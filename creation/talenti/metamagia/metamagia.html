@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+</head>
+<body>
+    <div class="container flex-column">
+
+        <h1 class="coltitle center">Metamagia</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <p class="coltext">I talenti metamagici consentono di modificare il proprio incantesimo dopo la sua creazione. </p>
+                </li>
+                <li>
+                    <p class="coltext">Poter lanciare gli incantesimi modificati in questo modo ha costi di mana aggiuntivi dipendentemente dal tipo di modifica che si vuole applicare. </p>
+                </li>
+                <li>
+                    <p class="coltext">Quando il costo in mana è definito con "+" vuol dire che all'incantesimo lanciato bisogna sommare il costo della metamagia. </p>
+                </li>
+                <li>
+                    <p class="coltext">Quando il costo in mana è definito "x" vuol dire che bisogna moltiplicare il costo dell'incantesimo lanciato tante volte quanto è espresso nel talento.</p>
+                </li>
+                <li>
+                    <p class="coltext">Con Mana minimo si intente il costo minimo dell’incantesimo per poterlo modificare con un talento di Metamagia. </p>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <ul>
+                <li>
+                    <h2 class="coltitle">Incantesimi Ampliati:</h2>
+                    <h3 class="coltitle">Mana minimo: 6</h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x3 </h3>
+                    <p class="coltext">Si modifica l’emanazione, l’esplosione o la propagazione di un incantesimo per aumentarne l’area d'effetto. Qualsiasi estensione numerica dell’area dell’incantesimo, aumenta del 100%.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi brillanti: </h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: +2</h3>
+                    <p class="coltext">Gli incantesimi con componenti visibili che infliggono danni emanano un bagliore luminoso che Abbaglia il nemico colpito.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi brucianti: </h2>
+                    <h3 class="coltitle">Costo minimo: 4 </h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2</h3>
+                    <p class="coltext">Gli incantesimi che infliggono danni causano danni aggiuntivi nel round successivo pari a metà del costo in mana dell’incantesimo. (Funziona solo una volta per ogni bersaglio). </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi concentrati: </h2>
+                    <h3 class="coltitle">Costo in mana: +3 </h3>
+                    <p class="coltext">Quando si lancia un incantesimo che influenza o bersaglia più di una creatura, è possibile scegliere un bersaglio o una creatura entro l’effetto dell’incantesimo. <br> La Cd per il Tiro salvezza di quella creatura è aumentata di +2. <br> Bisogna scegliere su quale bersaglio concentrare l’incantesimo prima di lanciarlo.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi concussivi:</h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: +4</h3>
+                    <p class="coltext">Le creature che subiscono danni da incantesimi sonori subiscono una penalità di -2 al Txc, tiro salvezza, prove abilittà e caratteristica per un numero di round pari a metà del livello dell’incantatore (minimo 1).</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimo trappola: </h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2</h3>
+                    <p class="coltext">Quando si lancia un incantesimo, se questi viene contrastato con una reazione l’incantesimo viene rediretto contro colui che ha provato a contrastarlo (se era già il bersaglio dell’incantesimo la reazione si svolge come da norma). <br> Se l’incantesimo ne concede la possibilità l’incantatore può comunque effettuare il suo Tiro salvezza.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi debilitanti:</h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: +5  </h3>
+                    <p class="coltext">Quando l’incantesimo modificato in questo modo infligge danni ad una creatura, questa diviene inferma per un numero di round pari a metà del livello dell’incantatore (minimo 1). <br>
+                    Se l’incantesimo prevede un Tiro salvezza e questi viene superato con successo, questi nega anche l’infermità. <br>
+                    Se l’incantesimo non prevede un tiro salvezza, il bersaglio può provare un Tiro salvezza su Tempra per negare l’effetto. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimo dirompenti: </h2>
+                    <h3 class="coltitle">Costo minimo: 5</h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2 </h3>
+                    <p class="coltext">I nemici che vengono influenzati da un incantesimo Dirompente mentre lanciano incantesimi o capacità magiche, devono effettuare una prova su Concentrazione (Cd il Tiro salvezza dell’incantesimo Dirompente). <br>
+                    I bersagli che evitano l’effetto dell’incantesimo, evitano anche l’effetto Dirompente. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi durevoli: </h2>
+                    <h3 class="coltitle">Costo di mana aggiuntivo: +4 </h3>
+                    <p class="coltext">Un incantesimo ad area Istantaneo, permane un round aggiuntivo. <br> Chi si trova nell’area non subisce danni aggiuntivi, ma altre creature o oggetti che entrano nell’area, subiscono i suoi effetti. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi echeggianti:</h2>
+                    <h3 class="coltitle">Costo di mana aggiuntivo: x2 </h3>
+                    <p class="coltext">La mattina è possibile scegliere di modificare un proprio incantesimo. 1 volta al giorno il costo dell’incantesimo lanciato viene rimborsato interamente dopo 1d6 round. <br>
+                    L’incantesimo può comunque essere usato altre volte, ma solo una volta al giorno ha quest’effetto. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi ectoplasmatici:</h2>
+                    <h3 class="coltitle">Costo in mana: +2 </h3>
+                    <p class="coltext">I propri incantesimi hanno effetto normale su creature eteree o incorporee.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi elementali:</h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: +3 </h3>
+                    <p class="coltext">Si può scegliere un elemento quando si lancia l’incantesimo, i danni di quest’ultimo vengono sostituiti dall’elemento scelto. <br>
+                    È anche possibile dividere i danni metà dell’elemento e metà dei danni originali dell’incantesimo. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi estesi: </h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x1,5</h3>
+                    <p class="coltext">Un incantesimo esteso dura il doppio del normale. <br> Gli incantesimi che hanno durata Istantanea, Concentrazione o Permanente, non sono influenzati. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi frastornanti: </h2>
+                    <h3 class="coltitle">Costo minimo: 4 </h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x3</h3>
+                    <p class="coltext">Quando l’incantesimo modificato in questo modo infligge danni ad una creatura, questa diviene Frastornata per un numero di round pari a metà dell’incantatore (minimo 1). <br>
+                    Se l’incantesimo prevede un Tiro salvezza e questi viene superato con successo, questi nega anche l’infermità. <br>
+                    Se l’incantesimo non prevede un tiro salvezza, il bersaglio può provare un Tiro salvezza su Tempra per negare l’effetto. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi gelidi: </h2>
+                    <h3 class="coltitle">Costo minimo: 4 </h3>
+                    <h3 class="coltitle">Costo in mana: x1,5</h3>
+                    <p class="coltext">I propri incantesimi che infliggono danno da freddo rendono il bersaglio colpito Intralciato per un numero di round pari a metà del livello dell’incantatore. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi immobili: </h2>
+                    <h3 class="coltitle">Costo in mana: +4</h3>
+                    <p class="coltext">Si può lanciare il proprio incantesimo senza le componenti somatiche</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi ingranditi: </h2>
+                    <h3 class="coltitle">Costo in mana: x1,5</h3>
+                    <p class="coltext">È possibile modificare un incantesimo con raggio di azione vicino, medio o lungo per ingrandirlo del 100%. <br>
+                    Un incantesimo ingrandito con raggio di azione vicino viene quindi ad avere un raggio di azione di 15 m + 1,5 m per livello, mentre gli incantesimi con raggio di azione medio ottengono un raggio di azione di 60 m + 6 m per livello e infine quelli con raggio di azione lungo arrivano a un raggio di azione di 240 m + 24 m per livello. <br>
+                    Un incantesimo ingrandito occupa uno slot incantesimo di un livello superiore a quello effettivo dell’incantesimo. <br>
+                    Gli incantesimi i cui raggi di azione non sono definiti dalla distanza, e allo stesso modo gli incantesimi i cui raggi di azione non sono vicino, medio o lontano, non possono essere ingranditi con questo talento. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi intensi: </h2>
+                    <h3 class="coltitle">Costo minimo: 5</h3>
+                    <h3 class="coltitle">Costo in mana: x1,5</h3>
+                    <p class="coltext">Quando il mago lancia l’incantesimo Intenso, aggiunge due dadi ai danni dell’incantesimo. <br>
+                        Se l’incantesimo non infligge danni questo talento non si applica. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi massimizzati: </h2>
+                    <h3 class="coltitle">Costo minimo: 8</h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x3</h3>
+                    <p class="coltext">Tutti gli effetti numerici variabili di un incantesimo modificato da questo talento, sono massimizzati. <br>
+                    Non ha alcun effetto sui Tiri salvezza e sui tiri contrapposti, ne sugli incantesimi privi di variabili casuali. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi penetranti:</h2>
+                    <h3 class="coltitle">Costo minimo: 3 </h3>
+                    <h3 class="coltitle">Costo in mana: x1,5</h3>
+                    <p class="coltext">Quando si lancia un incantesimo penetrante contro un bersaglio con Resistenza agli incantesimi, questo la considera come se fosse inferiore di 5 rispetto alla sua effettiva RI.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi Persistenti:</h2>
+                    <h3 class="coltitle">Costo minimo: 5 </h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2</h3>
+                    <p class="coltext">Quando una creatura bersagliata da un incantesimo persistente, oppure che si trova nella sua area, supera il Tiro salvezza, contro l’incantesimo, deve effettuare un nuovo Tiro salvezza contro l’effetto. <br>
+                    Se la creatura fallisce questo secondo Tiro salvezza, subisce il pieno effetto dell’incantesimo, come se avesse fallito il primo. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi pietosi:</h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: +2</h3>
+                    <p class="coltext">È Possibile alterare i propri incantesimi in modo che infliggano danni non letali. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi potenziati:</h2>
+                    <h3 class="coltitle">Costo minimo: 8 </h3>
+                    <h3 class="coltitle">Costo in mana: x1,5</h3>
+                    <p class="coltext">Tutti gli effetti numerici variabili di un incantesimo potenziato aumentano della metà, compresi i bonus a tiri di dado. <br>
+                    Questo talento non si applica ai Tiri salvezza e ai tiri contrapposti né agli incantesimi privi di variabile casuale.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi rapidi:</h2>
+                    <h3 class="coltitle">Costo minimo: 8</h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x3</h3>
+                    <p class="coltext">Il lancio di un incantesimo rapido è un’azione veloce. <br>
+                    Si può compiere un’altra azione, persino lanciare un altro incantesimo, nello stesso round in cui si lancia un incantesimo rapido. <br>
+                    Un incantesimo il cui tempo di lancio sia più lungo di 1 round o 1 azione di round completo non si può velocizzare.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">ncantesimi rimbalzanti:</h2>
+                    <h3 class="coltitle">Costo minimo: 6 </h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x1,5</h3>
+                    <p class="coltext">Quando un incantesimo rimbalzante che ha come bersaglio una singola creatura non ha effetto sul bersaglio (sia questo dovuto alla RI o ad un Tiro salvezza riuscito), è possibile impiegando un’azione veloce, ridirigere l’incantesimo verso un bersaglio entro il raggio d’azione. <br>
+                    L’incantesimo ridiretto funziona come se il nuovo bersaglio fosse il bersaglio dell’originale incantesimo. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi selettivi: </h2>
+                    <h3 class="coltitle">Costo minimo: 6</h3>
+                    <h3 class="coltitle">Costo di mana aggiuntivo: x1,5</h3>
+                    <h3 class="coltitle">Prerequisito: 5 gradi su Sapienza magica </h3>
+                    <p class="coltext">Quando si lancia un incantesimo selettivo con un’area d’effetto ed una durata istantanea è possibile scegliere un numero di bersagli pari al proprio modificatore caratteristica primario per escluderli dall’effetto dell’incantesimo. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi silenziosi: </h2>
+                    <h3 class="coltitle">Costo in mana: + 4</h3>
+                    <p class="coltext">Un incantesimo silenzioso può essere lanciato senza le componenti verbali.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi spaventosi:</h2>
+                    <h3 class="coltitle">costo minimo: 4</h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2</h3>
+                    <p class="coltext">Quando l’incantesimo modificato in questo modo infligge danni ad una creatura, questa diviene Scossa per un numero di round pari a metà dell’incantatore (minimo 1). <br>
+                    Se l’incantesimo prevede un Tiro salvezza e questi viene superato con successo, questi nega anche la condizione di scosso. <br>
+                    Se l’incantesimo non prevede un tiro salvezza, il bersaglio può provare un Tiro salvezza su Volontà per negare l’effetto. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi tonanti:</h2>
+                    <h3 class="coltitle">Costo minimo: 4 </h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2</h3>
+                    <p class="coltext">Quando l’incantesimo modificato in questo modo infligge danni ad una creatura, questa diviene Assordata per un numero di round pari a metà dell’incantatore (minimo 1). <br>
+                    Se l’incantesimo prevede un Tiro salvezza e questi viene superato con successo, questi nega anche la condizione Assordato. <br>
+                    Se l’incantesimo non prevede un tiro salvezza, il bersaglio può provare un Tiro salvezza su Tempra per negare l’effetto. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi ripetuti:</h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x1,5 mana su entrambi gli incantesimi lanciati <br>
+                    (esempio: l’incantesimo lanciato costa 6 mana, il costo per il talento sarebbe 6+3 per il primo incantesimo + 6+3 per l’incantesimo ripetuto)</h3>
+                    <p class="coltext">Un incantesimo ripetuto viene lanciato automaticamente una seconda volta all’inizio del proprio turno nel round successivo. <br>
+                    A prescindere da dove ci si trovi, il secondo incantesimo ha origine nello stesso punto e influenza la stessa area dell’incantesimo originario. Se l’incantesimo originario designa un bersaglio a distanza, l’incantesimo ripetuto influenza lo stesso bersaglio se entro 9 metri dalla posizione iniziale; altrimenti il secondo incantesimo fallisce.<br> L’incantesimo ripetuto non può essere influenzato da altri talenti di metamagia. </p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Dividere raggio: </h2>
+                    <h3 class="coltitle">Costo Minimo: 6</h3>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x2 </h3>
+                    <p class="coltext">il personaggio può fare in modo che qualsiasi incantesimo a raggio emetta un raggio addizionale oltre il numero normalmente permesso. <br>
+                    Il raggio addizionale richiede un tiro per colpire di contatto a distanza separato per colpire e infligge danni come di norma. <br>
+                    Può essere scagliato contro lo stesso bersaglio del primo raggio oppure contro un bersaglio diverso, ma tutti i raggi devono essere diretti contro bersagli entro 9 metri l'uno dall'altro ed emessi contemporaneamente.</p>
+                </li>
+                <li>
+                    <h2 class="coltitle">Incantesimi transidmensionali:</h2>
+                    <h3 class="coltitle">Costo in mana aggiuntivo: x1,5 </h3>
+                    <p class="coltext">Un incantesimo transdimensionale ha il suo effetto normale completo sulle creature incorporee, sulle creature sul Piano Etereo o sul Piano delle Ombre, e sulle creature dentro uno spazio extradimensionale nell'area dell'incantesimo. <br>
+                    Tali creature comprendono le creature eteree, le creature che sono soggette a intermittenza o camminare nelle ombre, i fantasmi manifestati e le creature all'interno dello spazio extradimensionale. <br>
+                    Il personaggio deve essere in grado di percepire una creatura per mirarla con un incantesimo transdimensionale, ma non ha bisogno di percepire una creatura per catturarla nell'area di un'esplosione, un cono, una emanazione o una propagazione.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../talenti.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Talenti</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

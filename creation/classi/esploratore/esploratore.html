@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Esploratore</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D6</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilita: </h3>
+                    <p class="coltext inline">6+int</p>
+                    <p class="coltext">Le abilità di classe dell'esploratore sono: Acrobazia, Artista della fuga, Cercare, Cavalcare, Conoscenze (Dungeon), Conoscenze (Geografia), Conoscenza (Natura), Disattivare congegni, Equilibrio, Furtività, Guarire, Intimidire, Nuotare, Percezione, Scalare, Sopravvivenza e Reazione</p>
+                <li>
+                    <h3 class="coltitle inline">Competenze:</h3>
+                    <p class="coltext inline">Competente in tutte le armi semplici più Arco Corto, Balestra a Mano, Manganello, Spada Corta e Stocco. Competente in armature leggere. </p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#schermaglia" class="link">Schermaglia 1d6 +1 Ca</a>,
+                    <a href="#trappole" class="link">Scoprire trappole</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#andatura" class="link">Andatura nel bosco</a>,
+                    <a href="#schivare" class="link">Schivare prodigioso</a>, <br>
+                    <a href="#natura" class="link">Senso della natura</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#passo" class="link">Passo senza tracce</a>,
+                    <a href="#resistenza" class="link">Resistenza fisica</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#schermaglia" class="link">Schermaglia 2d6 +2 Ca</a>, <br>
+                    <a href="#veloce" class="link">Movimento veloce</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#eludere" class="link">Eludere</a>,
+                    <a href="#nemico" class="link">Nemico Prescelto</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#talento" class="link">Talento magico</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td><td class="coltext">
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#schermaglia" class="link">Schermaglia 3d6 +3 Ca</a>, <br>
+                    <a href="#schivare2" class="link">Schivare prodigioso migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#natura2" class="link">Affinità alla natura</a>,
+                    <a href="#senso" class="link">Sesto senso</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#nemico" class="link">Nemico Prescelto</a>,
+                    <a href="#talento" class="link">Talento magico</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+11/+6/+1</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#schivare3" class="link">Schivata estrema</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#schermaglia" class="link">Schermaglia 4d6 +4 Ca</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+13/+8/+3</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#colpo" class="link">Colpo sicuro</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+14/+9/+4</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#nemico" class="link">Nemico Prescelto</a>,
+                    <a href="#talento" class="link">Talento magico</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+15/+10/+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#eludere2" class="link">Eludere migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+16/+11/+6/+1</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#schermaglia" class="link">Schermaglia 5d6 +5 Ca</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+17/+12/+7/+2</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+18/+13/+8/+3</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#talento" class="link">Talento magico</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+19/+14/+9/+4</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#libero" class="link">Movimento libero</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+20/+15/+10/+5</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#schermaglia" class="link">Schermaglia 6d6 +6 Ca</a>,
+                    <a href="#nemico" class="link">Nemico Prescelto</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="schermaglia"><a href="#skill" class="link">Schermaglia</a></h3>
+                    <p class="coltext">Un esploratore di 1° livello ed ogni 4 livelli successivi, fintanto che non indossa armature medie o pesanti ed il suo carico è leggero, ottiene un bonus di competenza alla CA e infligge danni extra in ogni round in cui si sposta di almeno 3 metri rispetto alla posizione che aveva all'inizio del turno. Entrambi i bonus si applicano non appena si è spostato di 3 metri (non prima); i danni extra vengono inflitti solo nel turno dell'esploratore, mentre il bonus CA dura fino all'inizio del suo turno successivo. Questa capacità non si può utilizzare mentre si combatte in sella a una cavalcatura. I danni extra di Schermaglia sono danni di precisione (il bersaglio dev'essere visibile, vulnerabile ai colpi critici e non più lontano di 9 metri).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="trappole"><a href="#skill" class="link">Scoprire trappole</a></h3>
+                    <p class="coltext"> L’esploratore aggiunge metà del proprio livello alle prove di Percezione per localizzare le trappole e alle prove di Disattivare Congegni (minimo +1). L’Esploratore può usare l'Abilità Disattivare Congegni per disarmare trappole magiche.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="andatura"><a href="#skill" class="link">Andatura nel bosco</a></h3>
+                    <p class="coltext">A partire dal 2° livello, un Esploratore può muoversi attraverso qualsiasi tipo di sottobosco (come rovi, sterpi naturali, zone infestate e simili terreni) a velocità normale e senza subire danni o altri impedimenti. Tuttavia, rovi, sterpi e aree infestate che sono incantati o manipolati magicamente per Impedire il movimento hanno effetto anche sull’Esploratore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare"><a href="#skill" class="link">Schivare prodigioso</a></h3>
+                    <p class="coltext">Dal 2° livello, l’Esploratore acquisisce la capacità di reagire al pericolo prima di quanto i suoi sensi gli avrebbero normalmente permesso di fare. L’esploratore non viene mai colto Impreparato, né perde il suo bonus di Destrezza alla CA se l'attaccante è Invisibile. Tuttavia, perde comunque il bonus di Destrezza alla CA se è Immobilizzato. L’esploratore con questa capacità perde comunque il bonus di Destrezza alla CA se un avversario usa con successo un'azione di Fintare contro di lui.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="natura"><a href="#skill" class="link">Senso della natura</a></h3>
+                    <p class="coltext">Un Esploratore ottiene bonus +4 alle prove di Conoscenze (natura) e Sopravvivenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="passo"><a href="#skill" class="link">Passo senza tracce</a></h3>
+                    <p class="coltext">A partire dal 3° livello, un Esploratore non lascia tracce in ambienti naturali e non può essere inseguito seguendo le sue tracce.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="resistenza"><a href="#skill" class="link">Resistenza fisica</a></h3>
+                    <p class="coltext">L’esploratore ottiene bonus +4 alle prove e ai Tiri Salvezza elencati di seguito. Prove di Nuotare effettuate per evitare i Danni Non Letali, prove di Costituzione effettuate per non smettere di Correre, prove di Costituzione effettuate per evitare i Danni Non Letali causati da marce forzate, prove di Costituzione effettuate per trattenere il fiato, prove di Costituzione effettuate per resistere alla fame o alla sete, Tiri Salvezza su Tempra per evitare i Danni Non Letali causati da ambienti caldi o freddi e Tiri Salvezza su Tempra per evitare i danni causati da soffocamento. É possibile inoltre dormire con indosso armature medie senza svegliarsi Affaticati.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="veloce"><a href="#skill" class="link">Movimento veloce</a></h3>
+                    <p class="coltext">Fintanto che non indossa armature medie o pesanti e non trasporta un carico medio o pesante, ottiene un bonus di potenziamento di +3 metri alla velocità base sul terreno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eludere"><a href="#skill" class="link">Eludere</a></h3>
+                    <p class="coltext">A partire dal 5° livello, l’Esploratore può evitare con grande agilità anche gli attacchi magici e insoliti. Se supera il Tiro Salvezza su Riflessi contro un attacco che normalmente infligge la metà dei danni in caso di riuscita del Tiro Salvezza, non subisce alcun danno. La capacità di Eludere può essere usata solo se l’Esploratore non indossa armature o ne indossa una leggera. Un Esploratore Indifeso non riceve i benefici di Eludere.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="nemico"><a href="#skill" class="link">Nemico prescelto</a></h3>
+                    <p class="coltext"> Dal 5° livello l’Esploratore sceglie un tipo di creatura dalla tabella dei nemici prescelti del Ranger. <br>
+                        Egli ottiene bonus +2 ai Tiri per Colpire e per il danno contro di essi, questo bonus incrementa ogni 5 di +2 ogni 5 livelli (+4 al 10, +6 al 15…). Un Esploratore può effettuare prove di Conoscenze senza addestramento quando cerca di identificare queste creature. <br>
+                        Ogni 5 livelli si può aggiungere un Nemico prescelto aggiuntivo. <br>
+                        I nemici che si possono scegliere sono i seguenti (nelle parantesi è indicato il sottotipo): 
+                    <ul>
+                        <li class="coltext">Aberrazione</li>
+                        <li class="coltext">Animale</li>
+                        <li class="coltext">Bestia Magica</li>
+                        <li class="coltext">Costrutto</li>
+                        <li class="coltext">Drago</li>
+                        <li class="coltext">Esterno(Acqua)</li>
+                        <li class="coltext">Esterno(Aria)</li>
+                        <li class="coltext">Esterno(Buono)</li>
+                        <li class="coltext">Esterno(Caotico)</li>
+                        <li class="coltext">Esterno(Fuoco)</li>
+                        <li class="coltext">Esterno(Legale)</li>
+                        <li class="coltext">Esterno(Malvagio)</li>
+                        <li class="coltext">Demone</li>
+                        <li class="coltext">Esterno(Sogno)</li>
+                        <li class="coltext">Esterno(Terra)</li>
+                        <li class="coltext">Folletto</li>
+                        <li class="coltext">Melma</li>
+                        <li class="coltext">Non Morto</li>
+                        <li class="coltext">Parassita</li>
+                        <li class="coltext">Umanoide(Acquatico)</li>
+                        <li class="coltext">Umanoide(Elfo)</li>
+                        <li class="coltext">Umanoide(Gigante)</li>
+                        <li class="coltext">Umanoide(Gnoll)</li>
+                        <li class="coltext">Umanoide(Gnomo)</li>
+                        <li class="coltext">Umanoide(Goblinoide)</li>
+                        <li class="coltext">Umanoide(Halfling)</li>
+                        <li class="coltext">Umanoide(Nano)</li>
+                        <li class="coltext">Umanoide(Orco)</li>
+                        <li class="coltext">Umanoide(Rettile)</li>
+                        <li class="coltext">Umanoide(Umano)</li>
+                        <li class="coltext">Umanoide(Altro sottotipo)</li>
+                        <li class="coltext">Umanoide Mostruoso</li>
+                        <li class="coltext">Vegetale</li>
+                        <li class="coltext">Ravi (Solo parito anti-Ravi)</li>
+                    </ul></p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento magico</a></h3>
+                    <p class="coltext">L’esploratore al 6° ed ogni 4 livelli successivi ottiene un Talento magico aggiuntivo. <br>
+                        I talenti sono i talenti unici della campagna. <br>
+                        Ogni qualvolta indicato dai bonus, un personaggio Esploratore può accedere ad uno di questi talenti o capacità uniche anche non avendone i prerequisiti: <br>
+                        <a href="../../talenti/metamagia/metamagia.html" class="link">Talenti metamagia</a>, 
+                        <a href="../../talenti/normali/normali.html" class="link">talenti normali</a>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare2"><a href="#skill" class="link">Schivare prodigioso migliorato</a></h3>
+                    <p class="coltext">L’esploratore al 8° livello non può più essere Attaccato ai Fianchi. Questa difesa nega ai Ladri la possibilità di utilizzare Attacchi Furtivi contro l’Esploratore Attaccandolo ai Fianchi, a meno che non abbiano quattro livelli da Ladro in più dell’Esploratore preso di mira.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="natura2"><a href="#skill" class="link">Affinità alla natura</a></h3>
+                    <p class="coltext">L’esploratore al 9° livello ottiene un’innata affinità alla natura e diviene consapevole di come proteggersene. Quando l’incantatore viene attaccato da un incantesimo o una capacità speciale collegata alla natura (Elementi, Piante, Animali) aggiunge un bonus di +6 ai suoi Tiri salvezza per resistergli. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="senso"><a href="#skill" class="link">Sesto senso</a></h3>
+                    <p class="coltext">L’esploratore al 9° livello ogni volta che si avvicina entro 3 metri da una Trappola, riceve immediatamente una prova di Cercare per individuarla. Questa prova dovrebbe essere tirata dal GM di nascosto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare3"><a href="#skill" class="link">Schivata estrema</a></h3>
+                    <p class="coltext">Al 11° livello una volta al giorno, quando l’Esploratore verrebbe ridotto a 0 o meno Punti Ferita da un attacco in mischia, può compiere un passo di 1,5 metri come azione immediata. Se il movimento lo allontana dalla portata dell’attacco, non subisce danno da quest’ultimo. Il Combattente Agile Barcollante per 1 round nel suo turno successivo.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="colpo"><a href="#skill" class="link">Colpo sicuro</a></h3>
+                    <p class="coltext">Al 13° livello, l’Esploratore come azione di round completa può compiere un singolo attacco a distanza non magico che ignora il fallimento percentuale dato da Occultamento, Copertura parziale o incantesimi (come intermittenza) (per nebbie, illusione o invisibilità è necessario conoscere la posizione del bersaglio) 
+                        L’Esploratore può compiere quest’azione un numero di volte pari al suo modificatore Carisma. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eludere2"><a href="#skill" class="link">Eludere migliorato</a></h3>
+                    <p class="coltext">Al 15° livello, la capacità eludere dell’Esploratore migliora. Questa capacità funziona come eludere, tranne per il fatto che l’Esploratore continua a non subire danni se effettua con successo un Tiro Salvezza su Riflessi contro attacchi, ma subisce solo la metà dei danni se fallisce il Tiro Salvezza. Un Esploratore Indifeso non riceve i benefici di eludere migliorato.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="libero"><a href="#skill" class="link">Movimento libero</a></h3>
+                    <p class="coltext">Al 19° livello fintanto che non indossa armature medie o pesanti e non trasporta un carico medio o pesante, è considerato essere sempre sotto gli effetti di un incantesimo <a href = "https://golarion.altervista.org/wiki/Incantesimi/Libert%C3%A0_di_Movimento" target="_blank" class="link" id="famiglio">Libertà di Movimento(golarion)</a>.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Dragon slayer</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Potere</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le Abilità in cui è competente il Dragon slayer sono: Acrobazia, Artista della fuga, Cavalcare, Conoscenze natura, Conoscenze Arcane, Intimidire, Nuotare, Percezione, Reazione, Scalare, Sopravvivenza. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Il Dragon slayer non è competente nell’uso di Armi e armature. </p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+                <th class="coltitle">Danno <br> senz'armi</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#protezione" class="link">Protezione del drago</a>, <br>
+                    <a href="#benedizione" class="link">Benedizione del drago</a>, <br>
+                    <a href="#raffica" class="link">Raffica di colpi</a>, <br>
+                    <a href="#senzarmi" class="link">Colpo senz'armi</a>, <br>
+                    <a href="#legame" class="link">Strano legame</a>, <br>
+                    <a href="#nausea" class="link">Nausea</a>
+                </td>
+                <td class="coltext">1d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#schivare" class="link">Schivare prodigioso</a>
+                </td>
+                <td class="coltext">1d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#aspetto" class="link">Aspetto del drago</a>
+                </td>
+                <td class="coltext">1d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#legame" class="link">Strano legame</a>, <br>
+                    <a href="#outburst" class="link">Outburst</a>
+                </td>
+                <td class="coltext">1d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#benedizione" class="link">Benedizione del drago</a>, <br>
+                    <a href="#aspetto" class="link">Aspetto del drago</a>
+                </td>
+                <td class="coltext">1d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#soffio" class="link">Soffio del drago</a>
+                </td>
+                <td class="coltext">1d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#aspetto" class="link">Aspetto del drago</a>, <br>
+                    <a href="#schivare2" class="link">Schivare prodigioso migliorato</a>
+                </td>
+                <td class="coltext">1d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#legame" class="link">Strano legame</a>
+                </td>
+                <td class="coltext">1d10</td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#aspetto" class="link">Aspetto del drago</a>
+                </td>
+                <td class="coltext">1d10</td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#benedizione" class="link">Benedizione del drago</a>
+                </td>
+                <td class="coltext">1d10</td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+11/+6/+1</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#raffica" class="link">Raffica di colpi</a>, <br>
+                    <a href="#aspetto" class="link">Aspetto del drago</a>
+                </td>
+                <td class="coltext">1d10</td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#legame" class="link">Strano legame</a>
+                </td>
+                <td class="coltext">2d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+13/+8/+3</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#aspetto" class="link">Aspetto del drago</a>
+                </td>
+                <td class="coltext">2d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+14/+9/+4</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#outburst" class="link">Outburst</a>
+                </td>
+                <td class="coltext">2d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+15/+10/+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#benedizione" class="link">Benedizione del drago</a>
+                </td>
+                <td class="coltext">2d6</td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+16/+11/+6/+1</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#aspetto2" class="link">Aspetto del drago superiore</a>
+                </td>
+                <td class="coltext">2d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+17/+12/+7/+2</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#outburst" class="link">Outburst</a>
+                </td>
+                <td class="coltext">2d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+18/+13/+8/+3</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#aspetto2" class="link">Aspetto del drago superiore</a>
+                </td>
+                <td class="coltext">2d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+19/+14/+9/+4</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#aspetto3" class="link">Aspetto del drago finale</a>
+                </td>
+                <td class="coltext">2d8</td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+20/+15/+10/+5</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio</a>
+                </td>
+                <td class="coltext">2d10</td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="protezione"><a href="#skill" class="link">Protezione del drago</a></h3>
+                    <p class="coltext">Il Dragon slayer somma il suo bonus Potere alla Ca e Dmc. 
+                        Questi bonus si applicano anche contro gli attacchi da contatto o se il Dragon slayer è impreparato. 
+                        Indossare armature fa perdere al Dragon slayer questo bonus. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="benedizione"><a href="#skill" class="link">Benedizione del drago</a></h3>
+                    <p class="coltext">Il Dragon slayer di 1° livello, è immune ai danni provenienti dall’elemento che corrisponde al proprio dono, non solo, è in grado di nutrirsene ed ottenerne benefici come fosse un pasto completo. <br>
+                        Al 5° livello, venir colpiti da un incantesimo che infligge danni del proprio elemento consente al Dragon slayer come azione immediata di nutrirsene parzialmente, ciò rigenera mana o salute (a scelta del Dragon slayer) pari a metà dei danni inflitti dall’incantesimo. <br>
+                        Al 10° livello, il Dragon slayer mangiando l’elemento (non magico), tira il suo Dado mana (1d8) e rigenera quella quantità. <br>
+                        Può usare questa capacità un numero di volte ogni giorno pari al suo DV. <br>
+                        Al 15° livello, il Dragon slayer è in grado di dissolvere qualsiasi incantesimo corrispondente al suo elemento con cui entra in contatto (Incantesimi lanciati da incantatori di livello superiore a quello del Dragon slayer, necessitano una prova su dissolvere, incantesimi con Permanenza vengono soppressi per 24h), rigenerando un totale di Salute e Mana pari al costo dell’incantesimo. <br>
+                        Dal Livello 1 il Dragon slayer può mangiare creature composte dell’elemento che corrisponde al suo dono (ad esempio elementali), è necessario un attacco da contatto che infligge 1d8 danni x lvl, il Dragon slayer recupera il quantitativo di DV della creatura come salute o mana (a sua scelta). </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="raffica"><a href="#skill" class="link">Raffica di colpi</a></h3>
+                    <p class="coltext">Al 1° livello, un Dragon slayer può effettuare una Raffica di Colpi come azione di attacco completo. Quando compie una Raffica di Colpi, il Dragon slayer può eseguire un attacco addizionale al suo bonus attacco base migliore. Questo attacco addizionale si somma con gli attacchi bonus forniti da Velocità e altri effetti simili. Quando usa questa capacità, il Dragon slayer può effettuare questi attacchi usando qualsiasi combinazione di colpi senz'armi. <br>
+                        Al 11° livello, un Dragon slayer può compiere un ulteriore attacco col suo bonus di attacco base migliore quando utilizza una raffica di colpi. Questo attacco si somma con il primo attacco di aggiuntivo della raffica di colpi e con attacchi aggiuntivi ottenuti da Velocità ed effetti simili.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="senzarmi"><a href="#skill" class="link">Colpo senz'armi</a></h3>
+                    <p class="coltext">Al 1° livello, un Dragon slayer ottiene Colpo Senz'Armi Migliorato come Talento Bonus. Gli attacchi di un Dragon slayer possono essere portati con i pugni, i gomiti, le ginocchia o i piedi. Ciò significa che un Dragon slayer può effettuare colpi senz'armi anche quando non ha le mani libere. Non esiste l'equivalente dell'attacco con mano secondaria per un monaco che colpisce senz'armi. Un Dragon slayer può quindi applicare il suo pieno bonus di Forza ai tiri per i danni a tutti i suoi colpi senz'armi. I colpi senz'armi del Dragon slayer infliggono danni letali, ma può decidere di infliggere danni non letali senza alcuna penalità al tiro per colpire. Il Dragon slayer ha a disposizione tale scelta anche quando è in lotta.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="legame"><a href="#skill" class="link">Strano legame</a></h3>
+                    <p class="coltext">Tutti i Dragon slayer sono legati fin dalla nascita con un Exeedo, nessuno è mai riuscito a spiegare la causa di questo legame di amicizia. <br>
+                        L’Exeedo collabora al meglio delle sue possibilità per aiutare il Dragon slayer e lega la sua anima ad esso. <br>
+                        (Guarda l’appendice dell’Exeedo per le statistiche) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="nausea"><a href="#skill" class="link">Nausea</a></h3>
+                    <p class="coltext">Quando i Dragon slayer si trovano su mezzi di trasporto sono considerati Nauseati, incantesimi che leniscono la Nausea dimezzano la loro durata dopo ogni utilizzo consecutivo. <br>
+                        Il Dragon slayer può effettuare un Ts su Tempra (Cd 15+2 per ogni prova consecutiva), per resistere alla nausea per 1r. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare"><a href="#skill" class="link">Schivare prodigioso</a></h3>
+                    <p class="coltext">Dal 2° livello, il Dragon slayer acquisisce la capacità di reagire al pericolo prima di quanto i suoi sensi gli avrebbero normalmente permesso di fare. Il Dragon slayer non viene mai colto Impreparato, né perde il suo bonus di Destrezza alla CA se l'attaccante è Invisibile. Tuttavia, perde comunque il bonus di Destrezza alla CA se è Immobilizzato. Il Dragon slayer con questa capacità perde comunque il bonus di Destrezza alla CA se un avversario usa con successo un'azione di Fintare contro di lui.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aspetto"><a href="#skill" class="link">Aspetto del drago</a></h3>
+                    <p class="coltext">AL 3° ed ogni due livelli (Fino al 13), il Dragon slayer acquisisce sempre di più l’aspetto di un drago, è possibile selezionare una delle seguenti capacità. <br>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Fauci del drago: </h3>
+                            <p class="coltext inline">Si guadagna un attacco con il morso di 1d4 (se già si possiede quello che già si ha migliora di 1 dado) (passando da 1d4 a 1d6, da 1d6 a 1d8 etc.) (è possibile prendere questa capacità più volte per incrementare il livello del dado) </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Occhi del drago: </h3>
+                            <p class="coltext inline">Scurovisione 18m </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Olfatto del drago: </h3>
+                            <p class="coltext inline">Si acquisisce l'abilità Fiuto </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Scaglie draconiche: </h3>
+                            <p class="coltext inline">Armatura naturale +1 (è possibile prendere questa capacità più volte) </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Robustezza draconica: </h3>
+                            <p class="coltext inline">+1 Tempra (è possibile prendere questa capacità più volte) </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Destrezza draconica: </h3>
+                            <p class="coltext inline">1 Riflessi (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Volontà draconica: </h3>
+                            <p class="coltext inline">+1 Volontà (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Immunità draconica: </h3>
+                            <p class="coltext inline">L’incantatore diventa immune agli incantesimi di influenza mentale</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Velocità del drago: </h3>
+                            <p class="coltext inline">+3 al movimento (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Magia draconica: </h3>
+                            <p class="coltext inline">+1 alla Cd di un proprio incantesimo a scelta (Non funziona su incantesimi diversi dal proprio dono draconico)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Percezione draconica: </h3>
+                            <p class="coltext inline">+2 alle prove di percezione ed intuizione (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Incantesimi draconici: </h3>
+                            <p class="coltext inline">Apprendi un incantesimo del proprio Dono aggiuntivo (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Capacità draconico: </h3>
+                            <p class="coltext inline">Apprendi un Talento aggiuntivo (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Rigenerazione draconica: </h3>
+                            <p class="coltext inline">Ti curi di 1pf ogni round </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Mana aggiuntivo: </h3>
+                            <p class="coltext inline">aggiungi 5 mana alla tua pool totale (è possibile prendere questa capacità più volte)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Sentore del pericolo: </h3>
+                            <p class="coltext inline">+2 alle prove di Iniziativa e Reazione </p>
+                        </li>
+                    </ul></p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="soffio"><a href="#skill" class="link">Soffio del drago: </a></h3>
+                    <p class="coltext">Al 6° livello, il Dragon Slayer acquisisce la capacità di convogliare il soffio del drago, come azione di round completa, in un cono di 18m emette un’ondata di distruzione dell’elemento corrispondente. <br>
+                        Può usare questa capacità una sola volta al giorno. <br>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Area: </h3>
+                            <p class="coltext inline">Cono di 18m </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Danni: </h3>
+                            <p class="coltext inline">1d10xlvl dell’elemento del Dragon slayer (Raddoppiati contro le strutture)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ts: </h3>
+                            <p class="coltext inline">Riflessi dimezza (Cd 10+lvl dragon slayer+mod potere)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Effetto secondario: </h3>
+                            <p class="coltext inline">Dipendentemente dal Dono del Dragon slayer, il soffio avrà effetti secondari (può deciderli il Dragon slayer, purché siano coerenti con il Dono e devono avere l’approvazione del Master). </p>
+                        </li>
+                    </ul></p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare2"><a href="#skill" class="link">Schivare prodigioso migliorato</a></h3>
+                    <p class="coltext">Dal 7° livello in poi, il Dragon slayer non può più essere Attaccato ai Fianchi. Questa difesa nega ai Ladri la possibilità di utilizzare Attacchi Furtivi contro il Dragon slayer Attaccandolo ai Fianchi, a meno che non abbiano quattro livelli da Ladro in più del Dragon slayer preso di mira.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aspetto2"><a href="#skill" class="link">Aspetto del drago superiore: </a></h3>
+                    <p class="coltext">Al livello 16 e poi al 18, il Dragon slayer acquisisce un aspetto sempre più draconico e con esso, i suoi poteri aumentano. <br>
+                        Il dragon slayer può scegliere una delle seguenti capacità, se ha selezionato i poteri necessari dall’Aspetto del Drago. <br>
+                        <ul>
+                            <li>
+                                <h3 class="coltitle">Occhio assoluto: (Prerequisiti: Percezione draconica, Scurovisione, Fiuto) </h3>
+                                <p class="coltext">Il Dragon slayer ottiene Vista cieca 9m </p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle">Inafferabile: (Prerequisiti: Destrezza draconica, Velocità del Drago)</h3>
+                                <p class="coltext">Il dragon slayer è in grado di muoversi attraverso qualsiasi tipo di terreno e magia che gli impedirebbe altrimenti il movimento. <br>
+                                    Il Dragon slayer supera automaticamente qualsiasi prova di Manovra in Combattimento effettuata per resistere a un tentativo di Lotta, così come tutte le prove di Lottare o di Artista della Fuga per non essere più In Lotta o Immobilizzato. <br>
+                                    Questa capacità permette anche a un personaggio di muoversi e attaccare normalmente sott’acqua, ma non di respirare.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle">Scaglie anti magia: (Prerequisiti: Immunità draconica, Volontà draconica, Mana aggiuntivo) </h3>
+                                <p class="coltext">Il Dragon slayer guadagna RI pari al suo livello+mod potere.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle">Corpo senza tempo: (Prerequisiti: Rigenerazione draconica, Robustezza draconica)</h3>
+                                <p class="coltext">Il Dragon slayer diventa immune a Veleni e Malattie, inoltre non ha bisogno di dormire, bere, mangiare o respirare. </p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle">Scaglie dure: (Prerequisiti: 3 volte Scaglie draconiche)</h3>
+                                <p class="coltext">Il dragon slayer ottiene Rd pari a Metà del proprio livello. </p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="outburst"><a href="#skill" class="link">Outburst</a></h3>
+                    <p class="coltext">Il Dragon slayer al 4° livello, poi al 14° ed infine al 17° ottiene il potere di eccedere le sue capacità. <br>
+                        Assimilando mana da qualsiasi fonte il Dragon slayer può decidere di entrare in questo stato e può rimanerci un quantitativo di round pari 3 + modificatore potere ogni giorno (I round possono non essere continuativi, ma per rientrarci necessita nuovamente assimilare mana). <br>
+                        In questo stato il Dragon slayer rigenera mana pari ai propri DV ogni round, i suoi incantesimi sono Potenziati come fossero sotto l’effetto di Metamagia, inoltre emana un’aura attorno a sé in un raggio di 3m che infligge 1d6 pari a metà dei DV del Dragon slayer di danni dell’elemento del Dragon slayer. <br>
+                        A causa di questo sfoggio di potere il Dragon slayer subisce 2d6 danni non letali ogni round (non possono essere mitigati in alcun modo) e quando esce dall’Outburst è esausto. <br>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Al livello 14 </h3>
+                            <p class="coltext inline">gli incantesimi ottengono +5 alle Cd e l’area ed il raggio di questi è Raddoppiato, inoltre il Dragon slayer subisce danni dimezzati da ogni fonte di danno quando è in questo stato (Ciò sostituisce eventuale Rd)</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Al livello 17 </h3>
+                            <p class="coltext inline">
+                                il Dragon slayer può decidere di entrare in questo stato senza dover assimilare mana, come azione standard, ma per uscirne deve superare un Ts su Volontà (Cd 10+DV del Dragon slayer). <br>
+                                <ul>
+                                    <li>
+                                        <h3 class="coltitle inline">Follia del drago: </h3>
+                                        <p class="coltext inline">Dal livello 17 il Dragon slayer in Outburst non distingue più alleati da nemici, perciò attacca indistintamente chiunque sia alla sua portata, prediligendo chi ha atteggiamento ostile nei suoi confronti per poi dedicarsi agli altri (non si curerà di non colpire gli alleati con spell ad area). </p>
+                                    </li>
+                                </ul>
+                            </p>
+                        </li>
+                    </ul> </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aspetto3"><a href="#skill" class="link">Aspetto del drago finale: </a></h3>
+                    <p class="coltext">Al livello 19, il Dragon slayer sarà in grado di trasformarsi a volontà in un drago a tutti gli effetti (Grande Dragone), acquisendo le sue statistiche fisiche e le sue capacità. <br>
+                        Inoltre potrà usare a Volontà il suo Soffio. <br>
+                        In questo stato sarà immune alla magia se non quella Divina, dei Dragon slayer, God slayer o Demoniaca.
+                        <ul>
+                            <li>
+                                <h3 class="coltitle inline">Maledizione del drago: </h3>
+                                <p class="coltext inline"> Ogni volta che si trasforma, il Dragon slayer deve superare un Ts su Volontà Cd 15+1 ogni volta che si è trasformato (o ogni 24h in cui è in questo stato), altrimenti la sua anima viene distrutta e sostituita con quella di uno dei draghi antichi che condividevano il suo elemento. </p>
+                            </li>
+                        </ul></p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="dominio"><a href="#skill" class="link">Dominio</a></h3>
+                    <p class="coltext">Al 20° livello, il Dragon slayer acquisisce un tale potere sul suo elemento da poter influenzare tutti gli altri utilizzatori. <br>
+                        Se non vi sono altri contendenti (Divinità, God slayer o Dragon slayer) che aspirano al Dominio, il Dragon slayer può imporre regole su tutti coloro che usano il suo Dominio (ne discuteremo se mai riuscirete a raggiungere questo obbiettivo). <br>
+                        Se invece vi sono contendenti nessuno possiede autorità sul dominio (il che vuol dire che altri contendenti potrebbero cercarvi per uccidervi). <br>
+                        Anche senza l’autorità del Dominio, il Dragon slayer può controllare parzialmente gli incantesimi inerenti alla sua magia, quando qualcuno lancia incantesimi inerenti al suo dominio entro 36m da lui, può deciderne di alzarne o abbassarne le Cd pari al suo modificatore potere come azione immediata, 
+                        oppure può decidere di dimezzare o raddoppiare il costo in mana per lanciarlo. 
+                        (Può influenzare anche i suoi incantesimi). </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

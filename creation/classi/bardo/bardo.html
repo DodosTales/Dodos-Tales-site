@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        
+        <h1 class="coltitle center">Bardo</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilita: </h3>
+                    <p class="coltext inline">6+int</p>
+                    <p class="coltext">Le abilità di classe del bardo sono: Acrobazia, Artista della Fuga, Camuffare, Conoscenze (tutte prese singolarmente), Diplomazia, Furtività, Intimidire, Intrattenere, Intuizione, Percezione,  Raggirare, 
+                        Rapidità di Mano, Sapienza Magica, Scalare, Utilizzare Congegni Magici, Valutare, Reazione.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle">Competenze: </h3>
+                    <p class="coltext inline">Il Bardo è competente nell'uso di tutte le armi semplici, più Arco Corto, Frusta, Manganello, Spada Corta, Spada Lunga e Stocco. I bardi sono competenti nelle armature leggere e negli scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#affascinare" class="link">Affascinare</a>,
+                    <a href="#conoscenze" class="link">Conoscenze Bardiche</a>, <br>
+                    <a href="#esibizione" class="link">Esibizione bardica</a>,
+                    <a href="#coraggio" class="link">Ispirare coraggio +1</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#avvezzo" class="link">Avvezzo</a>,
+                    <a href="#versatile" class="link">Esecuzione versatile</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#competenza" class="link">Ispirare competenza +2</a>,
+                    <a href="#incanto" class="link">Ispirare incantato +1</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#distrazione" class="link">Distrazione</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#coraggio" class="link">Ispirare coraggio +2</a>, <br>
+                    <a href="#sapere" class="link">Maestro del sapere 1/giorno</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#versatile" class="link">Esecuzione versatile</a>,
+                    <a href="#suggestione" class="link">Suggestione</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#competenza" class="link">Ispirare competenza +4</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#terrore" class="link">Ispirare terrore</a>,
+                    <a href="#incanto" class="link">Ispirare incanto +2</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#grandezza" class="link">Ispirare grandezza</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    <a href="#eclettico" class="link">Eclettico</a>,
+                    <a href="#versatile" class="link">Esecuzione versatile</a>, <br>
+                    <a href="#coraggio" class="link">Ispirare coraggio +3</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    <a href="#competenza" class="link">Ispirare competenza +6</a>, <br>
+                    <a href="#sapere" class="link">Maestro del sapere 2/giorno</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#lenitiva" class="link">Musica lenitiva</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#esilio" class="link">Esilio sonoro</a>, <br>
+                    <a href="#incanto" class="link">Ispirare incanto +3</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">
+                    <a href="#spaventoso" class="link">Accordo spaventoso</a>, <br>
+                    <a href="#versatile" class="link">Esecuzione versatile</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+11/+6/+1</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">
+                    <a href="#competenza" class="link">Ispirare competenza +6</a>, <br>
+                    <a href="#eroismo" class="link">Ispirare eroismo</a>, <br>
+                    <a href="#coraggio" class="link">Ispirare coraggio +4</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext"></td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <a href="#sapere" class="link">Maestro del sapere 3/giorno</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+13/+8/+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">
+                    <a href="#versatile" class="link">Esecuzione versatile</a>, <br>
+                    <a href="#suggestione2" class="link">Suggestione di massa</a>, <br>
+                    <a href="#incanto" class="link">Ispirare incanto +4</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+14/+9/+4</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">
+                    <a href="#competenza" class="link">Ispirare competenza +10</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+15/+10/+5</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">
+                    <a href="#mortale" class="link">Musica mortale</a>,
+                    <a href="#coraggio" class="link">Ispirare coraggio +4</a>
+                </td>
+            </tr>
+        </table>
+        
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="conoscenze"><a href="#skill" class="link">Conoscenze Bardiche</a></h3>
+                    <p class="coltext">Il Bardo aggiunge metà del suo livello di classe (minimo 1) a tutte le prove di Conoscenze e può effettuare tali prove di Conoscenze anche senza addestramento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="esibizione"><a href="#skill" class="link">Esibizione Bardica</a></h3>
+                    <p class="coltext">Il Bardo è addestrato ad usare un'Abilità di Intrattenere per creare effetti magici su chi gli sta vicino, compreso se stesso se lo desidera. Egli può usare questa capacità per un numero di round al giorno pari a 4 + il suo modificatore di Carisma. Ad ogni nuovo livello dopo il 1° il Bardo può usare questa sua capacità per 2 round aggiuntivi al giorno. Ad ogni round, un Bardo può produrre uno dei tipi di Esibizione Bardica che ha appreso, come indicato dal suo livello. <br>
+                        Attivare un effetto di Esibizione Bardica è un'azione standard, ma può essere mantenuta come azione gratuita ogni round. Cambiare gli effetti di Esibizione Bardica richiede che il Bardo interrompa la sua esecuzione e ne inizi una nuova come azione standard Esibizione Bardica non può essere interrotta, ma termina immediatamente se il Bardo viene ucciso, Paralizzato o Stordito, reso Privo di Sensi o gli viene impedito in altro modo di usare l'azione gratuita per mantenerla ogni round. Il Bardo non può avere più di un effetto di Esibizione Bardica attivo nello stesso momento. <br>
+                        Al 7° livello, il Bardo può iniziare Esibizione Bardica come azione di movimento anziché azione standard. Al 13° livello, il Bardo può iniziare Esibizione Bardica come azione veloce. <br>
+                        Ogni Esibizione Bardica ha componenti sonore, visive, o entrambe. <br>
+                        Se la capacità di Esibizione Bardica ha componenti sonore, i bersagli devono essere in grado di sentire il Bardo affinché questa capacità abbia effetto, molte di queste esibizioni sono dipendenti dal linguaggio (come riportato nella descrizione). Il Bardo sordo ha una probabilità del 20% di fallire se tenta di usare una capacità di Esibizione Bardica con una componente sonora. Se fallisce la prova, il tentativo conta lo stesso nel suo limite giornaliero. Le creature sorde sono immuni alle capacità di Esibizione Bardica con componenti sonore. <br>
+                        Se la capacità di Esibizione Bardica ha componenti visive, i bersagli devono essere in grado di vedere il Bardo affinché questa capacità abbia effetto. Il Bardo cieco ha una probabilità del 50% di fallire se tenta di usare una capacità di Esibizione Bardica con una componente visiva. Se fallisce la prova, il tentativo conta lo stesso nel suo limite giornaliero. Le creature cieche sono immuni alle capacità di Esibizione Bardica con componenti visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="affascinare"><a href="#skill" class="link">Affascinare</a></h3>
+                    <p class="coltext">Al 1° livello, il Bardo può usare Esibizione Bardica per Affascinare una o più creature. Per essere Affascinata, ogni creatura deve trovarsi entro 27 metri, essere in grado di vedere e sentire il Bardo e deve prestargli attenzione. Anche il Bardo deve essere in grado di vedere la creatura. La distrazione di un combattimento vicino o di altri pericoli impedisce che la capacità funzioni. Per ogni tre livelli ottenuti dal Bardo dopo il 1°, con questa capacità egli può colpire una creatura addizionale. <br>
+                        Ogni creatura entro il raggio riceve un Tiro Salvezza su Volontà (CD 10 + metà del livello del Bardo + il modificatore di Carisma del Bardo) per negare l'effetto. Se il Tiro Salvezza di una creatura riesce, il Bardo non può tentare di Affascinare di nuovo quella creatura per le successive 24 ore. Se il Tiro Salvezza fallisce, la creatura si siede tranquillamente ad osservare il Bardo, senza effettuare nessun'altra azione, per tutto il tempo in cui il Bardo continua a mantenere Esibizione Bardica. Mentre è Affascinata, una creatura subisce penalità -4 alle prove di Abilità effettuate come reazioni, come le prove di Percezione. Qualsiasi minaccia potenziale al bersaglio gli permette di effettuare un nuovo Tiro Salvezza contro l'effetto. Qualsiasi minaccia evidente, come estrarre un'arma, lanciare un Incantesimo, puntare un'arma a distanza al bersaglio, spezza automaticamente l'effetto. <br>
+                        Affascinare è una capacità di Ammaliamento (compulsione) che influenza la mente. Affascinare si basa su componenti sonore e visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="coraggio"><a href="#skill" class="link">Ispirare coraggio</a></h3>
+                    <p class="coltext">Al 1° livello, il Bardo può usare Esibizione Bardica per ispirare coraggio nei suoi alleati (incluso se stesso), sostenendoli contro la Paura e migliorando le loro capacità di combattimento. Perché abbia effetto, un alleato deve essere in grado di ascoltare il Bardo. Un alleato influenzato riceve Bonus Morale +1 ai Tiri Salvezza, e Bonus di Competenza +1 al Tiro per Colpire e ai danni. Al 5° livello, e ad ogni cinque livelli da Bardo successivi, questo bonus aumenta di +1, fino ad un massimo di +5 al 20° livello. Ispirare Coraggio è una capacità di influenza mentale. Ispirare Coraggio può basarsi su componenti sonore o visive. Il Bardo deve scegliere quali componenti usare quando dà inizio ad Ispirare Coraggio.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="competenza"><a href="#skill" class="link">Ispirare competenza</a></h3>
+                    <p class="coltext">Il Bardo di 3° livello o superiore può usare Esibizione Bardica per aiutare un alleato ad eseguire un compito. L'alleato deve trovarsi entro 9 metri dal Bardo ed essere in grado di vederlo e sentirlo. L'alleato ottiene Bonus di Competenza +2 alle sue Prove di Abilità con un'Abilità particolare per tutto il tempo in cui continua ad ascoltare la musica del Bardo. Questo bonus aumenta di +2 ogni quattro livelli che il Bardo ottiene dopo il 3° (+4 al 7°, +6 all'11°, +8 al 15° e +10 al 19°). Alcuni usi di questa capacità non sono fattibili, come i tentativi di Furtività, e potrebbero essere vietati a discrezione del GM. Il Bardo non può Ispirare Competenza su se stesso. Ispirare Competenza si basa su componenti sonore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incanto"><a href="#skill" class="link">Ispirare incantato</a></h3>
+                    <p class="coltext">Il Bardo di 3° livello o superiore può usare Esibizione Bardica per migliorare le capacità magiche a se stesso o su un singolo alleato consenziente entro 9 metri. <br>
+                        Colui che è influenzato da questa capacità consuma 1 mana in meno ogni 5 livelli oltre il 3 (+2 al livello 8, +3 al livello 13, +4 al livello 18) quando lancia un suo incantesimo e le Cd aumentano di +1 ogni 5 livelli oltre il 3. <br>
+                        L’effetto dura per 5 round. <br>
+                        Ogni 5 livelli oltre il 3, il Bardo può selezionare un alleato aggiuntivo da influenzare. <br>
+                        Ispirare incantato si basa su componenti sonore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="distrazione"><a href="#skill" class="link">Distrazione</a></h3>
+                    <p class="coltext">Il Bardo di 4° livello o superiore può usare Esibizione Bardica per contrastare il lancio di un incantesimo di un bersaglio entro 9m, questi deve superare una prova su concentrazione (CD 10+lvl bardo+ il modificatore carisma del bardo) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="suggestione"><a href="#skill" class="link">Suggestione</a></h3>
+                    <p class="coltext">Il Bardo di 6° livello o superiore può usare Esibizione Bardica per imporre l'effetto dell'Incantesimo Suggestione ad una creatura che abbia già Affascinato. Utilizzare questa capacità non spezza la Concentrazione del Bardo per l'effetto di Affascinare, ma richiede un'azione standard per essere attivata (oltre all'azione gratuita necessaria per mantenere l'effetto di Affascinare). Il Bardo può usare questa capacità di Esibizione Bardica più di una volta contro una creatura specifica durante un utilizzo specifico della stessa. <br>
+                        Imporre la Suggestione non conta per il limite giornaliero del Bardo di esecuzioni di Esibizione Bardica. Un Tiro Salvezza su Volontà (CD 10 + livello del Bardo + il modificatore di Carisma del Bardo) nega l'effetto. Questa capacità influenza solo una creatura singola. Suggestione è una capacità di Ammaliamento (compulsione), che influenza la mente, dipendente dal linguaggio che si basa su componenti sonore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="terrore"><a href="#skill" class="link">Ispirare terrore</a></h3>
+                    <p class="coltext">Il Bardo di 8° livello o superiore può usare Esibizione Bardica per scatenare un senso di orrore crescente nei suoi nemici, facendoli diventare Scossi. Per essere colpito, un nemico deve essere in grado di vedere e sentire il Bardo suonare ed essere entro 9 metri da lui. L'effetto dura fin tanto che il nemico resta entro 9 metri dal Bardo, e questi continua la sua esecuzione. Questa capacità non fa diventare i nemici Spaventati o In Preda al Panico, anche se sono già Scossi per altri effetti. Ispirare Terrore è un effetto di paura che influenza la mente e si basa su componenti sonore e visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="grandezza"><a href="#skill" class="link">Ispirare grandezza</a></h3>
+                    <p class="coltext">Il Bardo di 9° livello o superiore può usare Esibizione Bardica per Ispirare Grandezza su se stesso o su un singolo alleato consenziente entro 9 metri, fornendo capacità aggiuntive in combattimento. Per ogni tre livelli da Bardo ottenuti dopo il 9°, il Bardo può Ispirare Grandezza su un alleato addizionale con un singolo utilizzo di questa capacità (fino ad un massimo di quattro al 18° livello). Per Ispirare Grandezza, tutti i bersagli devono essere in grado di vedere e sentire il Bardo. Una creatura a cui è stata ispirata grandezza guadagna 2 Dadi Vita bonus (d10), il corrispondente numero di Punti Ferita Temporanei (applicare il modificatore di Costituzione del bersaglio, se presente, a questi Dadi Vita bonus), Bonus di Competenza +2 al Tiro per Colpire e bonus +1 ai Tiri Salvezza su Tempra. I Dadi Vita bonus contano come Dadi Vita regolari per determinare gli effetti di incantesimi che sono dipendenti dai Dadi Vita. Ispirare Grandezza è una capacità di influenza mentale che si basa su componenti sonore e visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="lenitiva"><a href="#skill" class="link">Musica lenitiva</a></h3>
+                    <p class="coltext">Il Bardo di 12° livello o superiore può usare Esibizione Bardica per creare un effetto equivalente ad un Incantesimo Cura Ferite Gravi di Massa (livello dell'incantatore pari al livello del Bardo). Inoltre, questa musica rimuove le condizioni di Affaticato, Infermo e Scosso da chiunque vi assista. Utilizzare questa capacità richiede 4 round di esecuzione ininterrotta, e i bersagli devono essere in grado di sentire e vedere il Bardo e restare entro 9 metri da lui per tutta l'esecuzione. Musica Lenitiva si basa su componenti sonore e visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="esilio"><a href="#skill" class="link">Esilio sonoro</a></h3>
+                    <p class="coltext">Il Bardo di 13° livello o superiore può usare Esibizione Bardica contro un bersaglio entro 27m da lui, il soggetto ha diritto ad una prova su volontà (Cd pari alla prova di Intrattenere del Bardo) altrimenti non riesce ad emettere o sentire alcun suono. (Assordato) <br>
+                        Incantesimi e capacità speciali che necessitino del suono per funzionare falliscono automaticamente. <br>
+                        Il Bardo può mantenere l’esibizione attiva fintanto che rimane concentrato su di essa</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="spaventoso"><a href="#skill" class="link">Accordo spaventoso</a></h3>
+                    <p class="coltext">Il Bardo di 14° livello o superiore può usare Esibizione Bardica per causare paura nei suoi nemici. Per essere colpito, un nemico deve essere in grado di sentire l'esecuzione del Bardo e trovarsi entro 9 metri da lui. Ogni nemico entro il raggio riceve un Tiro Salvezza su Volontà (CD Pari alla prova di intrattenere del bardo) per negare l'effetto. Se il Tiro Salvezza della creatura riesce, il Bardo non può usare Accordo Spaventoso su quella creatura nuovamente per le successive 24 ore. Se il Tiro Salvezza fallisce, la creatura è spaventata e fugge via finché sente l'esecuzione del Bardo. Accordo Spaventoso si basa su componenti sonore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eroismo"><a href="#skill" class="link">Ispirare eroismo</a></h3>
+                    <p class="coltext">Il Bardo di 15° livello o superiore può usare Esibizione Bardica per Ispirare Eroismo su se stesso o su un singolo alleato entro 9 metri. Per ogni tre livelli da Bardo ottenuti dopo il 15°, il Bardo può Ispirare Eroismo su un alleato addizionale. Per Ispirare Eroismo, tutti i bersagli devono essere in grado di sentire e vedere il Bardo. Una creatura così ispirata guadagna Bonus Morale +4 ai Tiri Salvezza e Bonus di Schivare +4 alla CA, inoltre ottiene i bonus di tutte gli altri ispirare. L'effetto dura per tutto il tempo in cui i bersagli sono in grado di assistere all'esecuzione del bardo. Ispirare eroismo è una capacità di influenza mentale che si basa su componenti sonore e visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="suggestione2"><a href="#skill" class="link">Suggestione di massa</a></h3>
+                    <p class="coltext">Questa capacità funziona come l'Incantesimo Suggestione, tranne che il Bardo di 18° livello o superiore può imporre la Suggestione simultaneamente a un qualsiasi numero di creature che egli abbia già affascinato. Suggestione di Massa è una capacità di Ammaliamento (compulsione), che influenza la mente, dipendente dal linguaggio, che si basa su componenti sonore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="mortale"><a href="#skill" class="link">Musica mortale</a></h3>
+                    <p class="coltext">Il Bardo di 20° livello o superiore può usare Esibizione Bardica per causare la morte di un nemico per gioia o disperazione. Per essere colpito, un bersaglio deve essere in grado di sentire l'esecuzione del Bardo per 1 round completo e trovarsi entro 9 metri da lui. Il bersaglio riceve un Tiro Salvezza su Volontà (CD 10 + metà livello del Bardo + il modificatore di Carisma del Bardo) per negare l'effetto. Se il Tiro Salvezza riesce, il bersaglio è Barcollante per 1d4 round ed il Bardo non può usare Musica Mortale su quella creatura nuovamente per le successive 24 ore. Se il Tiro Salvezza fallisce, la creatura muore. Musica Mortale è un effetto di morte che influenza la mente, che si basa su componenti sonore e visive.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="avvezzo"><a href="#skill" class="link">Avvezzo</a></h3>
+                    <p class="coltext">Al 2° livello, il Bardo diventa resistente alla Esibizione Bardica degli altri Bardi e agli effetti sonori in genere. Il Bardo guadagna bonus +4 ai Tiri Salvezza effettuati contro capacità di Esibizione Bardica ed effetti sonori e dipendenti dal linguaggio. <br>
+                        Inoltre sostituisce ai Tiri salvezza su Volontà Potere con Carisma </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="versatile"><a href="#skill" class="link">Esecuzione versatile</a></h3>
+                    <p class="coltext">Al 2° livello, il Bardo può scegliere un tipo di Intrattenere. Egli può usare il suo bonus in quell'Abilità al posto del bonus che ha in Abilità associate. Quando sostituisce in questo modo, il Bardo usa il suo bonus totale di Intrattenere, compreso quello come abilità di classe, al posto del bonus dell'Abilità associata. Al 6° livello, e successivamente ogni 4 livelli, il Bardo può scegliere un tipo addizionale di Intrattenere da sostituire. 
+                        I tipi di Intrattenere e le loro Abilità associate sono: Canto (Intuizione, Raggirare), Commedia (Intimidire, Raggirare), Danza (Acrobazia, Volare), Oratoria (Diplomazia, Intuizione), Recitazione (Camuffare, Raggirare), Strumenti a corda (Diplomazia, Raggirare), Strumenti a fiato (Addestrare Animali, Diplomazia), Strumenti a percussione (Addestrare Animali, Intimidire) e Strumenti a tastiera (Diplomazia, Intimidire).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sapere"><a href="#skill" class="link">Maestro del sapere</a></h3>
+                    <p class="coltext">Al 5° livello, il Bardo diventa un Maestro del Sapere e può prendere 10 a tutte le prove di Conoscenze in cui ha gradi. Un Bardo può comunque scegliere di non prendere 10 e tirare normalmente. Inoltre, una volta al giorno, il Bardo può prendere 20 alle prove di Conoscenze come azione standard. Può usare questa capacità una volta in più al giorno per ogni sei livelli che possiede oltre al 5°, fino ad un massimo di tre volte al giorno al 17° livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eclettico"><a href="#skill" class="link">Eclettico</a></h3>
+                    <p class="coltext">Al 10° livello, il Bardo può usare qualsiasi Abilità, anche senza avere addestramento in esse. Al 16° livello, il Bardo considera tutte le Abilità come abilità di classe. Al 19° livello, il bardo può prendere 10 a tutte le Prove di Abilità, anche se ciò non è normalmente permesso.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

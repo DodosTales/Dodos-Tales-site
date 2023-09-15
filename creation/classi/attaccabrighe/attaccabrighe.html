@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        
+        <h1 class="coltitle center">Attaccabrighe</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D4</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Potere</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le Abilità di classe dell'attaccabrighe sono Acrobazia, Addestrare Animali, Artigianato, Artista della Fuga, Cavalcare, Conoscenze (dungeon), Conoscenze (locali), Intimidire, Intuizione, Nuotare, Percezione, Professione e Scalare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">L'attaccabrighe è competente in tutte le armi semplici più l'Ascia, l'Arco Corto e le armi da combattimento ravvicinato del Guerriero. Gli attaccabrighe sono competenti nelle armature leggere e negli scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Danno
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">1d6
+                </td>
+                <td class="coltext"><a href="#addestramento" class="link">Addestramento Marziale</a>, 
+                    <a href="#astuzia" class="link">Astuzia dell'Attaccabrighe</a>, <br>
+                    <a href="#senzarmi" class="link">Colpo Senz'Armi</a>,
+                    <a href="#marziale" class="link">Flessibilità Marziale</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">1d6
+                </td>
+                <td class="coltext"><a href="#raffica" class="link">Raffica dell'Attaccabrighe (Combattere con Due Armi)</a>, <br>
+                <a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">1d6
+                </td>
+                <td class="coltext"><a href="#manovre" class="link">Addestramento alle Manovre 1</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext"><a href="#ca" class="link">Bonus alla CA +1</a>, <br>
+                    <a href="#knockout" class="link">Knockout 1/giorno</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext"><a href="#colpo" class="link">Colpo dell'Attaccabrighe (magia)</a>, <br>
+                    <a href="#ravvicinato" class="link">Padronanza delle Armi da Combattimento Ravvicinato</a>, <br>
+                     <a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext"><a href="#marziale" class="link">Flessibilità Marziale (azione veloce)</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext"><a href="#manovre" class="link">Addestramento alle Manovre 2</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext"><a href="#raffica" class="link">Raffica dell'Attaccabrighe (combattere con due armi migliorato), <br>
+                    <a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext"><a href="#ca" class="link">Bonus alla CA +2 </a>, <br>
+                    <a href="#colpo" class="link">Colpo dell'Attaccabrighe (argento e ferro freddo)</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext"><a href="#marziale" class="link">Flessibilità Marziale (azione gratuita)</a>, 
+                    <a href="#knockout" class="link">Knockout 2/giorno</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext"><a href="#manovre" class="link">Addestramento alle Manovre 3</a>, 
+                    <a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext"><a href="#colpo" class="link">Colpo dell'Attaccabrighe (allineamento)</a>,
+                    <a href="#marziale" class="link">Flessibilità Marziale (azione immediata)</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext"><a href="#ca" class="link">Bonus alla CA +3</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext"><a href="#manovre" class="link">Addestramento alle Manovre 4</a>, <br>
+                    <a href="#raffica" class="link">Raffica dell'Attaccabrighe (Combattere con Due Armi Superiore)</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext"><a href="#terrificante" class="link">Colpo Terrificante</a>, 
+                    <a href="#knockout" class="link">Knockout 3/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext"><a href="#colpo" class="link">Colpo dell'Attaccabrighe (adamantio)</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext"><a href="#ca" class="link">Bonus alla CA +4</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext"><a href="#manovre" class="link">Addestramento alle Manovre 5</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">2d10
+                </td>
+                <td class="coltext"><a href="#terrificante2" class="link">Colpo Terrificante Migliorato</a>, <br>
+                    <a href="#marziale" class="link">Flessibilità Marziale (qualsiasi numero)</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus di Combattimento</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="addestramento"><a href="#skill" class="link">Addestramento marziale</a></h3>
+                    <p class="coltext">Al 1° livello, un attaccabrighe conta il suo livello totale da attaccabrighe sia come livelli da Guerriero che da Monaco al fine di qualificarsi per i talenti. Inoltre, viene considerato sia Guerriero che Monaco per i talenti e gli oggetti magici che hanno effetti diversi in base ai livelli posseduti in queste classi (come Pugno Stordente o una Tunica del Monaco). Questa capacità non conferisce automaticamente i talenti normalmente concessi ai guerrieri e ai monaci in base al loro livello di classe, come Pugno Stordente.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="astuzia"><a href="#skill" class="link">Astuzia dell'attaccabrighe</a></h3>
+                    <p class="coltext">Se il punteggio di Intelligenza dell'attaccabrighe è inferiore a 13, viene considerato pari a 13 ai fini di soddisfare i prerequisiti dei Talenti di Combattimento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="senzarmi"><a href="#skill" class="link">Colpo senz'armi</a></h3>
+                    <p class="coltext">Al 1° livello, un attaccabrighe guadagna Colpo Senz'Armi Migliorato come talento bonus. Gli attacchi dell'attaccabrighe possono essere portati con entrambi i pugni o anche con gomiti, ginocchia e piedi. Ciò significa che un attaccabrighe può effettuare colpi senz'armi anche quando non ha le mani libere. Un attaccabrighe applica il suo pieno modificatore di Forza (e non la metà) ai tiri per i danni a tutti i suoi colpi senz'armi. <br>
+
+                        In genere, i colpi senz'armi di un attaccabrighe infliggono danni letali, ma può decidere di infliggere Danni Non Letali senza alcuna penalità al Tiro per Colpire. Ha la stessa possibilità di scegliere di infliggere danni letali o non letali anche quando è In Lotta. <br>
+                        
+                        Il colpo senz'armi di un attaccabrighe viene considerato sia un'arma manufatta che un'arma naturale ai fini degli incantesimi o effetti che modificano le armi manufatte o le armi naturali.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="marziale"><a href="#skill" class="link">Flessiblità marziale</a></h3>
+                    <p class="coltext">Un attaccabrighe può impegnare un'azione di movimento per ottenere i benefici di un talento di combattimento che non possiede. Questo effetto dura 1 minuto. L'attaccabrighe deve soddisfare tutti i prerequisiti del talento. Può usare questa capacità per un numero di volte al giorno pari a 3 + metà del suo livello da attaccabrighe (minimo 4 volte al giorno). <br>
+
+                        L'attaccabrighe può usare questa capacità di nuovo prima del termine della durata per sostituire il talento di combattimento precedente con un altro. <br>
+                        
+                        Se un talento di combattimento ha limitazioni agli usi giornalieri (come Pugno Stordente), tutti gli usi del talento mentre si utilizza questa capacità contano ai fini di tale limite giornaliero. <br>
+                        
+                        Al 6° livello, un attaccabrighe può usare questa capacità per ottenere i benefici di due talenti di combattimento per volta. Può selezionare un talento come azione veloce o due talenti come azione di movimento. Può usare uno di questi talenti per soddisfare i prerequisiti del secondo: farlo significa che non può sostituire un talento che attualmente sta sopperendo ai requisiti di altri senza sostituire quelli che lo richiedono. Ogni singolo talento selezionato conta ai fini dei suoi usi giornalieri di questa capacità. <br>
+                        
+                        Al 10° livello, un attaccabrighe può usare questa capacità per ottenere i benefici di tre talenti di combattimento per volta. Può selezionare un talento come azione gratuita, due come azione veloce o tre come azione di movimento. Può usare uno di questi talenti per soddisfare i prerequisiti del secondo e terzo: farlo significa che non può sostituire un talento che attualmente sta sopperendo ai requisiti di altri senza sostituire quelli che lo richiedono. Ogni singolo talento selezionato conta ai fini dei suoi usi giornalieri di questa capacità. <br>
+                        
+                        Al 12° livello, un attaccabrighe può usare questa capacità per ottenere i benefici di un talento di combattimento come azione immediata o di tre come azione veloce. Ogni singolo talento selezionato conta ai fini dei suoi usi giornalieri di questa capacità. <br>
+                        
+                        Al 20° livello, un attaccabrighe può usare questa capacità per ottenere i benefici di un qualsiasi numero di talenti di combattimento come azione veloce. Ogni singolo talento selezionato conta ai fini dei suoi usi giornalieri di questa capacità e può essere usato come prerequisito per qualsiasi altro.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="raffica"><a href="#skill" class="link">Raffica dell'attaccabrighe</a></h3>
+                    <p class="coltext">A partire dal 2° livello, un attaccabrighe può compiere una raffica dell'attaccabrighe come azione di attacco completo. Quando lo fa, può compiere un attacco addizionale usando qualsiasi combinazione di colpi senz'armi, di attacchi con le armi del gruppo speciale "armi da combattimento ravvicinato" o con le armi del gruppo speciale "armi da monaco" come se disponesse del talento Combattere con Due Armi. Non deve necessariamente usare due armi diverse per usare questa capacità. <br>
+
+                        Un attaccabrighe applica il suo pieno bonus di Forza ai tiri per i danni a tutti i suoi attacchi effettuati con raffica dell'attaccabrighe. Un attaccabrighe può sostituire un attacco senz'armi con le manovre in combattimento Disarmare, Sbilanciare e Spezzare come parte di una raffica dell'attaccabrighe. Un attaccabrighe con armi naturali non può usare queste armi come parte di una raffica dell'attaccabrighe e neppure effettuare attacchi naturali in aggiunta agli attacchi di raffica dell'attaccabrighe. <br>
+                        
+                        Al 8° livello, l'attaccabrighe ottiene l'uso del talento Combattere con Due Armi Migliorato quando utilizza la raffica dell'attaccabrighe. Al 15° livello, l'attaccabrighe ottiene l'uso del talento Combattere con Due Armi Superiore quando usa raffica dell'attaccabrighe.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talenti bonus di combattimento</a></h3>
+                    <p class="coltext">Al 2° livello e ogni 3 livelli successivi, un attaccabrighe ottiene un talento bonus da combattimento in aggiunta a quelli ottenuti per l'avanzamento del personaggio. Questi talenti bonus devono essere scelti tra quelli che influenzano o potenziano le sue difese o i suoi attacchi in mischia. L'attaccabrighe deve soddisfare i prerequisiti del talento bonus da combattimento selezionato. <br>
+
+                        Una volta raggiunto il 5° livello e ogni 3 livelli successivi, un attaccabrighe può scegliere di imparare un nuovo talento bonus da combattimento al posto di un talento bonus di combattimento che ha già. In effetti, L'attaccabrighe perde quel talento bonus da combattimento in cambio di uno nuovo. Il vecchio talento non può essere uno che è utilizzato come prerequisito per un altro talento, una classe di prestigio o un'altra capacità. Un attaccabrighe può cambiare solo un talento a ogni dato livello e deve scegliere se scambiare o meno il talento nel momento in cui guadagna un nuovo talento bonus per il livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="manovre"><a href="#skill" class="link">Addestramento alle manovre</a></h3>
+                    <p class="coltext">Al 3° livello, un attaccabrighe può selezionare una Manovra in Combattimento in cui riceve un addestramento aggiuntivo. Ottiene bonus +1 alle prove di Manovra in Combattimento quando effettua la Manovra in Combattimento e bonus +1 alla DMC quando si difende contro di essa. <br>
+
+                        Al 7° livello e ogni 4 livelli successivi, un attaccabrighe diventa più esperto in un'altra Manovra in Combattimento, ottenendo bonus +1 alle prove di Manovra in Combattimento e alla DMC. inoltre, i bonus concessi a tutte le manovre precedenti aumentano di 1. (Per esempio, se un attaccabrighe sceglie Lottare al 3° livello e Spezzare al 7° livello, i suoi bonus a Lottare sono +2 e quelli a Spezzare +1. Se poi sceglie Spingere quando raggiunto l'11° livello, i suoi bonus a Lottare sono +3, quelli a Spezzare +2 e quelli a Spingere +1.)</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ca"><a href="#skill" class="link">Bonus alla CA</a></h3>
+                    <p class="coltext">Al 4° livello, quando un attaccabrighe indossa un'armatura leggera o nessuna armatura, ottiene Bonus di Schivare +1 alla CA e alla DMC. Questo bonus aumenta di 1 al 9°, 13° e 18° livello. <br>
+
+                        Questi bonus alla CA si applicano anche contro gli attacchi di contatto. Perde questi bonus quando è Immobilizzato o Indifeso, quando indossa un'armatura media o pesante, o trasporta un carico medio o pesante.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="knockout"><a href="#skill" class="link">Knockout</a></h3>
+                    <p class="coltext">Al 4° livello, una volta al giorno un attaccabrighe può scatenare un attacco devastante in grado di far cadere Privo di Sensi un bersaglio. Deve annunciare il suo intento prima di effettuare il suo Tiro per Colpire. Se l'attaccabrighe colpisce e il suo bersaglio subisce danni dal colpo, quest'ultimo deve superare un Tiro Salvezza su Tempra (CD = 10 + metà del livello dell'attaccabrighe + il maggiore tra il suo modificatore di Forza o quello di Destrezza) o cade Privo di Sensi per 1d6 round. Ogni round nel suo turno, il bersaglio Privo di Sensi può tentare un nuovo Tiro Salvezza per porre termine all'effetto come azione di round completo che non provoca Attacchi di Opportunità. Le creature immuni ai Colpi Critici o ai Danni Non Letali sono immuni a questa capacità. Al 10° livello, l'attaccabrighe può usare questa capacità due volte al giorno; al 16° livello, può usarla tre volte al giorno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="colpo"><a href="#skill" class="link">Colpo dell'attaccabrighe</a></h3>
+                    <p class="coltext">Al 5° livello, i colpi senz'armi di un attaccabrighe sono considerati come armi magiche al fine di superare la Riduzione del Danno. Al 9° livello, i suoi attacchi senz'armi sono considerati come di ferro freddo e d'argento al fine di superare la Riduzione del Danno. Al 12° livello, l'attaccabrighe sceglie una componente di allineamento: buono, caotico, legale o malvagio; i suoi attacchi senz'armi sono considerati di quell'allineamento al fine di superare la Riduzione del Danno. (La componente di allineamento non può essere opposta all'attuale allineamento dell'attaccabrighe, come per un attaccabrighe buono che scelga colpi malvagi). Al 17° livello i suoi attacchi senz’armi sono considerati anche come armi di adamantio al fine di superare la Riduzione del Danno e la Durezza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ravvicinato"><a href="#skill" class="link">Padronanza del combattimento ravvicinato</a></h3>
+                    <p class="coltext">Al 5° livello, il danno con le armi da combattimento ravvicinato di un attaccabrighe aumenta. Quando impugna un'arma da combattimento ravvicinato, usa il danno da combattimento ravvicinato di un attaccabrighe inferiore di 4 livelli invece del danno base dell'arma (per esempio, un attaccabrighe Medio di 5° livello che impugna un Pugnale da Mischia infligge 1d6 danni invece dei normali 1d4 dell'arma). Se l'arma normalmente infligge più danni di questo ammontare, il danno non cambia. Questa capacità non influenza altri aspetti dell'arma. L'attaccabrighe può decidere di usare il danno base dell'arma anziché il danno del suo colpo senz'armi, ma deve dichiararlo prima di effettuare il Tiro per Colpire.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="terrificante"><a href="#skill" class="link">Colpo terrificante</a></h3>
+                    <p class="coltext">Al 16° livello, l'attaccabrighe può effettuare una prova di Manovra in Combattimento di colpo terrificante contro una creatura corporea della sua stessa taglia o inferiore, come azione standard. Se la prova di Manovra in Combattimento ha successo, l'avversario subisce danni come se l'attaccabrighe l'avesse colpito con l'arma da combattimento ravvicinato che sta impugnando o con un Colpo Senz'Armi e viene scagliato via 3 m nella direzione scelta dell'attaccabrighe e cade Prono. L'attaccabrighe può spingere l'avversario solo in linea retta, e l'avversario non può avvicinarsi all'attaccabrighe più del quadretto da cui è partito. Se un ostacolo impedisce il completamento del movimento dell'avversario, l'avversario che l'ostacolo subiscono 1d6 danni e l'avversario cade Prono nello spazio adiacente all'ostacolo. (A differenza del talento dei mostri Colpo Terrificante, l'attaccabrighe può essere di qualsiasi taglia per usare questa capacità.)</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="terrificante2"><a href="#skill" class="link">Colpo terrificante migliorato</a></h3>
+                    <p class="coltext">Al 20° livello, l'attaccabrighe può usare la sua capacità Colpo Terrificante come attacco anziché come azione standard. Può usarlo su creature di qualsiasi taglia. Se ottiene un 20 naturale al tiro della prova in combattimento, l'attaccabrighe può tentare immediatamente di confermare il critico effettuando un'altra prova di Manovra in Combattimento con gli stessi modificatori del precedente; se il tiro di conferma riesce, l'attacco infligge il doppio del danno e anche i danni per aver colpito un ostacolo (se presente) vengono raddoppiati.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

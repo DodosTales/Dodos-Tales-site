@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
+    <script type="module" src="donoper.js"></script>
+</head>
+<body>
+    <div class="container flex-column flex-center">
+        <h1 class="coltitle">Scopri il tuo dono</h1>
+
+        <p class="coltext">Verranno generati 3 doni casualmente, poi se ne potrà scegliere 1. <br>
+        In caso capitino doni uguali, o se il master lo concede, si potrà generare un ulteriore dono. </p>
+
+        <p class="coltext">Scelta del dono classico (100 doni disponibili): </p>
+
+        <div>
+            <button class="normal-button" id="magg">Doni classici</button> <br>
+            <div id="magdiv" class="hidden" style="margin: 0.5em 0 0.5em 0;">
+                <ul>
+                    <li class="coltext listamag"></li>
+                    <li class="coltext listamag"></li>
+                    <li class="coltext listamag"></li>
+                </ul>
+            </div> <br>
+            <button class="normal-button" id="exmagg">Dono extra</button>
+            <p class="coltext" id="extramag"></p>
+        </div>
+
+        <p class="coltext">Scelta del dono completo (140 doni disponibili): </p>
+
+        <div>
+            <button class="normal-button" id="comp">Doni completi</button> <br>
+            <div id="compdiv" class="hidden" style="margin: 0.5em 0 0.5em 0;">
+                <ul>
+                    <li class="coltext listacomp"></li>
+                    <li class="coltext listacomp"></li>
+                    <li class="coltext listacomp"></li>
+                </ul>
+            </div> <br>
+            <button class="normal-button" id="excomp">Dono extra</button>
+            <p class="coltext" id="extracomp"></p>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+    
+            <a href="../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

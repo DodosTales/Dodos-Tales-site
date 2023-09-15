@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Guerriero</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana:</h3>
+                    <p class="coltext inline">D6</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">2+int</p>
+                    <p class="coltext">Le Abilità di classe del guerriero sono Addestrare Animali, Artigianato, Cavalcare, Conoscenze (dungeon), Conoscenze (ingegneria), Intimidire, Nuotare, Professione, Scalare e Sopravvivenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Il Guerriero è competente nell'uso di tutte le armi semplici e da guerra, in tutte le armature (leggere, medie e pesanti) e negli scudi (incluso lo Scudo Torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">>+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext"><a href="#audacia" class="link">Audacia +1</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#armatura" class="link">Addestramento nelle Armature 1</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi 1</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#audacia" class="link">Audacia +2</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#armatura" class="link">Addestramento nelle Armature 2</a> 
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi 2</a> 
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#audacia" class="link">Audacia +3</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#armatura" class="link">Addestramento nelle Armature 3</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi 3</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#audacia" class="link">Audacia +4</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#armatura" class="link">Addestramento nelle Armature 4</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi 4</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#audacia" class="link">Audacia +5</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#armatura2" class="link"> Padronanza dell'Armatura</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#armi2" class="link">Padronanza dell'Arma</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento bonus</a></h3>
+                    <p class="coltext">Al 1° livello, e successivamente ad ogni livello pari, il Guerriero riceve un talento bonus in aggiunta a quelli ottenuti per l'avanzamento del personaggio (il che vuol dire che un Guerriero ottiene un talento ad ogni livello). Questi talenti bonus devono essere tratti da quelli indicati come talenti di combattimento, chiamati a volte anche “talenti bonus del guerriero”. <br>
+
+                        Una volta raggiunto il 4° livello, e successivamente ogni quattro livelli (8°, 12°, e così via), un Guerriero può scegliere di imparare un nuovo talento bonus al posto di un talento bonus che ha già. In effetti, il Guerriero perde quel talento bonus in cambio di uno nuovo. Il vecchio talento non può essere uno che è utilizzato come prerequisito per un altro talento, per una classe di prestigio o un'altra capacità. Un guerriero può cambiare solo un talento ad ogni dato livello e deve scegliere se scambiare o meno il talento nel momento in cui guadagna un nuovo talento bonus per il livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="audacia"><a href="#skill" class="link">Audacia</a></h3>
+                    <p class="coltext">A partire dal 2° livello, un Guerriero riceve bonus +1 ai Tiri Salvezza su Volontà contro Paura. Questo bonus aumenta, successivamente, di +1 ogni quattro livelli.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armatura"><a href="#skill" class="link">Addestramento nelle armature</a></h3>
+                    <p class="coltext">A partire dal 3° livello, un Guerriero impara a muoversi meglio quando indossa un'armatura. Quando indossa un'armatura, riduce la penalità di armatura alla prova di 1 (fino ad un minimo di 0) e aumenta il bonus di Destrezza massimo permesso dalla sua armatura di 1. Successivamente, ogni quattro livelli (7°, 11° e 15°), questi bonus aumentano di +1 ogni volta, fino ad un massimo di riduzione della penalità di armatura alla prova di –4 e un massimo di aumento del bonus di Destrezza massimo permesso di +4. <br>
+
+                        Inoltre, un Guerriero si può muovere alla sua normale velocità mentre indossa un'armatura media. Al 7° livello, un Guerriero può muoversi alla sua normale velocità quando indossa un'armatura pesante.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armi"><a href="#skill" class="link">Addestramento nelle armi</a></h3>
+                    <p class="coltext">A partire dal 5° livello, un Guerriero può selezionare un gruppo di armi, come indicato sotto. Ogni volta che attacca con un'arma di questo gruppo, riceve bonus +1 al Tiro per Colpire e per i danni. <br>
+
+                        Successivamente, ogni quattro livelli (9°, 13° e 17°), un Guerriero si può addestrare in un altro gruppo di armi. Riceve bonus +1 ai Tiri per Colpire e per i danni quando attacca con un'arma da questo gruppo. In aggiunta, i bonus concessi dai gruppi di armi precedenti aumentano ciascuno di +1. Per esempio, quando un Guerriero raggiunge il 9° livello, riceve bonus +1 ai Tiri per Colpire e per i danni con un gruppo di armi e bonus +2 ai tiri per colpire e per i danni con il gruppo di armi selezionato al 5° livello. I bonus concessi dai gruppi sovrapposti non si cumulano. Si prenda il bonus più alto concesso per un'arma se questa sta in due o più gruppi. <br>
+                        
+                        Un Guerriero inoltre aggiunge questo bonus a tutte le prove di Manovra in Combattimento effettuate con le armi di questo gruppo. Questo bonus si applica anche alla Difesa da Manovra in Combattimento del Guerriero quando si difende da tentativi di Disarmare e Spezzare effettuati contro le armi di questo gruppo. <br>
+                        
+                        I gruppi di armi sono definiti come segue (il GM può aggiungere altre armi a questi gruppi, o aggiungere gruppi completamente nuovi):
+                        <ul>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Archi: </h3>
+                                <p class="coltext inline">Arco Corto, Arco Corto Composito, Arco Lungo, Arco Lungo Composito.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi a lama leggera: </h3>
+                                <p class="coltext inline"> Affettacani, Astrum, Baionetta, Bastone Animato, Falcetto, Gladio, Hunga Munga, Kama, Kerambit, Kukri, Madu, Pata, Pugnale, Pugnale Spaccaspada, Quadrens, Sciabola Dentata, Scissor, Sica, Spada Corta, Spada Farfalla, Stocco e Wakizashi.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi a lama pesante: </h3>
+                                <p class="coltext inline">Bastone Animato a Doppia Katana , Chakram, Dao a Nove Anelli, Falcata, Falce, Falchion, Ji Dao Lian Doppio, Katana, Khopesh, Klar, Nodachi, Sciabola Dentata, Sciabola Elfica, Scimitarra, Shotel, Spada a Due Lame, Spada a Sette Rami, Spada Aldori, Spada Bastarda, Spada del Tempio, Spada Lunga, Spada Rhoka, Spadone, Terbutje e Terbutje Pesante.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi ad asta: </h3>
+                                <p class="coltext inline">Alabarda, Alabarda Tridente, Bec de Corbin, Berdica, Corsesca, Falcione, Falcione-Giusarma, Forca da Prigionieri, Giusarma, Lancia Uncinata, Mazzapicchio, Naginata, Nodachi, Rhomphaia, Roncone, Squartacavalli, Tepoztopilli, Uncino Ogre e Yueyachan.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi d'assedio: </h3>
+                                <p class="coltext inline">Ariete, Balista, Bombarda, Catapulta, Corvo, Drago di Fuoco, Dragone di Fuoco, Mantelletto, Ronfea, Torre da Assiedo, Trabucco e tutti gli altri tipi di arma d'assedio.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi da combattimento ravvicinato: </h3>
+                                <p class="coltext inline">Armatura Chiodata, Baionetta, Cestus, Colpo Senz'Armi, Dan Bong, Dardo Wushu, Emeici, Guanto d'Arme, Guanto d'Arme Chiodato, Klar, Madu, Manganello, Paletto di Legno, Pennello di Ferro, Pugnale da Mischia, Randello Mere, Scissor, Scudo Chiodato Leggero, Scudo Chiodato Pesante, Scudo Leggero, Scudo Pesante, Tekko-Kagi, Tirapugni, Tonfa e Ventaglio da Guerra.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi da fuoco: </h3>
+                                <p class="coltext inline">Tutte le armi da fuoco a una mano, a due mani e d'assedio.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi da lancio: </h3>
+                                <p class="coltext inline">Aklys, Amentum, Arpione, Ascia da Lancio, Astrum, Bastone Fionda Halfling, Bolas, Boomerang, Cerbottana, Chakram, Dardo, Dardo Wushu, Fionda, Giavellotto, Hunga Munga, Kestros, Lancia, Lancia Corta, Lazo, Martello Leggero, Pilum, Propulsore, Pugnale, Randello, Rete, Rete da Cattura, Scudo da Lancio, Sheng Biao, Shuriken, Sibat, Tridente e Tubo della Polvere Velenosa.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi da monaco: </h3>
+                                <p class="coltext inline">Alabarda Tridente, Bastone Bo, Bastone Ferrato, Cestus, Colpo Senz'Armi, Dan Bong, Dao a Nove Anelli, Dardo Wushu, Doppio Kama Incatenato, Emeici, Frusta a Nove Sezioni, Ji Dao Lian Doppio, Jutte, Kama, Kusarigama, Kyoketsu Shoge, Lungchuan Tamo, Nunchaku, Sai, Sansetsukon, Shang Gou, Sheng Biao, Shuriken, Siangham, Spada a Sette Rami, Spada a Doppia Lama a Tre Punte, Spada del Tempio, Spada Farfalla, Tirapugni, Tonfa, Urumi, Ventaglio da Guerra e Yueyachan.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi doppie: </h3>
+                                <p class="coltext inline"> Bastone Animato a Doppia Katana, Bastone Bo, Bastone Ferrato, Doppia Ascia Orchesca, Doppio Kama Incatenato, Kusarigama, Lancia con Catena, Martello-Picco Gnomesco, Mazzafrusto Doppio, Spada a Due Lame, Taiaha, Urgrosh Nanico e Yueyachan.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Armi naturali: </h3>
+                                <p class="coltext inline">Colpo Senz'Armi e armi naturali (ali, artigli, corna, coda e morso).</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Asce: </h3>
+                                <p class="coltext inline">Ascia, Ascia Bipenne, Ascia da Battaglia, Ascia da Guerra Nanica, Ascia da Lancio, Ascia Uncinata, Berdica, Doppia Ascia Orchesca, Gravina, Noccoliera ad Ascia, Pata, Piccone Leggero e Piccone Pesante.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Balestre: </h3>
+                                <p class="coltext inline"> Balestra a Mano, Balestra a Ripetizione a Mano, Balestra a Ripetizione Leggera, Balestra a Ripetizione Pesante, Balestra Doppia, Balestra Leggera, Balestra Pesante, Balestra Subacquea Leggera, Balestra Subacquea Pesante e Tubo Lancia Frecce.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Lance: </h3>
+                                <p class="coltext inline">Alabarda Tridente, Amentum, Arpione, Giavellotto, Lancia, Lancia con Catena, Lancia Corta, Lancia da Cavaliere, Lancia da Cinghiale, Lancia Lunga, Pilum, Sibat e Tridente.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Martelli: </h3>
+                                <p class="coltext inline">Aklys, Aspersorio da Battaglia, Martello da Guerra, Martello Leggero, Mazza Leggera, Mazza Pesante, Randello, Randello Mere, Randello Pesante, Spaccaterra, Taiaha, Tetsubo e Wahaika.</p>
+                            </li>
+                            <li class="coltext">
+                                <h3 class="coltitle inline">Mazzafrusti: </h3>
+                                <p class="coltext inline">Catena Chiodata, Doppio Kama Incatenato, Frusta, Frusta a Nove Sezioni, Frusta Scorpione, Kusarigama, Kyoketsu Shoge, Lama Volante, Lancia con Catena, Liuxing Chui, Mazzafrusto Doppio, Mazzafrusto Leggero, Mazzafrusto Pesante, Morning Star, Nunchaku, Sansetsukon e Urumi.</p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armatura2"><a href="#skill" class="link">Padronanza dell'armatura</a></h3>
+                    <p class="coltext">Al 19° livello, un Guerriero guadagna RD 5/— se indossa l'armatura o porta lo scudo.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armi2"><a href="#skill" class="link">Padronanza dell'arma: </a></h3>
+                    <p class="coltext">Al 20° livello, un Guerriero sceglie un'arma, come la Spada Lunga, l'Ascia Bipenne o l'Arco Lungo. Ogni attacco effettuato con quell'arma conferma automaticamente tutte le minacce di critico e il moltiplicatore al danno aumenta di 1 (×2 diventa ×3, per esempio). Inoltre, non può essere Disarmato mentre impugna un'arma di questo tipo.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

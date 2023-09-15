@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Chierico</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Potere</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe del Chierico sono: Acrobazia, Cavalcare, Conoscenze (Arcane), Conoscenze (Nobilità), Conoscenze (Piani), Conoscenze (Locali), Conoscenze (Religioni), Conoscenze (Storia), Diplomazia, Guarire, Intuizione, Sapienza magica, Valutare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I chierici sono competenti nell'uso sono competenti nell’uso di Armature semplici, Medie e scudi. Inoltre sono competenti nell’uso di Armi semplici e da guerra</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline"><a href="./divinità.html" class="link">Elenco divinità</a></h3>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di Classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#aura" class="link">Aura</a>, <a href="#incanalare" class="link">Incanalare Energia 1d6</a>, <br><a href="#simbolo" class="link">Simbolo sacro</a>, <a href="#gettone" class="link">Gettone divino</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Incantesimo aggiuntivo) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 2d6</a>, <br>
+                    <a href="#arma" class="link">Arma sacra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Abilità passiva) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 3d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Incantesimo aggiuntivo) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 4d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Incantesimo aggiuntivo) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 5d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Capacità attiva) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 6d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Incantesimo aggiuntivo) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 7d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Abilità passiva) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 8d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Incantesimo aggiuntivo) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 9d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">
+                    <a href="#dominio" class="link">Dominio (Capacità Attiva) </a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a href="#incanalare" class="link">Incanalare Energia 10d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">
+                    <a href="#divinità" class="link">Invocare divinità</a>
+                </td>
+                </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="incanalare"><a href="#skill" class="link">Incanalare energia</a></h3>
+                    <p class="coltext">A prescindere dall'allineamento, i chierici possono rilasciare un'ondata di energia incanalando il potere della propria fede attraverso il simbolo sacro (o sacrilego). Quest'energia può essere usata per infliggere o curare danni, in base al tipo di energia incanalata e alle creature bersaglio. <br>
+                        Un Chierico buono (o un Chierico di una divinità buona) incanala energia positiva e può scegliere di infliggere danni alle creature non morte o di curare le creature viventi. Un chierico malvagio (o un chierico di una divinità malvagia) incanala energia negativa e può scegliere di infliggere danni alle creature viventi o di curare le creature non morte. Un chierico neutrale (o un chierico che non venera una divinità specifica) può scegliere di incanalare sia energia positiva che negativa. Una volta effettuata la scelta, non si può più modificare. Questa decisione determina anche se il chierico lancia spontaneamente incantesimi di cura o infliggere (vedi Lancio Spontaneo). <br>
+                        Incanalare energia causa un'esplosione che colpisce tutte le creature di un tipo (non morte o viventi) in un raggio di 9 metri attorno al Chierico. La quantità di danno inflitto o curato è pari a 1d6 danni più 1d6 danni ogni due livelli da Chierico oltre il 1° (2d6 al 3°, 3d6 al 5°, e così via). <br>
+                        Le creature che subiscono danno dall'energia incanalata ricevono un Tiro Salvezza su Volontà per dimezzarlo. <br>
+                         La CD del Tiro Salvezza è uguale a 10 + livello del chierico + il modificatore di Potere del chierico. Le creature curate dall'energia incanalata non possono eccedere il loro totale di Punti Ferita massimi (i punti curati in più non sono calcolati). Un chierico può incanalare per un numero di volte al giorno pari a 3 + il suo modificatore di Potere. Incanalare è un'azione standard che non provoca Attacchi d'Opportunità. Un chierico può scegliere di includere o meno sé stesso nell'effetto di incanalare. Un chierico deve essere in grado di presentare il suo simbolo sacro per usare questa capacità. <br>
+                        Il Chierico può anche decidere di utilizzare la capacità Incanalare energia per rigenerare Mana a sé stesso ed ai propri alleati nell’area.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aura"><a href="#skill" class="link">Aura</a></h3>
+                    <p class="coltext">Al livello 1 il Chierico emana un’aura divina impercettibile, gli alleati entro 9m ottengono un bonus ai Ts su Volontà di +1 (Ogni 4 livelli questo bonus incrementa di +1). <br>
+                        Inoltre, come azione standard i Chierici sono in grado di identificare l’allineamento di creature e oggetti. 
+                        Come per Occhio arcano la Cd è 10+DV della creatura+ modificatore potere (oggetti o capacità possono alterare o impedire questa capacità). </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="simbolo"><a href="#skill" class="link">Simbolo sacro</a></h3>
+                    <p class="coltext">
+                        Il Chierico offre la sua più totale devozione alla divinità, donando ad essa la sua anima, in cambio, la divinità gli dona il suo simbolo sacro. <br>
+Questo può essere una spilla, un amuleto o persino l’arma impugnata dal Chierico. <br>
+Il Chierico sfrutta il suo simbolo sacro per lanciare incantesimi, i quali incrementano la loro Cd di +1 (+1 aggiuntivo ogni 4 livelli incantatore). <br>
+Se però il Chierico non segue i dettami della propria divinità o gli viene sottratto il proprio simbolo sacro, lanciare le sue magie diviene molto più impegnativo, ed è costretto a spendere il 25% di mana extra, finchè non rientra in possesso di un nuovo simbolo sacro o ottiene il perdono dalla propria divinità.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="gettone"><a href="#skill" class="link">Gettone divino</a></h3>
+                    <p class="coltext">
+                        Fin da quando il chierico Devolve la sua anima alla divinità, può ottenere Gettoni divini, questa rara merce il cui aspetto varia da divinità a divinità, viene concessa dalla divinità stessa allo stesso modo del Karma (Apparendo nelle mani del proprio fedele). <br>
+                        Solo il Chierico a cui è stata assegnata la moneta può spenderla, ma se gli viene sottratta questa non scompare.
+                        Spendendo i Gettoni (Come azione gratuita) il Chierico può ottenere bonus diversi: 
+                    </p>
+                    <ul>
+                        <li class="coltext">Il Chierico può lanciare un incantesimo modificato con Metamagia (Purchè abbia il talento di Metamagia necessario) senza consumare mana aggiuntivo (se vengono impiegati più talenti di Metamagia sul singolo incantesimo, sono necessari più Gettoni). </li>
+                        <li class="coltext">Il Chierico somma il proprio livello al Txc e danni ai propri attacchi per l’intero round.</li>
+                        <li class="coltext">Il Chierico somma il proprio livello ai Ts per il round successivo. </li>
+                        <li class="coltext">Il Chierico Elimina danni alle caratteristiche e livelli negativi da sé stesso o da un alleato.</li>
+                        <li class="coltext">Il Chierico elimina gli effetti di una maledizione o un veleno da se stesso o da un alleato effettuando una prova (1d20+lvl Chierico+ mod potere) contro la Cd del veleno o la maledizione (Ciò non rimuove eventuali danni già avvenuti, ma impedisce che ne avvengano di nuovi). </li>
+                        <li class="coltext">Spendendo 5 monete il Chierico può riportare in vita una creatura morta entro 1d4 round (Un chierico può riportare in vita un altro Chierico del suo stesso credo senza limiti di tempo, poiché la sua anima è in possesso alla divinità. In questo caso, possono essere usati sia i Gettoni in possesso al cadavere da riportare in vita, sia quelli in possesso al Chierico che effettua il rituale. <br>
+                            Il Dio può rifiutarsi di cedere l’anima o l’anima può rifiutarsi di rinascere, in questo caso i Gettoni non vengono consumati ma la resurrezione non ha luogo). </li>
+                        <li class="coltext">Il Chierico attiva una delle capacità del proprio Dono, il Costo è scritto vicino all’abilità. </li>
+                    </ul>
+                    <p class="coltext">Ogni divinità ha i propri dettami, seguendoli è possibile ottenere Gettoni divini, inoltre, particolari azioni che soddisfano la propria Divinità concedono ulteriori Gettoni.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="dominio"><a href="#skill" class="link">Dominio</a></h3>
+                    <p class="coltext">Dal livello 2 il chierico ottiene dei benefici in base al Dominio o i Domini della divinità che ha deciso di servire. <br>
+                        Ogni livello pari ottiene un beneficio aggiuntivo. </p>
+                    <ul>
+                        <li class="coltext">Incantesimo aggiuntivo: Il Chierico può creare un nuovo incantesimo appartenente al Dono del Dominio che ha deciso di servire. </li>
+                        <li class="coltext">Capacità passiva: In base al Dominio, ottiene una capacità passiva aggiuntiva.</li>
+                        <li class="coltext">Capacità superiore: Una capacità appartenente al Dominio della divinità, utilizzabile solo spendendo Gettoni divini. </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="arma"><a href="#skill" class="link">Arma sacra</a></h3>
+                    <p class="coltext">Dal livello 3, quando il Chierico impugna l’arma preferita dalla propria divinità, ottiene un bonus di +1 al Txc e Danni (Bonus sacro) (incrementa di +1 ogni 4 livelli incantatore). <br>
+                        Inoltre quando colpisce avversari di allineamento opposto al proprio come azione immediata può sommare il proprio modificatore al danno un numero di volte pari a 3+mod potere. </p>
+                </li>
+                <li>
+                <h3 class="coltitle" id="divinità"><a href="#skill" class="link">Invocare divinità</a></h3>
+                    <p class="coltext">Al livello 20 il Chierico è divenuto uno dei più fedeli servitori del proprio Dio, grazie alla sua posizione, consumando 25.000 mo può richiedere il suo intervento, il quale si manifesta in modo diverso in base al Dominio ed alla natura della Divinità. <br>
+                        Se questa non reputa lo scontro degno del suo intervento o contro i suoi principi, può rifiutarsi di intervenire, potrebbe persino offendersi ed infliggere gravi punizioni al Chierico che ha richiesto il suo aiuto. <br>
+                        In Caso però la Divinità decida di intervenire, il suo aiuto avrà un impatto decisivo. <br>
+                        (Potrebbe ripristinare mana e salute dei suoi alleati, Evocare alleati in aiuto, o persino agire attivamente contro i nemici del Chierico). <br>
+                        La divinità agisce attraverso il corpo del Chierico, il quale, come mero mortale non è in grado di sostenere tale potere, questi deve superare un Ts su Tempra Cd 30 ed un Ts su Volontà Cd 30 se fallisce il primo Ts il Corpo viene distrutto ed il Chierico muore, se fallisce il secondo l’Anima viene distrutta ed il Chierico muore, senza possibilità di resuscitarlo. <br>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

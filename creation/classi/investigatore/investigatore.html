@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Investigatore</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Intelligenza</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">6+int</p>
+                    <p class="coltext">Le abilità di classe dell'investigatore sono: Acrobazia, Artigianato, Artista della Fuga, Camuffare, Conoscenze (tutte), Diplomazia, Disattivare Congegni, Furtività, Guarire, Intimidire, Intrattenere, Intuizione, Linguistica, Percezione, Professione, Raggirare, Rapidità di Mano, Sapienza Magica, Scalare, Utilizzare Congegni Magici, Valutare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenze: </h3>
+                    <p class="coltext inline">L'investigatore è competente nell'uso di tutte le armi semplici, più Arco Corto, Balestra a Mano, Bastone Animato, Manganello, Spada Corta e Stocco. Gli investigatori sono competenti nelle armature leggere, ma non negli scudi.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br>Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#ispirazione">Ispirazione</a>, <br> <a class="link" href="#trappole">Scoprire Trappole</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#veleno">Conoscenza dei Veleni</a>, <a class="link" href="#resistenza">Resistenza al Veleno +2</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>, <a class="link" href="#ricordo">Ricordo Arguto</a>, <br><a class="link" href="#trappole2">Percepire Trappole +1</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#alchimia2">Alchimia Rapida</a>, <a class="link" href="#colpo">Colpo Studiato +1d6</a>, <br> <a class="link" href="#studiato">Combattimento Studiato</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>, <a class="link" href="#resistenza">Resistenza al Veleno +4</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +2d6</a>, <a class="link" href="#trappole2">Percepire Trappole +2</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#resistenza">Resistenza al Veleno +6</a>,  <a class="link" href="#colpo">Colpo Studiato +3d6</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>, <a class="link" href="#trappole2">Percepire Trappole +3</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +4d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>, <a class="link" href="#resistenza">Immunità al Veleno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +5d6</a>, <a class="link" href="#trappole2">Percepire Trappole +4</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +6d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>, <a class="link" href="#trappole2">Percepire Trappole +5</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +7d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +8d6</a>, <a class="link" href="#trappole2">Percepire Trappole +6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Investigatore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext"><a class="link" href="#colpo">Colpo Studiato +9d6</a>, <a class="link" href="#ispirazione2">Vera Ispirazione</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="ispirazione"><a href="#skill" class="link">Ispirazione</a></h3>
+                    <p class="coltext">Un investigatore è andato oltre la conoscenza e l'addestramento, possiede anche acuti poteri di osservazione e deduzione che surclassano le capacità altrui. Un investigatore in genere usa questi poteri come supporto per le sue investigazioni, ma può anche impiegare questi lampi di ispirazione in altre situazioni. <br>
+
+                        Un investigatore ha la capacità di potenziare le prove di Abilità e le prove di Caratteristiche grazie alle sue brillanti ispirazioni. L'investigatore ha una riserva di ispirazione pari alla metà del suo livello da investigatore + il suo modificatore di Intelligenza (minimo 1). La riserva di ispirazione di un investigatore viene reintegrata ogni giorno, generalmente dopo che ha trascorso una notte di riposo a dormire. Come azione gratuita, può spendere un uso di ispirazione della sua riserva per aggiungere 1d6 (il suo dado di ispirazione) al risultato della prova, compreso quando prende 10 o 20. Questa scelta deve essere effettuata dopo che la prova è stata tirata ma prima che il risultato venga rivelato. Un investigatore può usare ispirazione una sola volta per prova o tiro. L'investigatore può usare ispirazione per qualsiasi prova di Conoscenze, Linguistica o Sapienza Magica senza spenderne usi, a condizione che abbia addestramento nell'abilità. <br>
+                        
+                        Ispirazione può essere usata anche per Tiri per Colpire e Tiri Salvezza, al costo di due usi di ispirazione della sua riserva per volta. Nel caso dei Tiri Salvezza, usare ispirazione è un'azione immediata anziché un'azione gratuita.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="trappole"><a href="#skill" class="link">Scoprire trappole</a></h3>
+                    <p class="coltext">Un investigatore aggiunge metà del proprio livello alle prove di Percezione per localizzare le trappole e alle prove di Disattivare Congegni (minimo +1). Un investigatore può usare l'abilità Disattivare Congegni per disarmare trappole magiche.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="veleno"><a href="#skill" class="link">Conoscenza veleno</a></h3>
+                    <p class="coltext">Un investigatore ha una profonda comprensione e un profondo apprezzamento per i Veleni. Al 2° livello, non corre mai il rischio di avvelenarsi per errore mentre applica il Veleno su un'arma. Se l'investigatore spende 1 minuto a esaminare fisicamente un Veleno, può effettuare una prova di Conoscenze (natura) per identificare qualsiasi Veleno naturale o una prova di Conoscenze (arcane) per identificare qualsiasi Veleno magico (CD = CD del Tiro Salvezza del Veleno). Infine, una volta che ha identificato un Veleno, può spendere 1 minuto per effettuare una prova di Artigianato (alchimia) (CD = CD del Tiro Salvezza del Veleno) per neutralizzarne 1 dose. Se ha successo rende la dose innocua. L'investigatore non rischia di avvelenarsi accidentalmente quando esamina o tenta di neutralizzare un Veleno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="resistenza"><a href="#skill" class="link">Resistenza al veleno</a></h3>
+                    <p class="coltext">Al 2° livello, un investigatore guadagna bonus +2 ai Tiri Salvezza contro Veleno. Questo bonus aumenta a +4 al 5° livello e a +6 all'8° livello. Al 11° livello, l'investigatore ottiene l'immunità al Veleno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="dote"><a href="#skill" class="link">Doti da investigatore</a></h3>
+                    <p class="coltext">Al 3° livello e ogni 2 livelli successivi, un investigatore ottiene una dote da investigatore. A meno che non sia indicato diversamente, ogni dote da investigatore può essere selezionata una sola volta. <br>
+
+                        Le doti contrassegnate con un asterisco (*) aggiungono degli effetti a un combattimento studiato dell'investigatore. Solo una di queste doti può essere applicata a uno specifico attacco e la decisione deve essere effettuata prima che il Tiro per Colpire venga effettuato.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Aiuto senza sforzo: </h3>
+                            <p class="coltext inline">Un investigatore può usare un'azione Aiutare un Altro come azione di movimento anziché come azione standard. Un investigatore può spendere un uso di ispirazione per effettuare invece un'azione Aiutare un Altro come azione veloce.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Allerta ispirata: </h3>
+                            <p class="coltext inline">Ogni volta che l'investigatore diventa Impreparato, può spendere un uso di ispirazione per ignorare questa condizione. Deve essere conscio di farlo e deciderlo quando diventa impreparato. Usare questa capacità non richiede azioni.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo accecante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni con colpo studiato, l'avversario deve superare un Tiro Salvezza su Tempra o è Accecato permanentemente. Un Tiro Salvezza riuscito riduce l'effetto ad Abbagliato per 1d4 round. La CD del Tiro Salvezza su Tempra è pari a 10 + metà del livello dell'investigatore + il suo modificatore di Intelligenza. Questa dote non ha effetto su creature che non si affidano agli occhi per vedere o con più di due occhi (sebbene più colpi critici possono causare loro cecità, a discrezione del GM). La cecità può essere curata da Guarigione, Rigenerazione, Rimuovi Cecità o capacità simili. Un investigatore deve essere almeno di 17° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo assordante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni con colpo studiato, l'avversario deve superare un Tiro Salvezza su Tempra o viene Assordato permanentemente. Un Tiro Salvezza riuscito riduce l'effetto la durata dell'effetto a 1 round. La CD del Tiro Salvezza su Tempra è pari a 10 + metà del livello dell'investigatore + il suo modificatore di Intelligenza. Questa dote non ha effetto sulle creature sorde. La sordità può essere curata da Guarigione, Rigenerazione, Rimuovi Sordità o capacità simili. Un investigatore deve essere almeno di 15° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo confondente: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni con colpo studiato, l'avversario deve superare un Tiro Salvezza su Tempra o diventa Confuso per 1d4+1 round. Un Tiro Salvezza riuscito riduce la durata dell'effetto a 1 round. La CD del Tiro Salvezza su Tempra è pari a 10 + metà del livello dell'investigatore + il suo modificatore di Intelligenza. Costrutti, creature senza mente, Melme, Vegetali, Non Morti, Creature Incorporee e creature immuni ai colpi critici non vengono influenzati da questa capacità. Un investigatore deve essere almeno di 19° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo riposizionante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni con colpo studiato, come azione gratuita può effettuare una prova di Manovra in Combattimento di Riposizionare contro la creatura danneggiata da colpo studiato. Questa Manovra non provoca Attacchi di Opportunità. Un investigatore deve essere almeno di 13° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo rubante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni con colpo studiato, come azione gratuita può effettuare una prova di Manovra in Combattimento di Rubare contro la creatura danneggiata da colpo studiato. Questa Manovra non provoca Attacchi di Opportunità. Un investigatore deve essere almeno di 13° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo squinternante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni con colpo studiato, come azione gratuita può effettuare una prova di Manovra in Combattimento di Sbilanciare contro la creatura danneggiata da colpo studiato. Questa Manovra non provoca Attacchi di Opportunità. Un investigatore deve essere almeno di 9° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Conoscenza degli oggetti: </h3>
+                            <p class="coltext inline">Un investigatore può usare Sapienza Magica per identificare proprietà e parole di commando degli Oggetti Magici senza bisogno di utilizzare Individuazione del Magico o incantesimi simili. Un investigatore deve essere almeno di 7° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Dote dei congegni: </h3>
+                            <p class="coltext inline">Un investigatore può usare l'abilità Utilizzare Congegni Magici anche se non ha addestramento in questa abilità. Se l'investigatore ha addestramento in Utilizzare Congegni Magici, può usare ispirazione per qualsiasi prova di Utilizzare Congegni Magici senza spenderne usi.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Doti da ladro: </h3>
+                            <p class="coltext inline">Un investigatore può selezionare le Doti da Ladro seguenti al posto di una dote da investigatore: Acutezza Percettiva Acuto Osservatore, Addestramento nelle Armi da Fuoco, Ammaliatore, Arrampicamuri, Assaltatore, Bugie Convincenti, Camuffamento Rapido, Contatti nel Mercato Nero , Creatore di Trappole Scaltro, Difficile da Ingannare, Disattivare Rapido, Dita Rapide, Equilibrista, Estorcere Informazioni, Forte Bracciata, Fuga Rapida, Furtività Rapida, Grinta, Innesco Prodigioso, Maestria Ambientale, Maestro delle Corde, Magia Maggiore, Magia Minore, Mano Lesta, Manovra Senza Pari, Mimetizzazione, Parole Melliflue, Recupero, Rialzarsi, Rubare in Combattimento, Saltatore Esperto, Scalatore Agile, Scaltro Poliglotta, Scassinare Rapido, Stomaco di Ferro, Strisciare Furtivo , Trattenere il Fiato o Veleno Duraturo. Tutti gli effetti di doti basati sul livello da Ladro usano il livello di classe dell'investigatore. Se la Dote da Ladro ha un prerequisito (come la Dote da Ladro Magia Maggiore che richiede la dote Magia Minore), l'investigatore deve soddisfarlo prima di poterla acquisire. Questa dote può essere acquisita più volte; ogni volta, concede all'investigatore una nuova Dote da Ladro.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Empatia: </h3>
+                            <p class="coltext inline">Quando effettua una prova di Intuizione l'investigatore tira due d20 e tiene il risultato migliore. Se un investigatore usa ispirazione per una prova di Intuizione, tira due volte il suo dado di ispirazione e tiene il risultato migliore. Una volta al giorno, l'investigatore può spendere un uso di ispirazione per prendere come bersaglio una singola creatura che è in grado di vedere e sentire entro 9 metri. Dopo averlo fatto, l'investigatore individua i pensieri superficiali della mente del bersaglio, come se si fosse concentrato per 3 round mentre usava l'incantesimo Individuazione dei Pensieri, a meno che la creatura non superi un Tiro Salvezza su Volontà. La CD del tiro salvezza è pari a 10 + metà del livello dell'investigatore + il suo modificatore di Intelligenza. Se il bersaglio fallisce, l'investigatore può continuare a individuarne i pensieri superficiali per un numero di round pari a metà del livello dell'investigatore. Un investigatore deve essere almeno di 5° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Fini reconditi: </h3>
+                            <p class="coltext inline">Un investigatore impara a celare i suoi pensieri e i suoi intenti a occhi indiscreti e persino a magie intrusive. Quando un investigatore usa ispirazione per una prova di Raggirare per trasmettere un messaggio segreto o una prova di Linguistica per creare falsi, può tirare il suo dado di ispirazione due volte e tenere il risultato migliore. Inoltre, l'investigatore può usare ispirazione per un Tiro Salvezza contro un incantesimo o un effetto di Divinazione senza spenderne usi. Un investigatore deve essere almeno di 11° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Intelligenza ispirata: </h3>
+                            <p class="coltext inline">Un investigatore può usare ispirazione per qualsiasi prova di Conoscenze, Linguistica o Sapienza Magica senza spenderne usi, anche se non ha addestramento nell'Abilità.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Intimidazione ispirata: </h3>
+                            <p class="coltext inline">Quando un investigatore supera una prova di Intimidire per Demoralizzare un avversario, può spendere un uso di ispirazione per aumentare automaticamente il risultato della prova di 5 ai fini di determinare la durata dell'effetto demoralizzante. Può scegliere di usare più usi di ispirazione in questo modo per aumentare ulteriormente la durata dell'effetto demoralizzante. Un investigatore deve avere addestramento in Intimidire per scegliere questa dote. La dote da investigatore Ispirazione del Sottobosco Criminale non ha effetto su questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ispirazione ampliata: </h3>
+                            <p class="coltext inline">Un investigatore può usare ispirazione per qualsiasi prova di Diplomazia, Guarire, Intuizione, Percezione o Professione senza spenderne usi, a condizione che abbia addestramento nell'abilità.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ipsirazione combattiva: </h3>
+                            <p class="coltext inline">Quando un investigatore usa ispirazione per un Tiro per Colpire o un Tiro Salvezza, ne spende un uso anziché due. Un investigatore deve essere almeno di 9° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ispirazione combattiva superiore: </h3>
+                            <p class="coltext inline">Si sceglie un singolo tipo di Arma (come Bastone Animato o Spada Corta). Finché l'investigatore ha almeno un uso di ispirazione nella sua riserva di ispirazione, non spende più usi di ispirazione per utilizzare ispirazione per gli attacchi effettuati con quell'Arma. Un investigatore deve avere la dote Ispirazione Combattiva ed essere almeno di 19° livello per scegliere questa dote</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ispirazione del sottobosco criminale</h3>
+                            <p class="coltext inline">Un investigatore può usare ispirazione per qualsiasi prova di Camuffare, Disattivare Congegni, Intimidire, Raggirare o Rapidità di Mano senza spenderne usi, a condizione che abbia addestramento nell'abilità.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ispirazione incredibile: </h3>
+                            <p class="coltext inline">L'investigatore può tirare un d8 come suo dato di ispirazione anziché un d6. Se ha la capacità Vera Ispirazione, tira 2d8 e aggiunge il risultato di entrambi i dadi. Un investigatore deve essere almeno di 7° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ispirazione non convenzionale: </h3>
+                            <p class="coltext inline">Un investigatore con questa dote può scegliere un'Abilità qualsiasi. Può aggiungere il suo dado di ispirazione alle prove di quell'abilità senza spenderne usi.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ispirazione tenace: </h3>
+                            <p class="coltext inline">Quando un investigatore tira il suo dado di ispirazione, può tirare due volte e tenere il risultato migliore. Un investigatore deve essere almeno di 13° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Maestria ispirante: </h3>
+                            <p class="coltext inline">Quando un investigatore supera una prova di Conoscenze per identificare capacità e debolezze un mostro, può spendere un uso di ispirazione come azione veloce per concedere agli alleati entro 9 metri Bonus Cognitivo +4 ai Tiri per Colpire contro quel mostro o quel tipo di mostro per 1 round. Un investigatore deve essere almeno di 7° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Offensiva debilitante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni a un bersaglio del suo combattimento studiato, la creatura è anche Inferma per 1 round. Un investigatore deve essere almeno di 7° livello per scegliere questa dote</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Offensiva fiaccante: </h3>
+                            <p class="coltext inline">Quando un investigatore infligge danni a un bersaglio del suo combattimento studiato, la creatura non può effettuare Attacchi di Opportunità per un round. Un investigatore deve essere almeno di 5° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ricordo eidetico: </h3>
+                            <p class="coltext inline">Un investigatore può sempre prendere 10 a tutte le sue prove di Conoscenze, anche se distratto o in pericolo immediato. Un investigatore può spendere un uso di ispirazione per prendere 20 a una prova di Conoscenze, anche se distratto o in pericolo immediato. Un investigatore deve essere almeno di 11° livello per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Scoperte dell'alchimista: </h3>
+                            <p class="coltext inline">L'investigatore può selezionare una delle Scoperte dell'Alchimista seguenti come dote da investigatore: Cognatogeno, Combinare Estratti, Convertire Veleno, Diluizione, Elisir della Vita, Infusione, Mutageno, Pozione Estesa, Pozione Eterna, Pozione Potenziata e Veleno Concentrato. Quando seleziona una scoperta da alchimista, deve avere un livello sufficientemente alto per qualificarsi per quella Scoperta, usando il suo livello da investigatore come livello da Alchimista per determinare se si qualifica. Questa dote può essere acquisita più volte; ogni volta, concede all'investigatore una nuova Scoperta dell'Alchimista.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Seguire tracce percettivo: </h3>
+                            <p class="coltext inline">Un investigatore può usare Percezione anziché Sopravvivenza per trovare e seguire tracce, usando le stesse CD indicate per la prova di Sopravvivenza. Un investigatore deve avere addestramento in Percezione per scegliere questa dote.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Studiare rapidamente: </h3>
+                            <p class="coltext inline">Un investigatore può usare combattimento studiato come azione veloce anzichè come azione di movimento.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ricordo"><a href="#skill" class="link">Ricordo arguto</a></h3>
+                    <p class="coltext">Al 3° livello, un investigatore può effettuare tutte le prove di Conoscenze senza addestramento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="trappole2"><a href="#skill" class="link">Percepire trappole</a></h3>
+                    <p class="coltext">Al 3° livello, un investigatore ottiene una percezione intuitiva dei pericoli dovuti a trappole, che gli conferisce bonus +1 ai Tiri Salvezza su Riflessi effettuati per evitare trappole e Bonus di Schivare +1 alla CA contro gli attacchi effettuati da trappole. Al 6° livello e ogni 3 livelli successivi, questi bonus aumentano di 1 (fino a un massimo di +6 al 18° livello).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="studiato"><a href="#skill" class="link">Combattimento studiato</a></h3>
+                    <p class="coltext">Con occhi acuti e mente calcolatrice, un investigatore può valutare la potenza del suo avversario per approfittare delle lacune nelle sue doti e nel suo addestramento. Al 4° livello, un investigatore può usare un'azione di movimento per studiare un singolo nemico che può vedere. Dopo averlo fatto, aggiunge metà del suo livello da investigatore come Bonus Cognitivo ai Tiri per Colpire in mischia e come bonus ai tiri per i danni contro la creatura. Questo effetto dura per un numero di round pari al suo modificatore di Intelligenza (minimo 1) o finché infligge danni con un Colpo Studiato, a seconda di ciò che accade prima. Il bonus ai tiri per i danni è danno da precisione e non viene moltiplicato in caso di colpo critico. <br>
+
+                        Un investigatore può avere un solo bersaglio di combattimento studiato per volta e, una volta che una creatura è stata bersaglio del combattimento studiato dell'investigatore, non può essere bersaglio del combattimento studiato di quello stesso investigatore per 24 ore, a meno che quest'ultimo non spenda un uso di Ispirazione quando intraprende l'azione di movimento per usare questa capacità.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="colpo"><a href="#skill" class="link">Colpo studiato</a></h3>
+                    <p class="coltext">Al 4° livello, una volta colpito il suo bersaglio studiato con un attacco in mischia, un investigatore può effettuare un colpo studiato come azione gratuita contro quel bersaglio per infliggergli danni addizionali. Il danno addizionale è 1d6 al 4° livello e aumenta di 1d6 per ogni 2 livelli successivi (fino a un massimo di 9d6 al 20° livello). Il danno di colpo studiato è danno da precisione e non viene moltiplicato in caso di colpo critico; le creature immuni agli Attacchi Furtivi sono immuni anche a colpo studiato. <br>
+
+                        Se l'attacco dell'investigatore usa un'arma che infligge Danni Non Letali (Colpo Senz'Armi, Frusta o Manganello), può scegliere di infliggere con colpo studiato Danni Non Letali invece che danni letali. Se l'investigatore sceglie di effettuare un attacco che infligge danni letali per infliggere Danni Non Letali (con la consueta penalità -4 ai Tiri per Colpire), anche il colpo studiato può infliggere Danni Non Letali. <br>
+                        
+                        L'investigatore deve essere in grado di vedere il bersaglio abbastanza bene da capire quale sia un punto vitale ed essere in grado di raggiungerlo. L'investigatore non può usare colpo studiato mentre colpisce una creatura con Occultamento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="alchimia2"><a href="#skill" class="link">Alchimia rapida</a></h3>
+                    <p class="coltext">Al 4° livello, un investigatore può creare oggetti alchemici con stupefacente velocità. A un investigatore serve la metà del tempo normalmente richiesto per creare oggetti alchemici. Può anche applicare del Veleno su un'arma come azione di movimento anziché standard.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ispirazione2"><a href="#skill" class="link">Vera ispirazione</a></h3>
+                    <p class="coltext">Al 20° livello, un investigatore può usare Ispirazione per tutte le prove di Abilità (anche quelle in cui non ha addestramento) e alle prove di Caratteristica senza spenderne usi. Inoltre, ogni volta che usa Ispirazione per una prova di Abilità, una prova di Caratteristica, un Tiro per Colpire o un Tiro Salvezza, aggiunge 2d6 anziché 1d6 al risultato. Alcune doti possono influenzare questo effetto. Se l'investigatore ha la dote da investigatore Ispirazione Incredibile, tira invece 2d8. Se l'investigatore usa questa capacità con Empatia, Ispirazione Tenace e doti simili, tira due serie di dadi di Ispirazione e tiene il migliore tra i due risultati.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

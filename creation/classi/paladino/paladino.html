@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Paladino</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">2+int</p>
+                    <p class="coltext">Le abilità di classe del paladino sono: Addestrare Animali, Artigianato, Cavalcare, Conoscenze (nobiltà), Conoscenze (religione), Diplomazia, Guarire, Intuizione, Professione, Sapienza Magica.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I paladini sono competenti nell'uso di tutte le armi semplici e da guerra, di tutti i tipi di armatura (pesanti, medie e leggere) e scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br>Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di Classe
+                </th>
+                </tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#aura">Aura di Bene</a>, <a class="link" href="#individuazione">Individuazione del Male</a>, <br> <a class="link" href="#punire">Punire il Male 1/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#grazia">Grazia Divina</a>, <a class="link" href="#imposizione">Imposizione delle Mani</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#aura2">Aura di Coraggio</a>, <a class="link" href="#salute">Salute Divina</a>, <br><a class="link" href="#indulgenza">Indulgenza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#incanalare">Incanalare Energia Positiva</a>, <br> <a class="link" href="#punire">Punire il Male 2/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#legame">Legame Divino</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#indulgenza">Indulgenza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#punire">Punire il Male 3/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#aura3">Aura di Fermezza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#indulgenza">Indulgenza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a class="link" href="#punire">Punire il Male 4/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a class="link" href="#aura4">Aura di Giustizia</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a class="link" href="#indulgenza">Indulgenza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a class="link" href="#punire">Punire il Male 5/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a class="link" href="#aura5">Aura di Fede</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a class="link" href="#indulgenza">Indulgenza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a class="link" href="#punire">Punire il Male 6/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a class="link" href="#aura6">Aura di Rettitudine</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a class="link" href="#indulgenza">Indulgenza</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a class="link" href="#punire">Punire il Male 7/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext"><a class="link" href="#campione">Campione Sacro</a>
+                </td>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="aura"><a href="#skill" class="link">Aura di bene</a></h3>
+                    <p class="coltext">Il potere dell'aura di bene di un Paladino (vedi l'incantesimo Individuazione del Bene) è pari al suo livello da paladino.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="individuazione"><a href="#skill" class="link">Individuazione del male</a></h3>
+                    <p class="coltext">A volontà, un paladino può usare Individuazione del Male, come l'incantesimo omonimo. Un Paladino può, come azione di movimento, concentrarsi su un singolo oggetto o individuo entro 18 metri e determinare se è malvagio, apprendendo la forza della sua aura come se lo avesse studiato attentamente per 3 round. Mentre focalizza l'attenzione su un oggetto o un individuo, il Paladino non può individuare il male in nessun altro oggetto o individuo che si trovi nel raggio d'azione dell'incantesimo.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="punire"><a href="#skill" class="link">Punire il male</a></h3>
+                    <p class="coltext">Una volta al giorno, un Paladino può invocare i poteri del bene per aiutarlo nella lotta contro il male. Come azione veloce, il Paladino sceglie un bersaglio nella sua visuale da punire. Se questo bersaglio è malvagio, il paladino aggiunge il suo bonus di Carisma (se presente) ai Tiri per Colpire e aggiunge il suo livello da paladino ai tiri per il danno contro il bersaglio di punire il male. Se il bersaglio di punire il male è un Esterno con il Sottotipo Malvagio, un Drago di allineamento malvagio o un Non Morto, il bonus al danno del primo attacco riuscito aumenta a 2 danni per ogni livello da paladino posseduto. A prescindere dal bersaglio, punire il male supera automaticamente qualsiasi RD che la creatura possiede. <br>
+
+                        Inoltre, mentre punire il male è attivo, il paladino ottiene un Bonus di Deviazione pari al suo modificatore di Carisma (se presente) alla sua CA contro gli attacchi effettuati dal bersaglio della capacità. Se un paladino seleziona come bersaglio una creatura non malvagia, punire il male è sprecato senza produrre effetti. <br>
+                        
+                        L'effetto di punire il male rimane attivo finché il bersaglio non muore o il paladino non riposa e riguadagna l'uso della capacità. Al 4° livello, e ogni tre livelli successivi, il paladino può punire il male una volta in più al giorno, come indicato nella Tabella: Paladino, fino ad un massimo di sette volte al giorno al 19° livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="grazia"><a href="#skill" class="link">Grazia divina</a></h3>
+                    <p class="coltext">Al 2° livello, un paladino ottiene un bonus a tutti i Tiri Salvezza pari al suo modificatore di Carisma (se presente).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="imposizione"><a href="#skill" class="link">Imposizione delle mani</a></h3>
+                    <p class="coltext">A partire dal 2° livello, un Paladino può curare le ferite (le proprie e quelle degli altri) con il tocco. Ogni giorno può usare questa capacità per un numero di volte pari a metà del suo livello da Paladino più il suo modificatore di Carisma. Con un utilizzo della capacità, un paladino può curare 1d6 punti ferita ogni due livelli da paladino posseduti. Usare questa capacità è un'azione standard, a meno che il paladino non scelga se stesso come bersaglio, nel qual caso è un'azione veloce. Nonostante il nome, un paladino necessita solo di una mano libera per usare questa capacità. <br>
+
+                        In alternativa, il Paladino può usare questa capacità per infliggere danni a creature Non Morte, causando 1d6 danni ogni due livelli da Paladino posseduti. Usare imposizione delle mani in questo modo necessita di un attacco di contatto in mischia riuscito che non provoca Attacchi d'Opportunità. I Non Morti non ricevono Tiro Salvezza contro questo danno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aura2"><a href="#skill" class="link">Aura di coraggio</a></h3>
+                    <p class="coltext">A partire dal 3° livello, un Paladino è immune alla Paura (magica o meno). Gli alleati presenti entro un raggio di 3 metri dal Paladino guadagnano Bonus Morale +4 ai Tiri Salvezza contro effetti di Paura. Questa capacità funziona solo se il paladino è cosciente e non funziona se il paladino è Privo di Sensi o morto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="salute"><a href="#skill" class="link">Salute divina</a></h3>
+                    <p class="coltext">Al 3° livello, un paladino diventa immune a tutte le Malattie, comprese le malattie soprannaturali e magiche, inclusa Putrefazione della Mummia.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="indulgenza"><a href="#skill" class="link">Idulgenza</a></h3>
+                    <p class="coltext">Al 3° livello e ogni tre livelli successivi, un Paladino può selezionare una indulgenza. Ogni indulgenza aggiunge un effetto alla capacità del Paladino imposizione delle mani. Ogni volta che il paladino usa imposizione delle mani per curare un bersaglio, quest'ultimo riceve gli effetti addizionali di ogni indulgenza posseduta dal paladino. Una indulgenza può eliminare una condizione causata da una maledizione, una malattia o un veleno senza Guarire l'afflizione. Tali condizioni tornano dopo 1 ora a meno che l'indulgenza non elimini anche l'afflizione che le causa. Al 3° livello, un paladino può scegliere tra le seguenti indulgenze iniziali.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Affaticato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Affaticato.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Infermo: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Infermo.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Scosso: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Scosso.</p>
+                        </li>
+                    </ul>
+                    <p class="coltext">Al 6° livello, un paladino aggiunge le seguenti indulgenze alla lista di quelle che possono essere selezionate.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Ammalato: </h3>
+                            <p class="coltext inline">La capacità imposizione delle mani del paladino funge da Rimuovi Malattia, usando il livello del paladino come livello dell'incantatore.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Barcollante: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Barcollante, a meno che l'obiettivo non sia esattamente a 0 Punti Ferita.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Frastornato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Frastornato.</p>
+                        </li>
+                    </ul>
+                    <p class="coltext">Al 9° livello, un paladino aggiunge le seguenti indulgenze alla lista di quelle che possono essere selezionate.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Avvelenato: </h3>
+                            <p class="coltext inline">La capacità imposizione delle mani del paladino funge da Neutralizza Veleno, usando il livello del paladino come livello dell'incantatore.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Esausto: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Esausto. Il paladino deve avere l'indulgenza Affaticato prima di selezionare questa indulgenza.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Maledetto: </h3>
+                            <p class="coltext inline">La capacità imposizione delle mani del paladino funge da Rimuovi Maledizione, usando il livello del paladino come livello dell'incantatore.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Nauseato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Nauseato. Il paladino deve avere l'indulgenza Infermo prima di selezionare questa indulgenza.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Spaventato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Spaventato. Il paladino deve avere l'indulgenza Scosso prima di selezionare questa indulgenza.</p>
+                        </li>
+                    </ul>
+                    <p class="coltext">Al 12° livello, un paladino aggiunge le seguenti indulgenze alla lista di quelle che possono essere selezionate.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Accecato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Accecato.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Assordato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Assordato.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Paralizzato: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Paralizzato.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Stordito: </h3>
+                            <p class="coltext inline">Il bersaglio non è più Stordito.</p>
+                        </li>
+                    </ul>
+                    <p class="coltext">Queste capacità sono cumulative. Per esempio, un Paladino di 12° livello può con imposizione della mani curare 6d6 punti ferita e le condizioni Affaticato ed Esausto così come rimuovere Malattie e neutralizzare Veleni. Una volta che si sceglie una condizione o effetto magico, non si può cambiare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incanalare"><a href="#skill" class="link">Incanalare energia positiva</a></h3>
+                    <p class="coltext">Quando un paladino raggiunge il 4° livello, guadagna la capacità soprannaturale di Incanalare Energia positiva come un Chierico. Usando questa capacità consuma due usi della sua capacità imposizione delle mani. Un paladino utilizza il suo livello come livello da Chierico effettivo quando incanala l'energia positiva. Questa è una capacità basata sul Carisma.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="legame"><a href="#skill" class="link">Legame divino</a></h3>
+                    <p class="coltext">Al 5° livello, un Paladino stringe un Legame divino con la sua divinità. Questo Legame può essere di una di due forme. Una volta scelta, la forma non si può cambiare.</p>
+                    <ul>
+                        <li>
+                            <p class="coltext inline">Il primo tipo di legame permette al paladino di potenziare la propria arma come azione standard invocando l'aiuto di uno spirito celestiale per 1 minuto per livello da paladino. Quando è invocato, lo spirito rende l'arma lucente come una torcia. Al 5° livello, questo spirito concede all'arma Bonus di Potenziamento +1. Successivamente, ogni tre livelli, l'arma guadagna un altro Bonus di Potenziamento +1, fino ad un massimo di +6 al 20° livello. Questi bonus possono aggiungersi all'arma, e cumularsi con quelli esistenti fino ad un massimo di +5, o possono essere usati per aggiungere all'arma una delle seguenti capacità: Affilata, Assiomatica, Difensiva, Distruttiva, Energia Luminosa, Esplosione di Fiamme, Infuocata, Pietosa, Sacra e Velocità. L'aggiunta di queste capacità consuma una quantità di bonus uguale al modificatore del prezzo base della capacità (vedi Tabella delle Capacità Speciali delle Armi da Mischia). Queste capacità bonus si aggiungono a qualsiasi altra capacità l'arma possegga già, ma le capacità doppie non si cumulano. Se l'arma non è magica, occorre aggiungere almeno Bonus di Potenziamento +1 prima di poter aggiungere una capacità speciale. Il bonus e le Capacità Speciali concessi dallo spirito sono determinati quando lo spirito è invocato e non possono essere cambiati finché lo spirito non viene invocato nuovamente. Lo spirito celestiale non concede alcun bonus se l'arma è impugnata da altri che non siano il Paladino ma i bonus ritornano se l'arma torna nelle mani del Paladino. Questi bonus si applicano soltanto ad un'estremità di un'arma doppia. Un paladino può utilizzare questa capacità una volta al giorno al 5° livello e successivamente una volta in più al giorno ogni quattro livelli, fino ad un massimo di quattro volte al giorno al 17° livello. <br>
+                                Se un'arma legata ad uno spirito celestiale viene distrutta, il paladino perde l'uso di questa capacità per 30 giorni, o fino a che non guadagna un livello, a seconda di quale dei due eventi accada prima. Durante questo periodo di 30 giorni, il paladino subisce penalità –1 ai Tiri per Colpire e ai danni con le armi.</p>
+                        </li>
+                        <li>
+                            <p class="coltext inline">Il secondo tipo di legame permette ad un paladino di ottenere i servigi di un destriero insolitamente intelligente, forte e leale, per servirlo nella sua crociata contro il male. Questa cavalcatura in genere è un Cavallo Pesante (per i paladini di Taglia Media) o un Pony (per i paladini di taglia Piccola), anche se cavalcature più esotiche, come Cammelli, Cinghiali o Cani sono comunque disponibili. Questa cavalcatura funziona come il Compagno Animale di un Druido, usando il livello del paladino come livello effettivo del Druido. Le cavalcature legate hanno un punteggio di Intelligenza minimo di 6. Una volta al giorno, come azione di round completo, un Paladino può richiamare magicamente la sua cavalcatura al suo fianco. Questa capacità è equivalente ad un incantesimo di un livello pari ad un terzo del livello del Paladino. La cavalcatura apparirà immediatamente adiacente al paladino. Il paladino può usare questa capacità una volta al giorno al 5° livello e successivamente una volta in più ogni quattro livelli, per un totale di quattro volte al 17° livello.</p>
+                            <ul>
+                                <li>
+                                    <p class="coltext">All'11° livello, la cavalcatura guadagna l'Archetipo Celestiale e diventa una Bestia Magica al fine di determinare quali incantesimi abbiano effetto su di essa.</p>
+                                </li>
+                                <li>
+                                    <p class="coltext">Al 15° livello, la cavalcatura del paladino guadagna Resistenza agli Incantesimi pari al livello del paladino +11.</p>
+                                </li>
+                            </ul>
+                            <p class="coltext">Se la cavalcatura del Paladino muore, il Paladino non può richiamare un'altra cavalcatura per 30 giorni o finché non guadagna un livello da paladino, quale dei due eventi accada prima. Durante questo periodo di 30 giorni, il paladino subisce penalità –1 ai Tiri per Colpire e ai danni con le armi.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aura3"><a href="#skill" class="link">Aura di fermezza</a></h3>
+                    <p class="coltext">All'8° livello, un Paladino è immune agli incantesimi e alle Capacità Magiche di charme. Ogni alleato entro 3 metri da lui ottiene Bonus Morale +4 ai Tiri Salvezza contro effetti di charme. <br>
+
+                        Questa capacità funziona soltanto mentre il paladino è cosciente, non se è Privo di Sensi o Morto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aura4"><a href="#skill" class="link">Aura di giustizia</a></h3>
+                    <p class="coltext">All'11° livello, un Paladino può spendere due usi della capacità punire il male per concedere punire il male a tutti gli alleati entro 3 metri da lui, usando i suoi bonus. Gli alleati devono utilizzare la capacità punire il male entro l'inizio del turno successivo del Paladino ed i bonus durano 1 minuto. Usare questa capacità è un'azione gratuita. Le creature malvagie non ottengono beneficio da questa capacità.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aura5"><a href="#skill" class="link">Aura di fede</a></h3>
+                    <p class="coltext">Al 14° livello, le armi del paladino sono considerate allineate al bene allo scopo di superare la Riduzione del Danno. Tutti gli attacchi effettuati contro gli avversari entro 3 metri sono considerati allineati al bene allo scopo di superare la Riduzione del Danno. <br>
+
+                        Questa capacità funziona soltanto mentre il paladino è cosciente, non se è Privo di Sensi o Morto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="aura6"><a href="#skill" class="link">Aura di Rettitudine</a></h3>
+                    <p class="coltext">Al 17° livello, un paladino guadagna RD 5/male ed immunità a incantesimi e capacità magiche di compulsione. Ogni alleato entro 3 metri da lui ottiene Bonus Morale +4 ai Tiri Salvezza contro effetti di compulsione. <br>
+
+                        Questa capacità funziona soltanto mentre il paladino è cosciente, non se è Privo di Sensi o Morto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="campione"><a href="#skill" class="link">Campione sacro</a></h3>
+                    <p class="coltext">Al 20° livello, un Paladino diventa un veicolo del potere del suo dio. La sua RD aumenta a 10/male. Ogni volta che usa punire il male e colpisce con successo un Esterno malvagio, quest'ultimo è soggetto all'incantesimo Esilio, che usa il livello del Paladino come livello dell'incantatore (la sua arma e il suo simbolo sacro contano automaticamente come oggetti che il soggetto odia). Dopo l'effetto di esilio e dopo che il danno causato dall'attacco viene risolto, punire il male termina. Inoltre, ogni volta che il Paladino incanala energia positiva o usa imposizione delle mani per curare una creatura, quest'ultima guarisce l'ammontare massimo possibile.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

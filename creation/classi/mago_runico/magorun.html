@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Mago runico</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Intelligenza </p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe del mago runico sono, Conoscenze (tutte), Linguistica (Int), Professione (Sag), Sapienza Magica, Valutare, Percezione e Reazione.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Il mago runico è competente nell'uso di armi semplici e negli stocchi e ell'uso di armature leggere e medie.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#runa" class="link">Maestro delle rune</a>, <br>
+                    <a href="#occhio" class="link">Occhio arcano</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#rituale" class="link">Rituale</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#manipolazione" class="link">Manipolazione del mana</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#manipolazione2" class="link">Manipolazione runica</a>, <br>
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    Talento bonus, <br>
+                    <a href="#corrotta" class="link">Frase corrotta</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#runa2" class="link">Runa extra</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#rituale2" class="link">Rituale migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#battaglia" class="link">Mago da battaglia</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    Talento bonus, <br>
+                    <a href="#disturbo" class="link">Disturbo magico</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    <a href="#runa2" class="link">Runa extra</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#incantesimo3" class="link">Incantesimi concatenanti</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">
+                    <a href="#antimagia" class="link">Protezione antimagia</a>, <br>
+                    <a href="#penetrazione" class="link">Penetrazione magica</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+11/+6/+1</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">Talento bonus</td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <a href="#runa2" class="link">Runa extra</a>, <br>
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <a href="#maestro2" class="link">Maestro incantatore</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+13/+8/+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">
+                    <a href="#metamagia" class="link">Padrone della metamagia</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+14/+9/+4</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">Talento bonus</td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+15/+10/+5</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>, <br>
+                    <a href="#finale" class="link">Forma finale</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="runa"><a href="#skill" class="link">Maestro delle rune</a></h3>
+                    <p class="coltext">Un mago runico di 1° aggiunge alla propria lista dei Linguaggi il Runico, inoltre effettuando una prova di Sapienza magica (CD:10+lvl incantatore+mod caratteristica primaria) è in grado di identificare gli effetti di quella Runa.
+                    </p>
+                <li>
+                    <h3 class="coltitle" id="occhio"><a href="#skill" class="link">Occhio arcano</a></h3>
+                    <p class="coltext">Un mago runico di 1° Concentrandosi x 1 azione standard può individuare auree magiche provenienti da esseri viventi o incantesimi.</p>
+                    <ul>
+                        <li>
+                            <p class="coltext">Effettuando una prova di Sapienza magica è possibile identificare il dono della creatura osservata <br>
+                                Cd: 10+DV creatura+ modificatore potere </p>
+                        </li>
+                        <li>
+                            <p class="coltext">Se non è stato possibile vedere l’incantesimo al lancio non è possibile definirne precisamente gli effetti, ma con una prova di Sapienza magica (CD 10+lvl incantatore+ modificatore caratteristica primaria) è possibile definirne l’effetto approssimativo: (Un incantesimo può avere più effetti)</p>
+                            <ul>
+                                <li class="coltext">Potenziamento (Qualsiasi incantesimo che potenzia le capacità)</li>
+                                <li class="coltext">Danno (Qualsiasi incantesimo che infligge danno diretto)</li>
+                                <li class="coltext">Mentale: (Incantesimi che influenzano la mente, come illusioni o controllo mentale)</li>
+                                <li class="coltext">Controllo: (Incantesimi che danno controllo del campo, o sugli avversari come nebbie o debuff vari)</li>
+                                <li class="coltext">Spaziale: (Evocazioni o incantesimi di spostamento)</li>
+                                <li class="coltext">Cura: (Incantesimi volti a lenire le ferite)</li>
+                                <li class="coltext">Divino: (Incantesimi che non usano Mana, bensì l’ausilio della Divinità)(Tipo gli incantesimi dei Chierici)</li>
+                                <li class="coltext">Ignoto: (Tutto ciò che non rientra negli effetti precedenti o magia Demoniaca) </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="rituale"><a href="#skill" class="link">Rituale</a></h3>
+                    <p class="coltext">Un mago runico di 2° livello, impiegando 1min pari al costo in mana dell’incantesimo, può decidere di lanciarlo consumando metà del proprio mana (min 1) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="manipolazione"><a href="#skill" class="link">Manipolazione del mana</a></h3>
+                    <p class="coltext">Un Mago runico di 3° livello 1voltaxmodificatore intelligenza può sommare come azione immediata il proprio bonus intelligenza ad un suo Tiro salvezza, Tiro per colpire (solo incantesimi) o Bonus Deviazione alla Ca. <br>
+                        Questa abilità è valida per un singolo attacco. <br>
+                        Questa abilità non può essere usata se si è colti alla sprovvista o privi di sensi.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="manipolazione2"><a href="#skill" class="link">Manipolazione runica</a></h3>
+                    <p class="coltext">Quando l’incantatore identifica gli effetti di una Runa, può modificarne gli effetti in uno dei seguenti modi: </p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Disattivarla:</h3>
+                            <p class="coltext inline">Gli effetti della runa vengono dissolti</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Escludere bersaglio: </h3>
+                            <p class="coltext inline">Ad esempio se una runa si attiva infliggendo danni quando la porta si apre, l’incantatore può far in modo di escludere se stesso dall’effetto per aprire la porta senza danni.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Interrompere temporaneamente l’effetto: </h3>
+                            <p class="coltext inline">1rxlvl</p>
+                        </li>
+                        <p class="coltext">Dipendentemente dall’incantesimo potrebbero esserci altri modi per intervenire su di esso a discrezione del Dm. <br>
+                            Per manipolare l’incantesimo è necessario superare una prova Linguaggi Cd (10+lvl incantatore+caratteristica primaria). </p>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="corrotta"><a href="#skill" class="link">Frase corrotta</a></h3>
+                    <p class="coltext">L’incantatore imprime un particolare sforzo nella creazione dell’incantesimo, creando una frase combinando più incantesimi offensivi. Poiché controllare tante parole contemporaneamente è uno sforzo mentale considerevole, l’incantatore può utilizzarlo solo 1volta x mod intelligenza. 
+                        <ul>
+                            <li class="coltext">Non è possibile combinare incantesimi il cui lancio sia superiore ad 1 azione standard</li>
+                            <li class="coltext">Funziona solo su incantesimi offensivi </li>
+                            <li class="coltext">Il costo in mana è pari alla somma degli incantesimi combinati </li>
+                            <li class="coltext">Il lancio richiede un’azione di round completo </li>
+                        </ul>
+                        <p class="coltext">Esempio: Creando un incantesimo con due Dolore, Uscirà una frase “Dolore intenso” La quale infliggerà 1d4+1d6 (il primo lancio di dolore+ il secondo) <br>
+                            Oppure: Unendo Dolore ad Incanta elementi l’incantesimo sarà “Dolore fiammeggiante” o “Dolore folgorante” etc. ed infliggerà 1d4+1d8 (dell’elemento scelto) </p>
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incantesimo"><a href="#skill" class="link">Incantesimo migliorato</a></h3>
+                    <p class="coltext">Un mago runico di 4° può scegliere uno dei suoi incantesimi e modificarlo permanentemente con una delle seguenti opzioni senza incrementarne il costo in mana. </p>
+                    <ul>
+                        <li class="coltext">Incantesimi Estesi</li>
+                        <li class="coltext">Incantesimi Immobili</li>
+                        <li class="coltext">Incantesimi Silenziosi</li>
+                        <li class="coltext">Bersaglio esclusivo: l’incantatore può decidere di escludere un singolo bersaglio dall’area del suo incantesimo</li>
+                        <li class="coltext">Incremento Cd: L’incantesimo guadagna un bonus di +1 alla Cd</li>
+                        <li class="coltext">Diminuzione costo: l’incantesimo costa 1 mana in meno </li>
+                    </ul>
+                    <p class="coltext">Ogni 4 livelli dopo il 4 l’incantatore può applicare opzione aggiuntiva della lista all’incantesimo oppure selezionare un nuovo incantesimo a cui applicarne.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="runa2"><a href="#skill" class="link">Runa extra</a></h3>
+                    <p class="coltext">Un mago runico di 6° livello impara come applicare una runa vuota sul suo corpo o su una qualsiasi superfice, all’interno della Runa l’incantatore può applicare un qualsiasi incantesimo (purchè colui che lo lancia, non sia di livello superiore a quello dell’incantatore). Dopodichè l’incantatore può attivare la runa come azione gratuita per far scaturire l’effetto dell’incantesimo, oppure può decidere le condizioni di attivazione della Runa. <br>
+                        La Runa permane fintanto che l’incantesimo non viene scaricato o finchè l’incantatore non decide di dissolverla. <br>
+                        Una volta dissolta una runa può essere riapplicata nuovamente dopo un riposo lungo. <br>
+                        Sono necessari 10 minuti per applicare una runa. <br>
+                        L’incantatore può mantenere una runa aggiuntiva ogni 5 livelli oltre il 6 (lvl 11, 16). </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="rituale2"><a href="#skill" class="link">Rituale migliorato</a></h3>
+                    <p class="coltext">Un mago runico di 8° quando prepara un rituale può applicarvi un numero di talenti di Metamagia (se posseduti e se l’incantesimo lo consente) pari al suo modificatore intelligenza, senza pagarne costi aggiuntivi. <br>
+                        Ogni talento di Metamagia necessita 10 minuti aggiuntivi per preparare l’incantesimo. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="battaglia"><a href="#skill" class="link">Mago da battaglia</a></h3>
+                    <p class="coltext">Un mago runico di 9° ha ormai acquisito una discreta esperienza sul campo di battaglia ed è ormai in grado di mantenere la sua concentrazione ed impedire che i suoi incantesimi vengano dissolti. <br>
+                        Quando un mago è costretto ad effettuare una prova su concentrazione, può usare al suo posto Sapienza magica. 
+                        Quando un incantesimo del mago sta venendo dissolto da un altro incantesimo questi può effettuare una prova su sapienza magica, ogni 5 gradi con cui la prova viene superata aumentano di +1 la Cd per dissolverla. <br>
+                        Cd: 10+Dv incantetore+mod caratteristica primaria</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="disturbo"><a href="#skill" class="link">Disturbo magico</a></h3>
+                    <p class="coltext">Un Mago runico di 10° una volta al giorno, quando sta per subire un attacco da parte di un incantesimo o una capacità magica, come azione immediata può effettuare una prova di Sapienza magica contrapposta contro l’incantatore per reindirizzare l’incantesimo contro un altro bersaglio o modificare il punto in cui avrà effetto l’incantesimo. <br>
+                        In caso di successo sarà necessario consumare lo stesso mana necessario per il lancio dell’incantesimo deviato. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incantesimo3"><a href="#skill" class="link">Incantesimi concatenati</a></h3>
+                    <p class="coltext">Un mago runico di 13° Un numero di volte pari al proprio modificatore intelligenza al giorno, è in grado di lanciare più di un incantesimo per round, pari al quantitativo concesso dal proprio Bab. (uno con Bab 6 e l’alto con Bab 1) (quindi 2 incantesimi) <br>
+                        Entrambi gli incantesimi dovranno essere necessariamente a bersaglio singolo ed effettuati sempre contro lo stesso bersaglio (con un txc) come azione di round competa, utilizzando il Bab come per un normale attacco. <br>
+                        (Possono essere anche due incantesimi di cura su se stessi o su un alleato, o due buff, purchè siano a bersaglio singolo) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="antimagia"><a href="#skill" class="link">Protezione antimagia</a></h3>
+                    <p class="coltext">Un mago runico di 14° livello è in grado di usare la propria magia per proteggersi dagli incantesimi degli avversari, per un numero di volte pari al suo modificatore di intelligenza, come azione veloce, ottiene Ri pari a 10+lvl incantatore per 1r pari al modificatore intelligenza del mago. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="penetrazione"><a href="#skill" class="link">Penetrazione magica</a></h3>
+                    <p class="coltext">Un mago runico di 14° ottiene un bonus di +4 alle prove per superare la Ri del nemico </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="maestro2"><a href="#skill" class="link">Maestro incantatore</a></h3>
+                    <p class="coltext">Un mago runico di 17° livello ha imparato ulteriormente ad ottimizzare il mana consumato per i suoi incantesimi. <br>
+                        Il costo per incrementare la Cd dell’incantesimo scende da 4 a 3. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="metamagia"><a href="#skill" class="link">Padrone della metamagia</a></h3>
+                    <p class="coltext">Un mago runico di 18° livello, quando lancia un incantesimo modificato dalla Metamagia, una volta al giorno pari al suo modificatore intelligenza può decidere come azione gratuita di sottrarre al costo totale dell’incantesimo pari al suo modificatore intelligenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="finale"><a href="#skill" class="link">Forma finale</a></h3>
+                    <p class="coltext">Un mago runico di livello 20° diviene un tutt'uno con la magia Runica, acquisendo una forma di ineguagliabile potere. <br>
+                        In questa forma l’incantatore ottiene: </p>
+                    <ul>
+                        <li class="coltext">Etereo</li>
+                        <li class="coltext">Rd: 20 </li>
+                        <li class="coltext">Ri: 10+lvl incantatore </li>
+                        <li class="coltext">Volare: 18 m perfetto </li>
+                        <li class="coltext">Ottiene un bonus pari al suo modificatore intelligenza ai Ts </li>
+                        <li class="coltext">Visione del vero </li>
+                        <li class="coltext">Le Cd dei suoi incantesimi aumentano di +4 </li>
+                        <li class="coltext">I suoi incantesimi sono Massimizzati senza costi aggiuntivi in mana </li>
+                        <li class="coltext">Gli incantesimi dell’incantatore non possono essere interrotti o dissolti (fatta eccezione per campi anti magia) </li>
+                    </ul>
+                    <p class="coltext">L’incantatore può mantenere questa forma 1rxmod intelligenza. <br>
+                        Dopodichè è barcollante per 1d4 round e affaticato fino a un riposo lungo 
+                        (queste condizioni non possono essere eliminate con mezzi magici) </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

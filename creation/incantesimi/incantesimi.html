@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="../../responsive.css">
+    <script src="incantesimi.js"></script>
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Incantesimi conosciuti</h1>
+
+        <div class="center">
+            <p class="coltext">Non vengono considerati incantesimi conosciuti aggiuntivi dati da capacità da classi o razziali.</p>
+
+            <form>
+                <label for="livello" class="coltext">Selezionare il proprio livello: </label>
+                <input type="number" name="livello" id="livello" class="inumber" min="1" max="20" value="1"> <br>
+                <label for="intelligenza" class="coltext">Selezionare il modificatore di intelligenza del livello 1: </label>
+                <input type="number" name="intelligenza" id="intelligenza" class="inumber" min="-4" max="6" value="0"> <br>
+            </form>
+
+            <div>
+                <button class="normal-button" style="margin-bottom: 0.8em;" id="calcolo">Calcola incantesimi conosciuti</button> <br>
+                <p class="coltext inline">Gli incantesimi conosciuti sono: </p>
+                <p class="coltext inline" id="result"></p>
+            </div>
+        </div>
+        
+        <div class="flex-row center">
+            <a href="../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+    
+            <a href="../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

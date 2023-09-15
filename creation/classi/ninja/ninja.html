@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Ninja</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Potere</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">8+int</p>
+                    <p class="coltext">Le abilità di classe del ninja sono: Acrobazia, Artigianato (Veleni), Artista della fuga, Camuffare, Conoscenze Tradizioni, Diplomazia, Disattivare congegni, Furtività, Intimidire, Intrattenere, Intuizione, Nuotare, Percezione, Professione, Raggirare, Rapidità di mano, Reazione, Scalare, Usare congegni magici, Valutare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Il ninja è competente nell’uso delle armi semplici, più Arco corto, Kama, Katana, Kusarigama, Nunchaku, Sai, Shuriken, Siangham, Spada corta e Wakizashi. Non è competente nell’uso di Armature e Scudi. </p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +1d6</a>, <br>
+                    <a href="#trappole" class="link">Scoprire Trappole</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">
+                    <a href="#ki" class="link">Riserva KI</a>,
+                    <a href="#veleni" class="link">Maestro dei Veleni</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +2d6</a>, <br>
+                    <a href="#eludere" class="link">Eludere</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#difesa" class="link">Difesa incrollabile</a>, <br>
+                    <a href="#schivare" class="link">Schivare prodigioso </a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +3d6</a>, <br>
+                    <a href="#veleni" class="link">Maestro dei Veleni</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#ombra" class="link">Passo d'ombra</a>, <br>
+                    <a href="#armi" class="link">Maestro delle armi</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +4d6</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#veleni" class="link">Maestro dei Veleni</a>, <br>
+                    <a href="#pronto" class="link">Sempre pronto</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +5d6</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#sostituzione" class="link">Sostituzione disperata</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +6d6</a>, <br>
+                    <a href="#veleni" class="link">Maestro dei Veleni</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#vedere" class="link">Vedere l'inosservabile</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +7d6</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#veleni" class="link">Maestro dei Veleni</a>, <br>
+                    <a href="#stordente" class="link">Colpo stordente</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+11/+6/+1</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +8d6</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#ombra2" class="link">Passo d'ombra superiore</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +9d6</a>, <br>
+                    <a href="#veleni" class="link">Maestro dei Veleni</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+13/+8/+3</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#assassinare" class="link">Assassinare</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+14/+9/+4</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#furtivo" class="link">Attacco Furtivo +10d6</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+15/+10/+5</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#nascondersi" class="link">Maestro del nascondersi</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="furtivo"><a href="#skill" class="link">Attacco furtivo</a></h3>
+                    <p class="coltext">Se un ninja è in grado di sorprendere un avversario quando non è in grado di difendersi efficacemente dal suo attacco, può colpire un punto vitale per infliggere danni aggiuntivi.  <br>
+                        L'attacco del ninja infligge danni aggiuntivi ogni volta che al suo bersaglio viene negato il bonus di Destrezza alla CA (che abbia o meno un bonus di Destrezza), o quando il ninja attacca il bersaglio ai fianchi. I danni aggiuntivi sono 1d6 al 1° livello e 1d6 addizionali ogni due livelli da ninja successivi. Se il ninja dovesse infliggere un colpo critico con un attacco furtivo, questi danni aggiuntivi non vengono moltiplicati. Gli attacchi a distanza possono contare come attacchi furtivi solo se il bersaglio si trova entro 9 metri. <br>
+                        Con un'arma che infligge danni non letali (Colpo Senz'Armi, Frusta o Manganello), il ninja può compiere un attacco furtivo che infligge danni non letali invece che danni letali. Non può usare un'arma che infligge danni letali per provocare danni non letali in un attacco furtivo, neanche con la solita penalità -4. <br>
+                        Il ninja deve essere in grado di vedere il bersaglio abbastanza bene da capire quale sia un punto vitale ed essere in grado di raggiungerlo. Il ninja non può compiere un attacco furtivo mentre colpisce una creatura con Occultamento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="trappole"><a href="#skill" class="link">Scoprire trappole</a></h3>
+                    <p class="coltext">Il Ninja aggiunge il proprio livello alle prove di Percezione e Disattivare congegni per individuare Trappole e porte nascoste e disinnescarle.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ki"><a href="#skill" class="link">Riserva KI</a></h3>
+                    <p class="coltext">Al 2° livello, un ninja ottiene una riserva di punti ki, un'energia soprannaturale che può impiegare portare a termine sfide eccezionali II numero di punti nella riserva ki del ninja è pari a 1/2 del livello del ninja + il suo modificatore di Potere. Finché ha almeno 1 punto della sua riserva ki, si considera che prenda sempre la rincorsa in tutte le prove di Acrobazia effettuate per saltare. Al 10° livello, il ninja riduce anche della metà la CD delle prove di Acrobazia effettuate per saltare (anche se continua a non potersi muovere più lontano di quanto permetta la sua velocità).</p>
+                        <ul>
+                            <li class="coltext">Spendendo 1 punto della sua riserva ki, un ninja può effettuare un attacco addizionale al suo bonus di attacco migliore, ma solo quando compie un attacco completo.</li>
+                            <li class="coltext">Spendendo 1 punto della sua riserva Ki può aumentare la sua velocità di 6 metri per 1 round.</li>
+                            <li class="coltext">Spendendo 1 punto dalla sua riserva   ki per ottenere Bonus di Schivare +4 e Ts riflessi per 1 round. </li>
+                            <li class="coltext">Spendendo 1 punto dalla sua riserva Ki il ninja ottiene un bonus di +6 alla prossima prova abilità.</li>
+                            <li class="coltext">Spendendo 1 punto della sua riserva KI il ninja può rialzarsi da prono come azione gratuita che non offre attacchi d’opportunità.</li>
+                            <li class="coltext">Spendendo 1 Punto dalla sua riserva Ki, come azione immediata, il Ninja può annullare il danno di una caduta.</li>
+                        </ul>
+                    <p class="coltext"> La riserva ki si reintegra al mattino dopo 8 ore di riposo o meditazione; queste ore non devono necessariamente essere consecutive. Se il ninja possiede livelli in un'altra classe che concede punti per una riserva ki, i livelli da ninja si cumulano con quelli di tale classe per determinare il numero totale di punti che compongono la riserva ki, ma solo un modificatore di caratteristica viene sommato al totale.  La scelta di quale caratteristica usare si effettua quando si acquisisce il secondo privilegio di classe e una volta effettuata, non si può più modificare. Il ninja ora può usare i punti di questa riserva ki per potenziare i privilegi di tutte le classi che prevedono una riserva ki.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="veleni"><a href="#skill" class="link">Maestro dei veleni</a></h3>
+                    <p class="coltext">Un Ninja al livello 2, acquisisce la capacità di applicare il veleno alle sue armi come azione veloce e non rischia di avvelenarsi nel farlo. <br>
+                        Al livello 5 i Veleni del Ninja incrementano le loro Cd di +1 <br>
+                        Al livello 8 il Ninja è in grado di acquistare i Veleni al 50% del loro prezzo <br>
+                        Al livello 11 i Veleni del Ninja incrementano ulteriormente di +1 le loro Cd ed il Ninja acquisisce un bonus di +4 ai Ts su Tempra per resistere ai Veleni <br>
+                        Al livello 14 i Veleni del ninja infliggono danni massimizzati e durano il doppio <br>
+                        Al livello 17 il Ninja è immune ad ogni tipo di veleno. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eludere"><a href="#skill" class="link">Eludere</a></h3>
+                    <p class="coltext">Il Ninja può evitare con grande agilità anche gli attacchi magici e insoliti. Se supera il Tiro Salvezza su Riflessi contro un attacco che normalmente infligge la metà dei danni in caso di riuscita del Tiro Salvezza, non subisce alcun danno. La capacità di Eludere può essere usata solo se il Ninja non indossa armature. Un Ninja Indifeso non riceve i benefici di Eludere.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="difesa"><a href="#skill" class="link">Difesa incrollabile</a></h3>
+                    <p class="coltext">Un Ninja di 4° livello, quando ha ingombro nullo o leggero e non indossa l'armatura, somma il suo bonus di Potere (se presente) alla CA e alla DMC. <br>
+                        Questi bonus alla CA si applicano anche contro gli attacchi di contatto o quando il Ninja è Impreparato. Egli perde questi bonus quando è Immobilizzato o Indifeso.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare"><a href="#skill" class="link">Schivare prodigioso</a></h3>
+                    <p class="coltext">Un Ninja di 4° livello, mantiene il bonus di Destrezza alla CA anche se colto alla sprovvista o attaccato da un avversario invisibile. Se ha già Schivare Prodigioso guadagna Schivare Prodigioso Migliorato. <br>
+                        Il Ninja perde comunque il suo bonus alla Ca se un avversario compie con successo la sua azione di Fintare. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ombra"><a href="#skill" class="link">Passo d'ombra</a></h3>
+                    <p class="coltext">Un Ninja di 6° livello è in grado di muovere i suoi passi con una tale leggerezza da potersi muovere su superfici rumorose (Foglie secche, Ghiaia, Vetri rotti…) senza emettere alcun rumore e senza incorrere in penalità alle prove di Furtività. <br>
+                        Il Ninja non lascia alcuna impronta camminando, inoltre non attiva pedane a pressione e trappole dipendenti dal peso (Altre trappole si attivano normalmente), ma può esserne comunque influenzato se si trova nell’area della trappola e questa viene attivata da terzi. <br>
+                        Come Azione di Round Completo, può muoversi al doppio della sua velocità, ignorando il terreno difficile. Mentre si muove in questo modo, qualsiasi superficie lo sosterrà, indipendentemente dal suo peso. Questo gli permette di muoversi su acqua, lava o anche i rami più sottili degli alberi. Il ninja deve finire il suo movimento su una superficie in grado di sostenerlo normalmente. Non può muoversi in questo modo attraverso l'aria, né può camminare su muri o altre superfici verticali. Quando si muove in questo modo, il ninja non subisce danni da superfici o pericoli che reagiscono al contatto, come lava o triboli, né deve effettuare prove di Acrobazia per evitare di cadere su superfici sdrucciolevoli o grezze.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armi"><a href="#skill" class="link">Maestro delle armi</a></h3>
+                    <p class="coltext">Un Ninja di 6° livello, può aggiungere il suo bonus di Destrezza ai danni di qualsiasi arma. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="pronto"><a href="#skill" class="link">Sempre pronto</a></h3>
+                    <p class="coltext">Un Ninja di 8° livello Somma un bonus di +2 alle sue prove di Iniziativa, inoltre 1 volta pari al suo modificatore potere può decidere di ritirare la sua prova di iniziativa. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sostituzione"><a href="#skill" class="link">Sostituzione disperata</a></h3>
+                    <p class="coltext">Quando un Ninja di 10° livello subisce un attacco che lo porterebbe a 0 pf o inferiori, spendendo 2 punti KI, come azione immediata, si sostituisce con un suo clone illusiorio che prende i danni al suo posto, il Ninja invece si teletrasporta in un punto entro 9m dalla sua posizione e diviene invisibile e barcollante x1r. <br>
+                        Effetti che impediscono il teletrasporto o incantesimi che non infliggono danni diretti ai pf del Ninja, non permettono l’uso di questa capacità. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="inosservabile"><a href="#skill" class="link">Vedere l'inosservabile</a></h3>
+                    <p class="coltext">un Ninja di 12° livello, consumando 2 punti Ki, è in grado di vedere oltre il velo delle illusioni, osservando la vera forma delle cose per 1minxlvl. <br>
+                        In questo stato è in grado di vedere avversari invisibili e non è influenzato da illusioni. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="colpo stordente"><a href="#skill" class="link">Colpo stordente</a></h3>
+                    <p class="coltext">Un Ninja di 14° livello, quando infligge un attacco furtivo contro un nemico, questi deve superare un Tiro salvezza su Tempra (Cd: 10+mod destrezza del ninja+ numero di dadi del furtivo), se lo fallisce, non sarà in grado di usare attacchi d’opportunità o reazioni per 1 round. <br>
+                        Questa abilità non funziona su creature immuni ai danni furtivi. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ombra2"><a href="#skill" class="link">Passo d'ombra superiore</a></h3>
+                    <p class="coltext">Un Ninja di 16° livello, è in grado di muoversi e stazionare su qualsiasi superficie, comprese pareti e soffitti. <br>
+                        Inoltre fintanto possiede punti Ki nella sua riserva, può muoversi normalmente attraverso qualsiasi terreno o magia che normalmente lo renderebbero intralciato.  <br>
+                        Spendendo 1 punto Ki, il Ninja è in grado di attraversare pareti non magiche dello spessore di 1,5m </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="assassinare"><a href="#skill" class="link">Assassinare</a></h3>
+                    <p class="coltext">Un ninja di Livello 18, può uccidere nemici che non sono in grado di difendersi. Per tentare di assassinare un bersaglio, il ninja deve prima studiarlo per 1 round come Azione Standard. Nel round seguente, se il ninja effettua un attacco furtivo contro il bersaglio e a questi è negato il suo bonus di Destrezza alla CA, l'attacco furtivo ha l'effetto addizionale di poter uccidere il bersaglio. Questo tentativo fallisce automaticamente se il bersaglio individua o riconosce il ninja come nemico. Se l'attacco furtivo ha successo e il bersaglio dell'attacco fallisce un Tiro Salvezza su Tempra, muore. La CD del Tiro Salvezza è pari a 10 +1/2 del livello del ninja + il modificatore di Potere del ninja. Se supera il Tiro Salvezza, il bersaglio subisce lo stesso i danni dell'attacco furtivo come di norma, ma è immune alla capacità Assassinare di quel ninja per 1 giorno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="nascondersi"><a href="#skill" class="link">Maestro del nascondersi</a></h3>
+                    <p class="coltext">Al 20° livello, il ninja diviene un vero maestro della sua arte. Come azione Standard può rendersi invisibile per 1 minuto x livello. Mentre è Invisibile grazie a questa capacità, il ninja non può essere individuato con nessun mezzo o incantesimo. <br>
+                        Da invisibile il Ninja può compiere qualsiasi azione senza tornare visibile (Anche attaccare o lanciare incantesimi). <br>
+                        Usare questa capacità consuma 2 punti della sua riserva ki. Inoltre, ogni volta che il ninja infligge danni con un attacco furtivo, può sacrificare dadi di danno aggiuntivi per applicare per 1 minuto una penalità a un punteggio di caratteristica del bersaglio pari al numero dei dadi sacrificati. Questa penalità non si cumula e non può ridurre il punteggio di una caratteristica a meno di 1.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

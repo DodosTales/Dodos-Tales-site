@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+
+        <h1 class="coltitle center">Alchimista</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Intelligenza</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe dell'alchimista sono: Artigianato, Conoscenze (arcane), Conoscenze (natura), Disattivare Congegni, Guarire, Percezione, Professione, Rapidità di Mano, Sapienza Magica, Sopravvivenza, Utilizzare Congegni Magici, Valutare e Volare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Gli alchimisti sono competenti nell’uso di tutte le armi semplici e nelle bombe. Sono anche competenti nelle armature leggere, ma non negli scudi.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 1d6</a>, <a href="#lanciare" class="link">Lanciare Oggetti</a>, <br>
+                    <a href="#pozioni" class="link">Mescere Pozioni</a>, <a href="#mutageno" class="link">Mutageno</a>
+                </tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#resistenza" class="link">Resistenza al Veleno +2</a>, <a href="#scoperta" class="link">Scoperta</a>, <br> <a href="#veleni" class="link">Uso dei Veleni</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#alchimia" class="link">Alchimia Rapida</a>,  <a href="#bomba" class="link">Bomba 2d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 3d6</a>, <a href="#resistenza" class="link">Resistenza al Veleno +4</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#avvelenamento" class="link">Avvelenamento Rapido</a>,  <a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 4d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#resistenza" class="link">Resistenza al Veleno +6</a>, <a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 5d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#scoperta" class="link">Scoperta</a>, <a href="#resistenza" class="link">Immunità al Veleno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 6d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 7d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#mutageno2" class="link">Mutageno Persistente</a>, <a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 8d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 9d6</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#alchimia2" class="link">Alchimia Istantanea</a>, <a href="#scoperta" class="link">Scoperta</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#bomba" class="link">Bomba 10d6</a> 
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#scoperta2" class="link">Grande Scoperta</a>
+                </td>
+                </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="bomba"><a href="#skill" class="link">Bomba</a></h3>
+                    <p class="coltext">Oltre agli estratti magici, gli alchimisti sono esperti nel mescolare rapidamente varie sostanze chimiche volatili infondendo in esse le loro riserve magiche per creare potenti bombe che possono lanciare sui loro nemici. Un alchimista può usare ogni giorno un numero di bombe pari al suo livello di classe + il suo modificatore di Intelligenza. Le bombe sono instabili e, se non utilizzate nel loro round di creazione, si degradano e divengono inerti: il loro metodo di fabbricazione impedisce che vengano creati ed immagazzinati grossi quantitativi di materiale esplosivo. Per creare una bomba l’alchimista deve usare una boccetta o una fiala contenente 30 grammi di liquido catalizzatore; l’alchimista può creare questo liquido da piccole quantità di sostanze chimiche provenienti da un laboratorio alchemico, e queste forniture possono essere ripristinate prontamente come per la borsa per componenti di un incantatore. La maggior parte degli alchimisti all’inizio della giornata crea un numero di fiale di catalizzatore pari al numero totale di bombe che può creare in quel giorno: una volta creata, una fiala di catalizzatore rimane utilizzabile dall’alchimista per anni. <br>
+
+                        Estrarre le componenti, creare e lanciare una bomba richiede un’azione standard che provoca un attacco di opportunità. Le bombe lanciate hanno una gittata di 6 metri ed utilizzano l’attacco speciale Lanciare Armi a Spargimento. Le bombe sono considerate armi e possono essere selezionate usando talenti come Arma Focalizzata e Tiro Ravvicinato. Con un colpo diretto, la bomba di un alchimista infligge 1d6 danni da fuoco + un danno addizionale pari al modificatore di Intelligenza dell’alchimista. Il danno della bomba di un alchimista aumenta di 1d6 ad ogni livello dispari dell’alchimista (questo danno bonus non viene moltiplicato in caso di Colpo Critico o usando talenti come Colpo Vitale). Il danno da spargimento della bomba di un alchimista è sempre pari al danno minimo della bomba (così se la bomba infligge 2d6+4 danni da fuoco per un colpo diretto, il suo danno da spargimento sarebbe 6 danni da fuoco). Quelli colpiti dal danno da spargimento possono tentare un Tiro Salvezza su Riflessi per dimezzare il danno. La CD di questo Tiro Salvezza è pari a 10 + 1/2 livello dell’alchimista + il modificatore di Intelligenza dell’alchimista. <br>
+                        
+                        Gli alchimisti possono imparare nuovi tipi di bombe come scoperte (vedi la capacità Scoperta) quando avanzano di livello. La bomba di un alchimista, come un estratto, diventa inerte se usata o trasportata da chiunque altro.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="lanciare"><a href="#skill" class="link">Lanciare oggetti</a></h3>
+                    <p class="coltext">Tutti gli alchimisti acquisiscono il talento Lanciare Oggetti come talento bonus al 1° livello. Un alchimista aggiunge il suo modificatore di Intelligenza al danno inflitto con armi a spargimento, inclusi i danni da spargimento. Questo danno bonus è già incluso nel privilegio di classe Bomba.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="pozioni"><a href="#skill" class="link">Mescere pozioni</a></h3>
+                    <p class="coltext">Al 1° livello, gli alchimisti ottengono Mescere Pozioni come talento bonus. Un alchimista può mescere pozioni di qualunque formula conosca (fino al 3° livello), usando il suo livello di alchimista come livello dell’incantatore. L’incantesimo deve essere uno di quelli che possono essere impiegati in una pozione. L’alchimista non ha bisogno di soddisfare i prerequisiti per questo talento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="mutageno"><a href="#skill" class="link">Mutageno</a></h3>
+                    <p class="coltext">Al 1° livello, un alchimista scopre come creare un mutageno che può ingerire per aumentare la sua prestanza fisica al costo della sua personalità. Serve 1 ora per mescere una dose di mutageno e, una volta pronto, mantiene il suo potere fino a che non viene usato. Un alchimista può avere solo una dose di mutageno alla volta, se ne mesce una seconda, qualsiasi mutageno preesistente diventa inerte. Come per un estratto o una bomba, un mutageno che non sia in possesso di un alchimista diventa inerte finché quest’ultimo non lo riprende. <br>
+
+                        Quando un alchimista mesce un mutageno, seleziona un punteggio di caratteristica fisica: Forza, Destrezza o Costituzione. Bere un mutageno è un’azione standard. Non appena ingerito, il mutageno fa diventare l’alchimista più grosso e bestiale, concedendogli Bonus di Armatura Naturale +2 e Bonus Alchemico +4 al punteggio della caratteristica selezionata per 10 minuti per livello dell’alchimista. Inoltre, mentre il mutageno fa effetto, l’alchimista subisce penalità –2 ad una delle sue caratteristiche mentali. Se il mutageno aumenta la Forza, la penalità si applica alla Intelligenza. Se aumenta la Destrezza, la penalità si applica alla Saggezza. Se aumenta la Costituzione, la penalità si applica al Carisma. <br>
+                        
+                        Un non alchimista che beve un mutageno deve superare un Tiro Salvezza su Tempra (CD 10 + 1/2 livello dell’alchimista + il modificatore di Intelligenza dell’alchimista) o diventa Nauseato per 1 ora; un non alchimista non può mai trarre benefici da un mutageno, ma un alchimista può ottenere gli effetti di un mutageno altrui se lo beve. (Anche se in caso l’altro alchimista ne crei un altro, gli effetti del mutageno “rubato” cessano immediatamente.) Gli effetti di un mutageno non si cumulano. Ogni volta che un alchimista beve un mutageno, gli effetti di qualsiasi mutageno precedente terminano immediatamente.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="resistenza"><a href="#skill" class="link">Resistenza al veleno</a></h3>
+                    <p class="coltext">Al 2° livello, un alchimista guadagna bonus +2 ai Tiri Salvezza contro Veleno. Questo bonus aumenta a +4 al 5° livello e poi di nuovo a +6 all’8° livello. Al 10° livello un alchimista diventa completamente immune al Veleno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="scoperta"><a href="#skill" class="link">Scoperta</a></h3>
+                    <p class="coltext">Al 2° livello, e poi di nuovo ogni 2 livelli successivi (fino al 18° livello), un alchimista effettua un’incredibile scoperta alchemica. Se non indicato diversamente, un alchimista non può selezionare una singola scoperta più di una volta. Alcune scoperte si possono effettuare solo se l’alchimista prima soddisfa certi prerequisiti. Le scoperte che modificano le bombe contrassegnate con un asterisco (*) non si cumulano. Solo una di queste scoperte può essere applicata ad una singola bomba. La CD di qualsiasi Tiro Salvezza richiesto da una scoperta è pari a 10 + 1/2 livello dell’alchimista + il modificatore di Intelligenza dell’alchimista.</p>
+                    <a href = "https://golarion.altervista.org/wiki/Alchimista/Scoperte" target="_blank" class="link">Elenco scoperte(golarion)</a>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="veleni"><a href="#skill" class="link">Uso dei veleni</a></h3>
+                    <p class="coltext">Gli alchimisti sono esperti nell’uso dei Veleni e, a partire dal 2° livello, non corrono mai il rischio di avvelenarsi per errore mentre applicano il Veleno su un’arma.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="alchimia"><a href="#skill" class="link">Alchimia rapida</a></h3>
+                    <p class="coltext">Al 3° livello, un alchimista può creare oggetti alchemici con stupefacente velocità. Ad un alchimista serve la metà del tempo normalmente richiesto per creare oggetti alchemici e può applicare del Veleno su un’arma come azione di movimento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="avvelenamento"><a href="#skill" class="link">Avvelenamento rapido</a></h3>
+                    <p class="coltext">
+                        Al 6° livello, un alchimista può applicare una dose di Veleno su un’arma come azione veloce.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="mutageno2"><a href="#skill" class="link">Mutageon persistente</a></h3>
+                    <p class="coltext">Al 14° livello, gli effetti di un mutageno durano per 1 ora per livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="alchimia2"><a href="#skill" class="link">Alchimia istantanea</a></h3>
+                    <p class="coltext">Al 18° livello, un alchimista può creare oggetti alchemici con velocità quasi soprannaturale. Può creare qualsiasi oggetto alchemico come azione di round completo se supera una prova di Artigianato (alchimia) ed ha disponibili le risorse adatte per procedere alla creazione. Può applicare del veleno su un’arma come azione immediata.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="scoperta2"><a href="#skill" class="link">Grande scoperta</a></h3>
+                    <p class="coltext">Al 20° livello, l’alchimista fa una grande scoperta. Apprende immediatamente due scoperte normali, ma anche una terza scelta dall’elenco sottostante, che rappresenta una scoperta davvero sbalorditiva di significativa importanza. Per molti alchimisti, la promessa di una di queste grandi scoperte è l’obiettivo principale dei loro esperimenti e del loro duro lavoro.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Eterna Giovinezza: </h3>
+                            <p class="coltext inline">l’Alchimista ha scoperto una cura contro l’invecchiamento e d’ora in poi non subisce le penalità ai punteggi di caratteristica fisica dovute all’avanzare dell’età. Se l’alchimista sta già subendo tali penalità, queste sono rimosse.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Guarigione Rapida: </h3>
+                            <p class="coltext inline">La carne dell’alchimista risponde ai danni con velocità sbalorditiva, concedendogli Guarigione Rapida 5.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Intelletto Risvegliato: </h3>
+                            <p class="coltext inline">L’esposizione continua dell’alchimista a strane sostanze alchemiche ha ampliato la sua mente. Il suo punteggio di Intelligenza aumenta permanentemente di 2 punti.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Mutageno Puro: </h3>
+                            <p class="coltext inline">Il mutageno dell’alchimista ora concede Bonus di Armatura Naturale +8 e Bonus Alchemico +8 a Forza, Destrezza e Costituzione. L’alchimista subisce penalità –2 a Intelligenza, Saggezza e Carisma finché il mutageno perdura (vedi Mutageno). Un alchimista deve possedere la scoperta Mutageno Maggiore prima di poter selezionare questa scoperta.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Pietra Filosofale: </h3>
+                            <p class="coltext inline">L’alchimista impara come creare la Pietra Filosofale e può farlo una volta al mese senza spendere nulla. Creare la Pietra Filosofale richiede 1 giorno di lavoro.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Tocco Velenoso: </h3>
+                            <p class="coltext inline">L’alchimista ottiene un tocco velenoso, come fosse sotto gli effetti di un incantesimo Veleno. Può sopprimere o attivare questa capacità come azione gratuita. L’aspetto fisico di come l’alchimista genera ed effettua il suo tocco velenoso varia da alchimista ad alchimista.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

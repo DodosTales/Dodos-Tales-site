@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Ladro</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">8+int</p>
+                    <p class="coltext">Le abilità di classe del ladro sono Acrobazia, Artigianato, Artista della Fuga, Camuffare, Conoscenze (dungeon), Conoscenze (locali), Diplomazia, Disattivare Congegni, Furtività, Intimidire, Intrattenere, Intuizione, Linguistica, Nuotare, Percezione, Professione, Raggirare, Rapidità di Mano, Scalare, Utilizzare Congegni Magici e Valutare.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I ladri sono competenti nell'uso di tutte le armi semplici più Arco Corto, Balestra a Mano, Manganello, Spada Corta e Stocco. Sono competenti nelle armature leggere, ma non negli scudi.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a class="link" href="#accurato">Addestramento Accurato</a>, 
+                    <a class="link" href="#furtivo">Attacco Furtivo +1d6</a>, <br>
+                    <a class="link" href="#trappole">Scoprire Trappole</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, 
+                    <a class="link" href="#eludere">Eludere</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a class="link" href="#accurato">Addestramento Accurato</a>, <a class="link" href="#furtivo">Attacco Furtivo +2d6</a>, <br>
+                    <a class="link" href="#pericolo">Senso del Pericolo +1</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, 
+                    <a class="link" href="#ferita"> Ferita Debilitante</a>, <br>
+                    <a class="link" href="#schivare">Schivare Prodigioso</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a class="link" href="#furtivo">Attacco Furtivo +3d6</a>,
+                    <a class="link" href="#vantaggio">Vantaggio del Ladro</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, <a class="link" href="#pericolo">Senso del Pericolo  +2</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#furtivo">Attacco Furtivo +4d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, <br>
+                     <a class="link" href="#schivare2">Schivare Prodigioso Migliorato</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#furtivo">Attacco Furtivo +5d6</a>, <a class="link" href="#pericolo">Senso del Pericolo +3</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, <a class="link" href="#dote2">Doti Avanzate</a>, <br> <a class="link" href="#vantaggio">Vantaggio del Ladro</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#accurato">Addestramento Accurato</a>, <a class="link" href="#furtivo">Attacco Furtivo +6d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, <a class="link" href="#pericolo">Senso del Pericolo +4</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#furtivo">Attacco Furtivo +7d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#furtivo">Attacco Furtivo +8d6</a>, <a class="link" href="#pericolo">Senso del Pericolo +5</a>, <br> <a class="link" href="#vantaggio">Vantaggio del Ladro</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#furtivo">Attacco Furtivo +9d6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#dote">Dote da Ladro</a>, <a class="link" href="#pericolo">Senso del Pericolo  +6</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#accurato">Addestramento Accurato</a>, <a class="link" href="#furtivo">Attacco Furtivo +10d6</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#maestro">Colpo da Maestro</a>, <a class="link" href="#dote">Dote da Ladro</a>, <br> <a class="link" href="#vantaggio">Vantaggio del Ladro</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="furtivo"><a href="#skill" class="link">Attacco furtivo</a></h3>
+                    <p class="coltext">Se un ladro è in grado di sorprendere un avversario quando non è in grado di difendersi efficacemente dal suo attacco, può colpire un punto vitale per infliggere Danni aggiuntivi. <br>
+
+                        L'attacco del ladro infligge danni aggiuntivi ogni volta che al suo bersaglio viene negato il bonus di Destrezza alla CA (che abbia o meno un bonus di Destrezza), o quando il ladro Attacca il Bersaglio ai Fianchi. I danni aggiuntivi sono 1d6 al 1° livello e 1d6 addizionali ogni 2 livelli da ladro successivi. Gli attacchi a distanza possono contare come attacchi furtivi solo se il bersaglio si trova entro 9 metri. Questo danno aggiuntivo è un danno a precisione e non viene moltiplicato in caso di colpo critico. <br>
+                        
+                        Con un'arma che infligge Danni Non Letali (come Colpo Senz'Armi, Frusta o Manganello), il ladro può compiere un attacco furtivo che infligge Danni Non Letali invece che danni letali. Non può usare un'arma che infligge danni letali per provocare Danni Non Letali con un attacco furtivo, neanche con la solita penalità –4. <br>
+                        
+                        Il ladro deve essere in grado di vedere il bersaglio abbastanza bene da notare un punto vitale ed essere in grado di raggiungerlo. Il ladro non può compiere un attacco furtivo mentre colpisce una creatura con Occultamento Totale.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="trappole"><a href="#skill" class="link">Scoprire trappole</a></h3>
+                    <p class="coltext">Il ladro aggiunge metà del proprio livello alle prove di Percezione per localizzare le trappole e alle prove di Disattivare Congegni (minimo +1). Un ladro può usare l'Abilità Disattivare Congegni per disarmare trappole magiche.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="accurato"><a href="#skill" class="link">Addestramento accurato</a></h3>
+                    <p class="coltext">Al 1° livello, un ladro ottiene Arma Accurata come Talento bonus. Inoltre, a partire dal 3° livello, può selezionare un qualsiasi tipo di arma adatta al talento Arma Accurata (come i Pugnali o gli Stocchi). Una volta fatta, questa scelta non può essere cambiata. Quando colpisce un avversario con l'arma selezionata, il ladro aggiunge il suo modificatore Destrezza anziché Forza ai danni. Se un qualsiasi effetto impedisce al ladro di aggiungere il suo modificatore Forza ai danni, non può aggiungere il suo modificatore di Destrezza. Il ladro può selezionare una seconda arma all'11° livello e una terza al 19°.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eludere"><a href="#skill" class="link">Eludere</a></h3>
+                    <p class="coltext">Al 2° livello, un ladro può evitare con grande agilità anche gli attacchi magici e insoliti. Se supera un Tiro Salvezza su Riflessi contro un attacco che normalmente infligge la metà dei danni in caso di riuscita del Tiro Salvezza, non subisce alcun danno. Questa capacità può essere usata solo se il ladro non indossa armature o ne indossa una leggera. Un ladro Indifeso non riceve i benefici di eludere.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="dote"><a href="#skill" class="link">Dote da ladro</a></h3>
+                    <p class="coltext">Mentre un ladro guadagna esperienza, apprende alcune capacità che lo aiutano e confondono i nemici. A partire dal 2° livello, un ladro ottiene una dote da ladro. Successivamente, ne ottiene una addizionale ogni 2 livelli da ladro. Un ladro può scegliere una dote specifica soltanto una volta. <br>
+
+                        Le doti contrassegnate con un asterisco aggiungono degli effetti all'attacco furtivo del ladro. Solo una di queste doti può essere applicata ad uno specifico attacco, e la decisione deve essere effettuata prima che l'attacco venga compiuto. <br>
+                        A partire dal livello 10 si possono prendere le doti Avanzate al posto di queste.
+                    </p>
+                    <a href = "https://golarion.altervista.org/wiki/Ladro_Rivisitato/Doti_da_Ladro#Lista_Doti_da_Ladro_Rivisitato" target="_blank" class="link">Elenco doti(golarion)</a>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="pericolo"><a href="#skill" class="link">Senso del pericolo</a></h3>
+                    <p class="coltext">Dal 3° livello, un ladro ottiene bonus ai Tiri Salvezza su Riflessi effettuati per evitare le trappole e bonus di schivare +1 alla CA contro gli attacchi effettuati dalle trappole. Inoltre, ottiene bonus +1 alle prove di Percezione effettuate per evitare di essere colto di sorpresa da un nemico. Questi bonus aumentano di 1 ogni tre livelli da ladro successivi (fino a un massimo di +6 al 18° livello). Questa capacità conta come percepire trappole ai fini di qualsiasi prerequisito di talenti o classi, e può essere sostituito da qualsiasi capacità sostitutiva di un archetipo che sostituisce percepire trappole. I bonus di questa capacità si cumulano con quelli ottenuti da percepire trappole (se il ladro ha questo privilegio da un'altra classe).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ferita"><a href="#skill" class="link">Ferita debilitante</a></h3>
+                    <p class="coltext">Al 4° livello, quando un ladro infligge danno a un avversario con il suo attacco furtivo, può decidere di debilitarlo, infliggendogli una penalità per 1 round (in aggiunta a qualsiasi altra penalità provocata da una dote da ladro o altre capacità speciali). Il ladro può decidere di applicare una qualunque penalità delle seguenti quando infligge danni con un attacco furtivo.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Disorientato: </h3>
+                            <p class="coltext inline">Il bersaglio subisce penalità -2 ai tiri per colpire. Inoltre, subisce penalità addizionale -2 agli attacchi effettuati contro il ladro. Al 10° e al 16° livello, la penalità agli attacchi effettuati contro il ladro aumenta di -2 (fino a un massimo di -8).</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ostacolato: </h3>
+                            <p class="coltext inline">La velocità del bersaglio è ridotta della metà (fino a un minimo di 1,5 metri) per tutti i modi di movimento. Inoltre, il bersaglio non può compiere il Passo di 1,5 metri.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Sconcertato: </h3>
+                            <p class="coltext inline">Il bersaglio è disorientato, e subisce penalità -2 alla CA. Inoltre, subisce penalità addizionale -2 contro gli attacchi del ladro. Al 10° e al 16° livello, la penalità alla CA contro gli attacchi effettuati dal ladro aumenta di -2 (fino a un massimo di -8). Queste penalità non si cumulano con se stesse, ma ulteriori attacchi furtivi andati a segno estendono la loro durata di 1 round.</p>
+                        </li>
+                    </ul>
+                    <p class="coltext">Una creatura non può subire più di una penalità alla volta da questa capacità. Se una nuova penalità viene applicata, la precedente termina immediatamente. Qualsiasi forma di guarigione applicata a un bersaglio soggetto a una di queste penalità la rimuove.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare"><a href="#skill" class="link">Schivare prodigioso</a></h3>
+                    <p class="coltext">Dal 4° livello, il ladro acquisisce la capacità di reagire al pericolo prima di quanto i suoi sensi gli avrebbero normalmente permesso di fare. Il ladro non viene mai colto impreparato, né perde il suo bonus di Destrezza alla CA se l'attaccante è invisibile. Tuttavia, perde il bonus di Destrezza alla CA se è Immobilizzato. Un ladro con questa capacità perde comunque il bonus di Destrezza alla CA se un avversario usa con successo un'azione di fintare contro di lui. <br>
+
+                        Se un ladro possiede già schivare prodigioso come capacità di un'altra classe, guadagna automaticamente al suo posto Schivare Prodigioso Migliorato.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="vantaggio"><a href="#skill" class="link">Vantaggi del ladro</a></h3>
+                    <p class="coltext">Al 5° livello, un ladro padroneggia una singola abilità a tal punto da andare oltre i normali confini della stessa, compiendo gesta che altri possono solo sognare. Il ladro ottiene i poteri di <a href = "https://golarion.altervista.org/wiki/Sblocchi_di_Abilit%C3%A0" target="_blank" class="link">Sblocco di abilità(golarion)</a>, per tale abilità, come appropriato a seconda del numero di gradi spesi in essa. Al 10°,15° e 20° livello, seleziona un'abilità addizionale e ottiene anche per queste i poteri di Sblocco di Abilità.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare2"><a href="#skill" class="link">Schivare prodigioso migliorato</a></h3>
+                    <p class="coltext">Dall'8° livello in poi, un ladro non può più essere attaccato ai fianchi. <br>
+
+                        Questa difesa nega ad altri ladri la possibilità di utilizzare il fiancheggiamento per compiere un attacco furtivo, a meno che l'attaccante non abbia almeno quattro livelli in più del ladro. <br>
+                        
+                        Se un ladro ha già schivare prodigioso da un'altra classe, i livelli delle classi che forniscono schivare prodigioso si cumulano per determinare il livello minimo che un ladro deve avere per poterlo attaccare ai fianchi.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="dote2"><a href="#skill" class="link">Dote da ladro avanzate</a></h3>
+                    <p class="coltext">Al 10° livello e ogni 2 livelli successivi, un ladro può selezionare una delle seguenti doti avanzate al posto di una dote da ladro.</p>
+                    <a href = "https://golarion.altervista.org/wiki/Ladro_Rivisitato/Doti_da_Ladro#Lista_Doti_da_Ladro_Rivisitato_Avanzate" target="_blank" class="link">Elenco doti avanzate(golarion)</a>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="maestro"><a href="#skill" class="link">Colpo da maestro</a></h3>
+                    <p class="coltext">Al 20° livello, un ladro diventa incredibilmente mortale con i suoi attacchi furtivi. Ogni volta che un ladro infligge danno con un attacco furtivo, può scegliere uno dei seguenti tre effetti: il bersaglio è addormentato per 1d4 ore, paralizzato per 2d6 round, o ucciso. A prescindere dall'effetto scelto, il bersaglio riceve un Tiro Salvezza su Tempra per negare l'effetto addizionale. La CD del Tiro Salvezza è pari a 10 + la metà del livello del ladro + il modificatore di Destrezza del ladro. Una volta che una creatura è stata bersaglio di un colpo da maestro, che abbia o meno superato il Tiro Salvezza, è immune al colpo da maestro di quel ladro per 24 ore. Le creature immuni agli attacchi furtivi sono immuni anche a questa capacità.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

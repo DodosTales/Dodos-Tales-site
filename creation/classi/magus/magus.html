@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Magus</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Intelligenza</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">2+int</p>
+                    <p class="coltext">Le abilità di classe del magus sono: Artigianato, Cavalcare, Conoscenze (arcane), Conoscenze (dungeon), Conoscenze (piani), Intimidire, Nuotare, Professione, Sapienza Magica, Scalare, Utilizzare Congegni Magici, Volare, Percezione, Reazione.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenze: </h3>
+                    <p class="coltext inline">Il magus è competente nell'uso di tutte le armi semplici e da guerra e nelle armature leggere.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#combattimento" class="link">Incantesimi in combattimento</a>, <br>
+                    <a href="#riserva" class="link">Riserva arcana</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#colpo" class="link">Colpo incantato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#segreto" class="link">Segreto del magus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#recupero" class="link">Recupero mana</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <p class="coltext">Talento bonus</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#segreto" class="link">Segreto del magus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#armature" class="link">Armature medie</a>, <br>
+                    <a href="#difensiva" class="link">Magia difensiva</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#combattimento2" class="link">Incantesimi in combattimento migliorati</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#segreto" class="link">Segreto del magus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    <a href="#guerriero" class="link">Addestramento da guerriero</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    <a href="#recupero2" class="link">Recupero mana migliorato</a>, <br>
+                    <p class="coltext">Talento bonus</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#segreto" class="link">Segreto del magus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#armature2" class="link">Armature pesanti</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">
+                    <a href="#combattimento3" class="link">Incantesimi in combattimento superiori</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+11/+6/+1</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">
+                    <a href="#segreto" class="link">Segreto del magus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <a href="#contrattacco" class="link">Contrattacco</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+12/+7/+2</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <p class="coltext">Talento bonus</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+13/+8/+3</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">
+                    <a href="#segreto" class="link">Segreto del magus</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+14/+9/+4</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">
+                    <a href="#superiore" class="link">Accesso agli incantesimi superiore</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+15/+10/+5</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">
+                    <a href="#magus" class="link">Vero magus</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="combattimento"><a href="#skill" class="link">Incantesimi in combattimento</a></h3>
+                    <p class="coltext">Al 1° livello, un magus apprende come lanciare incantesimi e brandire armi contemporaneamente. Funziona in modo simile al combattimento con due armi, ma l’arma secondaria è un incantesimo che deve essere lanciato. Per usare questa capacità il magus deve avere una mano libera (anche se l’incantesimo che lancia non ha componenti somatiche), impugnando un’arma da mischia leggera o a una mano nell'altra. Come azione di round completo, può sferrare tutti i suoi attacchi con la sua arma da mischia con una penalità -2 e può inoltre lanciare un qualsiasi incantesimo della sua lista degli incantesimi da magus con un tempo di lancio pari a 1 azione standard. Se lancia questo incantesimo sulla difensiva, può decidere di subire una penalità addizionale ai suoi Tiri per Colpire, fino a un massimo pari al suo bonus di Intelligenza, e sommare questo ammontare come bonus di circostanza alla sua prova di concentrazione. Se la prova fallisce, l’incantesimo è perso, ma gli attacchi subiscono lo stesso la penalità. Un magus può scegliere se prima lanciare l’incantesimo o prima attaccare, ma se ha più di un attacco, non può lanciare l'incantesimo tra gli attacchi con l’arma.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="riserva"><a href="#skill" class="link">Riserva arcana</a></h3>
+                    <p class="coltext">Al 1° livello, il magus ottiene una riserva di mistiche energie arcane cui può attingere per alimentare i suoi poteri e potenziare le sue armi. Questa riserva arcana ha un numero di punti pari alla metà del suo livello da magus (minimo 1) + il suo modificatore di Intelligenza. Questa riserva si ricarica una volta al giorno quando il magus prepara i suoi incantesimi. Al 1°livello, un magus può spendere un punto della sua riserva arcana come azione veloce per concedere a qualsiasi arma impugni un Bonus di Potenziamento +1 per 1 minuto. Per ogni quattro livelli dopo il 1°, l’arma ottiene un ulteriore bonus di potenziamento +1, fino ad un massimo di +5 al 17° livello. Questi bonus possono essere aggiunti all’arma, cumulandosi con i potenziamenti preesistenti sull'arma fino ad un massimo di +5. Gli usi di questa capacità non si cumulano tra loro. <br>
+                        Al 5° livello, questi bonus possono essere usati per aggiungere le seguenti proprietà delle armi: Affilata, Danzante, Esplosione di Fiamme, Esplosione di Ghiaccio, Esplosione Folgorante, Folgorante, Gelida, Infuocata, Velocità o Vorpal. Aggiungere queste proprietà consuma un ammontare del bonus pari al modificatore del prezzo base della proprietà magica. Queste proprietà possono essere aggiunte a qualsiasi arma che già le possieda, ma si duplicano senza cumularsi. Se l’arma non è magica, bisogna aggiungere almeno un bonus di potenziamento +1 prima di qualsiasi altra proprietà. Questi bonus e proprietà vengono decisi quando viene speso il punto della riserva arcana e non possono essere modificati fino alla prossima volta in cui il magus utilizza questa capacità. Questi bonus non funzionano se l’arma viene impugnata da qualcuno che non sia il magus. <br>
+                        Un magus può potenziare solo un’arma alla volta in questa maniera. Se utilizza nuovamente questa capacità, gli effetti del precedente utilizzo terminano immediatamente.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="colpo"><a href="#skill" class="link">Colpo incantato</a></h3>
+                    <p class="coltext">Al 2° livello, ogni volta che un magus lancia un incantesimo con raggio di azione “contatto” della lista degli incantesimi da magus, può sprigionarlo attraverso qualsiasi arma che impugni come parte di un attacco in mischia. Al posto del normale attacco di contatto in mischia gratuito sferrato con l’incantesimo, un magus può effettuare un unico attacco in mischia gratuito con una sua arma come parte del lancio di questo incantesimo. Se ha successo, questo attacco in mischia infligge sia i suoi danni normali che gli effetti dell’incantesimo. Se usata con incantesimi in combattimento, anche questo attacco in mischia subisce tutte le penalità inflitte dalla capacità. <br>
+                Questo attacco utilizza l'intervallo di critico dell'arma (20, 19-20, o 18-20, eventualmente modificato dalla proprietà Affilata o da effetti simili), ma gli effetti dell'incantesimo infliggono solo danni raddoppiati (x2) ad un colpo critico, mentre i danni dell'arma utilizzano il proprio modificatore di critico.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="segreto"><a href="#skill" class="link">Segreto del magus</a></h3>
+                    <p class="coltext">Quando guadagna un livello, un magus apprende segreti specifici riguardanti il suo specifico modo di fondere possanza marziale e abilità magiche. A partire dal 3° livello, un magus ottiene un segreto del magus. Ottiene un segreto del magus addizionale ogni tre livelli da magus dopo il 3°. Un magus non può selezionare un segreto del magus più di una volta. Un segreto del magus che agisce sugli incantesimi può essere usato solo per modificare gli incantesimi della lista degli incantesimi da magus, a meno che non sia indicato diversamente. </p>
+                    <a href="https://golarion.altervista.org/wiki/Magus/Segreti" target="_blank" class="link">Segreti (golarion)</a>
+                    <p class="coltext">L'unico segreto modificato è il seguente: </p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle">Misto di incantesimi: </h3>
+                            <p class="coltext">Il Magus apprende un nuovo incantesimo dalla lista dei Doni Minori </p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="recupero"><a href="#skill" class="link">Recupero mana: </a></h3>
+                    <p class="coltext">Al 4° livello, il magus apprende come usare la sua riserva per recuperare il Mana.
+                        Con una azione veloce può recuperare il Mana spendendo i punti dalla sua Riserva arcana. 
+                        Ogni punto della riserva rigenera 1d8+lvl del Magus al mana. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="difensiva"><a href="#skill" class="link">Magia difensiva: </a></h3>
+                    <p class="coltext">Al 7° livello, Il Magus, come azione Immediata, può spendere 1 punto della sua Riserva Arcana per sommare il suo modificatore intelligenza ad un Ts o alla Ca (Deviazione) per il round successivo. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armature"><a href="#skill" class="link">Armature medie: </a></h3>
+                    <p class="coltext">Al 7° livello, un magus diventa competente nelle armature medie. Un magus può lanciare incantesimi da magus mentre indossa un’armatura media senza incorrere nelle normali probabilità di fallimento degli incantesimi arcani. Come qualsiasi altro incantatore arcano, un magus che indossa un’armatura pesante o usa uno scudo incorre nella probabilità di fallimento degli incantesimi arcani se l’incantesimo lanciato ha componenti somatiche.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="combattimento2"><a href="#skill" class="link">Incantesimi in combattimento migliorati: </a></h3>
+                    <p class="coltext">All'8° livello, la capacità del magus di lanciare incantesimi e sferrare attacchi migliora. Quando usa la capacità incantesimi in combattimento, il magus riceve automaticamente un bonus di circostanza +2 alle prove di concentrazione, che si sommano a qualsiasi altro bonus ottenuto scegliendo di subire penalità ai tiri per colpire.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="guerriero"><a href="#skill" class="link">Addestramento da guerriero: </a></h3>
+                    <p class="coltext">A partire dal 10° livello, un magus conta metà del suo livello da magus come livello da guerriero allo scopo di qualificarsi per i talenti. Se ha livelli da guerriero, questi livelli si cumulano.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="recupero2"><a href="#skill" class="link">Recupero mana migliorato: </a></h3>
+                    <p class="coltext">Al 11° livello, il magus apprende come usare la sua riserva per recuperare il Mana.
+                        Con una azione veloce può recuperare il Mana spendendo i punti dalla sua Riserva arcana. 
+                        Ogni punto della riserva rigenera 2d8+lvl del Magus al mana. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armature2"><a href="#skill" class="link">Armature pesanti: </a></h3>
+                    <p class="coltext">Al 13° livello, un magus diventa competente nelle armature pesanti. Un magus può lanciare incantesimi da magus mentre indossa un’armatura pesante senza incorrere nelle normali probabilità di fallimento degli incantesimi arcani. Come qualsiasi altro incantatore arcano, un magus che usa uno scudo incorre nella probabilità di fallimento degli incantesimi arcani se l’incantesimo lanciato ha componenti somatiche.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="combattimento3"><a href="#skill" class="link">Incantesimi in combattimento superiori:</a></h3>
+                    <p class="coltext">Al 14° livello, il magus ottiene la capacità di lanciare incantesimi e sferrare attacchi in mischia in modo impeccabile. Ogni volta che usa la sua capacità incantesimi in combattimento, il bonus alle sue prove di concentrazione è pari al doppio dell’ammontare della penalità all’attacco che sceglie di subire.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="contrattacco"><a href="#skill" class="link">Contrattacco</a></h3>
+                    <p class="coltext">Al 16° livello, ogni volta che un nemico entro la portata del magus lancia con successo un incantesimo sulla difensiva, provoca un attacco di opportunità da parte del magus dopo aver completato l’incantesimo. Questo attacco di opportunità non può interrompere l’incantesimo.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="superiore"><a href="#skill" class="link">Accesso agli incantesimi superiore: </a></h3>
+                    <p class="coltext">Al 19° livello, il Magus tira nuovamente 3d100, sceglie un nuovo Dono, e ne apprende immediatamente un numero di nuovi incantesimi pari al proprio Modificatore intelligenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="magus"><a href="#skill" class="link">Vero magus:</a></h3>
+                    <p class="coltext">Al 20° livello, il magus diventa un maestro negli incantesimi e nel combattimento. Ogni volta che usa la sua capacità incantesimi in combattimento, non ha bisogno di effettuare una prova di concentrazione per lanciare l’incantesimo sulla difensiva. Quando il magus usa incantesimi in combattimento ed il bersaglio del suo incantesimo è la stessa creatura che sta attaccando in mischia, può scegliere di incrementare la CD per resistere all’incantesimo di +2, ottenere un bonus di circostanza +2 a qualsiasi prova per superare la resistenza agli incantesimi o ottenere un bonus di circostanza +2 ai tiri per colpire effettuati contro il bersaglio durante il proprio turno.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

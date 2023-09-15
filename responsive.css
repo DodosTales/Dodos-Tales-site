@@ -1,0 +1,86 @@
+/*file con il container e la parte responsive*/
+.container{
+    max-width: 1320px;
+    height: 100%;
+    margin:0 auto;
+    display: flex;
+}
+
+@media (max-width: 576px){
+    *{
+        font-size: 1.01em;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+    .dodopos{
+        margin-left: 1.6em;
+    }
+
+    .button-led{
+        width: 20em;
+    }
+
+    .button-led-back{
+        width: 20em;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 767px){
+    *{
+        font-size: 1.01em;
+    }
+
+    .container{
+       max-width: 540px;
+    }
+
+    .flex-row{
+        flex-direction: column;
+    }
+
+    .button-led{
+        width: 20em;
+    }
+
+    .button-led-back{
+        width: 20em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    *{
+        font-size: 1.01em;
+    }
+
+    .container{
+       max-width: 720px;
+    }
+
+    .button-led{
+        width: 20em;
+    }
+
+    .button-led-back{
+        width: 20em;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .container{
+       max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px){
+    .container{
+       max-width: 1140px;
+    }
+}
+

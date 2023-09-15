@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Monaco</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D4</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Potere</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità:</h3>
+                    <p class="coltext inline">Le Abilità di classe del Monaco sono Acrobazia, Artigianato, Artista della Fuga, Cavalcare, Conoscenze (religioni), Conoscenze (storia), Furtività, Intimidire, Intrattenere, Intuizione, Nuotare, Percezione, Professione e Scalare.</p>
+                    <p class="coltext">4+int</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I monaci sono competenti nell'uso di Ascia, balestra (Leggera o Pesante), Bastone Ferrato, Fionda, Giavellotto, Kama, Lancia, Lancia Corta, Nunchaku, Pugnale, Randello, Sai, Shuriken, Siangham, Spada Corta, e in tutte le armi con la qualità speciale delle armi monaco. I monaci non sono competenti nelle armature e negli scudi. Quando indossa un'armatura, utilizza uno scudo, o trasporta un carico medio o pesante, un monaco perde il bonus alla CA, insieme alle sue capacità Movimento Veloce e Raffica di Colpi.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th>
+                <th class="coltitle">Danno Senz'Armi
+                </th>
+                <th class="coltitle">Bonus CA
+                </th>
+                <th class="coltitle">Movimento Veloce
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#senzarmi" class="link">Colpo Senz'Armi</a>, 
+                    <a href="#stordente" class="link">Pugno Stordente</a>, <br>
+                    <a href="#raffica" class="link">Raffica di Colpi</a>, 
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+                <td class="coltext">1d6
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0 m
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#eludere" class="link">Eludere</a>, <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+                <td class="coltext">1d6
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0 m
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#movimento" class="link">Movimento Veloce</a>, <br>
+                 <a href="#ki" class="link">Colpo Ki (magia), Riserva Ki</a>
+                </td>
+                <td class="coltext">1d6
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3 m
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#mente" class="link">Mente Lucida</a>, <br>
+                    <a href="#ki2" class="link">Potere Ki</a>
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3 m
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#stile" class="link">Colpo di Stile</a>, <br>
+                    <a href="#purezza" class="link">Purezza del Corpo</a>
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3 m
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#ki2" class="link">Potere Ki</a>, <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+6 m
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#ki" class="link">Colpo Ki (ferro freddo/argento)</a>
+                </td>
+                <td class="coltext">1d8
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+6 m
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#ki2" class="link">Potere Ki</a>
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6 m
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#stile" class="link">Colpo di Stile</a>, <a href="#eludere2" class="link">Eludere Migliorato</a>
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+9 m
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#ki" class="link">Colpo Ki  (legale)</a>, <a href="#ki2" class="link">Potere Ki</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+9 m
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#raffica" class="link">Raffica di Colpi</a>
+                </td>
+                <td class="coltext">1d10
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+9 m
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#ki2" class="link">Potere Ki</a>
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+12 m
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#stile" class="link">Colpo di Stile</a>, <br>
+                    <a href="#lingua" class="link">Lingua del Sole e della Luna</a>
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+12 m
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#ki2" class="link">Potere Ki</a>, <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+12 m
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#stile" class="link">Colpo di Stile (2/round)</a>
+                </td>
+                <td class="coltext">2d6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+15 m
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#ki" class="link">Colpo Ki (adamantio)</a>, <a href="#ki2" class="link">Potere Ki</a>
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+15 m
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#stile" class="link">Colpo di Stile</a>, <br>
+                    <a href="#tempo" class="link">Corpo Senza Tempo</a>
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+15 m
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#ki2" class="link">Potere Ki</a>, <a href="#talento" class="link">Talento Bonus</a>
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+18 m
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#mente2" class="link">Mente Impeccabile</a>
+                </td>
+                <td class="coltext">2d8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+18 m
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#perfezione" class="link">Perfezione Interiore</a>, <a href="#ki2" class="link">Potere Ki</a>
+                </td>
+                <td class="coltext">2d10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+18 m
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle"><a href="#skill" class="link">Bonus alla CA</a></h3>
+                    <p class="coltext">Quando ha ingombro nullo o leggero e non indossa l'armatura, un Monaco somma il suo bonus di Saggezza (se presente) alla CA e alla DMC. In aggiunta un Monaco guadagna bonus +1 alla CA e alla DMC al 4° livello. Questo bonus aumenta di +1 ogni quattro livelli da monaco successivi, fino ad un massimo di +5 al 20° livello. <br>
+
+                        Questi bonus alla CA si applicano anche contro gli attacchi di contatto o quando il Monaco è Impreparato. Egli perde questi bonus quando è Immobilizzato o Indifeso, quando indossa una qualsiasi armatura, porta uno scudo o trasporta un carico medio o pesante.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento bonus</a></h3>
+                    <p class="coltext">Al 1° livello, al 2° livello e ogni quattro livelli successivi, un monaco può selezionare un Talento Bonus. Questi bonus devono essere scelti dall'elenco seguente: </p>
+
+                        <ul>
+                            <li class="coltext">Cogliere di Sorpresa</li>
+                            <li class="coltext">Deviare Frecce</li>
+                            <li class="coltext">Lanciare Oggetti</li>
+                            <li class="coltext">Lottare Migliorato</li>
+                            <li class="coltext">Riflessi in Combattimento</li>
+                            <li class="coltext">Schivare</li>
+                            <li class="coltext">Stile dello Scorpione</li>
+                        </ul>
+
+                       <p class="coltext">Al 6° livello i seguenti talenti sono aggiunti all'elenco:</p> 
+
+                        <ul>
+                            <li class="coltext">Disarmare Migliorato</li>
+                            <li class="coltext">Fintare Migliorato</li>
+                            <li class="coltext">Mobilità</li>
+                            <li class="coltext">Pugno della Gorgone</li>
+                            <li class="coltext">Sbilanciare Migliorato</li>
+                            <li class="coltext">Spingere Migliorato</li>
+                        </ul>
+
+                       <p class="coltext"> Al 10° livello i seguenti talenti sono aggiunti all'elenco:</p>
+
+                        <ul>
+                            <li class="coltext">Afferrare Frecce</li>
+                            <li class="coltext">Attacco Rapido</li>
+                            <li class="coltext">Critico Migliorato</li>
+                            <li class="coltext">Collera della Medusa</li>
+                        </ul>
+
+                       <p class="coltext">Un Monaco non ha bisogno di soddisfare nessuno dei prerequisiti normalmente associati a questi talenti per selezionarli.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="raffica"><a href="#skill" class="link">Raffica di colpi</a></h3>
+                    <p class="coltext">Al 1° livello, un Monaco può effettuare una Raffica di Colpi come azione di attacco completo. Quando compie una Raffica di Colpi, il Monaco può eseguire un attacco addizionale al suo bonus attacco base migliore. Questo attacco addizionale si somma con gli attacchi bonus forniti da Velocità e altri effetti simili. Quando usa questa capacità, il Monaco può effettuare questi attacchi usando qualsiasi combinazione di colpi senz'armi e di attacchi con armi con la qualità speciale monaco. Non subisce alcuna penalità per l'utilizzo di più armi quando usa la raffica di colpi, ma se lo fa non ottiene attacchi aggiuntivi oltre a quelli concessi dalla raffica di colpi (ottiene comunque attacchi aggiuntivi derivanti da un alto bonus di attacco base, da questa capacità, da Velocità ed effetti simili). <br>
+                        Al 11° livello, un monaco può compiere un ulteriore attacco col suo bonus di attacco base migliore quando utilizza una raffica di colpi. Questo attacco si somma con il primo attacco di aggiuntivo della raffica di colpi e con attacchi aggiuntivi ottenuti da Velocità ed effetti simili.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="stordente"><a href="#skill" class="link">Pugno stordente</a></h3>
+                    <p class="coltext">Al 1° livello, il Monaco ottiene Pugno Stordente come Talento Bonus, anche se non ne soddisfa i prerequisiti. Al 4° livello e ogni 4 livelli successivi, il Monaco guadagna la capacità di applicare una nuova condizione sul bersaglio del suo Pugno Stordente. Questa condizione sostituisce lo stordimento del bersaglio per 1 round, ed un tiro salvezza riuscito ne nega l'effetto. Al 4° livello può scegliere di rendere il bersaglio Affaticato. All'8° livello può rendere il bersaglio Infermo per 1 minuto. Al 12° livello può rendere il bersaglio Barcollante per 1d6+1 round. Al 16° livello può permanentemente Accecare o Assordare il bersaglio. Al 20° livello può Paralizzare il bersaglio per 1d6+1 round. Il monaco deve scegliere quale condizione applicare prima di effettuare il tiro per colpire. Questi effetti non si cumulano l'uno con l'altro (una creatura Affaticata da Pugno Stordente non può diventare Esausta se colpita nuovamente da Pugno Stordente), ma i colpi aggiuntivi ne aumentano la durata.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="senzarmi"><a href="#skill" class="link">Colpo senz'armi</a></h3>
+                    <p class="coltext">Al 1° livello, un Monaco ottiene Colpo Senz'Armi Migliorato come Talento Bonus. Gli attacchi di un Monaco possono essere portati con i pugni, i gomiti, le ginocchia o i piedi. Ciò significa che un monaco può effettuare colpi senz'armi anche quando non ha le mani libere. Non esiste l'equivalente dell'attacco con mano secondaria per un monaco che colpisce senz'armi. Un monaco può quindi applicare il suo pieno bonus di Forza ai tiri per i danni a tutti i suoi colpi senz'armi. I colpi senz'armi del Monaco infliggono danni letali, ma può decidere di infliggere danni non letali senza alcuna penalità al tiro per colpire. Il monaco ha a disposizione tale scelta anche quando è in lotta. <br>
+
+                        Il Colpo Senz'Armi di un Monaco è considerato sia un'arma manufatta che un'arma naturale ai fini degli incantesimi o effetti che potenziano o migliorano le armi manufatte o le armi naturali.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eludere"><a href="#skill" class="link">Eludere</a></h3>
+                    <p class="coltext">Dal 2° livello, un Monaco può evitare i danni di molti attacchi ad area. Se supera un tiro salvezza su Riflessi contro un attacco che infligge normalmente la metà dei danni in caso di tiro salvezza riuscito, non subisce invece alcun danno. La capacità di eludere può essere usata solo se il Monaco indossa un'armatura leggera o nessuna armatura. Un Monaco Indifeso non riceve i benefici di eludere.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="movimento"><a href="#skill" class="link">Movimento veloce</a></h3>
+                    <p class="coltext">Al 3° livello, il Monaco ottiene un bonus di potenziamento alla sua velocità sul terreno. Un monaco in armatura o che trasporta un carico medio o pesante perde questa velocità extra.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ki"><a href="#skill" class="link">Riserva ki</a></h3>
+                    <p class="coltext">Al 3° livello, un Monaco guadagna una riserva di punti ki, un'energia soprannaturale che può impiegare per compiere imprese eccezionali. Il numero di punti nella riserva ki del Monaco è uguale alla metà del livello del Monaco + il suo modificatore di POtere. Finché ha almeno 1 punto della sua riserva ki, il Monaco può utilizzare un colpo ki. </p>
+                        <ul>
+                            <li class="coltext">Al 3° livello, il colpo ki permette di considerare gli attacchi senz'armi del Monaco come armi magiche al fine di superare la riduzione del danno.</li>
+                            <li class="coltext">Al 7° livello, i suoi attacchi senz'armi sono considerati anche armi d'argento e di ferro freddo al fine di superare la riduzione del danno.</li>
+                            <li class="coltext">Al 10° livello, i suoi attacchi senz'armi sono considerati anche armi legali al fine di superare la riduzione del danno.</li>
+                            <li class="coltext">Al 16° livello, i suoi attacchi senz'armi sono considerati come armi di Adamantio al fine di superare la riduzione del danno e la durezza.</li>
+                        </ul>
+                        <p class="coltext">Spendendo 1 punto dalla sua riserva ki come azione veloce, un Monaco può effettuare un attacco addizionale al suo bonus di attacco migliore quando compie la Raffica di Colpi. Questo attacco bonus si somma a tutti gli attacchi ottenuti dalla Raffica di Colpi, e a quelli ottenuti da Velocità ed effetti simili. Con l'avanzare dei livelli, il monaco ottiene ulteriori poteri che consumano i punti dalla sua riserva ki. <br>
+
+                        La riserva ki viene reintegrata al mattino dopo 8 ore di riposo o meditazione; queste ore non devono essere necessariamente consecutive.
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ki2"><a href="#skill" class="link">Poteri Ki</a></h3>
+                    <p class="coltext">Al 4° livello e ogni 2 livelli successivi, un Monaco può selezionare un potere ki. Questi poteri permettono al monaco di compiere incredibili imprese di potere mistico e prodezze acrobatiche spendendo punti della sua riserva ki. Una volta che un potere ki è stato selezionato, questa scelta non può essere cambiata. Alcuni poteri ki richiedono che il Monaco sia di un determinato livello o superiore per essere scelti. A meno che non sia indicato diversamente, un Monaco non può selezionare un potere ki più di una volta.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Anima Adamantina (Str):</h3>
+                            <p class="coltext inline">un Monaco può spendere 2 punti dalla sua riserva ki come azione veloce per ottenere Resistenza agli Incantesimi pari al suo livello da Monaco +10. Questa Resistenza agli Incantesimi dura un numero di round pari al livello da Monaco. Un Monaco deve essere almeno di 12° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Blocco del Ki (Sop):</h3>
+                            <p class="coltext inline">un Monaco con questo potere può spendere un punto dalla sua riserva ki come azione gratuita prima di effettuare un colpo senz'armi contro un avversario. Se l'attacco va a segno, il monaco interrompe il flusso di ki del bersaglio. Se il Monaco infligge danni al bersaglio del suo attacco, il costo per attivare i poteri ki del nemico aumenta di 1 per un'ora. Se il Monaco spende 2 punti dalla sua riserva ki, può usare questo potere per influenzare la scorta arcana, i punti grinta, l'ispirazione o i punti eleganza invece della sua riserva ki. Gli effetti di questa abilità non sono cumulativi, ma colpi addizionali ne aumentano la durata di un'ora per ogni colpo. Un Monaco deve essere almeno di 10° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Caduta Lenta (Sop): </h3>
+                            <p class="coltext inline">un Monaco può sfruttare un muro che sia a un braccio di distanza per rallentare la sua caduta spendendo 1 punto della riserva ki. Quando usa questo potere, il monaco non subisce danno dalla caduta (come per Caduta Morbida), ma deve essere adiacente a un muro per l'intera lunghezza della caduta (anche se questo potere può essere usato per ridurre il danno da caduta se il monaco è adiacente a un muro per solo una parte della caduta).</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Cavalcatura Ki (Sop): </h3>
+                            <p class="coltext inline">un Monaco con questo potere può spendere un punto della sua riserva ki come azione standard per concedere 2 punti ferita temporanei per livello del monaco alla sua cavalcatura per 1 ora per livello da monaco. Fintanto che sono adiacenti o il monaco la sta cavalcando, la sua cavalcatura condivide i suoi benefici di bonus alla CA, Colpo ki, Eludere, Eludere Migliorato, Mente Lucida Perfezione Interiore e Salto Sublime, se posseduti anche dal Monaco. Un Monaco deve essere almeno di 6° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Corpo Adamantino (Sop): </h3>
+                            <p class="coltext inline">spendendo 1 punto dalla sua riserva ki, un monaco che usa questo potere può eliminare una tossina dal suo corpo come se stesse usando Neutralizza Veleno, utilizzando i suoi livelli da monaco come livello di incantatore. Può rimuovere un solo veleno per ogni uso dei questa capacità. n Monaco deve essere almeno di 8° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Corpo Vuoto (Sop): </h3>
+                            <p class="coltext inline">un monaco con questo potere ki ottiene la capacità di assumere uno stato etereo per un minuto come se stesse usando l'incantesimo Forma Eterea, usando il suo livello da monaco come livello di incantatore. Usare questo potere è un'azione di movimento che costa 3 punti della sua riserva ki. Questo potere influenza solo il Monaco e non può essere utilizzata per rendere altre creature eteree.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Corsa sull'Acqua (Sop): </h3>
+                            <p class="coltext inline">un monaco con questo potere ki può spendere 1 punto della sua riserva ki come azione veloce per ottenere la capacità di camminare sull'acqua, come se fosse sotto gli effetti di Camminare sull'Acqua. Una volta attivato, questo potere dura 1 minuto per livello da Monaco. Un Monaco deve essere almeno di 6° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Difesa Furiosa (Str): </h3>
+                            <p class="coltext inline">Spendendo punto dalla sua riserva ki come azione immediata, un Monaco con questo potere kipuò ottenere bonus di schivare +4 alla CA fino alla fine del suo turno successivo. Il monaco può attivare questa capacità e il potere ki Maestria Senza Forma con la stessa azione immediata spendendo un totale di 3 punti della sua riserva ki. Un Monaco deve essere di almeno 7° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Equilbrio di Piuma (Str): </h3>
+                            <p class="coltext inline">un monaco con questa capacità può spendere 1 punto della sua riserva ki come azione veloce per aggiungere un equilibrio perfetto. Mentre questo potere è attivo, il monaco considera ogni prova di Acrobazia effettuata per rimanere in equilibrio come se avesse tirato 20. Questa capacità dura 1 minuto.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Esplosione Elementale (Sop): </h3>
+                            <p class="coltext inline">un Monaco con questa capacità può spendere 4 punti ki per scatenare una vampa di energia in un cono di 9 metri. Le creature all'interno del cono subiscono 20d6 danni del tipo di energia selezionato con il potere ki Furia Elementale. Superare un Tiro Salvezza su Riflessi (CD= 10 + la metà del livello da monaco + il suo modificatore di Potere) dimezza i danni. Un monaco deve essere di almeno 18° livello e avere il potere ki Furia Elementale prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Furia Elementale (Sop): </h3>
+                            <p class="coltext inline">Un monaco che seleziona questo potere deve scegliere un tipo di energia: acido, elettricità, freddo o fuoco. Una volta fatta, questa scelta non può essere cambiata. Il Monaco può spendere 1 punto dalla sua riserva ki come azione veloce per impregnare i suoi attacchi naturali di questa energia, facendogli infliggere 1d6 danni aggiuntivi del tipo di energia scelta per un numero di round pari a metà del suo livello da Monaco. Un Monaco deve essere di almeno 6° livello prima di poter selezionare questo potere ki.e.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Guardiano Ki (Sop): </h3>
+                            <p class="coltext inline">Come azione immediata prima di effettuare un tiro salvezza contro un effetto con bersagli multipli che pren-de come bersaglio anche altri suoi alleati o un effetto ad area che include suoi alleati, un monaco con questa capacità può spendere un qualsiasi numero di punti della sua riserva ki per designare un pari numero di alleati a lui adiacenti. Il monaco effettua un tiro salvezza per ogni alleato, utilizzando il suo bonus al posto di quello dell'alleato. Per ogni tiro salvezza superato, l'alleato corrispondente considera l'effetto come se avesse superato il tiro salvezza, e per ogni tiro salvezza fallito, l'alleato considera l'effetto come se avesse fallito il tiro salvezza. Se il monaco fallisce un qualsiasi tiro salvezza (compreso il suo), considera l'effetto come se avesse fallito il tiro salvezza. Un Monaco deve essere di almeno 6° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Incremento Ki (Sop): </h3>
+                            <p class="coltext inline">Un monaco con questa capacità può spendere 1 punto della sua riserva ki come azione veloce per aumentare l'incremento di gittata di qualsiasi arma da lancio da monaco di 6 metri. Questo incremento si applica prima di raddoppiare l'incremento di gittata dovuto a Tiro Lontano.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Integrità del Corpo (Sop): </h3>
+                            <p class="coltext inline">Un monaco con questo potere ki può curare le proprie ferite come azione standard. Spendendo 2 punti della sua riserva ki, può guarirsi danni pari a 1d8 + il suo livello da monaco.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Maestria Senza Forma (Str): </h3>
+                            <p class="coltext inline">un monaco con questa capacità cambia di continuo i suoi stili, senza mai fare due volte la stessa mossa e sfruttando le debolezze dello stile dell'avversario. Fintanto che non possiede alcun talento di stile, può spendere 1 della sua riserva ki come azione immediata, ottenendo i seguenti bonus contro gli avversari che sono in una posizione di un talento di stile: bonus di schivare +4 alla CA, bonus +4 di circostanza ai tiri per colpire e bonus pari al suo livello da monaco ai tiri per i danni. Questi bonus durano fino alla fine del suo turno successivo (o fino alla fine del turno se usa questa capacità durante il suo turno). Il monaco può attivare questa capacità e il potere ki Difesa Furiosa nello stesso turno come azione immediata pendendo un totale di 3 punti della sua riserva ki. Un Monaco deve essere di almeno 7° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Mente Adamantina (Sop): </h3>
+                            <p class="coltext inline"> spendendo 1 punto dalla sua riserva ki come azione veloce, un Monaco con questo potere può sopprimere un effetto di paura che sta subendo come se stesse utilizzando Rimuovi Paura, usando il suo livello da monaco come livello dell'incantatore. Può spendere 2 punti della sua riserva ki per attivare questa capacità anche quando è Spaventato o In Preda al Panico. Un Monaco deve essere di almeno 6° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Metabolismo Ki (Sop): </h3>
+                            <p class="coltext inline">un Monaco con questo potere usa il suo ki per controllare il suo metabolismo. Fintanto che ha almeno un punto nella sua riserva ki, il monaco necessita solo di un quarto del normale fabbisogno di cibo e acqua, ha bisogno solo di 2 ore di sonno per notte (anche per ripristinare la sua riserva ki) e può trattenere il respiro per 1 ora per punto di Costituzione. Come azione di movimento, può spendere 1 punto della sua riserva ki per entrare in uno stato di animazione sospesa, cadendo Privo di Sensi e apparendo morto a tutti i sensi. Nel momento in cui entra in questo stato, stabilisce dopo quanto tempo o dopo quale condizione svegliarsi.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Palmo Tremante (Sop): </h3>
+                            <p class="coltext inline">Un monaco può sviluppare delle vibrazioni nel corpo di un'altra creatura che, se così desidera, possono essere fatali. Usare questa capacità costa 4 punti della sua riserva ki,e il monaco deve dichiarare il suo utilizzo (e spendere i punti ki) prima di effettuare il tiro per colpire.Creature immuni ai colpi critici non ne subiscono gli effetti. Altrimenti, se il monaco colpisce con successo e il bersaglio subisce danni dal colpo, l'attacco del palmo tremante ha avuto effetto. Il monaco può scegliere di uccidere la vittima in qualsiasi momento successivo, purché ciò accada entro un numero di giorni pari al livello del monaco. Per farlo deve semplicemente desiderare che la vittima muoia (un'azione gratuita) e se quest'ultima non supera un Tiro Salvezza su Tempra (CD 10 + metà del livello del monaco + il modificatore di Potere del monaco), muore. Se supera il tiro salvezza, il bersaglio non è più soggetto agli effetti di quel particolare attacco di palmo tremante, ma può essere colpito da un nuovo attacco in futuro. Un monaco non può avere più di 1 palmo tremante attivo in un dato momento. Se un monaco usa palmo tremante mentre uno precedente è ancora attivo, l'effetto di quest'ultimo viene annullato. Un monaco deve essere almeno di 16° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Passi Leggeri (Str): </h3>
+                            <p class="coltext inline">Un monaco con questo potere ki si può muovere senza sforzo su pressoché ogni superficie. Quando il monaco attiva il suo potere ki equilibrio di piuma, può ignorare anche il terreno difficile. Inoltre, mentre il potere è attivo, può passare su qualsiasi superficie solida, anche se non sosterrebbe il suo peso. Non può comunque camminare su superfici liquide. Un monaco deve essere almeno di 8° livello e avere il potere ki equilibrio di piuma prima di poter selezionare questo potere.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Passo Abbondante (Sop): </h3>
+                            <p class="coltext inline">un Monaco con questo potere ki può scivolare magicamente fra gli spazi, come se stesse utilizzando l'incantesimo Porta Dimensionale. Usare questa capacità è un'azione di movimento che costa 2 punti dalla sua riserva ki. Il livello dell'incantatore per questo effetto è pari al livello del Monaco. Un monaco non può portare con sé altre creature quando usa questa capacità. Un monaco deve essere almeno di 8° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Potere Qinggong (Sop): </h3>
+                            <p class="coltext inline">Un monaco con questo potere può selezionare uno qualsiasi dei poteri ki del monaco qinggong per il quale si qualifica in base al proprio livello da monaco. Un monaco può acquisire questo potere più volte. Ogni volta, deve selezionare un diverso potere ki del monaco qinggong.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Resistenza Adamantina (Str): </h3>
+                            <p class="coltext inline">Spendendo 1 punto dalla sua riserva ki come azione veloce, il monaco ottiene RD 2/-. Al 16° livello la riduzione del danno aumenta a 4/-. Al 19° livello, la RD aumenta sncora a 6/-. Questa RD dura 1 minuto. Un monaco deve essere almeno di 12° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Respiro del Cobra (Sop): </h3>
+                            <p class="coltext inline"> Quando un monaco con questo potere ki usa corpo ammantino per neutralizzare un veleno, può decidere invece di ridirigere il veleno contro un singolo avversario entro 9 metri come attacco di contatto a distanza. Se l'attacco colpisce, il nemico deve superare un tiro salvezza (usando la CD e originale del veleno) o subisce gli effetti del veleno, anche se non è un veleno a contatto. Un monaco deve essere almeno di 12° livello e avere il potere ki Corpo Adamantino per poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Saggezza Precognitiva (Sop): </h3>
+                            <p class="coltext inline">Un monaco con questo potere può spendere 2 punti della sua riserva ki come azione immediata per dare i giusti consigli a un altro alleato entro 9 metri per evitare il disastro. Se l'alleato può sentire il monaco, può ritirare un singolo tiro per colpire o Tiro Salvezza. L'alleato deve tenere il secondo risultato anche se peggiore. Un monaco deve essere almeno di 8° livello prima di poter selezionare questo potere.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Salto Sublime (Str): </h3>
+                            <p class="coltext inline">Un monaco con questo potere ki aggiunge il suo livello a tutte le prove di Acrobazia effettuate per saltare, sia in alto che in lungo. Inoltre, si considera che abbia sempre rincorsa quando effettua prove di saltare usando Acrobazia. Spendendo 1 punto dalla sua riserva ki come azione veloce, un monaco ottiene bonus + 20 alle prove di Acrobazia effettuate per saltare per 1 round.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Salto nel Vento (Sop): </h3>
+                            <p class="coltext inline">Un monaco con questo potere ki può spendere 1 punto della sua riserva ki come azione di movimento per ottenere una velocità di volare (manovrabilità perfetta) pari alla sua velocitàbase sul terreno. Ogni round deve terminare il suo movimento su un terreno solido (o una superficie che possa sostenere il peso) o cade come di norma. Una volta attivata, questa capacità dura 1 minuto. Un monaco deve essere almeno 8° di livello e avere il potere ki Salto Sublime prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Salva Ki (Sop): </h3>
+                            <p class="coltext inline"> quando un incantesimo o una capacità magica con bersaglio non supera la sua resistenza agli incantesimi ottenuta da anima adamantina, il monaco può spendere 2 punti della sua riserva ki come azione immediata per riflettere l'incantesimo verso l'incantatore come per Riflettere Incantesimo. Un monaco deve essere di almeno 16° livello e avere il potere Anima Adamantina per selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Un Tocco (Str): </h3>
+                            <p class="coltext inline">Fintanto che ha almeno 1 punto nella sua riserva ki, un monaco può, come azione standard, effettuare un attacco senz'armi come attacco a contatto, aggiungendo metà del suo livello da monaco ai tiri per i danni, e spendere 1 punto della sua riserva ki per raddoppiare il bonus per quell'attacco. Un monaco deve essere almeno di 12° livello prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Uragano Ki (Str): </h3>
+                            <p class="coltext inline">Come azione di round completo, un monaco con questa capacità può muoversi fino al doppio della sua velocità base. In qualsiasi punto durante questo movimento il monaco può spendere 1 punto della sua riserva ki per effettuare il suo primo attacco di una raffica di colpi. Può poi spendere un altro punto ki per effettuare il secondo attacco della raffica di colpi, e così via, finché continua a spendere punti ki o non ha esaurito gli attacchi della raffica di colpi. Un monaco deve essere almeno di 10° livello e avere il potere ki velocità improvvisa prima di poter selezionare questo potere ki.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Velocità Improvvisa (Sop): </h3>
+                            <p class="coltext inline">Un monaco con questo potere ki può spendere 1 punto dalla sua riserva ki come azione veloce per ottenere un'improvvisa esplosione di velocità, incrementando la sua velocità base sul terreno di 9 metri per 1 minuto.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Visioni Ki (Sop): </h3>
+                            <p class="coltext inline">un Monaco con questo potere spesso ha visioni di spiriti o sente la voce del suo defunto mentore nei suoi sogni. Ogni notte in cui il monaco sogna, può usare questa capacità per ottenere i benefici di Divinazione. Se lo fa, spende 2 punti dalla sua riserva del giorno successivo. Un Monaco deve essere almeno di 10° livello per selezionare questo potere.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="mente"><a href="#skill" class="link">Mente lucida</a></h3>
+                    <p class="coltext">Al 4° livello, un monaco ottiene bonus +2 ai Tiri Salvezza contro incantesimi ed effetti di ammaliamento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="purezza"><a href="#skill" class="link">Purezza del corpo</a></h3>
+                    <p class="coltext">Al 5° livello, un Monaco acquisisce immunità a tutte le malattie, comprese quelle soprannaturali e magiche.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="stile"><a href="#skill" class="link">Colpo di stile</a></h3>
+                    <p class="coltext">Al 5° livello, un monaco può imparare un tipo di Colpo di Stile. Quando effettua una Raffica di Colpi, può dichiarare uno dei suoi attacchi senz'armi come Colpo di Stile. Questo attacco si risolve normalmente, ma ha effetti addizionali in base ai tipo di colpo prescelto. Al 9° livello, e ogni 4 livelli successivi, un monaco impara un colpo di stile aggiuntivo. Deve scegliere quale colpo di stile applicare colpire. Al 15° livello, può selezionare fino a due colpi senz'armi ogni round come colpi di stile, che possono essere anche di diverso tipo. Il monaco può scegliere uno qualsiasi dei colpi seguenti:</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Calcione: </h3>
+                            <p class="coltext inline"> Il monaco tenta di respingere suo avversario con un Potente calcio. Se l'attacco va a segno, il monaco ha disposizione una prova di manovra in combattimento gratuita contro il bersaglio (utilizzando il bonus di attacco base usato per il colpo). Se la prova ha successo, l'avversario viene spinto a 3 metri di distanza dal monaco in linea retta. Questa distanza aumenta di 3 metri ogni 5 punti di cui la prova supera la DMC avversaria, fino a una distanza massima pari al bonus di movimento veloce del monaco. Questo movimento non provoca attacchi di opportunità. L'avversario termina il movimento se colpisce un'altra creatura, una barriera o un oggetto solido. La creatura non cade prona a causa di questo movimento. Il monaco deve attaccare con un calcio per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Calcio Rotante:</h3>
+                            <p class="coltext inline"> Il monaco gira su se stesso, tirando un calcio inaspettato all'avversario. Il monaco effettua il suo attacco contro la CA da impreparato dell'avversario. Le creature con schivare prodigioso o effetti simili non possono essere colte impreparate da questo colpo di stile. Il monaco deve attaccare con un calcio per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Calcio Volante: </h3>
+                            <p class="coltext inline">Il monaco salta verso il suo avversario per colpirlo con un calcio. Prima dell'attacco, il monaco può muoversi di una distanza pari al suo bonus di movimento veloce. Questo movimento è parte della raffica di colpi del monaco e non richiede un'azione aggiuntiva. Alla fine del movimento, il monaco deve effettuare un attacco contro un nemico adiacente. Questo movimento può essere effettuato fra due attacchi, e provoca attacco di opportunità come di norma. L'attacco effettuato dopo il movimento deve essere un calcio.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Giravolta Difensiva: </h3>
+                            <p class="coltext inline">Il monaco turbina di continuo, confondendo il nemico. Se l'attacco va a segno, il monaco ottiene bonus di schivare +4 alla CA contro gli attacchi effettuati dal bersaglio di questo colpo di stile fino all'inizio del suo prossimo turno. Questo bonus non si cumula con se stesso. Il monaco deve attaccare con un pugno per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Gomitata: </h3>
+                            <p class="coltext inline"> Il monaco fa seguire al suo pugno una gomitata. Se l'attacco va a segno, il monaco può effettuare un attacco aggiuntivo utilizzando lo stesso bonus d'attacco del pugno con penalità -5. Se questo secondo attacco va a segno, infligge danni normalmente, ma tutto il danno è non letale. Il monaco deve attaccare con un pugno per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Mazzata:</h3>
+                            <p class="coltext inline">Il monaco unisce le mani a pugno usandole come una mazza e infliggendo un danno tremendo. Se l'attacco va a segno, il monaco tira per il danno senz'armi due volte, sommando i risultati prima di aggiungere il modificatore di Forza e gli altri modificatori al danno. Questo danno bonus non viene moltiplicato in caso di colpo critico. Il monaco deve attaccare con un pugno per usare questo colpo di stile, ma deve avere entrambe le mani libere.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Pestone:</h3>
+                            <p class="coltext inline">Il monaco pesta il piede di un nemico impedendogli di fuggire. Se l'attacco va a segno e il monaco termina il suo movimento adiacente all'avversario, il movimento di quest'ultimo è limitato. Fino all'inizio del turno successivo del monaco, il bersaglio dell'attacco può muoversi solo in modo tale da rimanere adiacente allo spazio del monaco. In alternativa, può effettuare una prova di manovra in combattimento (contro la DMC del monaco) come azione standard per liberarsi. Questo colpo non ha effetto contro le creature che non possono essere sbilanciate. Il monaco deve attaccare con un calcio per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Pugno Spezzaossa: </h3>
+                            <p class="coltext inline">Il monaco colpisce brutalmente con un pugno che penetrale difese avversarie. Se l'attacco va a segno, supera qualsiasi riduzione del danno o durezza posseduta dal bersaglio dell'attacco. Il monaco deve attaccare con un pugno per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Spazzata di Gamba: </h3>
+                            <p class="coltext inline">Il monaco cerca una spazzata sulla gamba del suo avversario, buttandolo a terra. Se l'attacco va a segno, il monaco può effettuare un tentativo gratuito di Sbilanciare contro il bersaglio di questo colpo (utilizzando il bonus di attacco base con cui è sferrato questo colpo). Questo tentativo di Sbilanciare non provoca attacchi di opportunità. Il monaco deve attaccare con un calcio per usare questo colpo di stile.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Testata: </h3>
+                            <p class="coltext inline"> Il monaco tira una testata in faccia al suo avversario, facendolo annaspare. Se l'attacco va a segno e l'avversario è della stessa taglia del monaco o inferiore, quest'ultimo può effettuare una prova di manovra in combattimento gratuita (utilizzando il bonus di attacco base usato per portare questo colpo). Se il bersaglio non è una creatura dello stesso tipo di quello del monaco, il monaco subisce penalità -8 alla prova. Se la prova è superata, il bersaglio è Barcollante per 1 round. Le creature senza una testa individuabile non sono influenzate da questo colpo di stile (a discrezione del GM). Il monaco deve attaccare con una testata per usare questo colpo di stile.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="eludere2"><a href="#skill" class="link">Eludere migliorato</a></h3>
+                    <p class="coltext">Al 9° livello, il monaco migliora la capacità di eludere. Continua a non subire danni se effettua con successo un Tiro Salvezza su Riflessi come per eludere, ma subisce solo la metà dei danni se fallisce il tiro salvezza. Un monaco Indifeso non ottiene i benefici di eludere migliorato.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="lingua"><a href="#skill" class="link">Lingua del sole e della luna</a></h3>
+                    <p class="coltext">Un Monaco di 13° livello o più può parlare con qualsiasi creatura vivente, come se fosse permanentemente sotto l'effetto dell'incantesimo Linguaggi</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="tempo"><a href="#skill" class="link">Corpo senza tempo</a></h3>
+                    <p class="coltext">Dal 17° livello, il Monaco non subisce più le penalità di caratteristica per l'invecchiamento e non può essere invecchiato magicamente. Qualsiasi penalità che abbia già subito rimane. I bonus di invecchiamento continuano ad accumularsi e il Monaco comunque muore di vecchiaia quando arriva il momento.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="mente2"><a href="#skill" class="link">Mente impeccabile</a></h3>
+                    <p class="coltext">Al 19° livello un monaco ottiene il totale controllo delle sue facoltà mentali. Quando deve effettuare un Tiro Salvezza su Volontà, può tirare due volte e tenere il risultato migliore. Se fallisce un Tiro Salvezza su Volontà contro un effetto che ha una durata superiore a 1 ora, il monaco può tentare un nuovo tiro salvezza alla fine di ogni ora per terminare l'effetto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="perfezione"><a href="#skill" class="link">Perfezione interiore</a></h3>
+                    <p class="coltext">Al 20° livello, un Monaco diventa una creatura magica. D'ora in avanti sarà sempre trattato come un esterno anziché un umanoide (o qualunque tipo di creatura sia) al fine degli incantesimi ed effetti magici. Inoltre, il Monaco ottiene RD 10/caotico, che gli permette di ignorare i primi 10 danni di qualsiasi attacco effettuato da un'arma non caotica. A differenza degli esterni, il monaco può sempre essere riportato in vita dalla morte come se fosse ancora un membro del tipo di creatura che era in precedenza. Infine, il monaco è in grado di entrare in uno stato di quiete assoluta. Durante questo periodo, il monaco non può intraprendere azioni, ma recupera punti ki al ritmo di 1 ogni 10 minuti passati in stato di quiete (non può usare questa capacità per ottenere un numero di punti ki superiore al suo massimo consentito).</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

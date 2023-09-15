@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../resposnive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+
+        <h1 class="coltitle center">Barbaro</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">d12</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">d4</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Potere</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe del barbaro sono Acrobazia, Addestrare Animali, Artigianato, Cavalcare, Conoscenze (natura), Intimidire, Nuotare, Percezione, Scalare e Sopravvivenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Il Barbaro è competente nell'uso di tutte le armi semplici e da guerra, nelle armature leggere, nelle armature medie e negli scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltitle">1°</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle">+0</td>
+                <td class="coltitle">+0</td>
+                <td><a href="#movimento">Movimento Veloce</a>, <br>
+                <a href="#ira">Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">2°</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle">+0</td>
+                <td class="coltitle">+0</td>
+                <td class="coltitle"><a href="#ira2">Potere d'Ira</a>, <br>
+                <a href="#schivare">Schivare Prodigioso</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">3°</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle"><a href="#pericolo">Senso del pericolo +1</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">4°</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle"><a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">5°</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle">+1</td>
+                <td class="coltitle"><a href="#schivare2">Schivare Prodigioso Migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">6°</td>
+                <td class="coltitle">+6/+1</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle"><a href="#ira2">Potere d'Ira</a>, <br>
+                    <a href="#pericolo">Senso del pericolo +2</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">7°</td>
+                <td class="coltitle">+7/+2</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle"><a href="#riduzione">Riduzione del Danno 1/-</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">8°</td>
+                <td class="coltitle">+8/+3</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle">+2</td>
+                <td class="coltitle"><a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">9°</td>
+                <td class="coltitle">+9/+4</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle"><a href="#pericolo">Senso del pericolo +3</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">10°</td>
+                <td class="coltitle">+10/+5</td>
+                <td class="coltitle">+7</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle"><a href="#riduzione">Riduzione del Danno 2/-</a>, <br>
+                    <a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">11°</td>
+                <td class="coltitle">+11/+6/+1</td>
+                <td class="coltitle">+7</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle">+3</td>
+                <td class="coltitle"><a href="#ira3">Ira Superiore</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">12°</td>
+                <td class="coltitle">+12/+7/+2</td>
+                <td class="coltitle">+8</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle"><a href="#pericolo">Senso del pericolo +4</a>, 
+                    <a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">13°</td>
+                <td class="coltitle">+13/+8/+3</td>
+                <td class="coltitle">+8</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle"><a href="#riduzione">Riduzione del Danno 3/-</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">14°</td>
+                <td class="coltitle">+14/+9/+4</td>
+                <td class="coltitle">+9</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle">+4</td>
+                <td class="coltitle"><a href="#ira2">Potere d'Ira</a>, <br>
+                    <a href="#indomita">Volontà Indomita</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">15°</td>
+                <td class="coltitle">+15/+10/+5</td>
+                <td class="coltitle">+9</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle"><a href="#pericolo">Senso del pericolo +5</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">16°</td>
+                <td class="coltitle">+16/+11/+6/+1</td>
+                <td class="coltitle">+10</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle"><a href="#riduzione">Riduzione del Danno 4/-</a>,
+                     <a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">17°</td>
+                <td class="coltitle">+17/+12/+7/+2</td>
+                <td class="coltitle">+10</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle">+5</td>
+                <td class="coltitle"><a href="#ira4">Ira Infaticabile</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">18°</td>
+                <td class="coltitle">+18/+13/+8/+3</td>
+                <td class="coltitle">+11</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle"><a href="#pericolo">Senso del pericolo +6</a>, <br>
+                    <a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">19°</td>
+                <td class="coltitle">+19/+14/+9/+4</td>
+                <td class="coltitle">+11</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle"><a href="#riduzione">Riduzione del Danno 5/-</a>,
+                </td>
+            </tr>
+            <tr>
+                <td class="coltitle">20°</td>
+                <td class="coltitle">+20/+15/+10/+5</td>
+                <td class="coltitle">+12</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle">+6</td>
+                <td class="coltitle"><a href="#ira5">Ira Possente</a>, <br>
+                     <a href="#ira2">Potere d'Ira</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="movimento"><a href="#skill" class="link">Movimento veloce</a></h3>
+                    <p class="coltext">Il barbaro ha una velocità superiore alla norma per la sua razza di +3 metri quando non indossa armature, o ne indossa una leggera o media, e non sta trasportando un carico pesante. Questo bonus si applica prima di modificare la velocità del barbaro in base a qualsiasi carico portato o armatura indossata. Il bonus si cumula con altri bonus alla velocità sul terreno del barbaro</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ira"><a href="#skill" class="link">Ira</a></h3>
+                    <p class="coltext">Un barbaro può attingere a una riserva interna di forza e ferocia, che gli concede maggior prodezza in combattimento. Al 1° livello il barbaro può entrare in ira per un numero di round al giorno pari a 4 + il suo modificatore di Costituzione. A ogni livello successivo, può entrare in ira per 2 round addizionali al giorno. Incrementi temporanei di Costituzione, come per esempio quello fornito da Resistenza dell'Orso, non aumentano il numero totale dei round giornalieri in cui il barbaro può entrare in ira. Un barbaro può entrare in ira come azione gratuita. Il numero di round in cui il barbaro può entrare in ira viene ripristinato dopo un riposo di 8 ore, non necessariamente consecutive. <br>
+                        Quando è in preda all'ira, un barbaro ottiene bonus +2 a tutti i Tiri per Colpire in mischia, ai tiri per i danni in mischia, ai tiri per i danni con armi da lancio e ai Tiri Salvezza su Volontà. Inoltre, ottiene penalità -2 alla Classe Armatura. Ottiene anche 2 punti ferita temporanei per Dado Vita. Questi punti ferita temporanei sono i primi a essere persi quando il personaggio subisce danni, vengono persi al termine dell'ira e non vengono ripristinati se il barbaro entra in ira prima di 1 minuto dall'ultima volta in cui era in preda all'ira. Mentre è in preda all'ira, il barbaro non può utilizzare alcuna Abilità basata su Carisma, Destrezza o Intelligenza (a eccezione di Acrobazia, Cavalcare, Intimidire e Volare) o capacità che richieda pazienza o concentrazione (come lanciare incantesimi). <br>
+                        Un barbaro può porre termine all'ira con un'azione gratuita ed è Affaticato per 1 minuto dopo la fine dell'ira. Un barbaro non può entrare in ira se è Affaticato o Esausto, ma può entrare in ira più volte al giorno. Se un barbaro in preda all'ira diventa Privo di Sensi la sua ira termina immediatamente.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ira2"><a href="#skill" class="link">Potere d'ira</a></h3>
+                    <p class="coltext">Nel corso della sua carriera, il barbaro impara a utilizzare la sua ira in nuovi modi. Al 2° livello e ogni 2 livelli successivi, il barbaro ottiene un potere d'ira. Il barbaro ottiene i benefici dei poteri d'ira solo quando è in preda all'Ira. Alcuni di questi poteri sono sempre attivi durante l'ira, mentre altri richiedono un'azione per essere utilizzati. A meno che non sia indicato diversamente, non è possibile lo stesso potere d'ira più di una volta. <br>
+                        Alcuni poteri sono posizioni. Attivare un potere d'ira di posizione è un'azione di movimento. Un barbaro non può avere attiva più di una posizione alla volta. Se attiva un potere d'ira di posizione mentre ne ha già attivo un altro, la posizione precedente termina immediatamente. La posizione può essere interrotta volontariamente dal barbaro come azione gratuita all'inizio del suo turno, altrimenti dura fino al termine dell'ira. <br>
+                        <a href = "https://golarion.altervista.org/wiki/Barbaro_Rivisitato/Poteri_d%27Ira" target="_blank" class="link">Potere d'ira (golarion)</a>
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare"><a href="#skill" class="link">Schivare prodigioso</a></h3>
+                    <p class="coltext">Dal 2° livello, il barbaro acquisisce la capacità di reagire al pericolo prima di quanto i suoi sensi gli avrebbero normalmente permesso di fare. Il barbaro non viene mai colto Impreparato, né perde il suo bonus di Destrezza alla CA se è Immobilizzato. Il barbaro con questa capacità perde comunque il bonus di Destrezza alla CA se un avversario usa con successo un'azione di Fintare contro di lui. <br>
+                        Se il barbaro possiede già Schivare Prodigioso come capacità di un'altra classe, guadagna automaticamente al suo posto Schivare Prodigioso Migliorato.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="pericolo"><a href="#skill" class="link">Senso del pericolo</a></h3>
+                    <p class="coltext">Dal 3° livello, il barbaro ottiene bonus +1 ai Tiri Salvezza su Riflessi effettuati per evitare le trappole e Bonus di Schivare +1 alla CA contro gli attacchi effettuati dalle trappole. Inoltre, ottiene bonus +1 alle prove di Percezione effettuate per evitare di essere colto di sorpresa da un nemico. Questi bonus aumentano di 1 ogni tre livelli da barbaro successivi (fino a un massimo di +6 al 18° livello). Questa capacità conta come percepire trappole ai fini di qualsiasi prerequisito di talenti o classi, e può essere sostituito da qualsiasi capacità sostitutiva di un archetipo che sostituisce percepire trappole. I bonus di questa capacità si cumulano con quelli ottenuti da percepire trappole (se il barbaro ha questo privilegio da un'altra classe).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="schivare2"><a href="#skill" class="link">Schivare prodigioso migliorato</a></h3>
+                    <p class="coltext">Dal 5° livello in poi, un barbaro non può più essere Attaccato ai Fianchi. Questa difesa nega ai Ladri la possibilità di utilizzare Attacchi Furtivi contro un barbaro Attaccandolo ai Fianchi, a meno che non abbiano quattro livelli da Ladro in più del barbaro preso di mira. <br>
+                        Se il barbaro ha già Schivare Prodigioso da un'altra Classe, i livelli delle Classi che forniscono Schivare Prodigioso si cumulano per determinare il livello minimo che un Ladro deve avere per poterlo attaccare ai fianchi.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="riduzione"><a href="#skill" class="link">Riduzione del danno</a></h3>
+                    <p class="coltext">Al 7° livello, un barbaro guadagna Riduzione del Danno. Ogni volta che il barbaro subisce dei danni da un'arma o da un Attacco Naturale bisogna sottrarre 1 danno dal totale dei danni di ogni singolo attacco andato a segno. Al 10° livello, e ogni tre livelli da barbaro successivi, questa Riduzione del Danno aumenta di 1 punto (fino a un massimo di 5 punti al 19° livello). Questa capacità può ridurre il danno a 0 ma non al di sotto di 0.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ira3"><a href="#skill" class="link">Ira superiore</a></h3>
+                    <p class="coltext">All'11° livello, i bonus forniti dall'Ira barbarica ai tiri per colpire in mischia, ai tiri per i danni in mischia, ai tiri per i danni con armi da lancio e ai Tiri Salvezza su Volontà aumentano a +3. Inoltre, i punti ferita temporanei ottenuti quando entra in ira aumentano a 3 per Dado Vita.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="indomita"><a href="#skill" class="link">Volontà indomita</a></h3>
+                    <p class="coltext">Durante l'Ira, un barbaro di 14° livello o superiore ottiene bonus +4 ai Tiri Salvezza su Volontà per resistere ad Incantesimi di Ammaliamento. Questo bonus si somma a tutti gli altri modificatori, compreso il bonus ai Tiri Salvezza su Volontà che il barbaro riceve durante l'Ira.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ira4"><a href="#skill" class="link">Ira infaticabile</a></h3>
+                    <p class="coltext">Dal 17° livello, un barbaro non diviene più Affaticato al termine dell'Ira.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ira5"><a href="#skill" class="link">Ira possente</a></h3>
+                    <p class="coltext">All'20° livello, i bonus forniti dall'Ira barbarica ai tiri per colpire in mischia, ai tiri per i danni in mischia, ai tiri per i danni con armi da lancio e ai Tiri Salvezza su Volontà aumentano a +4. Inoltre, i punti ferita temporanei ottenuti quando entra in ira aumentano a 4 per Dado Vita.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

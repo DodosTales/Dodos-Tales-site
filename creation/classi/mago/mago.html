@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Mago</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D6</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Intelligenza </p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe del mago sono, Conoscenze (tutte), Linguistica (Int), Professione (Sag),  Sapienza Magica, Valutare, Percezione e Reazione.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">Il mago è competente nella balestra leggera, balestra pesante, bastone ferrato, pugnale e randello. Non è competente in alcun tipo di armatura o scudo.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello</th>
+                <th class="coltitle">Bonus <br> Attacco Base</th>
+                <th class="coltitle">Tempra</th>
+                <th class="coltitle">Riflessi</th>
+                <th class="coltitle">Volontà</th>
+                <th class="coltitle">Privilegi di Classe</th>
+            </tr>
+            <tr>
+                <td class="coltext">1°</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">
+                    <a href="#legame" class="link">Legame arcano</a>, <br>
+                    <a href="#occhio" class="link">Occhio arcano</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">2°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+0</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#rituale" class="link">Rituale</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">3°</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">
+                    <a href="#manipolazione" class="link">Manipolazione del mana</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">4°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    <a href="#percezione" class="link">Percezione arcana migliorata</a>, <br>
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">5°</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">
+                    Talento bonus, <br>
+                    <a href="#maestro" class="link">Maestro incantatore</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">6°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#incantesimo2" class="link">Incantesimo extra</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">7°</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">
+                    <a href="#rituale2" class="link">Rituale migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">8°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+2</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">9°</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">
+                    <a href="#battaglia" class="link">Mago da battaglia</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">10°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    Talento bonus, <br>
+                    <a href="#ultima" class="link">Ultima risorsa</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">11°</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+3</td>
+                <td class="coltext">+7</td>
+                <td class="coltext">
+                    <a href="#incantesimo2" class="link">Incantesimo extra</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">12°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">13°</td>
+                <td class="coltext">+6/+1</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+8</td>
+                <td class="coltext">
+                    <a href="#incantesimo3" class="link">Incantesimi concatenanti</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">14°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+4</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">
+                    <a href="#antimagia" class="link">Protezione antimagia</a>, <br>
+                    <a href="#penetrazione" class="link">Penetrazione magica</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">15°</td>
+                <td class="coltext">+7/+2</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+9</td>
+                <td class="coltext">Talento bonus</td>
+            </tr>
+            <tr>
+                <td class="coltext">16°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <a href="#incantesimo2" class="link">Incantesimo extra</a>, <br>
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">17°</td>
+                <td class="coltext">+8/+3</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+5</td>
+                <td class="coltext">+10</td>
+                <td class="coltext">
+                    <a href="#maestro2" class="link">Maestro incantatore</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">18°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">
+                    <a href="#metamagia" class="link">Padrone della metamagia</a>
+                </td>
+            </tr>
+            <tr>
+                <td class="coltext">19°</td>
+                <td class="coltext">+9/+4</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+11</td>
+                <td class="coltext">Talento bonus</td>
+            </tr>
+            <tr>
+                <td class="coltext">20°</td>
+                <td class="coltext">+10/+5</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+6</td>
+                <td class="coltext">+12</td>
+                <td class="coltext">
+                    <a href="#incantesimo" class="link">Incantesimo migliorato</a>, <br>
+                    <a href="#supremo" class="link">Mago supremo</a>
+                </td>
+            </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="legame"><a href="#skill" class="link">Legame arcano</a></h3>
+                    <p class="coltext">Al 1° livello, i maghi formano un legame potente con un oggetto o una creatura. Questo legame può assumere una di due forme: un famiglio o un oggetto. Una volta che un mago effettua la scelta, non può più cambiarla. <br>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle">Un famiglio: </h3>
+                            <p class="coltext">Un famiglio è un animale domestico magico che potenzia le abilità ed i sensi del mago e può aiutarlo nella magia.</p>
+                            <a href = "https://golarion.altervista.org/wiki/Mago/Famiglio" target="_blank" class="link" id="famiglio">Elenco famigli (golarion)</a>
+                            <table>
+                                <tr>
+                                    <th class="coltitle">Livello</th>
+                                    <th class="coltitle">Mod. Armatura <br> Naturale</th>
+                                    <th class="coltitle">Intelligenza</th>
+                                    <th class="coltitle">Speciale</th>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">1°-2°</td>
+                                    <td class="coltext">+1</td>
+                                    <td class="coltext">8</td>
+                                    <td class="coltext">Allerta, Eludere Migliorato, <br> Legame Empatico</td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">3°-4°</td>
+                                    <td class="coltext">+2</td>
+                                    <td class="coltext">9</td>
+                                    <td class="coltext"> Parlare con il padrone</td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">5°-6°</td>
+                                    <td class="coltext">+3</td>
+                                    <td class="coltext">10</td>
+                                    <td class="coltext">Apprendere incantesimo </td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">7°-8°</td>
+                                    <td class="coltext">+4</td>
+                                    <td class="coltext">11</td>
+                                    <td class="coltext"></td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">9°-10°</td>
+                                    <td class="coltext">+5</td>
+                                    <td class="coltext">12</td>
+                                    <td class="coltext">Apprendere incantesimo</td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">11°-12°</td>
+                                    <td class="coltext">+6</td>
+                                    <td class="coltext">13</td>
+                                    <td class="coltext">Resistenza agli Incantesimi</td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">13°-14°</td>
+                                    <td class="coltext">+7</td>
+                                    <td class="coltext">14</td>
+                                    <td class="coltext">Scrutare sul Famiglio</td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">15°-16°</td>
+                                    <td class="coltext">+8</td>
+                                    <td class="coltext">15</td>
+                                    <td class="coltext">Apprendere incantesimo</td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">17°-18°</td>
+                                    <td class="coltext">+9</td>
+                                    <td class="coltext">16</td>
+                                    <td class="coltext"></td>
+                                </tr>
+                                <tr>
+                                    <td class="coltext">19°-20°</td>
+                                    <td class="coltext">+10</td>
+                                    <td class="coltext">17</td>
+                                    <td class="coltext">Apprendere incantesimo</td>
+                                </tr>
+                            </table>
+                            <ul>
+                                <li>
+                                    <h3 class="coltitle inline">Dado mana del famiglio: </h3>
+                                    <p class="coltext inline">1d4 (+mod potere)</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Allerta: </h3>
+                                    <p class="coltext inline">Quando il famiglio è a portata di braccio dal padrone, questi guadagna il talento Allerta.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Eludere migliorato: </h3>
+                                    <p class="coltext inline">Se il famiglio è soggetto a un attacco che normalmente permette un Tiro Salvezza su Riflessi per dimezzare i danni, il famiglio non subisce danni se supera il Tiro Salvezza e solo la metà dei danni se fallisce il Tiro Salvezza.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Legame empatico: </h3>
+                                    <p class="coltext inline">Il padrone ha un legame empatico con il suo famiglio fino a una distanza di 1,5 km. Il padrone non può vedere attraverso gli occhi del famiglio, ma può comunicare telepaticamente con esso. A causa della natura limitata del legame, si possono comunicare solo emozioni generiche. Grazie al legame empatico il padrone ha la stessa connessione del famiglio con un oggetto o un luogo.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Parlare col padrone: </h3>
+                                    <p class="coltext inline">Se il padrone è di 4° livello o superiore, il famiglio e il padrone possono comunicare verbalmente, come se utilizzassero un linguaggio comune. Le altre creature non sono in grado di comprendere la loro conversazione, se non utilizzando ausili magici.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Apprendere incantesimo: </h3>
+                                    <p class="coltext inline">Se il padrone è di 5°, poi ogni 5 livelli (lvl 10, 15, 20), il famiglio può imparare un incantesimo appartenente al suo dono ed utilizzarlo a piacimento fintanto che possiede mana.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Resistenza agli incantesimi: </h3>
+                                    <p class="coltext inline">Se il padrone è di 11° livello o superiore, il famiglio guadagna una Resistenza agli Incantesimi pari al livello del padrone +5. Se un altro incantatore tenta di colpire il famiglio con un incantesimo, deve effettuare una prova di livello dell'incantatore (1d20 + livello dell'incantatore) pari o superiore alla Resistenza agli Incantesimi del famiglio.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Scrutare sul famiglio: </h3>
+                                    <p class="coltext inline">Se il padrone è di 13° livello o superiore, può vedere e sentire attraverso gli occhi del famiglio indipendentemente dalla distanza a cui si trovi, purchè sia vivo e sia sullo steso piano. </p>
+                                </li>
+                            </ul>
+                            <p class="coltext">Se il famiglio muore è necessario spendere 200px e compiere un rituale che dura 24h per riportarlo in vita. (In caso di morte del mago, il Famiglio è libero dal legame e diviene indipendente)  </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle">Un oggetto legato: </h3>
+                            <p class="coltext">Un oggetto legato è uno strumento che il mago può usare per lanciare incantesimi addizionali. <br>
+                                L’incantatore si lega ad un oggetto magico che diviene in grado di accumulare al suo interno il potere del mago. <br>
+                                L’oggetto è in grado di accumulare al suo interno un quantitativo di mana pari a 4 per livello dell’incantatore o incantesimi (Solo dell’incantatore) purchè il costo non superi il massimale di mana accumulabile. <br>
+                                L’incantatore può decidere di lanciare un incantesimo all’interno dell’oggetto o trasferire il mana dall’oggetto a sé stesso come azione standard. <br>
+                                L’incantatore può caricare l’oggetto con il suo mana o con i suoi incantesimi tramite un rituale di 10 minuti. </p>
+                            <ul>
+                                <li>
+                                    <h3 class="coltitle inline">Al livello 5</h3>
+                                    <p class="coltext inline">l’incantatore può trasferire il mana come azione di movimento</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Al livello 10</h3>
+                                    <p class="coltext inline">l’incantatore può lanciare l’incantesimo accumulato nell’oggetto come azione di movimento</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Al livello 15</h3>
+                                    <p class="coltext inline">l’incantatore può lanciare l’incantesimo accumulato nell’oggetto o trasferire il mana come azione veloce. </p>
+                                </li>
+                            </ul>
+                            <p class="coltext">Fintanto che l’incantatore possiede l’oggetto legato, i suoi incantesimi ottengono un bonus di +1 alle Cd </p>
+                        </li>
+                    </ul></p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="occhio"><a href="#skill" class="link">Occhio arcano</a></h3>
+                    <p class="coltext">Un mago di 1° Concentrandosi x 1 azione standard può individuare auree magiche provenienti da esseri viventi o incantesimi.</p>
+                    <ul>
+                        <li>
+                            <p class="coltext">Effettuando una prova di Sapienza magica è possibile identificare il dono della creatura osservata <br>
+                                Cd: 10+DV creatura+ modificatore potere </p>
+                        </li>
+                        <li>
+                            <p class="coltext">Se non è stato possibile vedere l’incantesimo al lancio non è possibile definirne precisamente gli effetti, ma con una prova di Sapienza magica (CD 10+lvl incantatore+ modificatore caratteristica primaria) è possibile definirne l’effetto approssimativo: (Un incantesimo può avere più effetti)</p>
+                            <ul>
+                                <li class="coltext">Potenziamento (Qualsiasi incantesimo che potenzia le capacità)</li>
+                                <li class="coltext">Danno (Qualsiasi incantesimo che infligge danno diretto)</li>
+                                <li class="coltext">Mentale: (Incantesimi che influenzano la mente, come illusioni o controllo mentale)</li>
+                                <li class="coltext">Controllo: (Incantesimi che danno controllo del campo, o sugli avversari come nebbie o debuff vari)</li>
+                                <li class="coltext">Spaziale: (Evocazioni o incantesimi di spostamento)</li>
+                                <li class="coltext">Cura: (Incantesimi volti a lenire le ferite)</li>
+                                <li class="coltext">Divino: (Incantesimi che non usano Mana, bensì l’ausilio della Divinità)(Tipo gli incantesimi dei Chierici)</li>
+                                <li class="coltext">Ignoto: (Tutto ciò che non rientra negli effetti precedenti o magia Demoniaca) </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="rituale"><a href="#skill" class="link">Rituale</a></h3>
+                    <p class="coltext">Un mago di 2° livello, impiegando 1min pari al costo in mana dell’incantesimo, può decidere di lanciarlo consumando metà del proprio mana (min 1) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="manipolazione"><a href="#skill" class="link">Manipolazione del mana</a></h3>
+                    <p class="coltext">Un Mago di 3° livello 1voltaxmodificatore intelligenza può sommare come azione immediata il proprio bonus intelligenza ad un suo Tiro salvezza, Tiro per colpire (solo incantesimi) o Bonus Deviazione alla Ca. <br>
+                        Questa abilità è valida per un singolo attacco. <br>
+                        Questa abilità non può essere usata se si è colti alla sprovvista o privi di sensi.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="percezione"><a href="#skill" class="link">Percezione arcana migliorata</a></h3>
+                    <p class="coltext">l’incantatore se è in grado di identificare il dono, può percepire approssimativamente il quantitativo di mana posseduto dall’incantatore. </p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Schiacciante:</h3>
+                            <p class="coltext inline">più del doppio di quello dell’incantatore </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Opprimente: </h3>
+                            <p class="coltext inline">Maggiore di quello dell’incantatore </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Normale: </h3>
+                            <p class="coltext inline">Al pari di quello dell’incantatore</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Inferiore:</h3>
+                            <p class="coltext inline">meno del quantitativo attuale dell’incantatore </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Infimo:</h3>
+                            <p class="coltext inline">Meno della metà di quello dell’incantatore.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="maestro"><a href="#skill" class="link">Maestro incantatore: </a></h3>
+                    <p class="coltext">Un mago di 5° livello ha imparato ad ottimizzare il mana consumato per i suoi incantesimi. <br>
+                        Il costo per incrementare la Cd dell’incantesimo scende da 5 a 4. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incantesimo"><a href="#skill" class="link">Incantesimo migliorato</a></h3>
+                    <p class="coltext">Un mago di 4° può scegliere uno dei suoi incantesimi e modificarlo permanentemente con una delle seguenti opzioni senza incrementarne il costo in mana. </p>
+                    <ul>
+                        <li class="coltext">Incantesimi Estesi</li>
+                        <li class="coltext">Incantesimi Immobili</li>
+                        <li class="coltext">Incantesimi Silenziosi</li>
+                        <li class="coltext">Bersaglio esclusivo: l’incantatore può decidere di escludere un singolo bersaglio dall’area del suo incantesimo</li>
+                        <li class="coltext">Incremento Cd: L’incantesimo guadagna un bonus di +1 alla Cd</li>
+                        <li class="coltext">Diminuzione costo: l’incantesimo costa 1 mana in meno </li>
+                    </ul>
+                    <p class="coltext">Ogni 4 livelli dopo il 4 l’incantatore può applicare opzione aggiuntiva della lista all’incantesimo oppure selezionare un nuovo incantesimo a cui applicarne.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incantesimo2"><a href="#skill" class="link">Incantesimo extra</a></h3>
+                    <p class="coltext">Un mago di 6° apprende un nuovo incantesimo appartenente al proprio Dono o da un Dono di una persona disposta ad insegnarglielo. <br>
+                        L’incantatore apprende un Incantesimo aggiuntivo ogni 5 livelli oltre il 6 (lvl 11, 16) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="rituale2"><a href="#skill" class="link">Rituale migliorato</a></h3>
+                    <p class="coltext">Un mago di 8° quando prepara un rituale può applicarvi un numero di talenti di Metamagia (se posseduti e se l’incantesimo lo consente) pari al suo modificatore intelligenza, senza pagarne costi aggiuntivi. <br>
+                        Ogni talento di Metamagia necessita 10 minuti aggiuntivi per preparare l’incantesimo. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="battaglia"><a href="#skill" class="link">Mago da battaglia</a></h3>
+                    <p class="coltext">Un mago di 9° ha ormai acquisito una discreta esperienza sul campo di battaglia ed è ormai in grado di mantenere la sua concentrazione ed impedire che i suoi incantesimi vengano dissolti. <br>
+                        Quando un mago è costretto ad effettuare una prova su concentrazione, può usare al suo posto Sapienza magica. 
+                        Quando un incantesimo del mago sta venendo dissolto da un altro incantesimo questi può effettuare una prova su sapienza magica, ogni 5 gradi con cui la prova viene superata aumentano di +1 la Cd per dissolverla. <br>
+                        Cd: 10+Dv incantetore+mod caratteristica primaria</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ultima"><a href="#skill" class="link">Ultima risorsa</a></h3>
+                    <p class="coltext">Un Mago di 10° una volta al giorno, quando sta per subire un attacco da parte di un incantesimo o una capacità magica che lo porterebbe a 0pf o inferiore consuma come azione immediata un quantitativo di mana a sua scelta in grado di mitigare quel danno. <br>
+                        Ogni punto di mana consumato rimuove 1 punto del danno. <br>
+                        Danni indiretti come risucchi di caratteristica o livello, non possono essere mitigati</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="incantesimo3"><a href="#skill" class="link">Incantesimi concatenati</a></h3>
+                    <p class="coltext">Un mago di 13° Un numero di volte pari al proprio modificatore intelligenza al giorno, è in grado di lanciare più di un incantesimo per round, pari al quantitativo concesso dal proprio Bab. (uno con Bab 6 e l’alto con Bab 1) (quindi 2 incantesimi) <br>
+                        Entrambi gli incantesimi dovranno essere necessariamente a bersaglio singolo ed effettuati sempre contro lo stesso bersaglio (con un txc) come azione di round competa, utilizzando il Bab come per un normale attacco. <br>
+                        (Possono essere anche due incantesimi di cura su se stessi o su un alleato, o due buff, purchè siano a bersaglio singolo) </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="antimagia"><a href="#skill" class="link">Protezione antimagia</a></h3>
+                    <p class="coltext">Un mago di 14° livello è in grado di usare la propria magia per proteggersi dagli incantesimi degli avversari, per un numero di volte pari al suo modificatore di intelligenza, come azione veloce, ottiene Ri pari a 10+lvl incantatore per 1r pari al modificatore intelligenza del mago. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="penetrazione"><a href="#skill" class="link">Penetrazione magica</a></h3>
+                    <p class="coltext">Un mago di 14° ottiene un bonus di +4 alle prove per superare la Ri del nemico </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="maestro2"><a href="#skill" class="link">Maestro incantatore</a></h3>
+                    <p class="coltext">Un mago di 17° livello ha imparato ulteriormente ad ottimizzare il mana consumato per i suoi incantesimi. <br>
+                        Il costo per incrementare la Cd dell’incantesimo scende da 4 a 3. </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="metamagia"><a href="#skill" class="link">Padrone della metamagia</a></h3>
+                    <p class="coltext">Un mago di 18° livello, quando lancia un incantesimo modificato dalla Metamagia, una volta al giorno pari al suo modificatore intelligenza può decidere come azione gratuita di sottrarre al costo totale dell’incantesimo pari al suo modificatore intelligenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="supremo"><a href="#skill" class="link">Mago supremo</a></h3>
+                    <p class="coltext">Un mago di livello 20° può effettuare un rituale di 24h per ottenere un ulteriore dono, se è strettamente legato a qualcuno (un compagno di party, il famiglio o un amico stretto), può ottenere il suo dono, altrimenti può tirare nella tabella dei doni. <br>
+                        Concluso il rituale il Mago ottiene un numero di incantesimi pari al suo modificatore intelligenza inerenti al dono ottenuto. <br>
+                        Dopo un mese, spendendo 20.000 mo e 5.000px è possibile sostituire il proprio dono perdendo i 3/4 degli incantesimi ottenuti (eliminati randomicamente)  </p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

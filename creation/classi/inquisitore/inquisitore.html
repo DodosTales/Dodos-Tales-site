@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Inquisitore</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D8</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica principale: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">6+int</p>
+                    <p class="coltext">Le abilità di classe dell'Inquisitore sono: Artigianato, Camuffare, Cavalcare, Conoscenze (arcane), Conoscenze (dungeon), Conoscenze (natura), Conoscenze (piani), Conoscenze (religione), Diplomazia, Furtività, Guarire, Intimidire, Intuizione, Nuotare, Percezione, Professione,Raggirare, Sapienza Magica, Scalare, Sopravvivenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Compentenza: </h3>
+                    <p class="coltext inline">Un inquisitore è competente nell'uso di tutte le armi semplici, più Arco Corto, Arco Lungo, Balestra a Mano, balestra a ripetizione e l'arma preferita della sua divinità. È inoltre competente nelle armature leggere e medie e negli scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">>Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th>
+                </tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#inquisizione" class="link">Inquisizione</a>, <a href="#giudizio" class="link">Giudizio 1/giorno</a>, <br> 
+                    <a href="#mostri" class="link">Conoscenza dei Mostri</a>,
+                    <a href="#sguardo" class="link"> Sguardo Austero</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#iniziativa" class="link"> Iniziativa astuta</a>,<br> <a href="#allineamento" class="link">Individuazione dell'Allineamento</a>, <a href="#tracce" class="link"> Seguire Tracce</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#tattica" class="link"> Tattiche Solitarie</a>, <a href="#squadra" class="link"> Talento di Squadra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#giudizio" class="link"> Giudizio 2/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#anatema" class="link"> Anatema</a>, <a href="#bugie" class="link">Rivela Bugie</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#squadra" class="link"> Talento di Squadra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#giudizio" class="link"> Giudizio 3/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#giudizio2" class="link"> Secondo Giudizio</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#squadra" class="link"> Talento di Squadra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a href="#giudizio" class="link"> Giudizio 4/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext"><a href="#prestante" class="link"> Prestante</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a href="#anatema2" class="link"> Anatema Maggiore</a>, <a href="#squadra" class="link"> Talento di Squadra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext"><a href="#giudizio" class="link"> Giudizio 5/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a href="#debolezze" class="link"> Sfruttare Debolezze</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext"><a href="#squadra" class="link"> Talento di Squadra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a href="#giudizio" class="link"> Giudizio 6/giorno</a>, <a href="#giudizio3" class="link"> Terzo Giudizio</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext"><a href="#uccisore" class="link"> Uccisore</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a href="#squadra" class="link"> Talento di Squadra</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext"><a href="#giudizio" class="link"> Giudizio 7/giorno</a>
+                </td>
+                </tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext"><a href="#giudizio4" class="link"> Vero Giudizio</a>
+                </td>
+                </tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="mostri"><a href="#skill" class="link">Conoscenza dei mostri: </a></h3>
+                    <p class="coltext">L'inquisitore somma il suo modificatore di Saggezza alle Prove di Abilità di Conoscenze oltre a quello di Intelligenza, quando effettua Prove di Abilità per identificare le capacità e le debolezze delle creature.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="inquisizione"><a href="#skill" class="link">Inquisizione</a></h3>
+                    <p class="coltext">L'inquisitore può selezionare un'inquisizione che gli concede capacità speciali in base alla divinità venerata. Se il potere di un'Inquisizione richiede un Tiro Salvezza, la CD è pari a 10+1/2 del livello da Inquisitore del personaggio + il modificatore Carisma del personaggio. A meno che non sia indicato diversamente, il livello dell'incantatore per i poteri concessi che sono Capacità Magiche è pari al livello di classe dell'Inquisitore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="giudizio"><a href="#skill" class="link">Giudizio</a></h3>
+                    <p class="coltext">A partire dal 1° livello, un inquisitore può pronunciare un giudizio sui suoi nemici come azione veloce. Da quando il giudizio viene pronunciato, l'inquisitore ottiene un bonus o una capacità speciale in base al tipo di giudizio emesso. <br>
+
+                        Al 1° livello, un inquisitore può usare questa capacità una volta al giorno. Al 4° livello ed ogni tre livelli successivi, l'inquisitore può usare questa capacità una volta addizionale al giorno. Una volta attivata, questa capacità dura fino al termine del combattimento, poi tutti i bonus cessano immediatamente. <br>
+                        
+                        L'inquisitore deve prendere parte al combattimento per guadagnare questi bonus. Se In Preda al Panico, Paralizzato, Privo di Sensi, Spaventato, Stordito o in altro modo impossibilitato a partecipare al combattimento, la capacità non termina, ma i bonus non si riattivano fino a che non può nuovamente prendere parte al combattimento. <br>
+                        
+                        Quando l'inquisitore usa questa capacità, deve scegliere un tipo di giudizio da pronunciare. Come azione veloce, può cambiare questo giudizio con un altro tipo. <br>
+                        
+                        Se l'inquisitore è malvagio, riceve bonus Profani anziché Sacri. Gli inquisitori neutrali devono scegliere tra bonus Sacri o Profani. Una volta effettuata, questa scelta non può essere modificata.</p>
+                        <ul>
+                            <li>
+                                <h3 class="coltitle inline">Distruzione: </h3>
+                                <p class="coltext inline">L'inquisitore viene investito della collera divina, ottenendo Bonus Sacro +1 a tutti i tiri per i danni con le armi. Questo bonus aumenta di +1 ogni tre livelli da inquisitore posseduti.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Giustizia: </h3>
+                                <p class="coltext inline">Questo giudizio sprona l'inquisitore a cercare giustizia, concedendogli Bonus Sacro +1 a tutti i Tiri per Colpire. Questo bonus aumenta di +1 ogni cinque livelli da inquisitore posseduti. Al 10° livello, questo bonus raddoppia per tutti i tiri effettuati per confermare colpi critici.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Guarigione: </h3>
+                                <p class="coltext inline">L'inquisitore è circondato da una luce benefica, ottenendo Guarigione Rapida 1. Questo fa sì che l'inquisitore recuperi 1 Punto Ferita ogni round finché è vivo ed il giudizio perdura. L'ammontare dei Punti Ferita recuperati aumenta di 1 ogni tre livelli da inquisitore posseduti.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Penetrante: </h3>
+                                <p class="coltext inline">Questo giudizio permette all'inquisitore di concentrarsi di più e rende i suoi incantesimi più potenti. Questo beneficio concede Bonus Sacro +1 alle prove di Concentrazione e alle prove di livello dell'incantatore effettuate per superare la Resistenza agli Incantesimi di un bersaglio. Questo bonus aumenta di +1 ogni tre livelli da inquisitore posseduti.
+                                </p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Protezione: </h3>
+                                <p class="coltext inline">L'inquisitore viene circondato da un'aura protettiva, che gli concede Bonus Sacro +1 alla Classe Armatura. Questo bonus aumenta di +1 ogni cinque livelli da inquisitore posseduti. Al 10° livello, questo bonus raddoppia contro i tiri per confermare colpi critici effettuati contro l'inquisitore.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Punizione: </h3>
+                                <p class="coltext inline">Questo giudizio fa risplendere le armi dell'inquisitore di una luce divina. Le armi dell'inquisitore contano come magiche allo scopo di superare la Riduzione del Danno. Al 6° livello, le armi dell'inquisitore contano anche come di un tipo di allineamento (bene, caos, legge o male) allo scopo di superare la Riduzione del Danno. Il tipo selezionato deve essere uguale ad uno degli allineamenti dell'inquisitore. Se l'inquisitore è neutrale, non riceve questo bonus. Al 10° livello, le armi dell'inquisitore contano come adamantine allo scopo di superare la Riduzione del Danno (ma non per ridurre la Durezza).</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Purezza: </h3>
+                                <p class="coltext inline">L'inquisitore è protetto dalla vile contaminazione dei suoi nemici, guadagnando Bonus Sacro +1 a tutti i Tiri Salvezza. Questo bonus aumenta di +1 ogni cinque livelli da inquisitore posseduti. Al 10° livello, il bonus viene raddoppiato contro Maledizioni, Malattie e Veleni.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Recupero: </h3>
+                                <p class="coltext inline">Questo giudizio rende l'inquisitore resistente ai danni, concedendogli RD 1/magia. Questa RD aumenta di 1 ogni cinque livelli da inquisitore posseduti. Al 10° livello, questa RD cambia da magia ad un allineamento (bene, caos, legge o male) opposto a quello dell'inquisitore. Se è neutrale, l'inquisitore non riceve questo incremento.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Resistenza: </h3>
+                                <p class="coltext inline">L'inquisitore è schermato da un'aura tremolante, ed ottiene 2 punti di Resistenza all'Energia contro un tipo di energia (acido, elettricità, freddo, fuoco o sonoro) selezionato quando il giudizio viene dichiarato. La protezione aumenta di 2 ogni tre livelli da inquisitore posseduti.</p>
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sguardo"><a href="#skill" class="link">Sguardo austero</a></h3>
+                    <p class="coltext">Gli inquisitori sono addestrati a percepire la falsità ed intimidire i loro nemici. Un inquisitore riceve un Bonus Morale a tutte le prove di Intimidire e Intuizione pari alla metà del suo livello da inquisitore (minimo +1).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="allineamento"><a href="#skill" class="link">Individuazione dell'allineamento</a></h3>
+                    <p class="coltext">Al 2° livello, un inquisitore può usare a volontà Individuazione del Bene, Individuazione del Caos, Individuazione della Legge o Individuazione del Male. Può usarne solo uno alla volta.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="iniziativa"><a href="#skill" class="link">Iniziativa astuta</a></h3>
+                    <p class="coltext">Al 2° livello, un inquisitore somma il suo modificatore di Saggezza alle prove di Iniziativa, oltre al suo modificatore di Destrezza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="tracce"><a href="#skill" class="link">Seguire tracce</a></h3>
+                    <p class="coltext">Al 2° livello, un inquisitore aggiunge metà del suo livello a tutte le prove di Sopravvivenza effettuate per seguire o identificare le tracce.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="squadra"><a href="#skill" class="link">Talenti di squadra</a></h3>
+                    <p class="coltext">Al 3° livello, ed ogni tre livelli successivi, l'inquisitore ottiene un talento bonus oltre a quelli guadagnati dal normale avanzamento. Questi talenti bonus devono essere tratti da quelli indicati come Talenti di Squadra. L'inquisitore deve soddisfare i prerequisiti per il talento bonus selezionato. <br>
+
+                        Come azione standard, l'inquisitore può scegliere di imparare un nuovo talento di squadra bonus al posto del più recente talento di squadra bonus che conosce. In pratica, l'inquisitore “perde” il talento bonus in cambio di uno nuovo. Può scambiare solamente l'ultimo talento di squadra bonus guadagnato. Ogni volta che guadagna un nuovo talento di squadra, il talento di squadra precedente diventa fisso e non può più essere cambiato. Un inquisitore può cambiare il suo talento di squadra più recente un numero di volte al giorno pari al suo modificatore di Saggezza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="tattica"><a href="#skill" class="link">Tattiche solitarie</a></h3>
+                    <p class="coltext">Al 3° livello, tutti gli alleati vengono trattati come se possedessero gli stessi Talenti di Squadra dell'inquisitore allo scopo di determinare se l'inquisitore ottiene un bonus dai suoi talenti di squadra. I suoi alleati non ricevono bonus da questi talenti a meno che li possiedano davvero. La posizione e le azioni degli alleati devono soddisfare lo stesso i prerequisiti indicati nel talento di squadra per ottenere il bonus previsto.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="anatema"><a href="#skill" class="link">Anatema</a></h3>
+                    <p class="coltext">Al 5° livello, un inquisitore può infondere in una delle sue armi con la capacità speciale delle Anatema come azione veloce. Bisogna selezionare un tipo di creatura quando si usa questa capacità (ed un sottotipo se il tipo di creatura prescelto è umanoide o esterno). Una volta scelto, il tipo può essere cambiato come azione veloce. Questa capacità funziona solamente mentre l'inquisitore brandisce l'arma. Se la lascia cadere o se gli viene presa, l'arma riguadagna questa capacità se torna all'inquisitore prima del termine della durata. Questa capacità dura per un numero di round al giorno pari al livello dell'inquisitore. Questi round non devono necessariamente essere consecutivi.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="bugie"><a href="#skill" class="link">Rivela bugie</a></h3>
+                    <p class="coltext">Al 5° livello, un inquisitore può rivelare le bugie, come per l'incantesimo Rivela Bugie, per un numero di round al giorno pari al suo livello da inquisitore. Questi round non devono essere necessariamente consecutivi. Attivare questa capacità è un'azione immediata.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="giudizio2"><a href="#skill" class="link">Secondo giudizio</a></h3>
+                    <p class="coltext">All'8° livello, ogni volta che un inquisitore usa la sua capacità Giudizio, seleziona due giudizi diversi, anziché uno. Ciò consuma solamente un utilizzo della sua capacità giudizio. Come azione veloce, può cambiare uno di questi giudizi con un altro tipo.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="prestante"><a href="#skill" class="link">Prestante</a></h3>
+                    <p class="coltext">All'11° livello, un inquisitore può resistere mentalmente e fisicamente a determinati attacchi. Se supera un Tiro Salvezza su Tempra o Volontà contro un attacco che prevede un effetto ridotto per un Tiro Salvezza riuscito, evita completamente tale effetto. Questa capacità può essere usata solo se l'inquisitore sta indossando un'armatura leggera, un'armatura media o se non ne indossa alcuna. Un inquisitore Indifeso non ottiene i benefici di questa capacità.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="anatema2"><a href="#skill" class="link">Anatema maggiore</a></h3>
+                    <p class="coltext">Al 12° livello, ogni volta che un inquisitore utilizza la sua capacità Anatema, l'ammontare del danno bonus dell'arma contro le creature del tipo selezionato aumenta a 4d6.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="debolezze"><a href="#skill" class="link">Sfruttare debolezze</a></h3>
+                    <p class="coltext">Al 14° livello, l'inquisitore impara ad approfittare di qualsiasi occasione si presenti. Ogni volta che l'inquisitore mette a segno un colpo critico, ignora qualsiasi Riduzione del Danno potrebbe avere il bersaglio. Inoltre, se il bersaglio ha rigenerazione, la creatura la perde nel round successivo al colpo critico e può morire normalmente durante quel round. Le creature la cui rigenerazione funziona sempre sono immuni a questa capacità. Infine, se l'inquisitore infligge danni da energia ad una creatura con vulnerabilità a quel tipo di energia, infligge +1 danno per dado lanciato.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="giudizio3"><a href="#skill" class="link">Terzo giudizio</a></h3>
+                    <p class="coltext">Al 16° livello, ogni volta che un inquisitore usa la sua capacità Giudizio, seleziona tre giudizi diversi, anziché solo due. Ciò consuma solamente un utilizzo della sua capacità giudizio. Come azione veloce, può cambiare uno di questi giudizi con un altro tipo.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="uccisore"><a href="#skill" class="link">Uccisore</a></h3>
+                    <p class="coltext">Al 17° livello, un inquisitore impara a focalizzare il suo giudizio. Ogni volta che un inquisitore usa la sua capacità Giudizio, deve selezionare uno dei suoi giudizi: viene considerato di 5 livelli superiore per determinare i bonus concessi da quel particolare giudizio. A differenza degli altri tipi di giudizio, il potenziamento fornito da questa capacità non può essere modificato per il resto del giudizio.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="giudizio4"><a href="#skill" class="link">Vero giudizo</a></h3>
+                    <p class="coltext">Al 20° livello, un inquisitore può pronunciare un vero giudizio contro un nemico durante il combattimento. Ogni volta che un inquisitore usa la sua capacità Giudizio, l'inquisitore può invocare il vero giudizio su un nemico come azione veloce. Una volta dichiarato, l'inquisitore può sferrare un singolo attacco in mischia (o a distanza, se il nemico è entro 9 metri) contro il bersaglio. Se l'attacco va a segno, infligge danni normalmente e il bersaglio deve superare un Tiro Salvezza su Tempra o muore. La CD di questo Tiro Salvezza è pari a 10 + 1/2 livello dell'inquisitore + il modificatore di Saggezza dell'inquisitore. Indipendentemente dal fatto che il bersaglio superi o meno il Tiro Salvezza, è immune alla capacità vero giudizio dell'inquisitore per 24 ore. Una volta che questa capacità viene usata, non può essere riutilizzata per 1d4 round.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

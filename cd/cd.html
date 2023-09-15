@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <script type="module" src="cd.js"></script>
+</head>
+<body>
+    <div class="container flex-column">
+
+        <h1 class="coltitle center">Calcolo CD</h1>
+
+        <div class="center">
+        <form>
+            <label for="livello" class="coltext">Selezionare il proprio livello: </label>
+            <input type="number" name="livello" id="livello" class="inumber" min="1" max="20" value="1"> <br>
+            <label for="primaria" class="coltext">Selezionare il modificatore caratteristica primaria: </label>
+            <input type="number" name="primaria" id="primaria" class="inumber" min="-5" max="17" value="0"> <br>
+            <label for="mana" class="coltext">Selezionare il costo in mana: </label>
+            <input type="number" name="mana" id="mana" class="inumber" min="0" max="999" value="0">
+        </form>
+
+        <div>
+            <button class="normal-button" style="margin-bottom: 0.8em;" id="calcolo">Calcola CD</button> <br>
+            <p class="coltext inline">La CD del tuo incantesimo è: </p>
+            <p class="coltext inline" id="result"></p>
+        </div>
+
+        <div>
+            <p class="coltext">Testa se il tuo incantesimo è abbastanza potente</p>
+                <button class="normal-button" id="drey">
+                    Testa contro Drey
+                </button>
+            <p class="coltext" id="spazio"></p>
+        </div>
+
+        <a href="../home.html" class="button-link">
+            <button class="button-led-back">
+                <span>Dodo's Tales Home</span>
+                <i></i>
+            </button>
+        </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

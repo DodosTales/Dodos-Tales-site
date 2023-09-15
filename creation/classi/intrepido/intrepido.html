@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Intrepido</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D4</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le Abilità di classe dell'intrepido sono Acrobazia, Artigianato, Artista della Fuga, Cavalcare, Conoscenze (locali), Conoscenze (nobiltà), Diplomazia, Intimidire, Intrattenere, Intuizione, Nuotare, Percezione, Professione, Raggirare, Rapidità di Mano e Scalare</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">L'intrepido è competente nell'uso di tutte le armi semplici e da guerra, nelle armature leggere e negli scudi Buckler.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a class="link" href="#eleganza">Eleganza</a>, <a class="link" href="#gesta">Gesta</a>, <br>
+                    <a class="link" href="#accuratezza">Accuratezza dell'Intrepido</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a class="link" href="#affascinante">Vita Affascinante 3/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a class="link" href="#leggiadria">Leggiadria +1</a>, <a class="link" href="#gesta">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a class="link" href="#talento">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a class="link" href="#armi">Addestramento nelle Armi dell'Intrepido +1</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#affascinante">Vita Affascinante 4/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#leggiadria">Leggiadria +2</a>, <a class="link" href="#gesta">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a class="link" href="#talento">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#armi">Addestramento nelle Armi dell'Intrepido +2</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#affascinante">Vita Affascinante 5/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a class="link" href="#leggiadria">Leggiadria +3</a>, <a class="link" href="#gesta">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#talento">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#armi">Addestramento nelle Armi dell'Intrepido +3</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a class="link" href="#affascinante">Vita Affascinante 6/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#leggiadria">Leggiadria +4</a>, <a class="link" href="#gesta">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#talento">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a class="link" href="#armi">Addestramento nelle Armi dell'Intrepido +4</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#affascinante">Vita Affascinante 7/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#leggiadria">Leggiadria +5</a>, <a class="link" href="#gesta">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a class="link" href="#armi2">Padronanza delle Armi dell'Intrepido</a>, <br> <a class="link" href="#talento">Talento Bonus</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="eleganza"><a href="#skill" class="link">Eleganza</a></h3>
+                    <p class="coltext">Più che un semplice combattente poco corazzato, un intrepido è un contendente coraggioso. Combatte con l'eleganza: una misura fluttuante della capacità di un intrepido di compiere azioni incredibili in combattimento. All'inizio di ogni giorno, un intrepido ottiene un numero di punti eleganza pari al suo modificatore di Carisma (minimo 1). L'eleganza aumenta o diminuisce nell'arco della giornata ma generalmente l'intrepido non può averne più del suo modificatore di Carisma (minimo 1), anche se alcuni Talenti e Oggetti Magici possono influenzare questo massimo. Un intrepido spende eleganza per compiere gesta (vedi sotto) e riacquista eleganza nei seguenti modi.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Critico con un'Arma da Mischia Perforante Leggera o a una Mano: </h3>
+                            <p class="coltext inline">Ogni volta che l'intrepido conferma un colpo critico con un attacco con un'arma da mischia perforante leggera o a una mano, riguadagna 1 punto eleganza. Confermare un critico su una creatura Indifesa o ignara oppure vittime che hanno Dadi Vita pari a meno della metà del livello del personaggio dell'intrepido non reintegra punti eleganza.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Mortale con un'Arma da Mischia Perforante Leggera o a una Mano: </h3>
+                            <p class="coltext inline">Quando un intrepido riduce una creatura a 0 o meno punti ferita con un attacco con un'arma da mischia perforante leggera o a una mano mentre è nel vivo del combattimento, riguadagna 1 punto eleganza. Distruggere un oggetto incustodito, ridurre a 0 o meno punti ferita una creatura Indifesa o ignara oppure vittime che hanno Dadi Vita pari a meno della metà del livello del personaggio dell'intrepido non reintegra punti eleganza.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="gesta"><a href="#skill" class="link">Gesta</a></h3>
+                    <p class="coltext">Gli intrepidi possono spendere punti eleganza per compiere gesta. Molte gesta concedono all'intrepido alcuni bonus o effetti temporanei, ma alcune gli forniscono effetti di lunga durata. Alcune gesta hanno effetto fino a che l'intrepido ha almeno 1 punto eleganza, ma non richiedono la spesa di punti eleganza per essere mantenute. Un intrepido può compiere solo gesta del suo livello o inferiore. A meno che non sia indicato diversamente, una gesta può essere compiuta per più volte successive, finché si hanno abbastanza punti eleganza da spendere per farlo.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Eleganza Schivante (Str): </h3>
+                            <p class="coltext inline">Al 1° livello, quando un avversario tenta un attacco in mischia contro l'intrepido, quest'ultimo può spendere, come azione immediata, 1 punto eleganza per muoversi di 1,5 metri; farlo gli concede un Bonus di Schivare alla CA pari al suo modificatore di Carisma (minimo 0) contro l'attacco innescante. Questo movimento non nega l'attacco, che si risolve come se l'intrepido non si fosse mosso dal suo quadretto precedente. Questo movimento non è un passo di 1,5 metri: provoca Attacchi di Opportunità da parte delle creature che non hanno innescato questa gesta. L'intrepido può intraprendere questa gesta solo se indossa un'armatura leggera o nessuna armature, e non trasporta nulla di più pesante di un carico leggero.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Parata e Risposta di Opportunità (Str): </h3>
+                            <p class="coltext inline">Al 1° livello, quando un avversario effettua un attacco in mischia contro l'intrepido, quest'ultimo può spendere 1 punto eleganza e un uso di Attacco di Opportunità per tentare di parare l'attacco. L'intrepido effettua un Tiro per Colpire come se sferrasse un Attacco di Opportunità: per ogni categoria di taglia di cui la creatura attaccante è più grande dell'intrepido, quest'ultimo subisce penalità -2 al tiro. Se il suo risultato è superiore a quello della creatura attaccante, l'attacco di quest'ultima manca automaticamente. L'intrepido deve dichiarare l'uso di questa capacità dopo che l'attacco della creatura è stato annunciato, ma prima che il suo Tiro per Colpire venga effettuato. Quando effettua una parata con successo e ha almeno 1 punto eleganza, l'intrepido può, come azione immediata, effettuare un attacco contro la creatura di cui ha parato l'attacco, a condizione che sia entro portata. Il costo di questa gesta non può essere ridotto da nessuna capacità o effetto che riduca il costo in punti eleganza delle gesta.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Temerarietà (Str): </h3>
+                            <p class="coltext inline">Al 1° livello, un intrepido spendendo 1 punto eleganza quando effettua una prova di Acrobazia, Artista della Fuga, Cavalcare, Nuotare, Scalare o Volare può tirare 1d6 e aggiungere il risultato alla prova. Può farlo dopo aver effettuato la prova ma prima che il risultato venga rivelato. Se il risultato del d6 è un 6 naturale, l'intrepido tira un ulteriore 1d6 e aggiunge il risultato alla prova. Può continuare a farlo finché ottiene 6 naturali, fino a un numero di volte pari al suo modificatore di Destrezza (minimo 1).</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Preciso (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, quando l'intrepido ha almeno un punto eleganza, ottiene la capacità di colpire di precisione con un'arma perforante leggera o a una mano (che non sia un'arma naturale), aggiungendo il suo livello da intrepido ai danni. Per usare questa gesta, non può attaccare con l'arma che impugna nell'altra mano o usare uno scudo che non sia un Buckler. Può usare questa capacità anche quando lancia un'arma da mischia perforante leggera o a una mano, fintanto che il bersaglio è entro 9 metri dà lui. Qualsiasi creatura immune agli attacchi furtivi è immune al danno addizionale concesso da colpo preciso, e qualsiasi oggetto o capacità in grado di proteggere una creatura dai colpi critici la protegge anche dal danno addizionale di un colpo preciso. Questo danno addizionale è danno da precisione e non si moltiplica in caso di colpo critico. Come azione veloce, un intrepido può spendere 1 punto eleganza per raddoppiare il bonus al danno del suo colpo preciso nel suo attacco successivo. Questo beneficio deve essere usato prima del termine del suo turno o va perso. Il costo di questa gesta non può essere ridotto da nessuna capacità o effetto che riduce l'ammontare in punti eleganza, dei costi di una gesta (come il talento Gesta Personali).</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Iniziativa dell'Intrepido (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, quando l'intrepido ha almeno un punto eleganza, ottiene bonus +2 alle prove di Iniziativa. Inoltre, se ha il talento Estrazione Rapida, le sue mani libere e senza limitazioni, e un'arma da mischia perforante leggera o a una mano non nascosta e pronta per essere estratta, può estrarla come parte di una prova di Iniziativa.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Rialzarsi di Colpo (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, quando l'intrepido ha almeno un punto eleganza, può rialzarsi da Prono come azione di movimento senza provocare Attacchi d'Opportunità. Può invece rialzarsi da Prono come azione veloce spendendo l punto eleganza.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Scherma Minacciosa (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, quando l'intrepido ha almeno un punto eleganza, se colpisce un avversario con un'arma da mischia perforante leggera o a una mano, può usare Intimidire per Demoralizzarlo come azione veloce anziché come azione standard.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Mirato (Str): </h3>
+                            <p class="coltext inline">Al 7° livello, come azione di round completo, l'intrepido può spendere 1 punto eleganza per sferrare un singolo attacco con un'arma da mischia perforante leggera o a una mano che storpia una parte del corpo di un nemico. L'intrepido sceglie una parte del corpo da colpire. Se l'attacco ha successo, in aggiunta al danno normale, il bersaglio soffre uno degli effetti seguenti in base alla parte del corpo scelta come bersaglio (vedi seguito). Se una creatura non ha una delle parti del corpo elencate, quella parte non può essere scelta come bersaglio. Le creature immuni agli Attacchi Furtivi sono immuni a questi effetti. Oggetti e capacità che proteggono una creatura dai colpi critici la proteggono anche da questi colpi mirati.</p>
+                            <ul>
+                                <li>
+                                    <h3 class="coltitle inline">Ali o torso: </h3>
+                                    <p class="coltext inline">Il bersaglio è Barcollante per 1 round.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Braccia: </h3>
+                                    <p class="coltext inline">ll bersaglio non subisce danni dall'attacco, ma lascia cadere un oggetto che ha in mano a scelta dell'intrepido, anche se lo brandisce con due mani. Gli oggetti assicurati a un Guanto d'Arme con Sicura non possono essere scelti.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Gambe: </h3>
+                                    <p class="coltext inline">Il bersaglio cade a terra Prono. Le creature con quattro gambe o più sono immuni da questo effetto.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Testa: </h3>
+                                    <p class="coltext inline">Il bersaglio è Confuso per 1 round. Questo è un effetto di influenza mentale.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Finta Superiore (Str): </h3>
+                            <p class="coltext inline">Al 7° livello, un intrepido con almeno 1 punto eleganza può, come azione standard, mancare di proposito una creatura contro cui può sferrare un attacco con un'arma da mischia perforante leggera o a una mano. Quando lo fa, alla creatura viene negato il suo bonus di Destrezza alla CA fino all'inizio del prossimo turno dell'intrepido.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Grazia dell'Intrepido (Str): </h3>
+                            <p class="coltext inline">Al 7° livello, quando l'intrepido ha almeno un punto eleganza, non subisce penalità muovendosi a Velocità piena quando usa Acrobazia per tentare di muoversi attraverso un'area minacciata o lo spazio di un nemico.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Elusivo (Str): </h3>
+                            <p class="coltext inline">Al 11° livello, quando l'intrepido ha almeno un punto eleganza, ottiene i benefici dei privilegi di classe del Ladro Eludere, Schivare Prodigioso e Schivare Prodigioso Migliorato. Usa il suo livello da intrepido come livello da Ladro ai fini di Schivare Prodigioso Migliorato.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ferita Sanguinante (Str): </h3>
+                            <p class="coltext inline">Al 11° livello, quando l'intrepido colpisce una creatura vivente con un'arma da mischia perforante leggera o a una mano, può spendere 1 punto eleganza come azione gratuita per far sì che l'attacco infligga danni da Sanguinamento extra. L'ammontare dei danni da Sanguinamento è pari al modificatore di Destrezza dell'intrepido (minimo 1). Alternativamente, l'intrepido può spendere 2 punti eleganza per infliggere invece 1 danno da sanguinamento a Forza, Destrezza o Costituzione(a scelta dell'intrepido}. Le creature immuni agli attacchi furtivi sono immuni a questo tipo di danni da Sanguinamento.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Lama Sottile (Str): </h3>
+                            <p class="coltext inline">Al 11° livello, quando l'intrepido ha almeno un punto eleganza, è immune alle Manovre in Combattimento di Disarmare, Rubare e Spezzare effettuate contro un'arma da mischia perforante leggera o a una mano che sta impugnando.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Affondo Perfetto (Str): </h3>
+                            <p class="coltext inline">Al 15° livello, quando l'intrepido ha almeno un punto eleganza, può sferrare un affondo perfetto, concentrando tutto il suo potenziale offensivo in un singolo attacco con un'arma da mischia perforante leggera o a una mano effettuato come azione di round completo. Quando lo fa, effettua l'attacco contro la Classe Armatura di contatto del bersaglio e ignora tutte le Riduzioni del Danno possedute da quest'ultimo.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Difesa Vertiginosa (Str): </h3>
+                            <p class="coltext inline">Al 15° livello, quando impugna un'arma da mischia perforante leggera o a una mano, l'intrepido può spendere 1 punto eleganza per intraprendere l'azione Combattere sulla Difensiva come azione veloce anziché come azione standard. Quando Combatte sulla Difensiva in questo modo, il Bonus di Schivare alla CA concesso dall'azione aumenta a +4 e la penalità ai Tiri per Colpire si riduce a -2.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Prerogativa dell'Intrepido (Str): </h3>
+                            <p class="coltext inline">Al 15° livello, quando l'intrepido ha almeno un punto eleganza, può prendere 10 a qualsiasi prova di Acrobazia, Artista della Fuga, Nuotare, Cavalcare, Scalare o Volare anche se distratto o in pericolo immediato. Può usare questa capacità in congiunzione con la gesta Temerarietà.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Pugnalata Letale (Str): </h3>
+                            <p class="coltext inline">Al 19° livello, quando l'intrepido conferma un colpo critico con un'arma da mischia perforante leggera o a una mano, in aggiunta al danno normale, può spendere 1 punto eleganza per infliggere una pugnalata letale. Il bersaglio deve superare un Tiro Salvezza su Tempra o muore. La CD del tiro salvezza è pari a 10 + metà del livello dell'intrepido + il suo modificatore di Destrezza. Questo è un attacco mortale. Intraprendere questa gesta non reintegra punti eleganza all'intrepido.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Pugnalata Stordente (Str): </h3>
+                            <p class="coltext inline">Al 19° livello, quando un intrepido colpisce una creatura con un'arma da mischia perforante leggera o a una mano, può spendere 2 punti eleganza per Stordirla per 1 round. La creatura deve superare un Tiro Salvezza su Tempra (CD = 10 + metà del livello dell'intrepido + il suo modificatore di Destrezza) o è Stordita per 1 round. Le creature immuni ai colpi critici sono immuni anche a questo effetto.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Truffare la Morte (Str): </h3>
+                            <p class="coltext inline">Al 19° livello, quando l'intrepido ha almeno 1 punto eleganza, se ridotto a 0 Punti Ferita o meno, può spendere tutti i punti eleganza che gli rimangono per essere invece ridotto a 1 Punto Ferita. Gli effetti che uccidono direttamente l'intrepido senza infliggere danni ai Punti Ferita non sono influenzati da questa capacità.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="accuratezza"><a href="#skill" class="link">Accuratezza dell'intrepido</a></h3>
+                    <p class="coltext">Al 1° livello, un intrepido ottiene i benefici del talento Arma Accurata con le armi da mischia perforanti leggere o a una mano, e può usare il punteggio di Carisma al posto del punteggio di Intelligenza come prerequisito per i Talenti di Combattimento. Questa capacità conta come avere il talento Arma Accurata ai fini di soddisfare i prerequisiti dei Talenti.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="affascinante"><a href="#skill" class="link">Vita affascinante</a></h3>
+                    <p class="coltext">Al 2° livello, l'intrepido ottiene uno stratagemma per cavarsi di impaccio. Tre volte al giorno come azione immediata, può aggiungere il suo modificatore di Carisma al risultato di un suo Tiro Salvezza. Deve decidere di farlo prima che il tiro è stato effettuato. Al 6° livello e ogni 4 livelli successivi, il numero di volte al giorno in cui può farlo aumenta di 1 (fino a un massimo di 7 Tiri Salvezza al 18° livello).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="leggiadria"><a href="#skill" class="link">Leggiadria</a></h3>
+                    <p class="coltext">Al 3° livello, un intrepido ottiene Bonus di Schivare +1 alla CA quando indossa armature leggere o nessuna armature. Qualsiasi condizione che fa perdere il bonus di Destrezza alla CA, fa perdere anche questo Bonus di Schivare. Questo bonus aumenta di +1 ogni 4 livelli successivi al 3° (fino a un massimo di +5 al 19° livello).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento bonus</a></h3>
+                    <p class="coltext">Al 4° livello e ogni 4 livelli successivi, un intrepido ottiene un Talento bonus in aggiunta a quelli ottenuti per l'avanzamento del personaggio. Questi Talenti bonus devono essere tratti da quelli indicati come Talenti di Combattimento. I livelli da intrepido sono considerati come livelli da Guerriero ai fini di soddisfare i prerequisiti dei Talenti di Combattimento. <br>
+
+                        Una volta raggiunto il 4° livello e successivamente ogni quattro livelli, un intrepido può scegliere di imparare un nuovo Talento al posto di un Talento bonus che già ha. In effetti, l'intrepido perde quel Talento bonus in cambio di uno nuovo. Il vecchio Talento non può essere uno che è utilizzato come prerequisito per un altro Talento, per una Classe di Prestigio o un'altra capacità. Un intrepido può cambiare solo un Talento a ogni dato livello e deve scegliere se scambiare o meno il Talento nel momento in cui guadagna un nuovo Talento bonus per il livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armi"><a href="#skill" class="link">Addestramento nelle armi dell'intrepido</a></h3>
+                    <p class="coltext">Al 5° livello, un intrepido ottiene bonus +1 ai Tiri per Colpire e per i danni con armi da mischia perforanti leggere o a una mano. Mentre impugna una di queste armi, ottiene il beneficio del talento Critico Migliorato. Questi bonus aumentano di 1 per ogni 4 livelli dopo il 5° (fino a un massimo di +4 al 17° livello).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armi2"><a href="#skill" class="link">Padronanza delle armi dell'intrepido</a></h3>
+                    <p class="coltext">Al 20° livello, quando un intrepido minaccia un colpo critico con un'arma da mischia perforante leggera o a una mano, lo conferma automaticamente. Inoltre, il moltiplicatore per il critico di queste armi aumenta di 1 (x2 diventa x3, e così via).</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

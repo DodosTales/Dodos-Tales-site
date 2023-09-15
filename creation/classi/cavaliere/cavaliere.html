@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        
+        <h1 class="coltitle center">Cavaliere</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D6</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe del cavaliere sono Addestrare Animali, Artigianato, Cavalcare, Diplomazia, Intimidire, Intuizione, Nuotare, Professione, Raggirare e Scalare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I cavalieri sono competenti nell'uso di tutte le armi semplici e da guerra, tutte le armature (leggere, medie e pesanti) e negli scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 1/giorno</a> , <br>
+                    <a href="#cavalcatura" class="link">Cavalcatura</a>, <a href="#ordine" class="link">Ordine</a>, <br>
+                    <a href="#tattico" class="link">Tattico</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#ordine" class="link">Capacità dell'Ordine</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#carica" class="link">Carica del Cavaliere</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 2/giorno</a> , <br>
+                    <a href="#addestratore" class="link">Addestratore Esperto</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#stendardo" class="link">Stendardo</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 3/giorno</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#ordine" class="link">Capacità dell'Ordine</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#tattico2" class="link">Tattico Superiore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 4/giorno</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#carica2" class="link">Carica Possente</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>, <br>
+                    <a href="#sfida2" class="link">Sfida Impegnativa</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 5/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#stendardo2" class="link">Stendardo Superiore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#ordine" class="link">Capacità dell'Ordine</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 6/giorno</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#tattico3" class="link">Maestro Tattico</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 7/giorno</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#carica3" class="link">Carica Suprema</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="cavalcatura"><a href="#skill" class="link">Cavalcatura</a></h3>
+                    <p class="coltext">Un cavaliere ottiene i servigi di un destriero fedele per condurlo in battaglia. Questa cavalcatura funziona come il Compagno Animale di un Druido, usando il livello del cavaliere come livello effettivo da Druido. La creatura deve essere appropriata come cavalcatura ed in grado di essere cavalcata. Un cavaliere Medio può selezionare un Cammello o un Cavallo. Un cavaliere Piccolo può scegliere un Pony o un Lupo, ma anche un Cinghiale o un Cane se è almeno di 4° livello. Il GM può approvare altri animali come cavalcature appropriate. <br>
+
+                        Un cavaliere non subisce alcuna penalità di armatura alla prova di Cavalcare quando è in sella alla sua cavalcatura. La cavalcatura viene sempre considerata addestrata a combattere e riceve Competenza nelle Armature Leggere come talento bonus. La cavalcatura non ottiene la capacità speciale Condividere Incantesimi. <br>
+                        
+                        Il legame di un cavaliere con la sua cavalcatura è forte, con i due che imparano ad anticipare umori e mosse l'uno dell'altra. Se la cavalcatura dovesse morire, il cavaliere può trovarne un'altra che lo serva dopo 1 settimana dalla morte della precedente. Questa nuova cavalcatura non ottiene Devozione, Eludere, Eludere Migliorato o Legame come Capacità Speciali finché il cavaliere non avanza di un nuovo livello.
+                        
+                        </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ordine"><a href="#skill" class="link">Ordine</a></h3>
+                    <p class="coltext">Al 1° livello, un cavaliere deve entrare a far parte di uno specifico <a href = "https://golarion.altervista.org/wiki/Cavaliere#Ordini_Cavallereschi" target="_blank" class="link">Ordine(Golarion)</a>. L'ordine concede al cavaliere un certo numero di bonus, abilità di classe e capacità speciali. Inoltre, ogni ordine prevede un certo numero di editti che il cavaliere deve seguire. Se viola un qualsiasi editto, perde i benefici della capacità di sfida dell'ordine per 24 ore. La violazione di un editto è soggetta all'interpretazione di GM. <br>
+
+                        Un cavaliere non può cambiare ordine senza intraprendere un lungo percorso che lo porti a dedicarsi ad una nuova causa. Quando opera questa scelta, perde immediatamente tutti i benefici dal suo vecchio ordine. Deve poi seguire gli editti del suo nuovo ordine per un intero livello senza ottenere alcun beneficio da esso. Una volta completato l'iter, guadagna tutti i bonus del suo nuovo ordine. Si noti che i nomi di questi Ordini dovrebbero variare in funzione dell'ambientazione o delle preferenze del GM.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="tattico"><a href="#skill" class="link">Tattico</a></h3>
+                    <p class="coltext">Al 1° livello, un cavaliere riceve un Talento di Squadra come talento bonus, di cui soddisfi i prerequisiti. Come azione standard, il cavaliere può concedere questo talento a tutti gli alleati entro 9 metri che possono vederlo e sentirlo. Gli alleati mantengono l'utilizzo di questo talento bonus per 3 round + 1 round ogni due livelli da cavaliere posseduti. Gli alleati non hanno bisogno di soddisfare i prerequisiti per questo talento bonus. Il cavaliere può usare questa capacità una volta al giorno al 1° livello, più una volta addizionale al giorno al 5° livello e ogni 5 livelli successivi.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sfida"><a href="#skill" class="link">Sfida</a></h3>
+                    <p class="coltext">Una volta al giorno, un cavaliere può sfidare un nemico a combattere. Come azione veloce, il cavaliere sceglie un bersaglio in vista da sfidare. Gli attacchi in mischia del cavaliere infliggono danni extra ogni volta che vengono sferrati contro il bersaglio della sua sfida. Questo danno extra è pari al livello del cavaliere. Il cavaliere può usare questa capacità una volta al giorno al 1° livello, più una volta addizionale al giorno ogni tre livelli dopo il 1°, fino ad un massimo di sette volte al giorno al 19° livello. <br>
+
+                        Sfidare un nemico richiede gran parte della concentrazione del cavaliere. Il cavaliere subisce penalità –2 alla sua Classe Armatura, tranne contro gli attacchi sferrati dal bersaglio della sua sfida. <br>
+                        
+                        La sfida continua a far effetto fino a che il bersaglio muore o diventa incosciente, oppure termina il combattimento. Ogni sfida di un cavaliere include anche un altro effetto indicato nella sezione che descrive gli Ordini dei Cavalieri.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="carica"><a href="#skill" class="link">Carica del cavaliere</a></h3>
+                    <p class="coltext">Al 3° livello, un cavaliere impara a sferrare attacchi in Carica più accurati quando è in sella. Il cavaliere riceve bonus +4 ai Tiri per Colpire in mischia durante una Carica mentre è in sella (invece del normale +2). Inoltre, il cavaliere non subisce alcuna penalità alla sua CA dopo avere effettuato un attacco in Carica mentre è in sella.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="addestratore"><a href="#skill" class="link">Addestratore esperto</a></h3>
+                    <p class="coltext">Al 4° livello, un cavaliere impara ad addestrare cavalcature rapidamente e con insuperabile bravura. Il cavaliere riceve un bonus pari a metà del suo livello da cavaliere ogni volta che usa Addestrare Animali su un animale che funge da cavalcatura. Inoltre, può ridurre il tempo necessario per insegnare ad una cavalcatura un nuovo comando o addestrarla per un compito generico a 1 giorno per ogni settimana richiesta aumentando la CD di +5. Può addestrare anche più di una cavalcatura per volta, sebbene ogni cavalcatura dopo la prima aggiunga un +2 alla CD.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="stendardo"><a href="#skill" class="link">Stendardo</a></h3>
+                    <p class="coltext">Al 5° livello, lo stendardo di un cavaliere diventa un simbolo che ispira i suoi alleati e compagni. Finché lo stendardo del cavaliere è visibile chiaramente, tutti gli alleati entro 18 metri ricevono Bonus Morale +2 ai Tiri Salvezza contro Paura e Bonus Morale +1 ai Tiri per Colpire effettuati come parte di una Carica. Al 10° livello, ed ogni cinque livelli successivi, questi bonus aumentano di +1. Lo stendardo deve essere almeno Piccolo o più grande e deve essere portato o esposto dal cavaliere o dalla sua cavalcatura per funzionare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento bonus</a></h3>
+                    <p class="coltext">Al 6° livello, ed ogni sei livelli successivi, un cavaliere riceve un talento bonus in aggiunta a quelli ottenuti per il normale avanzamento. Questi talenti bonus devono essere scelti da quelli indicati come Talenti di Combattimento, ed il cavaliere deve sempre soddisfarne i prerequisiti.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="tattico2"><a href="#skill" class="link">Tattico superiore</a></h3>
+                    <p class="coltext">Al 9° livello, il cavaliere riceve un Talento di Squadra addizionale come talento bonus, di cui soddisfi i prerequisiti. Il cavaliere può concedere questo talento ai suoi alleati usando la capacità Tattico. Usare la capacità Tattico diventa un'azione veloce.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="carica2"><a href="#skill" class="link">Carica Possente</a></h3>
+                    <p class="coltext">All'11° livello, un cavaliere impara a sferrare attacchi in Carica devastanti mentre è in sella. Raddoppia l'intervallo di minaccia di qualsiasi arma impugnata durante una carica mentre è in sella. Questo aumento non si cumula con gli altri effetti che aumentano l'intervallo di minaccia dell'arma. Inoltre, il cavaliere può effettuare una manovra in combattimento gratuita di Disarmare, Sbilanciare, Spezzare o Spingere se il suo attacco in carica ha successo. Questa manovra in combattimento gratuita non provoca alcun Attacco di Opportunità.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sfida2"><a href="#skill" class="link">Sfida impegnativa</a></h3>
+                    <p class="coltext">Al 12° livello, ogni volta che un cavaliere dichiara una sfida, il suo bersaglio deve prestare attenzione alla minaccia che questi rappresenta. Finché il bersaglio è all'interno dell'area minacciata dal cavaliere, subisce penalità –2 alla sua CA contro gli attacchi sferrati da chiunque altro tranne il cavaliere.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="stendardo2"><a href="#skill" class="link">Stendardo superiore</a></h3>
+                    <p class="coltext">Al 14° livello, lo stendardo del cavaliere diventa un punto di riferimento per i suoi alleati. Tutti gli alleati entro 18 metri ricevono Bonus Morale +2 ai Tiri Salvezza contro incantesimi ed effetti di Charme e Compulsione. Inoltre, mentre il suo stendardo è esposto, il cavaliere può utilizzare un'azione standard per sventolarlo in aria, concedendo a tutti gli alleati entro 18 metri un Tiro Salvezza addizionale contro qualsiasi incantesimo o effetto li stia designando come bersaglio. Questo Tiro Salvezza viene effettuato con la CD originale. Incantesimi ed effetti che non permettono un Tiro Salvezza non sono influenzati da questa capacità. Un alleato non può trarre beneficio da questa capacità più di una volta al giorno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="tattico3"><a href="#skill" class="link">Maestro tattico</a></h3>
+                    <p class="coltext">Al 17° livello, il cavaliere riceve un Talento di Squadra addizionale come talento bonus, di cui soddisfi i prerequisiti. Il cavaliere può concedere questo talento ai suoi alleati usando la capacità Tattico. Ogni volta che il cavaliere usa la capacità Tattico concede due Talenti di Squadra qualsiasi che conosce. Può scegliere liberamente qualsiasi Talento di Squadra possieda, non soltanto i suoi talenti bonus.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="carica3"><a href="#skill" class="link">Carica suprema</a></h3>
+                    <p class="coltext">Al 20° livello, ogni volta che il cavaliere effettua un attacco in Carica mentre è in sella, raddoppia il normale danno (o lo triplica se usa una Lancia da Cavaliere). Inoltre, se il cavaliere conferma un Colpo Critico con un attacco in Carica mentre è in sella, il bersaglio è Stordito per 1d4 round. Un Tiro Salvezza su Volontà riduce lo stato a Barcollante per 1d4 round. La CD è pari a 10 + il Bonus di Attacco Base del cavaliere.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

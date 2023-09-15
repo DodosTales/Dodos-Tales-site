@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Pistolero</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dado vita: </h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dado mana: </h3>
+                    <p class="coltext inline">D4</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe di un pistolero sono Acrobazia (Des), Addestrare Animali, Artigianato, Cavalcare, Conoscenze (ingegneria), Conoscenze (locali), Guarire, Intimidire, Nuotare, Percezione, Professione, Raggirare, Rapidità di Mano, Scalare e Sopravvivenza.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I pistoleri sono competenti nell'uso di tutte le armi semplici e da guerra, e di tutte le armi da fuoco. I pistoleri sono competenti in tutte le armature leggere.</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#armiere" class="link">Armiere</a>, <a href="#gesta" class="link">Gesta</a>, <br>
+                    <a href="#grinta" class="link">Grinta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#leggiadria" class="link">Leggiadria +1</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#gesta" class="link">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talenti Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi da Fuoco 1</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#leggiadria" class="link">Leggiadria +2</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#gesta" class="link">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talenti Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi da Fuoco 2</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#leggiadria" class="link">Leggiadria +3</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#gesta" class="link">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talenti Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi da Fuoco 3</a> 
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#leggiadria" class="link">Leggiadria +4</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#gesta" class="link">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talenti Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#armi" class="link">Addestramento nelle Armi da Fuoco 4</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#leggiadria" class="link">Leggiadria +5</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#gesta" class="link">Gesta</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#grinta2" class="link">Vera Grinta</a>, <a href="#talento" class="link">Talenti Bonus</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="armiere"><a href="#skill" class="link">Armiere</a></h3>
+                    <p class="coltext">Al 1° livello, un pistolero ottiene un'Arma da Fuoco a sua scelta tra: Moschetto, Pistola o Trombone. La sua arma iniziale è malconcia e solo lui sa come usarla propriamente. Tutte le altre creature considerano la sua Arma da Fuoco come se avesse la condizione Rotto. Se l'arma ha già la condizione Rotto, è inservibile per chiunque altro. Quest'arma iniziale può essere venduta solo come rottame (il suo valore è 4d10 monete d'oro quando venduta). Il pistolero ottiene anche il talento Armaiolo come talento bonus.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="grinta"><a href="#skill" class="link">Grinta</a></h3>
+                    <p class="coltext">Un pistolero lascia il suo segno nel mondo con gesta audaci. Alcuni pistoleri sostengono di aderire a una via mistica delle Armi da Fuoco, ma è più probabile che la natura volubile e pericolosa delle loro armi sfoltisca i loro ranghi dagli sfortunati e dai distratti. Indipendentemente dal motivo, tutti i pistoleri hanno grinta. In termini di gioco, la grinta è un misto delle capacità che permettono a un pistolero di eseguire azioni incredibili in combattimento. All'inizio di ogni giorno, un pistolero ottiene un numero di punti grinta pari al suo modificatore di Saggezza (minimo 1). La grinta aumenta o diminuisce nell'arco della giornata, ma generalmente il pistolero non può averne più del suo modificatore di Saggezza (minimo 1), anche se alcuni talenti e oggetti magici possono influenzare questo massimo. Un pistolero spende grinta per compiere gesta (vedi sotto) e riacquista grinta nei seguenti modi.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Critico con un'Arma da Fuoco: </h3>
+                            <p class="coltext inline">Ogni volta che il pistolero conferma un colpo critico con un attacco con Arma da Fuoco mentre è nel vivo del combattimento, riguadagna 1 punto grinta. Confermare un critico su una creatura Indifesa o ignara oppure vittime che hanno Dadi Vita pari a meno della metà del livello del personaggio del pistolero non reintegra punti grinta.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Mortale con un'Arma da Fuoco: </h3>
+                            <p class="coltext inline">Quando un pistolero riduce una creatura a 0 o meno Punti Ferita con un attacco con un'Arma da Fuoco mentre è nel vivo del combattimento, riguadagna 1 punto grinta. Distruggere un oggetto incustodito, ridurre a o 0 meno Punti Ferita una creatura Indifesa o ignara oppure vittime che hanno Dadi Vita pari a meno della metà del livello del personaggio del pistolero non reintegra punti grinta.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="gesta"><a href="#skill" class="link">Gesta</a></h3>
+                    <p class="coltext">I pistoleri possono spendere punti grinta per compiere gesta. Molte gesta concedono al pistolero alcuni bonus o effetti temporanei, ma alcune gli forniscono effetti di lunga durata. Alcune gesta hanno effetto fino a che il pistolero ha almeno 1 punto grinta. Quella che segue è la lista delle gesta base del pistolero. Un pistolero può compiere solo gesta del suo livello o inferiori. A meno che non sia indicato diversamente, una gesta può essere compiuta per più volte successive, finché si hanno abbastanza punti grinta da spendere per farlo.</p>
+                    <ul>
+                        <li>
+                            <h3 class="coltitle inline">Occhio Letale (Str): </h3>
+                            <p class="coltext inline">Al 1° livello, un pistolero può risolvere un attacco contro la CA di contatto anziché quella normale quando spara oltre il primo incremento di gittata della sua Arma da Fuoco. Compiere questa gesta costa 1 punto grinta per ogni incremento di gittata oltre il primo. Il pistolero subisce ancora la penalità -2 ai Tiri per Colpire per ogni incremento di gittata oltre il primo quando compie questa gesta.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Riparazione Rapida (Str): </h3>
+                            <p class="coltext inline">Al 1° livello, come Azione Standard, il pistolero può rimuovere la condizione Rotto da una singola Arma da Fuoco che sta impugnando, fintanto che questa condizione viene ottenuta da un'Arma da Fuoco Inceppata. Il pistolero deve avere almeno 1 punto grinta per compiere questa gesta. Alternativamente, se il pistolero spende 1 punto grinta per compiere questa gesta, può usare Riparazione Rapida come azione equivalente al movimento anziché come Azione Standard.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Schivata del Pistolero (Str): </h3>
+                            <p class="coltext inline">Al 1° livello, il pistolero ottiene una prodigiosa abilità nell'evitare gli attacchi a distanza. Quando viene sferrato un attacco a distanza contro il pistolero, questi può spendere 1 punto grinta per muoversi di 1,5 metri come Azione Immediata, ottenendo così un bonus +2 alla CA contro quell'attacco. Questo movimento non è un passo di 1,5 metri e provoca Attacchi d'Opportunità. In alternativa, il pistolero può lasciarsi cadere Prono per guadagnare un bonus +4 alla CA contro quell'attacco. Il pistolero può compiere questa gesta solo mentre indossa armature medie e leggere e trasporta non più di un carico leggero.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo di Calcio (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, un pistolero può compiere un attacco in mischia a sorpresa con un'estremità o il calcio della sua Arma da Fuoco come Azione Standard. Quando lo fa, viene considerato competente nell'Arma da Fuoco come se fosse un'arma da mischia e ottiene un bonus ai Tiri per Colpire e per i danni pari al Bonus di Potenziamento dell'Arma da Fuoco. Il danno inflitto dal Colpo di Calcio è di tipo contundente e viene determinato dalla Taglia dell'Arma da Fuoco. Un'Arma da Fuoco a una mano infligge 1d6 danni (1d4 se brandita da creature di Taglia Piccola) mentre una a due mani infligge 1d10 danni (1d8 se brandita da creature di Taglia Piccola). Indipendentemente dalla Taglia del pistolero, il moltiplicatore per il critico di questo attacco è 20/x2. Se l'attacco colpisce, il pistolero può effettuare una Prova di Manovra in Combattimento per buttare a terra Prono il bersaglio come Azione Gratuita. Compiere questa gesta costa 1 punto grinta.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo di Utilità (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, se il pistolero ha almeno 1 punto grinta, può sparare tutti i seguenti colpi di utilità. Ogni colpo di utilità può essere applicato ad un singolo attacco con un'Arma da Fuoco, ma il pistolero deve dichiarare che lo usa prima di sparare il colpo.</p>
+                            <ul>
+                                <li>
+                                    <h3 class="coltitle inline">Cauterizzare: </h3>
+                                    <p class="coltext inline">Il pistolero può sferrare un attacco con un'Arma da Fuoco e premere la canna rovente su se stesso o su una creatura adiacente per tamponare la ferita sanguinante. Anziché infliggere danni, il colpo pone termine a una singola condizione di Sanguinamento che affligge la creatura. Il pistolero non deve necessariamente effettuare un Tiro per Colpire quando usa questa gesta: può sparare in aria, ma questo colpo consuma comunque munizioni come di norma.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Far Saltare Serrature: </h3>
+                                    <p class="coltext inline">il pistolero può effettuare un Tiro per Colpire contro una serratura entro il primo incremento di gittata della sua Arma da Fuoco. Una serratura Minuta generalmente ha CA 7, mentre quelle più grandi hanno CA inferiori. La serratura ottiene un bonus alla CA contro questi attacchi basato sulla sua qualità. Una serratura semplice ha bonus +10 alla CA, una serratura media ha bonus +15, una buona ha bonus +20 e una superiore bonus +30. Serratura Arcana concede un bonus +10 alla CA di una serratura contro questo attacco. Se colpita, la serratura viene distrutta e l'oggetto può essere aperto come se non fosso chiuso a chiave. Se mancata, la serratura viene distrutta, ma l'oggetto è incastrato e si considera ancora chiuso a chiave. Può essere ancora aperto attraverso questa gesta, una prova di Disattivare Congegni o una prova per sfondarlo, sebbene la CD o la CA aumenti di 10. Una chiave, una combinazione o simili meccanismi di apertura non funzionano più, anche se Scassinare può ancora essere impiegato per superare la serratura e il creatore di una Serratura Arcana possa sempre superare l'interdizione di quell'incantesimo.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Spostare Oggetti Incustoditi: </h3>
+                                    <p class="coltext inline">Il pistolero può effettuare un Tiro per Colpire contro oggetti incustoditi di Taglia Minuscola o inferiore entro il primo incremento di gittata della sua Arma da Fuoco. Un oggetto incustodito Minuscolo ha CA 5, uno Minuto ha CA 7 e uno Piccolissimo ha CA 11. Se colpisce, il pistolero non danneggia l'oggetto con il colpo, ma lo muove di un massimo di 1,5 metri più lontano dall'origine del colpo. Se manca, l'oggetto viene danneggiato normalmente.
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Iniziativa del Pistolero (Str): </h3>
+                            <p class="coltext inline">Al 3° livello, finché il pistolero ha almeno 1 punto grinta, ottiene i seguenti benefici. Innanzitutto, ottiene un bonus +2 alle prove di Iniziativa. Inoltre, se ha il talento Estrazione Rapida, le sue mani sono libere e senza limitazioni, e l'Arma da Fuoco non è nascosta, il pistolero può estrarre una singola Arma da Fuoco come parte di una prova di Iniziativa.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Letale (Str): </h3>
+                            <p class="coltext inline">Al 7° livello, come Azione di Round Completo, il pistolero può mirare e concentrare tutto il suo potenziale d'attacco in un singolo colpo letale. Quando lo fa, punta l'Arma da Fuoco su un singolo bersaglio, ma può effettuare tutti i Tiri per Colpire che ha in base al suo Bonus di Attacco Base. Effettua i Tiri per Colpire in ordine, dal più alto al più basso, come se stesse effettuando un attacco completo. Se uno di questi tiri colpisce il bersaglio, il singolo attacco del pistolero si considera andato a segno. Per ogni ulteriore tiro per colpire riuscito oltre il primo, il pistolero incrementa i danni del colpo aggiungendovi il dado base dei danni dell'Arma da Fuoco. Per esempio, se un pistolero di 7° livello spara con un moschetto colpendo con entrambi gli attacchi, infligge 2d12 danni anziché 1d12, prima di aggiungere qualsiasi modificatore ai danni. I danni da precisione e i danni extra derivanti da capacità speciali delle armi (come Infuocata) vengono aggiunti con i modificatori ai danni e non vengono incrementati da questa gesta. Se uno o più tiri erano minacce di critico, il pistolero conferma il critico usando il suo Bonus di Attacco Base migliore -5. Per ogni minaccia di critico oltre la prima, il pistolero riduce la sua penalità di 1 (fino a un massimo di 0). Un colpo letale provoca Inceppamento solo se tutti i suoi Tiri per Colpire provocano Inceppamento. Non si può compiere questa gesta con tromboni o altre armi a dispersione che colpiscono le creature in un cono. Un pistolero deve spendere 1 punto grinta per compiere questa gesta.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Bersagliare (Str): </h3>
+                            <p class="coltext inline">Al 7° livello, come Azione di Round Completo, il pistolero può sferrare un singolo attacco con un'Arma da Fuoco e scegliere che parte del corpo colpire. Ottiene i seguenti effetti in base alla parte del corpo che ha scelto come bersaglio. Se una creatura non ha una delle parti del corpo elencate, quella parte non può essere scelta come bersaglio. Questa gesta costa 1 punto grinta indipendentemente dalla parte del corpo della creatura scelta come bersaglio. Le creature immuni agli attacchi furtivi sono immuni a questi effetti.</p>
+                            <ul>
+                                <li>
+                                    <h3 class="coltitle inline">Ali: </h3>
+                                    <p class="coltext inline">Se colpito, il bersaglio viene danneggiato normalmente e deve superare una prova di Volare con CD 20 o precipita per 6 metri.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Braccia: </h3>
+                                    <p class="coltext inline">Se colpito, il bersaglio non subisce danni dal colpo, ma lascia cadere un oggetto che ha in mano a scelta del pistolero, anche se lo brandisce con due mani. Gli oggetti assicurati a un Guanto d'Arme con Sicura non cadono se il colpo va a segno.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Gambe: </h3>
+                                    <p class="coltext inline">Se colpito, il bersaglio viene danneggiato normalmente e cade a terra Prono. Le creature immuni agli attacchi per Sbilanciare sono immuni a questo effetto.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Testa: </h3>
+                                    <p class="coltext inline">Se colpito, il bersaglio subisce danni normalmente ed è anche Confuso per 1 round. È un effetto di influenza mentale.</p>
+                                </li>
+                                <li>
+                                    <h3 class="coltitle inline">Torso: </h3>
+                                    <p class="coltext inline">Mirare al torso ha una minaccia di critico di 19-20.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo sorprendente (Str): </h3>
+                            <p class="coltext inline">Al 7° livello, un pistolero con almeno 1 punto grinta può impiegare un'Azione Standard per mancare di proposito una creatura che normalmente colpirebbe con l'attacco di un'Arma da Fuoco. Quando lo fa, la creatura diventa Impreparata fino all'inizio del suo prossimo turno.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Esperto nella ricarica (Str): </h3>
+                            <p class="coltext inline">All'11° livello, ogni volta che tira per l'Inceppamento con un'Arma da Fuoco che ha la condizione Rotto, può spendere 1 punto grinta per prevenire l'esplosione dell'arma, anche se la condizione Rotto permane.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ferita Sanguinante (Str): </h3>
+                            <p class="coltext inline">All'11° livello, quando il pistolero colpisce una creatura vivente con l'attacco di un'Arma da Fuoco, può spendere 1 punto grinta come Azione Gratuita per far sì che l'attacco infligga danni da Sanguinamento extra. L'ammontare dei danni da Sanguinamento è pari al modificatore di Destrezza del pistolero. Alternativamente, il pistolero può spendere 2 punti grinta per infliggere invece 1 danno da Sanguinamento a Forza, Destrezza o Costituzione (a scelta del pistolero). Le creature immuni agli attacchi furtivi sono immuni a questo tipo di danni da Sanguinamento.
+                            </p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Ricarica Fulminea (Str): </h3>
+                            <p class="coltext inline">All'11° livello, finché il pistolero ha almeno 1 punto grinta, può ricaricare una singola canna di un'Arma da Fuoco a una o due mani come Azione Veloce una volta per round. Se ha Ricarica Rapida o usa cartucce alchemiche (o entrambi), può invece ricaricare una singola canna di un'arma come Azione Gratuita ogni round. Inoltre, utilizzare questa gesta non provoca Attacchi d'Opportunità.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Minaccioso (Str): </h3>
+                            <p class="coltext inline">Al 15° livello, il pistolero può spendere 1 punto grinta, sparare in aria con un'Arma da Fuoco e influenzare tutte le creature entro un'esplosione di 9 metri di raggio come se fossero soggette all'incantesimo Paura. La CD di questo effetto è pari a 10 + 1/2 del livello del pistolero + il modificatore di Carisma del pistolero.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Elusivo (Str): </h3>
+                            <p class="coltext inline">Al 15° livello, quando un pistolero ha almeno 1 punto grinta, ottiene i benefici dei privilegi di classe del Ladro Eludere, Schivare Prodigioso e Schivare Prodigioso Migliorato. Si utilizza il livello da pistolero come livello da Ladro per Schivare Prodigioso Migliorato.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Pistolero Fortunato (Str): </h3>
+                            <p class="coltext inline">Al 15° livello, il pistolero può spendere grinta per ritirare un Tiro Salvezza o una Prova di Abilità. Questo costa 2 punti grinta per ritirare un Tiro Salvezza e 1 punto grinta per ritirare una Prova di Abilità. Il pistolero deve tenere il secondo risultato, anche se inferiore. Questa gesta non può essere influenzata dal privilegio di classe Vera Grinta, dal talento Gesta Personali e da qualsiasi altro effetto che riduca il costo in punti grinta di una gesta.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo della Morte (Str): </h3>
+                            <p class="coltext inline">Al 19° livello, quando il pistolero mette a segno un colpo critico, può spendere 1 punto grinta per scegliere di infliggere danni normali, e il bersaglio deve effettuare un Tiro Salvezza su Tempra con CD pari a 10 +1/2 del livello del pistolero + il modificatore di Destrezza del pistolero. Se fallisce il Tiro Salvezza, il bersaglio muore. Questo è un attacco di morte. Compiere questa gesta non permette al pistolero di recuperare punti grinta come avverrebbe confermando un colpo critico o infliggendo un colpo mortale.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Colpo Stordente (Str): </h3>
+                            <p class="coltext inline">Al 19° livello, quando un pistolero colpisce una creatura, può spendere 2 punti grinta per Stordirla per 1 round. La creatura deve effettuare un Tiro Salvezza su Tempra (CD = 10 + 1/2 del livello del pistolero + il modificatore di Saggezza del pistolero). Se la creatura fallisce, è Stordita per 1 round. Le creature immuni ai colpi critici sono immuni anche a questo effetto.</p>
+                        </li>
+                        <li>
+                            <h3 class="coltitle inline">Truffare la Morte (Str): </h3>
+                            <p class="coltext inline">Al 19° livello, ogni volta che un pistolero viene ridotto a 0 Punti Ferita o meno, può spendere tutti i punti grinta che gli rimangono (minimo 1) per essere ridotto invece a 1 Punto Ferita.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="leggiadria"><a href="#skill" class="link">Leggiadria</a></h3>
+                    <p class="coltext">A partire dal 2° livello, un pistolero ottiene un Bonus di Schivare +1 alla CA quando non indossa armature o ne indossa una leggera. Qualsiasi condizione che fa perdere il bonus di Destrezza alla CA, fa perdere anche questo Bonus di Schivare. Questo bonus aumenta di +1 ogni 4 livelli successivi al 2° livello (fino a un massimo di +5 al 20° livello).</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento bonus</a></h3>
+                    <p class="coltext">Al 4° livello, e ogni 4 livelli successivi, un pistolero riceve un talento bonus in aggiunta a quelli per l'avanzamento del personaggio. Questi talenti bonus devono essere Talenti di Combattimento o Grinta.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="armi"><a href="#skill" class="link">Addestramento nelle armi da fuoco</a></h3>
+                    <p class="coltext">A partire dal 5° livello, un pistolero può selezionare uno specifico tipo di Arma da Fuoco (come Moschetto, Moschetto Ascia, Trombone o Pistola). Quando spara con un'arma di questo tipo, ottiene un bonus pari al suo modificatore di Destrezza ai tiri per i danni dell'Arma da Fuoco. Inoltre quando gli si Inceppa un'arma di questo tipo, il valore di Inceppamento dell'Arma da Fuoco aumenta di 2 anziché 4. <br>
+
+                        Ogni 4 livelli successivi (9°, 13° e 17°), il pistolero può selezionare un'altro tipo di Arma da Fuoco, ottenendo questi bonus anche con esso.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="grinta2"><a href="#skill" class="link">Vera grinta</a></h3>
+                    <p class="coltext">Al 20° livello, un pistolero seleziona due gesta cui ha accesso e che richiedono di spendere grinta per essere compiute. È possibile compiere queste gesta spendendo 1 punto grinta in meno del normale (minimo 0). Se il numero di punti grinta per compiere questa gesta viene ridotto a 0, il pistolero può compierla finché ha almeno 1 punto grinta. Se una gesta può già essere compiuta fintanto che si ha almeno 1 punto grinta, ora può essere compiuta anche quando non si hanno punti grinta.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>

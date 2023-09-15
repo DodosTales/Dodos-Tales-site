@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="../../../responsive.css">
+    <link rel="stylesheet" href="../classi.css">
+</head>
+<body>
+    <div class="container flex-column">
+        <h1 class="coltitle center">Samurai</h1>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle inline">Dadi vita:</h3>
+                    <p class="coltext inline">D10</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Dadi mana: </h3>
+                    <p class="coltext inline">D6</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Caratteristica primaria: </h3>
+                    <p class="coltext inline">Carisma</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Abilità: </h3>
+                    <p class="coltext inline">4+int</p>
+                    <p class="coltext">Le abilità di classe del samurai sono Addestrare Animali, Artigianato, Cavalcare, Diplomazia, Intimidire, Intuizione, Nuotare, Professione, Raggirare e Scalare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle inline">Competenza: </h3>
+                    <p class="coltext inline">I samurai sono competenti nell'uso di tutte le armi semplici e da guerra, più Katana, Naginata e Wakizashi. I samurai sono competenti in tutte le armature (leggere, medie e pesanti) e negli scudi (tranne gli scudi torre).</p>
+                </li>
+            </ul>
+        </div>
+
+        <table class="center" id="skill">
+            <tr>
+                <th class="coltitle">Livello
+                </th>
+                <th class="coltitle">Bonus <br> Attacco Base
+                </th>
+                <th class="coltitle">Tempra
+                </th>
+                <th class="coltitle">Riflessi
+                </th>
+                <th class="coltitle">Volontà
+                </th>
+                <th class="coltitle">Privilegi di classe
+                </th></tr>
+                <tr>
+                <td class="coltext">1°
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#cavalcatura" class="link">Cavalcatura</a>, <a href="#ordine" class="link">Ordine</a>, <br>
+                    <a href="#fermezza" class="link">Fermezza</a>, <br>
+                    <a href="#sfida" class="link">Sfida 1/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">2°
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext">+0
+                </td>
+                <td class="coltext"><a href="#ordine" class="link">Capacità dell'Ordine</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">3°
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#esperto" class="link">Esperto dell'Arma</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">4°
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#arciere" class="link">Arciere in Sella</a>, <br>
+                     <a href="#sfida" class="link">Sfida 2/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">5°
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext">+1
+                </td>
+                <td class="coltext"><a href="#stendardo" class="link">Stendardo</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">6°
+                </td>
+                <td class="coltext">+6/+1
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">7°
+                </td>
+                <td class="coltext">+7/+2
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 3/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">8°
+                </td>
+                <td class="coltext">+8/+3
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext">+2
+                </td>
+                <td class="coltext"><a href="#ordine" class="link">Capacità dell'Ordine</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">9°
+                </td>
+                <td class="coltext">+9/+4
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#fermezza2" class="link">Fermezza Superiore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">10°
+                </td>
+                <td class="coltext">+10/+5
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 4/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">11°
+                </td>
+                <td class="coltext">+11/+6/+1
+                </td>
+                <td class="coltext">+7
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext">+3
+                </td>
+                <td class="coltext"><a href="#resistenza" class="link">Resistenza Onorevole</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">12°
+                </td>
+                <td class="coltext">+12/+7/+2
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#sfida2" class="link">Sfida Impegnativa</a>, <br>
+                    <a href="#talento" class="link">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">13°
+                </td>
+                <td class="coltext">+13/+8/+3
+                </td>
+                <td class="coltext">+8
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 5/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">14°
+                </td>
+                <td class="coltext">+14/+9/+4
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext">+4
+                </td>
+                <td class="coltext"><a href="#stendardo2" class="link">Stendardo Superiore</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">15°
+                </td>
+                <td class="coltext">+15/+10/+5
+                </td>
+                <td class="coltext">+9
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#ordine" class="link">Capacità dell'Ordine</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">16°
+                </td>
+                <td class="coltext">+16/+11/+6/+1
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 6/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">17°
+                </td>
+                <td class="coltext">+17/+12/+7/+2
+                </td>
+                <td class="coltext">+10
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext">+5
+                </td>
+                <td class="coltext"><a href="#fermezza3" class="link">Fermezza Pura</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">18°
+                </td>
+                <td class="coltext">+18/+13/+8/+3
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#talento" class="link">Talento Bonus</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">19°
+                </td>
+                <td class="coltext">+19/+14/+9/+4
+                </td>
+                <td class="coltext">+11
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#sfida" class="link">Sfida 7/giorno</a>
+                </td></tr>
+                <tr>
+                <td class="coltext">20°
+                </td>
+                <td class="coltext">+20/+15/+10/+5
+                </td>
+                <td class="coltext">+12
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext">+6
+                </td>
+                <td class="coltext"><a href="#resistenza2" class="link">Resistenza Finale</a>
+                </td></tr>
+        </table>
+
+        <div>
+            <ul>
+                <li>
+                    <h3 class="coltitle" id="cavalcatura"><a href="#skill" class="link">Cavalcatura</a></h3>
+                    <p class="coltext">Un samurai ottiene i servigi di un destriero fedele per condurlo in battaglia. Questa cavalcatura funziona come il Compagno Animale di un Druido, usando il livello del samurai come livello effettivo da Druido. La creatura deve essere appropriata come cavalcatura e in grado di essere cavalcata. Un samurai di Medio può selezionare un Cammello o un Cavallo. Un samurai Piccolo può scegliere un Pony o un Lupo, ma anche un Cinghiale o un Cane se è almeno di 4° livello. Il GM può approvare altri Animali come cavalcature appropriate. <br>
+
+                        Un samurai non subisce alcuna penalità di armatura alla prova alle prove di Cavalcare quando è in sella alla sua cavalcatura. La cavalcatura viene sempre considerata addestrata a combattere e riceve Competenza nelle Armature Leggere come talento bonus. La cavalcatura non ottiene la capacità speciale Condividere Incantesimi. <br>
+                        
+                        Il legame di un samurai con la sua cavalcatura è forte, con i due che imparano ad anticipare umori e mosse l'uno dell'altra. Se la cavalcatura dovesse morire, il samurai può trovarne un'altra che lo serva dopo 1 settimana dalla morte della precedente. Questa nuova cavalcatura non ottiene Devozione, Eludere, Eludere Migliorato o Legame come capacità speciali finché il samurai non avanza di un nuovo livello.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="fermezza"><a href="#skill" class="link">Fermezza</a></h3>
+                    <p class="coltext">A partire dal 1° livello, il samurai guadagna la capacità fermezza che può usare per sopportare anche le ferite e le afflizioni più devastanti. Il samurai può usare questa capacità una volta al giorno al 1° livello, più una volta addizionale al giorno per ogni due livelli da samurai oltre il 1°. Ogni volta che il samurai sconfigge il bersaglio della sua sfida, riguadagna un uso giornaliero della sua fermezza, fino al raggiungimento del suo massimo giornaliero. Sconfiggere il bersaglio della sfida generalmente significa ridurlo a 0 Punti Ferita o meno, ma il GM potrebbe stabilire che anche un nemico che si arrende o fugge dalla battaglia sia sconfitto. Il samurai può usare questa fermezza in più modi.
+                        <ul>
+                            <li>
+                                <h3 class="coltitle inline">Determinato: </h3>
+                                <p class="coltext inline">Come Azione Standard, un samurai può spendere un uso della sua capacità fermezza per rimuovere la condizione Affaticato, Infermo o Scosso. Se il samurai è almeno di 8° livello, in alternativa può rimuovere la condizione Barcollante, Esausto, Nauseato o Spaventato. Se la condizione ha una durata più lunga di 1 ora o è permanente, questa capacità la rimuove per 1 ora dopodiché torna a manifestarsi.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Inarrestabile: </h3>
+                                <p class="coltext inline">Quando il samurai è ridotto a meno di 0 Punti Ferita, ma non è Morto, può spendere un uso della sua capacità fermezza, come Azione Immediata, per Stabilizzarsi istantaneamente e rimanere cosciente. È Barcollante, ma non è Privo di Sensi e diventa Morente se tenta di effettuare un'Azione Standard. Il samurai diventa Privo di Sensi se subisce altri danni di qualunque tipo.</p>
+                            </li>
+                            <li>
+                                <h3 class="coltitle inline">Risoluto: </h3>
+                                <p class="coltext inline">Ogni volta che il samurai è costretto ad effettuare un Tiro Salvezza su Tempra o Volontà, può spendere un uso della sua capacità fermezza, come Azione Immediata, per tirare due volte e tenere il risultato migliore. Bisogna decidere di usare questa capacità prima di effettuare il Tiro Salvezza.</p>
+                            </li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="ordine"><a href="#skill" class="link">Ordine</a></h3>
+                    <p class="coltext">Al 1° livello, un samurai deve entrare a far parte di uno specifico <a href = "https://golarion.altervista.org/wiki/Samurai#Ordini_dei_Samurai" target="_blank" class="link">Ordine(golarion)</a>. L'Ordine concede al samurai un certo numero di bonus, abilità di classe e capacità speciali. Inoltre, ogni ordine prevede un certo numero di editti che il samurai deve seguire. Se viola un qualsiasi editto, perde i benefici della capacità di sfida dell'ordine per 24 ore. La violazione di un editto è soggetta all'interpretazione del GM. <br>
+
+                        La maggior parte dei samurai appartiene all'ordine del samurai ed è devota al proprio signore. Quelli senza un signore, o che decidono di abbandonare il proprio, sono ronin. Un samurai può altrimenti scegliere di dedicarsi a uno degli <a href = "https://golarion.altervista.org/wiki/Cavaliere#Ordini_Cavallereschi" target="_blank" class="link">Ordini(golarion)</a> indicati nella descrizione del Cavaliere, ma è raro che accada. <br>
+                        
+                        Un samurai non può cambiare ordine senza intraprendere un lungo percorso che lo porti a dedicarsi a una nuova causa. Quando opera questa scelta, perde immediatamente tutti i benefici dal suo vecchio ordine. Deve poi seguire gli editti del suo nuovo ordine per un intero livello senza ottenere alcun beneficio da esso. Una volta completato l'iter, guadagna tutti i bonus del suo nuovo ordine. L'unica eccezione si ha quando un samurai decide di diventare un ronin. Un samurai può decidere di divenire immediatamente un ronin, perdendo tutti i benefici dal suo vecchio ordine e sostituendoli con quelli dall'ordine del ronin. Tuttavia, una volta ronin l'unico modo per il samurai di cambiare ordine è attraverso il metodo descritto sopra. Si noti che i nomi di questi ordini dovrebbero variare in funzione dell'ambientazione o delle preferenze del GM.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sfida"><a href="#skill" class="link">Sfida</a></h3>
+                    <p class="coltext">Una volta al giorno, un samurai può sfidare un nemico a combattere. Come Azione Veloce, il samurai sceglie un bersaglio in vista da sfidare. Gli attacchi in mischia del samurai infliggono danni extra ogni volta che vengono sferrati contro il bersaglio della sua sfida. Questo danno extra è pari al livello del samurai. Il samurai può usare questa capacità una volta al giorno al 1° livello, più una volta addizionale al giorno per ogni tre livelli dopo il 1°, fino a un massimo di sette volte al giorno al 19° livello. <br>
+
+                        Sfidare un nemico richiede gran parte della Concentrazione del samurai. Il samurai subisce penalità -2 alla sua Classe Armatura, tranne contro gli attacchi sferrati dal bersaglio della sua sfida. <br>
+                        
+                        La sfida continua a far effetto fino a che il bersaglio muore o diventa Incosciente, oppure termina il combattimento. Ogni sfida di un samurai include anche un altro effetto indicato nella sezione che descrive gli Ordini dei samurai.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="esperto"><a href="#skill" class="link">Esperto dell'arma</a></h3>
+                    <p class="coltext">Al 3° livello, un samurai ottiene una maestria ineguagliabile con le sue armi prescelte. Il samurai seleziona un'arma fra Arco Lungo, Katana, Naginata o Wakizashi. Il samurai può estrarre l'arma prescelta come Azione Gratuita come se avesse il talento Estrazione Rapida. Inoltre, ogni volta che minaccia un colpo critico con l'arma selezionata, ottiene bonus +2 al tiro per confermarlo. Infine, i suoi livelli da samurai contano come e si sommano con qualsiasi livello da Guerriero possieda allo scopo di soddisfare i prerequisiti dei talenti che selezionano specificamente la sua arma prescelta, come Arma Specializzata.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="arciere"><a href="#skill" class="link">Arciere in sella</a></h3>
+                    <p class="coltext">Al 4° livello, il samurai diventa esperto nell'usare armi da tiro mentre è in sella. Un samurai subisce solo penalità -2 ai Tiri per Colpire con armi a distanza quando la sua cavalcatura effettua movimento doppio. Questa penalità aumenta a -4 quando la sua cavalcatura corre.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="stendardo"><a href="#skill" class="link">Stendardo</a></h3>
+                    <p class="coltext">Al 5° livello, lo stendardo del samurai diventa un simbolo che ispira i suoi alleati e compagni. Finché lo stendardo del samurai è visibile chiaramente, tutti gli alleati entro 18 metri ricevono Bonus Morale +2 ai Tiri Salvezza contro Paura e un Bonus Morale +1 ai Tiri per Colpire effettuati come parte di una Carica. Al 10° livello, e ogni cinque livelli successivi, questi bonus aumentano di +1. Lo stendardo deve essere almeno Piccolo o più grande e deve essere portato o esposto dal samurai o dalla sua cavalcatura per funzionare.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="talento"><a href="#skill" class="link">Talento bonus</a></h3>
+                    <p class="coltext">Al 6° livello, e ogni sei livelli successivi, un samurai riceve un talento bonus in aggiunta a quelli ottenuti per il normale avanzamento. Questi talenti bonus devono essere scelti tra quelli indicati come Talenti di Combattimento. Il samurai deve soddisfare i prerequisiti per questi talenti bonus.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="fermezza2"><a href="#skill" class="link">Fermezza superiore</a></h3>
+                    <p class="coltext">Al 9° livello, il samurai può usare fermezza per negare alcune delle sue ferite più gravi. Dopo che un colpo critico contro di lui viene confermato, può spendere un uso della sua capacità Fermezza come Azione Immediata per trattare quel colpo critico come un colpo normale. Effetti che si attivano solo con un colpo critico non si attivano quando il samurai usa questa capacità.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="resistenza"><a href="#skill" class="link">Resistenza onorevole</a></h3>
+                    <p class="coltext">All'11° livello, il samurai può effettuare una resistenza onorevole, decidendo di combattere contro il bersaglio della sua sfida fino in fondo, a qualunque costo. All'11° livello, può effettuare una resistenza onorevole una volta al giorno, più una volta addizionale al giorno al 16° livello. Dichiarare una resistenza onorevole è un'Azione Veloce. Effettuando una resistenza onorevole, il samurai è immune alle condizioni Scosso, Spaventato e In Preda al Panico. Non diventa Privo di Sensi se il totale dei suoi Punti Ferita è inferiore a 0. Infine, ogni volta che un samurai deve effettuare un Tiro Salvezza mentre effettua una resistenza onorevole, può spendere un uso giornaliero della sua capacità Fermezza per ritirare un Tiro Salvezza dopo che il primo è stato effettuato. Bisogna tenere il risultato del secondo tiro, anche se peggiore. Se un samurai che sta effettuando una resistenza onorevole si ritira dalla battaglia contro il nemico che ha sfidato, non può utilizzare la capacità Sfida per 24 ore.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="sfida2"><a href="#skill" class="link">Sfida impegnativa</a></h3>
+                    <p class="coltext">Al 12° livello, ogni volta che un samurai dichiara una sfida, il suo bersaglio deve prestare attenzione alla minaccia che questi rappresenta. Finché il bersaglio è all'interno dell'area minacciata dal samurai, subisce penalità -2 alla sua CA contro gli attacchi sferrati da chiunque altro tranne il samurai.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="stendardo2"><a href="#skill" class="link">Stendardo superiore</a></h3>
+                    <p class="coltext">Al 14° livello, lo stendardo del samurai diventa un punto di riferimento per i suoi alleati. Tutti gli alleati entro 18 metri ricevono Bonus Morale +2 ai Tiri Salvezza contro incantesimi ed effetti di Charme e Compulsione. Inoltre, mentre il suo stendardo è esposto, il samurai può utilizzare un'Azione Standard per sventolarlo in aria, concedendo a tutti gli alleati entro 18 metri un Tiro Salvezza addizionale contro qualsiasi incantesimo o effetto li stia designando come bersaglio. Questo Tiro Salvezza viene effettuato con la CD originale. Incantesimi ed effetti che non permettono un Tiro Salvezza non sono influenzati da questa capacità. Un alleato non può trarre beneficio da questa capacità più di una volta al giorno.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="fermezza3"><a href="#skill" class="link">Fermezza pura</a></h3>
+                    <p class="coltext">Al 17° livello, un samurai può spendere usi della sua capacità Fermezza per evitare la morte. Se gli rimangono almeno due usi della sua capacità Fermezza, può spendere tutti gli usi giornalieri di questa capacità di cui dispone per evitare di morire. Anche se la fonte dell'attacco l'avrebbe ucciso, rimane in vita, a –1 Punti Ferita (o meno se era già sotto i –1), e Stabile.</p>
+                </li>
+                <li>
+                    <h3 class="coltitle" id="resistenza2"><a href="#skill" class="link">Resistenza finale</a></h3>
+                    <p class="coltext">Al 20° livello, un samurai può effettuare una resistenza finale ogni volta che lancia una sfida. Mentre questa sfida è in atto, tutte le armi da mischia e a distanza infliggono il minimo dei danni al samurai, a meno che l'attacco non metta a segno un colpo critico. Inoltre, il samurai rimane cosciente e non è Barcollante quando ha meno di 0 Punti Ferita. Mentre usa questa capacità, il samurai non può essere ucciso da armi da mischia o a distanza, a meno che non siano impugnate dal bersaglio della sua sfida. Gli attacchi degli avversari che non siano bersaglio della sua sfida non gli infliggono danni quando il samurai ha 0 o meno Punti Ferita. Questa capacità non ha effetto su incantesimi, effetti ambientali, capacità soprannaturali o qualsiasi altra fonte di danno che non sia un'arma da mischia o a distanza. Tali fonti di danno lo colpiscono normalmente e possono ucciderlo (anche se non lo fanno diventare Privo di Sensi e Barcollante se lo riducono a meno di 0 Punti Ferita). Questo effetto dura fino a che la sfida finisce o il samurai tenta un'azione offensiva contro un bersaglio diverso da quello della sua sfida.</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="flex-row center">
+            <a href="../classi.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Classi</span>
+                    <i></i>
+                </button>
+
+            <a href="../../creation.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Creazione personaggio</span>
+                    <i></i>
+                </button>
+            </a>
+
+            <a href="../../../home.html" class="button-link">
+                <button class="button-led-back margin">
+                    <span>Dodo's Tales Home</span>
+                    <i></i>
+                </button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+        <p>
+            Parte del sito è stato preso da
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>Non sono il proprietario delle immagini usate.</p>
+        <p>This site is for learning purpose and private use</p>
+        <p>
+            Some of the content are from
+            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
+        </p>
+        <p>I'm not the owner of the images used.</p>
+    </footer>
+</body>
+</html>
