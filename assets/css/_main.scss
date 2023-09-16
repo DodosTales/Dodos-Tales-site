@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+    --colmain: #eec085;
+    --colsec: #0f1b3d;
+    --colter: #0067a5;
+    --colquat: #d08951;
+    --colback: #390457;
+    --link: #517d3f;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colmain);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.dodotitle {
+    //margin-left: 4em;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--colsec);
+
+    img {
+        width: 2.6rem;
+    }
+}
+
+.link {
+    text-decoration: none;
+    border-bottom: var(--link) solid 0.1em;
+    color: var(--link);
+}
+
+.link:hover {
+    text-decoration: none;
+    color: var(--colquat);
+}
+
+footer {
+    width: 100%;
+    text-wrap: balance;
+    background: var(--colsec);
+    color: var(--colquat);
+    text-align: center;
+}

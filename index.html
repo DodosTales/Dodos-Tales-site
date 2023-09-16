@@ -1,77 +1,106 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
-    <script type="module" src="main.js"></script>
-</head>
-<body>
-    <div class="container flex-column flex-center">
-        <h1 class= "coltitle dodopos">
-            <img src="dodo.png" alt="dodos" class="dodo">
-            Dodo's Tales
-            <img src="dodo.png" alt="dodos" class="dodo">
-        </h1>
+    <head>
+        <title>Dodo's Tales</title>
+        <link rel="icon" type="image/png" href="/assets/img/dodo.png" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <script type="module" src="/assets/js/main.js"></script>
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body class="d-flex flex-column" style="min-height: 100vh">
+        <div class="container text-center mt-2">
+            <div class="row">
+                <h1 class="dodotitle">
+                    <img src="/assets/img/dodo.png" alt="dodos" />
+                    Dodo's Tales
+                    <img src="/assets/img/dodo.png" alt="dodos" />
+                </h1>
 
-        <a href="./creation/creation.html">
-            <button class="button-led">
-                <span>Creazione PG</span>
-                <i></i>
-            </button>
-        </a>
+                <a href="/creation/creation.html">
+                    <button class="button-led">
+                        <span>Creazione PG</span>
+                        <i></i>
+                    </button>
+                </a>
 
-        <a href="./doni/doni.html">
-            <button class="button-led">
-                <span>Elenco doni classici</span>
-                <i></i>
-            </button>
-        </a>
+                <a href="/doni/doni.html">
+                    <button class="button-led">
+                        <span>Elenco doni classici</span>
+                        <i></i>
+                    </button>
+                </a>
 
-        <a href="./doni/doni_comp.html">
-            <button class="button-led">
-                <span>Elenco doni completi</span>
-                <i></i>
-            </button>
-        </a>
+                <a href="/doni/doni_comp.html">
+                    <button class="button-led">
+                        <span>Elenco doni completi</span>
+                        <i></i>
+                    </button>
+                </a>
 
-        <a href="./cd/cd.html">
-            <button class="button-led">
-                <span>Calcolo CD incantesimi</span>
-                <i></i>
-            </button>
-        </a>
+                <a href="/cd/cd.html">
+                    <button class="button-led">
+                        <span>Calcolo CD incantesimi</span>
+                        <i></i>
+                    </button>
+                </a>
 
-        <a href="./karma/karma.html">
-            <button class="button-led">
-                <span>Karma</span>
-                <i></i>
-            </button>
-        </a>
+                <a href="/karma/karma.html">
+                    <button class="button-led">
+                        <span>Karma</span>
+                        <i></i>
+                    </button>
+                </a>
 
-        <a href="./reazione/reazione.html">
-            <button class="button-led">
-                <span>Reazione</span>
-                <i></i>
-            </button>
-        </a>
-    </div>
-    
-    <footer>
-        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
-        <p>
-            Parte del sito è stato preso da
-            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
-        </p>
-        <p>Non sono il proprietario delle immagini usate.</p>
-        <p>This site is for learning purpose and private use</p>
-        <p>
-            Some of the content are from
-            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
-        </p>
-        <p>I'm not the owner of the images used.</p>
-    </footer>
-</body>
+                <a href="/reazione/reazione.html">
+                    <button class="button-led">
+                        <span>Reazione</span>
+                        <i></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="my-auto"></div>
+        <footer class="p-1">
+            <div class="mb-2">
+                <div style="display: inline-flex; flex-direction: column">
+                    <span
+                        >Questo sito è per scopo di apprendimento e per uso
+                        privato</span
+                    >
+                    <span>
+                        Parte del sito è stato preso da
+                        <a
+                            class="link"
+                            href="https://golarion.altervista.org/wiki/Pagina_principale"
+                            target="_blank"
+                            >Golarion</a
+                        >
+                    </span>
+                    <span>Non sono il proprietario delle immagini usate.</span>
+                </div>
+            </div>
+            <div>
+                <div style="display: inline-flex; flex-direction: column">
+                    <span
+                        >This site is for learning purpose and private use</span
+                    >
+                    <span>
+                        Some of the content are from
+                        <a
+                            class="link"
+                            href="https://golarion.altervista.org/wiki/Pagina_principale"
+                            target="_blank"
+                        >
+                            Golarion
+                        </a>
+                    </span>
+                    <span>I'm not the owner of the images used.</span>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -1,32 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
-:root{
-    --colmain: #eec085;
-    --colsec: #0f1b3d;
-    --colter: #0067A5;;
-    --colquat: #d08951;
-    --colback: #390457;
-    --link:#517d3f;
-}
-
-*{
-  font-family: 'Quicksand', sans-serif;
-}
-
-body{
-  background-color: var(--colmain);
-}
-
-li{
-  margin-bottom: 0.5em;
-}
-
-.hidden{
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+.hidden {
   display: none;
 }
 
 /*questo center è usato per rendere un elemento centrato e va inserito nell'elemento*/
-.center{
+.center {
   margin-left: auto;
   margin-right: auto;
 }
@@ -36,16 +15,16 @@ li{
 }
 
 /*questo stile conviene usarlo per gli elementi da far diventare in colonna per i device con lo schermo piccolo*/
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
 
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 
 /*viene usato per fare in modo che il flex centri gli elementi, va usato assieme alla classe container*/
-.flex-center{
+.flex-center {
   justify-content: center;
   align-items: center;
 }
@@ -55,20 +34,12 @@ li{
   margin-right: 0.8em;
 }
 
-.dodopos{
-  margin-left: 4em;
-}
-
-.dodo {
-  width: 10%;
-}
-
-.coltitle{
+.coltitle {
   color: var(--colsec);
 }
 
-.coltext{
-    color: var(--colter);
+.coltext {
+  color: var(--colter);
 }
 
 .border {
@@ -76,7 +47,7 @@ li{
   padding: 0.2em;
 }
 
-.inumber{
+.inumber {
   margin: 0.8em 0.3em 0.8em 0.3em;
   background-color: transparent;
   color: var(--colter);
@@ -84,24 +55,41 @@ li{
   border-radius: 0.5em;
 }
 
-.button-link {
+:root {
+  --colmain: #eec085;
+  --colsec: #0f1b3d;
+  --colter: #0067a5;
+  --colquat: #d08951;
+  --colback: #390457;
+  --link: #517d3f;
+}
+
+* {
+  font-family: "Quicksand", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--colmain);
+}
+
+a {
   text-decoration: none;
-  margin-top: 1em;
 }
 
-.normal-button{
-  border-color: var(--colsec);
-  border-radius: 2em;
-  color: var(--colter);
-  background-color: transparent;
-  padding: 0.5em;
-  font-size: 1em;
+li {
+  margin-bottom: 0.5em;
 }
 
-.normal-button:hover{
-  cursor: pointer;
-  border-color: var(--colter);
-  background-color: var(--colquat);
+.dodotitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--colsec);
+}
+.dodotitle img {
+  width: 2.6rem;
 }
 
 .link {
@@ -110,124 +98,106 @@ li{
   color: var(--link);
 }
 
-.link:hover{
+.link:hover {
   text-decoration: none;
   color: var(--colquat);
 }
 
-footer{
+footer {
   width: 100%;
-  height: 100%;
-  margin-top: 10em;
+  text-wrap: balance;
   background: var(--colsec);
   color: var(--colquat);
   text-align: center;
 }
 
+button {
+  text-decoration: none;
+  border: 2px solid var(--colsec);
+  color: var(--colter);
+  background-color: var(--colquat);
+  padding: 0.5em;
+  font-size: 1em;
+}
+button:hover {
+  border-color: var(--colter);
+}
+
 /*BUTTON LED*/
-.button-led{
-    position: relative;
-    margin-bottom: 1em;
-    width: 18em;
-    background: var(--colsec);
-    color: var(--colsec);
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
-    letter-spacing: 0.1rem;
-    font-size: 1rem;
-    padding: 1rem 3rem;
-    transition: 0.2s;
-  }
-  
+.button-led {
+  position: relative;
+  margin-bottom: 1em;
+  width: 18em;
+  background: var(--colquat);
+  color: var(--colsec);
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1rem 3rem;
+  transition: 0.2s;
+}
 .button-led:hover {
-    letter-spacing: 0.2rem;
-    padding: 1.1rem 3.1rem;
-    background: var(--colter);
-    color: var(--colter);
-    animation: box 3s infinite;
+  letter-spacing: 0.2rem;
+  scale: 1.05;
+  color: var(--colter);
+  animation: box 3s infinite;
 }
-  
-.button-led::before {
-    content: "";
-    position: absolute;
-    inset: 2px;
-    background: var(--colquat);
-}
-  
-.button-led span {
-    position: relative;
-    z-index: 1;
-}
-
-.button-led i {
-    position: absolute;
-    inset: 0;
-    display: block;
-}
-  
-.button-led i::before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    left: 80%;
-    top: -2px;
-    border: 2px solid var(--colsec);
-    background: var(--colquat);
-    transition: 0.2s;
-}
-  
 .button-led:hover i::before {
-    width: 15px;
-    left: 20%;
-    animation: move 3s infinite;
+  width: 15px;
+  left: 20%;
+  animation: move 3s infinite;
 }
-  
-.button-led i::after {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    left: 20%;
-    bottom: -2px;
-    border: 2px solid var(--colsec);
-    background: var(--colquat);
-    transition: 0.2s;
-}
-  
 .button-led:hover i::after {
-    width: 15px;
-    left: 80%;
-    animation: move 3s infinite;
+  width: 15px;
+  left: 80%;
+  animation: move 2.8s infinite;
 }
-  
-@keyframes move {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(5px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+.button-led i::before {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 6px;
+  left: 80%;
+  top: -4px;
+  border: 2px solid var(--colsec);
+  background: var(--colquat);
+  transition: 0.2s;
 }
-  
-@keyframes box {
-    0% {
-      box-shadow: var(--colquat);
-    }
-    50% {
-      box-shadow: var(--colsec);
-    }
-    100% {
-      box-shadow: var(--colquat);
-    }
+.button-led i::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 6px;
+  left: 20%;
+  bottom: -4px;
+  border: 2px solid var(--colsec);
+  background: var(--colquat);
+  transition: 0.2s;
 }
 
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes box {
+  0% {
+    box-shadow: var(--colquat);
+  }
+  50% {
+    box-shadow: var(--colsec);
+  }
+  100% {
+    box-shadow: var(--colquat);
+  }
+}
 /*BUTTON LED BACK*/
-.button-led-back{
+.button-led-back {
   position: relative;
   width: 18em;
   background: var(--colback);
@@ -314,7 +284,6 @@ footer{
     transform: translateX(0);
   }
 }
-
 @keyframes box {
   0% {
     box-shadow: var(--colquat);
@@ -325,4 +294,4 @@ footer{
   100% {
     box-shadow: var(--colquat);
   }
-}
+}/*# sourceMappingURL=style.css.map */
