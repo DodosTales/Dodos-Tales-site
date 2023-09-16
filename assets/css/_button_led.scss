@@ -20,7 +20,7 @@ button {
     color: var(--colsec);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
-    padding: 1rem 3rem;
+    padding: 1rem 0rem;
     transition: 0.2s;
 
     &:hover {
@@ -70,6 +70,20 @@ button {
             transition: 0.2s;
         }
     }
+
+    &-back {
+        @extend .button-led;
+        //background: var(--colback);
+        border: 2px solid var(--colback);
+        color: var(--colback);
+
+        i {
+            &::before,
+            &::after {
+                border: 2px solid var(--colback);
+            }
+        }
+    }
 }
 
 @keyframes move {
@@ -96,7 +110,7 @@ button {
     }
 }
 
-/*BUTTON LED BACK*/
+/*BUTTON LED BACK
 .button-led-back {
     position: relative;
     width: 18em;
@@ -196,3 +210,4 @@ button {
         box-shadow: var(--colquat);
     }
 }
+*/
