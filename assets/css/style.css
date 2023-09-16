@@ -47,9 +47,6 @@ li {
   width: 2.6rem;
 }
 
-/*.coltitle {
-    color: var(--colsec);
-}*/
 .coltext {
   color: var(--colter);
 }
@@ -255,4 +252,15 @@ button:hover {
         box-shadow: var(--colquat);
     }
 }
-*//*# sourceMappingURL=style.css.map */
+*/
+table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+td, th {
+  border: 1px solid #0f1b3d;
+  text-align: left;
+  padding: 0.5em;
+}/*# sourceMappingURL=style.css.map */

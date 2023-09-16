@@ -2,86 +2,108 @@
 <html lang="it">
     <head>
         <title>Dodo's Tales</title>
+        <link rel="icon" type="image/png" href="/assets/img/dodo.png" />
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/assets/css/style.css" />
-        <script type="module" src="/assets/js/main.js"></script>
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
-        <div class="container flex-column flex-center">
-            <h1 class="coltitle">Talenti Dodo's Tales unici</h1>
-
-            <a
-                href="./metamagia/metamagia.html"
-                class="button-link button-grid-1"
-            >
-                <button class="button-led">
-                    <span>Metamagia</span>
-                    <i></i>
-                </button>
-            </a>
-
-            <a href="./normali/normali.html" class="button-link button-grid-2">
-                <button class="button-led">
-                    <span>Normali</span>
-                    <i></i>
-                </button>
-            </a>
-
+        <div class="container flex-column text-center">
             <div>
-                <p class="coltext">
-                    Per gli altri talenti andare su
-                    <a
-                        href="https://golarion.altervista.org/wiki/Talenti"
-                        target="_blank"
-                        class="link"
-                        id="talenti"
-                        >Golarion</a
-                    >
-                </p>
-            </div>
+                <h1 class="dodotitle">Talenti Dodo's Tales unici</h1>
 
-            <div class="flex-row">
-                <a href="../creation.html" class="button-link">
-                    <button class="button-led-back margin">
-                        <span>Creazione personaggio</span>
-                        <i></i>
-                    </button>
-                </a>
+                <div class="row flex-column">
+                    <div class="col">
+                        <a href="./metamagia/metamagia.html">
+                            <button class="button-led">
+                                <span>Metamagia</span>
+                                <i></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="./normali/normali.html">
+                            <button class="button-led">
+                                <span>Normali</span>
+                                <i></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
 
-                <a href="../../index.html" class="button-link">
-                    <button class="button-led-back margin">
-                        <span>Dodo's Tales Home</span>
-                        <i></i>
-                    </button>
-                </a>
+                <div>
+                    <p class="coltext">
+                        Per gli altri talenti andare su
+                        <a
+                            href="https://golarion.altervista.org/wiki/Talenti"
+                            target="_blank"
+                            id="talenti"
+                            >Golarion</a
+                        >
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-3">
+                        <a href="../creation.html">
+                            <button class="button-led-back">
+                                <span>Creazione personaggio</span>
+                                <i></i>
+                            </button>
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="/index.html">
+                            <button class="button-led-back">
+                                <span>Dodo's Tales Home</span>
+                                <i></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <footer>
-            <p>Questo sito è per scopo di apprendimento e per uso privato</p>
-            <p>
-                Parte del sito è stato preso da
-                <a
-                    class="link"
-                    href="https://golarion.altervista.org/wiki/Pagina_principale"
-                    target="_blank"
-                    >Golarion</a
-                >
-            </p>
-            <p>Non sono il proprietario delle immagini usate.</p>
-            <p>This site is for learning purpose and private use</p>
-            <p>
-                Some of the content are from
-                <a
-                    class="link"
-                    href="https://golarion.altervista.org/wiki/Pagina_principale"
-                    target="_blank"
-                    >Golarion</a
-                >
-            </p>
-            <p>I'm not the owner of the images used.</p>
+        <div class="my-auto"></div>
+        <footer class="p-1">
+            <div class="mb-2">
+                <div style="display: inline-flex; flex-direction: column">
+                    <span
+                        >Questo sito è per scopo di apprendimento e per uso
+                        privato</span
+                    >
+                    <span>
+                        Parte del sito è stato preso da
+                        <a
+                            class="link"
+                            href="https://golarion.altervista.org/wiki/Pagina_principale"
+                            target="_blank"
+                            >Golarion</a
+                        >
+                    </span>
+                    <span>Non sono il proprietario delle immagini usate.</span>
+                </div>
+            </div>
+            <div>
+                <div style="display: inline-flex; flex-direction: column">
+                    <span
+                        >This site is for learning purpose and private use</span
+                    >
+                    <span>
+                        Some of the content are from
+                        <a
+                            class="link"
+                            href="https://golarion.altervista.org/wiki/Pagina_principale"
+                            target="_blank"
+                        >
+                            Golarion
+                        </a>
+                    </span>
+                    <span>I'm not the owner of the images used.</span>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
