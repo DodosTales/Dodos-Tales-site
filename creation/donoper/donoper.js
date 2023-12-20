@@ -1,6 +1,6 @@
 "use strict";
 
-import { doni_comp, doni_mag } from "../../main.js";
+import { doni_comp, doni_mag } from "../../assets/js/main.js";
 
 window.onload = ()=>{
 
