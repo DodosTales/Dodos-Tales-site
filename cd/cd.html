@@ -17,7 +17,11 @@
             <div>
                 <h1>Calcolo CD</h1>
 
-                <p class="coltext">La CD si calcolerà nel seguente modo: 10 + caratteristica primaria + 1 ogni 5 mana spesi + talenti + 1 ogni 5 mana aggiuntivo spesi</p>
+                <p class="coltext">
+                    La CD si calcolerà nel seguente modo: 10 + caratteristica
+                    primaria + 1 ogni 5 mana spesi + talenti + 1 ogni 5 mana
+                    aggiuntivo spesi
+                </p>
 
                 <div>
                     <form>
@@ -31,8 +35,7 @@
                             class="inumber"
                             min="1"
                             max="20"
-                            value="1"
-                        />
+                            value="1" />
                         <br />
                         <label for="primaria" class="coltext"
                             >Selezionare il modificatore caratteristica
@@ -45,8 +48,7 @@
                             class="inumber"
                             min="-5"
                             max="17"
-                            value="0"
-                        />
+                            value="0" />
                         <br />
                         <label for="mana" class="coltext"
                             >Selezionare il costo in mana:
@@ -58,18 +60,18 @@
                             class="inumber"
                             min="0"
                             max="999"
-                            value="0"
-                        />
+                            value="0" />
                     </form>
-
                     <div>
                         <button
-                            class="normal-button"
+                            class="button-led-back mt-1"
                             style="margin-bottom: 0.8em"
-                            id="calcolo"
-                        >
-                            Calcola CD
+                            id="calcolo">
+                            <span> Calcola CD </span>
+                            <i></i>
                         </button>
+                    </div>
+                    <div>
                         <br />
                         <p class="coltext inline">
                             La CD del tuo incantesimo è:
@@ -81,9 +83,14 @@
                         <p class="coltext">
                             Testa se il tuo incantesimo è abbastanza potente
                         </p>
-                        <button class="normal-button" id="drey">
-                            Testa contro Drey
+                    </div>
+                    <div>
+                        <button class="button-led-back" id="drey">
+                            <span>Testa contro Drey</span>
+                            <i></i>
                         </button>
+                    </div>
+                    <div>
                         <p class="coltext" id="spazio"></p>
                     </div>
 
@@ -126,8 +133,7 @@
                         <a
                             class="link"
                             href="https://golarion.altervista.org/wiki/Pagina_principale"
-                            target="_blank"
-                        >
+                            target="_blank">
                             Golarion
                         </a>
                     </span>
