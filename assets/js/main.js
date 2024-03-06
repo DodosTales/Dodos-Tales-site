@@ -267,6 +267,7 @@ const battute = [
     "Hai altre idee in testa o hai già finito lo spazio per averle?",
     "Se continui così mi SPAZIOentisco!",
     "Dovresti apprendere altri incantesimi, così spazi il tuo repertorio",
+    "Facendo spazio nella tua mente forse troveresti il modo di fare qualcosa bene",
 ];
 
 export { doni_mag, doni_comp, battute };
