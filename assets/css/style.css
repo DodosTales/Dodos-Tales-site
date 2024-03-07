@@ -10,7 +10,7 @@
 
 * {
   font-family: "Quicksand", sans-serif;
-  font-size: 1.01em;
+  font-size: 1.02em;
 }
 
 html,
@@ -78,7 +78,7 @@ h3 {
   border-radius: 0.5em;
 }
 
-.cd-res {
+.res {
   display: inline;
   margin-bottom: 1.5em;
 }
@@ -98,7 +98,8 @@ button {
   color: var(--colter);
   background-color: var(--colquat);
   padding: 0.5em;
-  font-size: 1em;
+  font-size: 1.01em;
+  margin-bottom: 1em;
 }
 button:hover {
   border-color: var(--colter);
@@ -107,7 +108,7 @@ button:hover {
 /*BUTTON LED*/
 .button-led, .button-led-back {
   position: relative;
-  margin: 1em;
+  margin: 0.5em;
   width: 18em;
   background: var(--colquat);
   color: var(--colsec);
