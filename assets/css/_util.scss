@@ -8,9 +8,9 @@
     margin-right: auto;
 }
 
-.inline {
+/*.inline {
     display: inline;
-}
+}*/
 
 /*questo stile conviene usarlo per gli elementi da far diventare in colonna per i device con lo schermo piccolo*/
 .flex-row {
@@ -43,12 +43,4 @@
 .border {
     border: solid 0.15em var(--colsec);
     padding: 0.2em;
-}
-
-.inumber {
-    margin: 0.8em 0.3em 0.8em 0.3em;
-    background-color: transparent;
-    color: var(--colter);
-    border: solid 0.15em var(--colsec);
-    border-radius: 0.5em;
 }
