@@ -515,6 +515,27 @@ const DATA = [
         "28 focolare",
         null,
     ],
+
+    [
+        "",
+        "Cercando informazioni su Leon per aiutare Ofelia, raggiungiamo la sua casa scoprendo parte del passato di Ofelia. Esplorando la casa di Leon, scopriamo che Karmin lo ha rapito e, dopo aver sconfitto il suo incantesimo, entriamo in una dimensione diversa dove ci sono frammenti di Onyxia ed altri tiefling. Dopo aver conosciuto il passato di Leon, Ofelia prende un frammento artificiale ed assorbe gli altri frammenti senza uccidere il recipiente. Usciamo dalla casa e Ravi viene preso e portato dalla sua divinità. Successivamente andiamo al tempio del drago, dove viene conservato un uovo di drago ed un teschio di un drago con un cristallo nero, che era chiamato Kalamith. Zan e Tog si sentono attratti dal cristallo e dopo un po' ne vengono letteralmente risucchiati, finendo per stringere un patto con il drago antico Kalamith. Dopo aver fatto una riunione di aggiornamento con gli altri membri della gilda si fa sera, e Perseus trova un nuovo compagno, Null.",
+        "29 focolare",
+        null,
+    ],
+
+    [
+        "",
+        "Dopo aver scoperto che Null può riconoscere i demoni, lo iniziamo ad usare per le nostre indagini. Andiamo alla festa nel castello dove sono presenti molti maghi importanti tra cui Drey, i master delle gilde e gli avatar di molte divinità. Durante il discorso del re una strana guardia fa sparire molti maghi potenti in una scatola ed il castello viene assaltato da demoni, mentre i master si allontanano furtivamente. Seguiamo i master che vanno verso la tesoriera del castello, dove la master degli Astral Narvals va in una caveau segreto, mentre gli altri master rivelano la forma demoniaca che sconfiggiamo con l’aiuto di Brighitte, capo di Limurg. Indagando nel caveau scopriamo che è stata presa una cosa legata a “Il primo”. Dopo si risolve la situazione al castello, ma ci viene detto di tacere sull’accaduto e torniamo alla locanda.",
+        "30 focolare",
+        null,
+    ],
+
+    [
+        "Fine della saga della capitale",
+        "Veniamo portati alla piazza del castello per la premiazione. Dopo iniziamo i giochi facendo uno scontro amichevole di introduzione. Zan e Xirelia vincono subito. Poi dopo la vittoria a tavolino di Ofelia e Stir, si scontrano Perseus e Arataki contro Tog ed il therian Sunny, che vincono Tog e Sunny. Negli altri incontri incontriamo Loyce. Poi si continua con Zan e Xirelia contro Goetia e Dalghe, ma prima dello scontro compare Drey al centro dell’arena che apre sopra Oleus un portale facendo uscire 6 draghi, tra cui Barost e Venomfang. I dragon slayer vanno verso i loro draghi, mentre gli altri che non affrontano Drey escono dall’arena ed infine arriva Arrett. Molti di noi tentano di trovare un modo di affrontarlo, ma poi Drey, usando a suo vantaggio un incantesimo di Arrett, sacrifica Loyce per richiamare dal passato un Arrett, che toglie il dominio del tempo del nostro Arrett. Subito dopo un aeronave del concilio della magia distrugge la protezione spaziale di Drey ed i maghi di grado Leggenda con gli avatar delle divinità presenti nell’arena feriscono gravemente Drey e l’Arrett del passato costringendolo alla resa ed alla fuga. Alla fine del casino, il corpo di Loyce viene rigenerato, Ofelia chiede aiuto a Kardia per la sua situazione e si scopre che il vero di nome di Ravi è Ares ed è il figlio di Helios.",
+        "1 Gelata",
+        null,
+    ],
 ];
 
 const template = (titolo, corpo, data, img) => {
