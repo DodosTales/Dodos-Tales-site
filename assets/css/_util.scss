@@ -1,0 +1,46 @@
+.hidden {
+    display: none;
+}
+
+/*questo center è usato per rendere un elemento centrato e va inserito nell'elemento*/
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*.inline {
+    display: inline;
+}*/
+
+/*questo stile conviene usarlo per gli elementi da far diventare in colonna per i device con lo schermo piccolo*/
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/*viene usato per fare in modo che il flex centri gli elementi, va usato assieme alla classe container*/
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.margin {
+    margin-top: 1.5em;
+    margin-right: 0.8em;
+}
+
+.coltitle {
+    color: var(--colsec);
+}
+
+.coltext {
+    color: var(--colter);
+}
+
+.border {
+    border: solid 0.15em var(--colsec);
+    padding: 0.2em;
+}

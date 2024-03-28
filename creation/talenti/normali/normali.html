@@ -1,222 +1,466 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../style.css">
-    <link rel="stylesheet" href="../../../responsive.css">
-</head>
-<body>
-    <div class="container flex-column">
+    <head>
+        <title>Dodo's Tales</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/style.css">
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="container flex-column">
+            <h1 class="coltitle text-center">Normali</h1>
 
-        <h1 class="coltitle center">Normali</h1>
+            <div>
+                <ul>
+                    <li>
+                        <h2 class="coltitle">Incantesimi focalizzati:</h2>
+                        <p class="coltext">
+                            Aumenta la Cd di un proprio incantesimo e diminuisce
+                            di 1 il costo in mana per lanciarlo. <br />
+                            Può essere preso più volte per incantesimi diversi.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">
+                            Incantesimi focalizzati superiori:
+                        </h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: incantesimi focalizzati
+                        </h3>
+                        <p class="coltext">
+                            Aumenta ulteriormente la Cd di un proprio
+                            incantesimo e diminuisce di 1 il costo di mana per
+                            lanciarlo. <br />
+                            Può essere preso più volte per incantesimi diversi.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Mana aggiuntivo:</h2>
+                        <p class="coltext">
+                            Aggiunge 5 mana al livello 1 ed aggiunge 1 mana
+                            aggiuntivo ogni livello successivo
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Scorta di mana:</h2>
+                        <p class="coltext">
+                            Una volta al giorno il mago può ripristinare
+                            1d8+modificatore potere del suo mana come azione
+                            gratuita. <br />
+                            Ogni 5 livelli ottiene un uso aggiuntivo della sua
+                            scorta di mana (lvl 5 2 ripristini, lvl 10 3
+                            ripristini….)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Salasso magico:</h2>
+                        <h3 class="coltitle">
+                            Prerequisito: Costituzione 16, Attacco base 3
+                        </h3>
+                        <p class="coltext">
+                            L’incantatore può rigenerare la propria salute
+                            convertendo il proprio mana in pf come azione di
+                            round completo. <br />
+                            Il soggetto è in grado di convertire un quantitativo
+                            di mana al giorno pari al doppio dei propri DV
+                            (tutti assieme o dilazionati in diverse cure nel
+                            corso della giornata)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Soppressione dell’aura magica:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Competenza in Raggirare e Sapienza
+                            magica.
+                        </h3>
+                        <p class="coltext">
+                            Come azione gratuita è possibile occultare la
+                            propria aura impedendo tramite Occhio arcano o altre
+                            capacità magiche di identificare il proprio dono, la
+                            propria forza ed il proprio allineamento. <br />
+                            Si può provare a forzare questo occultamento
+                            effettuando una prova contrapposta di Intuizione
+                            contro Raggirare, una volta fallita non è possibile
+                            ritentare per le prossime 24h. <br />
+                            Un incantatore che prova ad identificare un
+                            incantesimo senza conoscere il Dono dell’incantatore
+                            subisce una penalità do -10 alla prova. <br />
+                            Se l’incantatore riesce ad identificare
+                            l’incantesimo di un bersaglio della creatura avrà un
+                            bonus di +5 alla prova di intuizione. <br />
+                            (Se privo di sensi, non è possibile mantenere la
+                            soppressione attiva)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">
+                            Soppressione dell’aura magica superiore:
+                        </h2>
+                        <h3 class="coltitle">
+                            Prerequisito: Soppressione dell’aura, Raggirare 10
+                            gradi, Sapienza magica 10 gradi
+                        </h3>
+                        <p class="coltext">
+                            L’incantatore riesce a nascondere il suo Dono ed il
+                            suo allineamento senza difficoltà e non consente
+                            alcuna prova ad eventuali osservatori. <br />
+                            Inoltre è in grado di occultare anche le auree
+                            magiche emanate da oggetti che ha indosso. <br />
+                            Con una prova di Raggirare Contrapposta a Intuizione
+                            è in grado di far identificare all’avversario un
+                            Dono o un allineamento a sua scelta,
+                            indipendentemente se ciò corrisponda al vero. (Nel
+                            caso la prova fallisca, l’incantatore semplicemente
+                            non sarà in grado di riconoscere l’aura e
+                            l’allineamento)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Dardo arcano:</h2>
+                        <p class="coltext">
+                            Manipolando della magia grezza, l’incantatore
+                            scaglia un dardo come attacco a distanza. <br />
+                            Txc (1d20+ Bab+ Mod caratteristica primaria) <br />
+                            Danni: 1d10 da forza <br />
+                            I danni di questo incantesimo aumentano di 1d10
+                            quando l'incantatore arriva al 5° livello (2d10),
+                            11° livello (3d10) e 17° livello (4d10). <br />
+                            Gittata: 36m
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Emanazione dell’aura:</h2>
+                        <h3 class="coltitle">Prerequisito: 5 DV, Potere 16</h3>
+                        <p class="coltext">
+                            Come azione standard, si emana la propria aura
+                            magica che influenza la zona dipendentemente dal
+                            proprio potere (un dono del ghiaccio emanerà un
+                            freddo pungente, un dono della luce emanerà un
+                            bagliore, etc.). <br />
+                            Le creature ostili che si avvicinano all’incantatore
+                            devono superare una prova su Volontà (Cd: 10+mod
+                            potere incantatore+ 1/2 del livello
+                            dell’incantatore). <br />
+                            L’incantatore può mantenere l’aura attiva 1rxlvl
+                            <br />
+                            Bersagli di 2 Livelli inferiori subiscono un malus
+                            pari al modificatore potere dell’incantatore alla
+                            prova. <br />
+                            Bersagli di 2 Livelli o superiore non sono
+                            influenzati <br />
+                            Le dimensioni dell’aura aumentano di 1,5m ogni 2 lvl
+                            dell’incantatore <br />
+                            Lvl:1-2 = 1,5m <br />
+                            Lvl:3-4 = 3m <br />
+                            Lvl:4-5 = 4,5m <br />
+                            etc.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Esplosione dell’aura:</h2>
+                        <h3 class="coltitle">
+                            Prerequisito: Emanazione dell’aura, 10 DV, Dardo
+                            arcano
+                        </h3>
+                        <p class="coltext">
+                            Come azione di round completo, una volta al giorno,
+                            l’incantatore emana violentemente la propria aura,
+                            creando un’esplosione che sbalza via oggetti e
+                            creature nell’area <br />
+                            Le creature nell’area devono superare una prova su
+                            Tempra (Cd:10+lvl incantatore +mod potere) o vengono
+                            trascinati di 3m ogni punto sotto la Cd della prova,
+                            fino al limitare dell’aura o finché non impattano
+                            contro un ostacolo.<br />
+                            Ogni 3m il bersaglio subisce 1d6 danni, se colpisce
+                            un ostacolo subisce 3d6 danni aggiuntivi ed è Prono.
+                            <br />
+                            Creature di Taglia grande o superiore non subiscono
+                            gli effetti di questa capacità. <br />
+                            Creature di taglia piccola hanno un malus di -5 al
+                            tiro salvezza. <br />
+                            Creature in volo (non magico) devono superare una
+                            prova di Volare Cd 20 o precipitano (se lo superano
+                            ma falliscono il Ts su Tempra, a meno che non
+                            trovino ostacoli, vengono solo allontanati senza
+                            subire danni). <br />
+                            Le dimensioni dell’aura aumentano ulteriormente di
+                            1,5m in base al Potere che si possiede. <br />
+                            Potere 16-17----- +1,5 <br />
+                            Potere 18-19------+3 <br />
+                            Potere 20-21------+4,5 <br />
+                            etc. <br />
+                            (Da sommare ad Emanazione dell’aura)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Aura distruttiva:</h2>
+                        <h3 class="coltitle">
+                            Prerequisito: Emanazione dell’aura, Esplosione
+                            dell’aura, Dardo arcano, 15DV
+                        </h3>
+                        <p class="coltext">
+                            Come azione di Round completo, una volta al giorno,
+                            l’aura emanata erompe con una potenza devastante
+                            sbalzando via le creature ed oggetti nell’area (Vedi
+                            Esplosione dell’aura). <br />
+                            Inoltre, all’interno della propria aura si
+                            sviluppano effetti magici inerenti al proprio Dono
+                            che avvantaggiano l’incantatore. <br />
+                            L’effetto come per la creazione degli incantesimi va
+                            deciso dall’incantatore al momento in cui prende
+                            questo talento. <br />
+                            (ad esempio un Dono di Necromanzia potrebbe far
+                            tornare come non morti le creature uccise nell’area,
+                            un dono del freddo potrebbe creare una tempesta di
+                            neve che infligge danni ogni round… etc.). <br />
+                            In base all’effetto scelto, mantenere l’aura attiva
+                            richiederà un quantitativo di mana ogni round.
+                            L’incantatore può mantenere l’Aura un massimo di
+                            1rxlvl ogni giorno. <br />
+                            Solo un Aura può essere mantenuta attiva nella
+                            stessa area (indipendentemente se siano alleati o
+                            nemici), se due Aure collidono è necessario superare
+                            una prova di Potere contrapposta, colui che fallisce
+                            subirà 1d8 dannix lvl incantatore. <br />
+                            In caso di pareggio della prova entrambe le auree
+                            detoneranno consumando metà del mana totale da
+                            entrambi gli incantatori ed infliggendo la somma
+                            delle due come danno a tutte le creature all’interno
+                            delle due auree. <br />
+                            (fatta eccezione per i due incantatori che non hanno
+                            diritto al tiro salvezza, le altre creature
+                            nell’area possono fare Riflessi dimezza Cd: 10+mod
+                            potere più alto fra i due in cantatori+1 ogni 5 mana
+                            consumato). <br />
+                            (Danni ad edifici Raddoppiati)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Reazione migliorata:</h2>
+                        <h3 class="coltitle">Prerequisiti: Destrezza 16</h3>
+                        <p class="coltext">
+                            SI guadagnano +2 gradi all’abilità Reazione, inoltre
+                            si guadagnano 3 reazioni aggiuntive che si andranno
+                            a sommare alle reazioni totali giornaliere.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Reazione aggiuntiva:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Destrezza: 16, Reazione 8 gradi
+                        </h3>
+                        <p class="coltext">
+                            Chi possiede questo talento può usare la capacità
+                            Reazione una volta aggiuntiva durante il
+                            combattimento (Questo talento può essere preso più
+                            volte).
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Reazione veloce:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Solo Ladro, Ninja ed Esploratore,
+                            Reazione Migliorata, Reazione Doppia
+                        </h3>
+                        <p class="coltext">
+                            Dopo aver usato Reazione l’incantatore può compiere
+                            il suo normale turno nel suo round.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Mago da battaglia:</h2>
+                        <p class="coltext">
+                            Se il mago possiede incantesimi in corpo a corpo o
+                            con attacco da contatto ravvicinato, può utilizzarli
+                            per effettuare attacchi d’opportunità.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Incantatore imperturbabile:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: 5DV, Mago da battaglia, Costituzione
+                            16
+                        </h3>
+                        <p class="coltext">
+                            Il mago seleziona uno dei suoi incantesimi, quando
+                            lo lancia questi, può prendere 20 a concentrazione
+                            per lanciarlo sulla difensiva.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Uccisore di maghi:</h2>
+                        <h3 class="coltitle">Prerequisiti: Bab 3</h3>
+                        <p class="coltext">
+                            Il personaggio ottiene un bonus di +1 alle prove su
+                            Volontà, inoltre gli incantatori che minaccia non
+                            possono lanciare sulla difensiva (Falliscono
+                            automaticamente qualsiasi prova su concentrazione),
+                            ma sono consapevoli di non poter lanciare sulla
+                            difensiva mentre sono minacciati da un personaggio
+                            con questo talento. <br />
+                            Speciale: A causa del suo odio verso la magia il
+                            personaggio consumerà il doppio del mana per
+                            lanciare qualsiasi incantesimo. <br />(ciò non
+                            incrementa le Cd degli incantesimi)
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Penetrare protezione magica:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Bab 8, Uccisore di maghi
+                        </h3>
+                        <p class="coltext">
+                            Il disprezzo del personaggio verso i maghi è così
+                            forte che come azione standard può compiere un
+                            attacco che ignora qualsiasi bonus alla classe
+                            armatura garantito dagli incantesimi. <br />
+                            Se il personaggio infligge danni al bersaglio,
+                            dissolve immediatamente tutti gli incantesimi e gli
+                            effetti magici che gli garantiscono Classe armatura.
+                            <br />
+                            Speciale: Il suo odio verso la magia è tale da
+                            ripudiarla, colui che acquisisce questo talento non
+                            è più in grado di lanciare incantesimi.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Penetrare occultamento magico:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Combattere alla cieca (è fra i talenti
+                            di pathfinder), Uccisore di maghi
+                        </h3>
+                        <p class="coltext">
+                            Il feroce odio verso i maghi permette
+                            all’incantatore di ignorare la possibilità di
+                            mancare il bersaglio quando questi è occultato da
+                            effetti magici (nebbie, invisibilità, intermittenze,
+                            occultamento…), inoltre se un mago crea copie di se
+                            stesso è in grado di distinguere immediatamente il
+                            vero mago fra le copie. <br />
+                            (in caso di occultamento non magico, il soggetto
+                            subisce comunque la probabilità di fallimento).
+                            <br />
+                            Speciale: Il suo odio verso la magia è tale da
+                            ripudiarla, colui che acquisisce questo talento non
+                            è più in grado di lanciare incantesimi.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Occhio arcano:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Sapienza magica 6 gradi, Conoscenze
+                            arcane 6 gradi
+                        </h3>
+                        <p class="coltext">
+                            Il personaggio che acquisisce questo talento ottiene
+                            la capacità di visualizzare le auree magiche
+                            provenienti da esseri viventi o oggetti.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Occhio arcano migliorato:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Occhio arcano (ottenuto dalla classe
+                            mago o tramite talento), Abilità focalizzata
+                            (sapienza magica)
+                        </h3>
+                        <p class="coltext">
+                            Il personaggio che acquisisce questo talento è in
+                            grado di identificare le auree magiche come azione
+                            veloce invece che Standard.
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Benedetto dal Karma:</h2>
+                        <p class="coltext">
+                            Il personaggio che acquisisce questo talento è in
+                            grado di trasportare una seconda biglia del Karma
+                            (Se ne ottiene una).
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Trasferimento del Karma:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti: Benedetto dal Karma, 5DV
+                        </h3>
+                        <p class="coltext">
+                            Il personaggio che acquisisce questo talento può
+                            ottenere o consegnare biglie del Karma ad altre
+                            persone (Seppur non può tenere più di due biglie
+                            alla volta). <br />
+                            Il personaggio deve concedere il Karma
+                            volontariamente e non può essere obbligato a farlo
+                            magicamente. <br />
+                            (Solo personaggi con questo talento possono ricevere
+                            o donare Karma da altre persone).
+                        </p>
+                    </li>
+                    <li>
+                        <h2 class="coltitle">Manipolazione del Karma:</h2>
+                        <h3 class="coltitle">
+                            Prerequisiti; Benedetto dal Karma, Trasferimento del
+                            Karma, 10DV
+                        </h3>
+                        <p class="coltext">
+                            Il personaggio che acquisisce questo Talento è in
+                            grado di sfruttare al meglio il Karma, quando lo usa
+                            può scegliere due sue poteri da attivare.
+                        </p>
+                    </li>
+                </ul>
+            </div>
 
-        <div>
-            <ul>
-                <li>
-                    <h2 class="coltitle">Incantesimi focalizzati: </h2>
-                    <p class="coltext">Aumenta la Cd di un proprio incantesimo e diminuisce di 1 il costo in mana per lanciarlo. <br>
-                        Può essere preso più volte per incantesimi diversi. </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Incantesimi focalizzati superiori:</h2>
-                    <h3 class="coltitle">Prerequisiti: incantesimi focalizzati</h3>
-                    <p class="coltext">Aumenta ulteriormente la Cd di un proprio incantesimo e diminuisce di 1 il costo di mana per lanciarlo. <br>
-                        Può essere preso più volte per incantesimi diversi.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Mana aggiuntivo: </h2>
-                    <p class="coltext">Aggiunge 5 mana al livello 1 ed aggiunge 1 mana aggiuntivo ogni livello successivo </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Scorta di mana:</h2>
-                    <p class="coltext">Una volta al giorno il mago può ripristinare 1d8+modificatore potere del suo mana come azione gratuita. <br>
-                        Ogni 5 livelli ottiene un uso aggiuntivo della sua scorta di mana (lvl 5 2 ripristini, lvl 10 3 ripristini….) </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Salasso magico: </h2>
-                    <h3 class="coltitle">Prerequisito: Costituzione 16, Attacco base 3</h3>
-                    <p class="coltext">L’incantatore può rigenerare la propria salute convertendo il proprio mana in pf come azione di round completo.  <br>
-                        Il soggetto è in grado di convertire un quantitativo di mana al giorno pari al doppio dei propri DV (tutti assieme o dilazionati in diverse cure nel corso della giornata) </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Soppressione dell’aura magica:</h2>
-                    <h3 class="coltitle">Prerequisiti: Competenza in Raggirare e Sapienza magica.</h3>
-                    <p class="coltext">Come azione gratuita è possibile occultare la propria aura impedendo tramite Occhio arcano o altre capacità magiche di identificare il proprio dono, la propria forza ed il proprio allineamento. <br>
-                    Si può provare a forzare questo occultamento effettuando una prova contrapposta di Intuizione contro Raggirare, una volta fallita non è possibile ritentare per le prossime 24h. <br>
-                    Un incantatore che prova ad identificare un incantesimo senza conoscere il Dono dell’incantatore subisce una penalità do -10 alla prova. <br>
-                    Se l’incantatore riesce ad identificare l’incantesimo di un bersaglio della creatura avrà un bonus di +5 alla prova di intuizione. <br>
-                    (Se privo di sensi, non è possibile mantenere la soppressione attiva) </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Soppressione dell’aura magica superiore:</h2>
-                    <h3 class="coltitle">Prerequisito: Soppressione dell’aura, Raggirare 10 gradi, Sapienza magica 10 gradi </h3>
-                    <p class="coltext">L’incantatore riesce a nascondere il suo Dono ed il suo allineamento senza difficoltà e non consente alcuna prova ad eventuali osservatori. <br>
-                    Inoltre è in grado di occultare anche le auree magiche emanate da oggetti che ha indosso. <br>
-                    Con una prova di Raggirare Contrapposta a Intuizione è in grado di far identificare all’avversario un Dono o un allineamento a sua scelta, indipendentemente se ciò corrisponda al vero. (Nel caso la prova fallisca, l’incantatore semplicemente non sarà in grado di riconoscere l’aura e l’allineamento)</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Dardo arcano: </h2>
-                    <p class="coltext">Manipolando della magia grezza, l’incantatore scaglia un dardo come attacco a distanza. <br>
-                        Txc (1d20+ Bab+ Mod caratteristica primaria)  <br>
-                        Danni: 1d10 da forza <br>
-                        I danni di questo incantesimo aumentano di 1d10 quando l'incantatore arriva al 5° livello (2d10), 11° livello (3d10) e 17° livello (4d10). <br>
-                        Gittata: 36m </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Emanazione dell’aura: </h2>
-                    <h3 class="coltitle">Prerequisito: 5 DV, Potere 16</h3>
-                    <p class="coltext">Come azione standard, si emana la propria aura magica che influenza la zona dipendentemente dal proprio potere (un dono del ghiaccio emanerà un freddo pungente, un dono della luce emanerà un bagliore, etc.). <br>
-                        Le creature ostili che si avvicinano all’incantatore devono superare una prova su Volontà (Cd: 10+mod potere incantatore+ 1/2  del livello dell’incantatore). <br>
-                        L’incantatore può mantenere l’aura attiva 1rxlvl <br>
-                        Bersagli di 2 Livelli inferiori subiscono un malus pari al modificatore potere dell’incantatore alla prova. <br> 
-                        Bersagli di 2 Livelli o superiore non sono influenzati <br>
-                        Le dimensioni dell’aura aumentano di 1,5m ogni 2 lvl dell’incantatore <br>
-                        Lvl:1-2 = 1,5m <br>
-                        Lvl:3-4 = 3m  <br>
-                        Lvl:4-5 = 4,5m <br>
-                        etc.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Esplosione dell’aura:</h2>
-                    <h3 class="coltitle">Prerequisito: Emanazione dell’aura, 10 DV, Dardo arcano</h3>
-                    <p class="coltext">Come azione di round completo, una volta al giorno, l’incantatore emana violentemente la propria aura, creando un’esplosione che sbalza via oggetti e creature nell’area <br>
-                        Le creature nell’area devono superare una prova su Tempra (Cd:10+lvl incantatore +mod potere) o vengono trascinati di 3m ogni punto sotto la Cd della prova, fino al limitare dell’aura o finché non impattano contro un ostacolo.<br>
-                        Ogni 3m il bersaglio subisce 1d6 danni, se colpisce un ostacolo subisce 3d6 danni aggiuntivi ed è Prono. <br>
-                        Creature di Taglia grande o superiore non subiscono gli effetti di questa capacità. <br>
-                        Creature di taglia piccola hanno un malus di -5 al tiro salvezza. <br>
-                        Creature in volo (non magico) devono superare una prova di Volare Cd 20 o precipitano (se lo superano ma falliscono il Ts su Tempra, a meno che non trovino ostacoli, vengono solo allontanati senza subire danni). <br>
-                        Le dimensioni dell’aura aumentano ulteriormente di 1,5m in base al Potere che si possiede. <br>
-                        Potere 16-17----- +1,5 <br>
-                        Potere 18-19------+3 <br>
-                        Potere 20-21------+4,5 <br>
-                        etc. <br>
-                        (Da sommare ad Emanazione dell’aura) </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Aura distruttiva: </h2>
-                    <h3 class="coltitle">Prerequisito: Emanazione dell’aura, Esplosione dell’aura, Dardo arcano, 15DV</h3>
-                    <p class="coltext">Come azione di Round completo, una volta al giorno, l’aura emanata erompe con una potenza devastante sbalzando via le creature ed oggetti nell’area (Vedi Esplosione dell’aura). <br> 
-                        Inoltre, all’interno della propria aura si sviluppano effetti magici inerenti al proprio Dono che avvantaggiano l’incantatore. <br>
-                        L’effetto come per la creazione degli incantesimi va deciso dall’incantatore al momento in cui prende questo talento. <br>
-                        (ad esempio un Dono di Necromanzia potrebbe far tornare come non morti le creature uccise nell’area, un dono del freddo potrebbe creare una tempesta di neve che infligge danni ogni round… etc.). <br>
-                        In base all’effetto scelto, mantenere l’aura attiva richiederà un quantitativo di mana ogni round. 
-                        L’incantatore può mantenere l’Aura un massimo di 1rxlvl ogni giorno. <br>
-                        Solo un Aura può essere mantenuta attiva nella stessa area (indipendentemente se siano alleati o nemici), se due Aure collidono è necessario superare una prova di Potere contrapposta, colui che fallisce subirà 1d8 dannix lvl incantatore. <br>
-                        In caso di pareggio della prova entrambe le auree detoneranno consumando metà del mana totale da entrambi gli incantatori ed infliggendo la somma delle due come danno a tutte le creature all’interno delle due auree. <br>
-                        (fatta eccezione per i due incantatori che non hanno diritto al tiro salvezza, le altre creature nell’area possono fare Riflessi dimezza Cd: 10+mod potere più alto fra i due in cantatori+1 ogni 5 mana consumato). <br>
-                        (Danni ad edifici Raddoppiati) </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Reazione migliorata:</h2>
-                    <h3 class="coltitle">Prerequisiti: Destrezza 16 </h3>
-                    <p class="coltext">SI guadagnano +2 gradi all’abilità Reazione, inoltre si guadagnano 3 reazioni aggiuntive che si andranno a sommare alle reazioni totali giornaliere.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Reazione aggiuntiva: </h2>
-                    <h3 class="coltitle">Prerequisiti: Destrezza: 16, Reazione 8 gradi </h3>
-                    <p class="coltext">Chi possiede questo talento può usare la capacità Reazione una volta aggiuntiva durante il combattimento (Questo talento può essere preso più volte).</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Reazione veloce:</h2>
-                    <h3 class="coltitle">Prerequisiti: Solo Ladro, Ninja ed Esploratore, Reazione Migliorata, Reazione Doppia </h3>
-                    <p class="coltext">Dopo aver usato Reazione l’incantatore può compiere il suo normale turno nel suo round.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Mago da battaglia: </h2>
-                    <p class="coltext">Se il mago possiede incantesimi in corpo a corpo o con attacco da contatto ravvicinato, può utilizzarli per effettuare attacchi d’opportunità. </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Incantatore imperturbabile: </h2>
-                    <h3 class="coltitle">Prerequisiti: 5DV, Mago da battaglia, Costituzione 16 </h3>
-                    <p class="coltext">Il mago seleziona uno dei suoi incantesimi, quando lo lancia questi, può prendere 20 a concentrazione per lanciarlo sulla difensiva.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Uccisore di maghi:</h2>
-                    <h3 class="coltitle">Prerequisiti: Bab 3 </h3>
-                    <p class="coltext">Il personaggio ottiene un bonus di +1 alle prove su Volontà, inoltre gli incantatori che minaccia non possono lanciare sulla difensiva (Falliscono automaticamente qualsiasi prova su concentrazione), ma sono consapevoli di non poter lanciare sulla difensiva mentre sono minacciati da un personaggio con questo talento. <br>
-                    Speciale: A causa del suo odio verso la magia il personaggio consumerà il doppio del mana per lanciare qualsiasi incantesimo. <br>(ciò non incrementa le Cd degli incantesimi)</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Penetrare protezione magica:</h2>
-                    <h3 class="coltitle">Prerequisiti: Bab 8, Uccisore di maghi </h3>
-                    <p class="coltext">Il disprezzo del personaggio verso i maghi è così forte che come azione standard può compiere un attacco che ignora qualsiasi bonus alla classe armatura garantito dagli incantesimi. <br> 
-                        Se il personaggio infligge danni al bersaglio, dissolve immediatamente tutti gli incantesimi e gli effetti magici che gli garantiscono Classe armatura. <br>
-                        Speciale: Il suo odio verso la magia è tale da ripudiarla, colui che acquisisce questo talento non è più in grado di lanciare incantesimi.  </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Penetrare occultamento magico: </h2>
-                    <h3 class="coltitle">Prerequisiti: Combattere alla cieca (è fra i talenti di pathfinder), Uccisore di maghi</h3>
-                    <p class="coltext">Il feroce odio verso i maghi permette all’incantatore di ignorare la possibilità di mancare il bersaglio quando questi è occultato da effetti magici (nebbie, invisibilità, intermittenze, occultamento…), inoltre se un mago crea copie di se stesso è in grado di distinguere immediatamente il vero mago fra le copie. <br>
-                        (in caso di occultamento non magico, il soggetto subisce comunque la probabilità di fallimento). <br>
-                        Speciale: Il suo odio verso la magia è tale da ripudiarla, colui che acquisisce questo talento non è più in grado di lanciare incantesimi. </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Occhio arcano: </h2>
-                    <h3 class="coltitle">Prerequisiti: Sapienza magica 6 gradi, Conoscenze arcane 6 gradi</h3>
-                    <p class="coltext">Il personaggio che acquisisce questo talento ottiene la capacità di visualizzare le auree magiche provenienti da esseri viventi o oggetti.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Occhio arcano migliorato: </h2>
-                    <h3 class="coltitle">Prerequisiti: Occhio arcano (ottenuto dalla classe mago o tramite talento), Abilità focalizzata (sapienza magica) </h3>
-                    <p class="coltext">Il personaggio che acquisisce questo talento è in grado di identificare le auree magiche come azione veloce invece che Standard.</p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Benedetto dal Karma: </h2>
-                    <p class="coltext">Il personaggio che acquisisce questo talento è in grado di trasportare una seconda biglia del Karma (Se ne ottiene una). </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Trasferimento del Karma:</h2>
-                    <h3 class="coltitle">Prerequisiti: Benedetto dal Karma, 5DV</h3>
-                    <p class="coltext">Il personaggio che acquisisce questo talento può ottenere o consegnare biglie del Karma ad altre persone (Seppur non può tenere più di due biglie alla volta). <br>
-                        Il personaggio deve concedere il Karma volontariamente e non può essere obbligato a farlo magicamente. <br> 
-                        (Solo personaggi con questo talento possono ricevere o donare Karma da altre persone). </p>
-                </li>
-                <li>
-                    <h2 class="coltitle">Manipolazione del Karma: </h2>
-                    <h3 class="coltitle">Prerequisiti; Benedetto dal Karma, Trasferimento del Karma, 10DV </h3>
-                    <p class="coltext">Il personaggio che acquisisce questo Talento è in grado di sfruttare al meglio il Karma, quando lo usa può scegliere due sue poteri da attivare. </p>
-                </li>
-            </ul>
+            <div class="flex-row center">
+                <a href="../talenti.html" class="button-link">
+                    <button class="button-led-back margin">
+                        <span>Talenti</span>
+                        <i></i>
+                    </button>
+                </a>
+
+                <a href="../../creation.html" class="button-link">
+                    <button class="button-led-back margin">
+                        <span>Creazione personaggio</span>
+                        <i></i>
+                    </button>
+                </a>
+
+                <a href="../../../index.html" class="button-link">
+                    <button class="button-led-back margin">
+                        <span>Dodo's Tales Home</span>
+                        <i></i>
+                    </button>
+                </a>
+            </div>
         </div>
 
-        <div class="flex-row center">
-            <a href="../talenti.html" class="button-link">
-                <button class="button-led-back margin">
-                    <span>Talenti</span>
-                    <i></i>
-                </button>
-
-            <a href="../../creation.html" class="button-link">
-                <button class="button-led-back margin">
-                    <span>Creazione personaggio</span>
-                    <i></i>
-                </button>
-            </a>
-
-            <a href="../../../index.html" class="button-link">
-                <button class="button-led-back margin">
-                    <span>Dodo's Tales Home</span>
-                    <i></i>
-                </button>
-            </a>
-        </div>
-    </div>
-
-    <footer>
-        <p>Questo sito è per scopo di apprendimento e per uso privato</p>
-        <p>
-            Parte del sito è stato preso da
-            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
-        </p>
-        <p>Non sono il proprietario delle immagini usate.</p>
-        <p>This site is for learning purpose and private use</p>
-        <p>
-            Some of the content are from
-            <a class="link" href="https://golarion.altervista.org/wiki/Pagina_principale" target="_blank">Golarion</a>
-        </p>
-        <p>I'm not the owner of the images used.</p>
-    </footer>
-</body>
+        <footer>
+            <p>Questo sito è per scopo di apprendimento e per uso privato</p>
+            <p>
+                Parte del sito è stato preso da
+                <a
+                    class="link"
+                    href="https://golarion.altervista.org/wiki/Pagina_principale"
+                    target="_blank"
+                    >Golarion</a
+                >
+            </p>
+            <p>Non sono il proprietario delle immagini usate.</p>
+            <p>This site is for learning purpose and private use</p>
+            <p>
+                Some of the content are from
+                <a
+                    class="link"
+                    href="https://golarion.altervista.org/wiki/Pagina_principale"
+                    target="_blank"
+                    >Golarion</a
+                >
+            </p>
+            <p>I'm not the owner of the images used.</p>
+        </footer>
+    </body>
 </html>

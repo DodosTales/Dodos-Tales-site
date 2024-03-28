@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+:root {
+    --colmain: #eec085;
+    --colsec: #0f1b3d;
+    --colter: #0067a5;
+    --colquat: #d08951;
+    --colback: #390457;
+    --link: #517d3f;
+}
+
+* {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.02em;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colmain);
+
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+a {
+    text-decoration: none;
+    //border-bottom: var(--link) solid 0.1em;
+    color: var(--link);
+
+    &:hover {
+        text-decoration: none;
+        color: var(--colter);
+    }
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+h2{
+    font-size: 1.60em;
+}
+
+h3{
+    font-size: 1.20em;
+}
+
+.dodotitle {
+    //margin-left: 4em;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--colsec);
+
+    img {
+        width: 2.6rem;
+    }
+}
+
+.coltext {
+    color: var(--colter);
+}
+
+.link{
+    text-decoration: none;
+    border-bottom: var(--link) solid 0.1em;
+    color: var(--link);
+
+    &:hover{
+    text-decoration: none;
+    color: var(--colquat);
+    }
+}
+
+.inumber {
+    margin: 0.8em 0.3em 0.8em 0.3em;
+    background-color: transparent;
+    color: var(--colter);
+    border: solid 0.15em var(--colsec);
+    border-radius: 0.5em;
+}
+
+.res{
+    display: inline;
+    margin-bottom: 1.5em;
+}
+
+footer {
+    padding: 0.25rem;
+    width: 100%;
+    text-wrap: balance;
+    background: var(--colsec);
+    color: var(--colquat);
+    text-align: center;
+}
