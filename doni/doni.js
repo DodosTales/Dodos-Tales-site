@@ -1,6 +1,6 @@
 "use strict";
 
-import { doni_mag } from "/assets/js//main.js";
+import { doni_mag } from "/Dodos-Tales-site/assets/js//main.js";
 
 const doni = document.querySelector(".doni");
 

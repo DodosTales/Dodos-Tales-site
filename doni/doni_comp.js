@@ -1,6 +1,6 @@
 "use strict";
 
-import { doni_comp } from "/assets/js/main.js";
+import { doni_comp } from "/Dodos-Tales-site/assets/js/main.js";
 
 const donicomp = document.querySelector(".donicomp");
 
