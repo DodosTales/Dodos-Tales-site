@@ -14,6 +14,7 @@ window.onload = () => {
         const mana = Number(document.getElementById("mana").value);
         //approssimo il livello ed il mana per ottenere interi dalla divisione 
         //la formula per la CD era 10 + 1 ogni 4 livelli (partendo da 1) + 1 ogni 5 mana spesi + caratteristica
+        //
         let cd =
             (livello - (livello % 4)) / 4 +
             primaria +
