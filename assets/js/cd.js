@@ -1,6 +1,6 @@
 "use strict";
 
-import { battute } from "/assets/js/main.js";
+import { battute } from "/Dodos-Tales-site/assets/js/main.js";
 
 window.onload = () => {
     const calcolo = document.getElementById("calcolo");
@@ -12,7 +12,7 @@ window.onload = () => {
         const livello = Number(document.getElementById("livello").value);
         const primaria = Number(document.getElementById("primaria").value);
         const mana = Number(document.getElementById("mana").value);
-        //approssimo il livello ed il mana per ottenere interi dalla divisione 
+        //approssimo il livello ed il mana per ottenere interi dalla divisione
         //la formula per la CD era 10 + 1 ogni 4 livelli (partendo da 1) + 1 ogni 5 mana spesi + caratteristica
         //
         let cd =
