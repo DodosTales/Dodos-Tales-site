@@ -75,7 +75,7 @@ const DATA = [
 
     [
         "Il grande cataclisma", 
-        "Grazie alla coalizione delle nazioni ed al Grande Consiglio i mortali iniziarono ad ottenere diverse vittorie contro gli eserciti dei Demoni, ma la vittoria sembrava ancora lontana. <br>Ma, un lord dei demoni di nome Baal, riuscì a farsi largo con il suo esercito fino al Pilastro dell’Aria e dopo aver sterminato i Therian che lo proteggevano, lo corruppe, trasformando ogni forma di vita per miglia e miglia in qualcosa di oscuro e malevolo. (Le creature senzienti che riuscirono a mantenere coscienza di sé divennero la racca che oggi è conosciuta come Tiefling) <br>Con la distruzione del pilastro elementale, ne mortali ne draghi erano più in grado di utilizzare la magia in quell’area che giorno dopo giorno sembrava espandersi sempre di più. ", 
+        "Grazie alla coalizione delle nazioni ed al Grande Consiglio i mortali iniziarono ad ottenere diverse vittorie contro gli eserciti dei Demoni, ma la vittoria sembrava ancora lontana. <br>Ma, un lord dei demoni di nome Baal, riuscì a farsi largo con il suo esercito fino al Pilastro dell’Aria e dopo aver sterminato i Therian che lo proteggevano, lo corruppe, trasformando ogni forma di vita per miglia e miglia in qualcosa di oscuro e malevolo. (Le creature senzienti che riuscirono a mantenere coscienza di sé divennero la razza che oggi è conosciuta come Tiefling) <br>Con la distruzione del pilastro elementale, ne mortali ne draghi erano più in grado di utilizzare la magia in quell’area che giorno dopo giorno sembrava espandersi sempre di più. ", 
         "481 EM", 
         null
     ],
