@@ -448,4 +448,43 @@
 
 .timeline-block.timeline-block-icon-only .timeline-content {
   visibility: hidden;
+}
+
+.timeline-shortcut {
+  text-align: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 100vh;
+  z-index: 5;
+  transition: width 1s;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.timeline-shortcut:hover {
+  width: 15%;
+}
+.timeline-shortcut .timeline-shortcutcontent {
+  margin: auto 0;
+  height: 80%;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(128, 128, 128, 0.7058823529) rgba(0, 0, 0, 0);
+}
+.timeline-shortcut .timeline-shortcutcontent::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
+.timeline-shortcut .timeline-shortcutcontent::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+.timeline-shortcut .timeline-shortcutcontent::-moz-scrollbar-button, .timeline-shortcut .timeline-shortcutcontent::-webkit-scrollbar-button {
+  display: none;
+}
+.timeline-shortcut button {
+  width: -webkit-fill-available;
+  overflow: hidden;
+  text-wrap: nowrap;
+  text-overflow: ellipsis;
 }/*# sourceMappingURL=timeline.css.map */

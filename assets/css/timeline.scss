@@ -264,3 +264,51 @@ $fa-size: 30px !default;
         visibility: hidden;
     }
 }
+
+.timeline-shortcut {
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100vh;
+    z-index: 5;
+    transition: width 1s;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    &:hover {
+        width: 15%;
+    }
+
+    .timeline-shortcutcontent {
+        margin: auto 0;
+        height: 80%;
+        overflow-y: auto;
+        scrollbar-width: thin;
+        scrollbar-color: #808080b4 #00000000;
+
+        &::-webkit-scrollbar-thumb {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-track {
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+        }
+
+        &::-moz-scrollbar-button,
+        &::-webkit-scrollbar-button {
+            display: none;
+        }
+    }
+
+    button {
+        width: -webkit-fill-available;
+        overflow: hidden;
+        text-wrap: nowrap;
+        text-overflow: ellipsis;
+    }
+}
