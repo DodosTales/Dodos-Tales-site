@@ -42,12 +42,12 @@ li {
     margin-bottom: 0.5em;
 }
 
-h2{
-    font-size: 1.60em;
+h2 {
+    font-size: 1.6em;
 }
 
-h3{
-    font-size: 1.20em;
+h3 {
+    font-size: 1.2em;
 }
 
 .dodotitle {
@@ -65,14 +65,14 @@ h3{
     color: var(--colter);
 }
 
-.link{
+.link {
     text-decoration: none;
     border-bottom: var(--link) solid 0.1em;
     color: var(--link);
 
-    &:hover{
-    text-decoration: none;
-    color: var(--colquat);
+    &:hover {
+        text-decoration: none;
+        color: var(--colquat);
     }
 }
 
@@ -85,9 +85,13 @@ h3{
     border-radius: 0.5em;
 }
 
-.res{
+.res {
     display: inline;
     margin-bottom: 1.5em;
+}
+
+.listamag {
+    list-style: none;
 }
 
 footer {

@@ -1,47 +1,42 @@
 "use strict";
 
-import { doni_comp, doni_mag } from "../../assets/js/main.js";
+import { changeSVG, DiceSVG } from "/Dodos-Tales-site/assets/js/dice_svg.js";
+import { doni_comp, doni_mag } from "/Dodos-Tales-site/assets/js/main.js";
 
-window.onload = ()=>{
+const maggiori = document.getElementById("magg");
+const comp = document.getElementById("comp");
+const exmaggiori = document.getElementById("exmagg");
+const extramagg = document.getElementById("extramag");
+const excomp = document.getElementById("excomp");
+const extracomp = document.getElementById("extracomp");
+const magdiv = document.getElementById("magdiv");
+const listamag = document.querySelectorAll(".listamag");
+const compdiv = document.getElementById("compdiv");
+const listacomp = document.querySelectorAll(".listacomp");
 
-    const maggiori = document.getElementById("magg");
-    const comp = document.getElementById("comp");
-    const exmaggiori = document.getElementById("exmagg");
-    const extramagg = document.getElementById("extramag");
-    const excomp = document.getElementById("excomp");
-    const extracomp = document.getElementById("extracomp");
-    const magdiv = document.getElementById("magdiv");
-    const listamag = document.querySelectorAll(".listamag");
-    const compdiv = document.getElementById("compdiv");
-    const listacomp = document.querySelectorAll(".listacomp");
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max);
+}
 
-    const getRandomInt = (max) =>{
-       return Math.floor(Math.random() * max);
-    };
+function multipleDoni(elem, array) {
+    elem.forEach((el) => singoloDono(el, array));
+}
 
-    maggiori.addEventListener('click', ()=>{
-        listamag.forEach((el)=>{
-            const ran = getRandomInt(doni_mag.length);
-            el.innerText = String(ran+1) + "--" + doni_mag[ran];
-        });
-        magdiv.classList.remove("hidden");
-    });
+function singoloDono(elem, array) {
+    let ran = getRandomInt(array.length);
+    elem.innerHTML = `<div class='row mb-2 justify-content-start align-items-center'>
+                <div class='col-6 col-md-4 col-lg-3'>${changeSVG(
+                    DiceSVG,
+                    ran + 1
+                )}</div>
+                <div class='col coltext'>${array[ran]}</div>
+            </div>`;
+}
 
-    exmaggiori.addEventListener('click', ()=>{
-        const ran = getRandomInt(doni_mag.length);
-        extramagg.innerText = String(ran+1) + "--" + doni_mag[ran];
-    });
+maggiori.addEventListener("click", () => multipleDoni(listamag, doni_mag));
 
-    comp.addEventListener('click', ()=>{
-        listacomp.forEach((el)=>{
-            const ran = getRandomInt(doni_comp.length);
-            el.innerText = String(ran+1) + "--" + doni_comp[ran];
-        });
-        compdiv.classList.remove("hidden");
-    });
+exmaggiori.addEventListener("click", () => singoloDono(extramagg, doni_mag));
 
-    excomp.addEventListener('click', ()=>{
-        const ran = getRandomInt(doni_comp.length);
-        extracomp.innerText = String(ran+1) + "--" + doni_comp[ran];
-    });
-};
+comp.addEventListener("click", () => multipleDoni(listacomp, doni_comp));
+
+excomp.addEventListener("click", () => singoloDono(extracomp, doni_comp));
