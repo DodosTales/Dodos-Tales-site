@@ -536,6 +536,27 @@ const DATA = [
         "1 Gelata",
         null,
     ],
+
+    [
+        "Din e la sofferenza di Cupido",
+        "Din, il dragon slayer del suono degli Astral Narvalls, abbandona la sua gilda e decide di unirsi ai Lion’s Pride creando scalpore. Per essere messo alla prova gli viene affidato un incarico, indagare su un furto avvenuto nel locale di Cerasus ‘amore ad ogni costo’ di Eros, il dio dell’amore. Ad accompagnare Din si uniscono: Cupido; Seishin, con il suo compagno Spirit; Nyx; Lanwor; Zazeres.",
+        "21 Gelata",
+        null,
+    ],
+
+    [
+        "",
+        "Arrivati a Cerasus, Cupido racconti del suo passato con Eros ed andiamo dalla committente, Pheito. Parlando con Pheito, oltre agli insulti da parte di Cupido, scopriamo che la merce rubata è una droga particolare chiamata, Ambrosia Scarlatta, che è la stessa droga usata dalla master degli Astral Narvalls per sottomettere gli altri membri. Indagando nel magazzino dove è avvenuto il furto, Seishin, scopre una strana magia spaziale usata molto probabilmente per i furti. Dopo un po' di ulteriori indagini riduciamo la lista dei sospettati a due persone Mix e Domina. Andiamo prima da Mix dove incontriamo due dragon slayer di seconda generazione: Beta e Gamma. Grazie a Din sentiamo la loro conversazione dove notiamo che Gamma sta nascondendo qualcosa che sembra essere importante e Beta invece sta indagando sui furti per conto suo. Successivamente ci dirigiamo verso Domina, ma nel tragitto una vecchia conoscenza di Din lo sfida, ma viene sconfitta. Concludiamo la giornata venendo ospitati nel villaggio dei pooka.",
+        "25 Gelata",
+        null,
+    ],
+
+    [
+        "Din il rubacuori ed il riscatto di Cupido",
+        "Andiamo da Pheito al love shop, però senza trovarla, ma Din trova il suo scopo della vita: riappacificare Gamma ed il suo exceedo. Quindi andiamo nel love cafè trovando Pheito e Thorn, che seguendolo, ci porta da Domina nel casino per poi sparire. Cercando dov’è finito Thorn finiamo in un passaggio segreto per poi entrare nella stanza blindata, difesa da Gamma. Dopo aver sconfitto ed interrogato Gamma scopriamo che Thorn è il responsabile della sparizione dell’Ambrosia scarlatta. Scopriamo che Thorn è in combutta con Crystal Wise, ma purtroppo non riusciamo a scoprire dove si nasconde la master. Dopo aver sconfitto Thorn, aggiorniamo Pheito della situazione, ma Cupido incontra Eros instaurando una battaglia di insulti ed uno schiaffo evitato grazie a Cupido. Dopo riscuotiamo la ricompensa ed usciamo incontrando Alpha, uno dei dragon slayer di seconda generazione, che dona uno strano oggetto a Cupido dicendo che servirà contro Eros. Inoltre Din fa colpo sulla sua vecchia conoscenza.",
+        "26 Gelata",
+        null,
+    ],
 ];
 
 const template = (titolo, corpo, data, img, index) => {
