@@ -65,6 +65,10 @@ h3 {
     color: var(--colter);
 }
 
+.required {
+    color: var(--colback);
+}
+
 .link {
     text-decoration: none;
     border-bottom: var(--link) solid 0.1em;
