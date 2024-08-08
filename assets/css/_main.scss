@@ -50,6 +50,14 @@ h3 {
     font-size: 1.2em;
 }
 
+textarea, .itext {
+    margin: 0.8em 0.3em 0.8em 0.3em;
+    background-color: transparent;
+    color: var(--colter);
+    border: solid 0.15em var(--colsec);
+    border-radius: 0.5em;
+}
+
 .dodotitle {
     //margin-left: 4em;
     font-size: 2rem;
@@ -65,8 +73,16 @@ h3 {
     color: var(--colter);
 }
 
-.required {
+.req {
     color: var(--colback);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.inline_item {
+    display: inline-flex;
 }
 
 .link {

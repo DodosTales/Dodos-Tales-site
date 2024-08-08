@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <title>Dodo's Tales</title>
+        <link rel="icon" type="image/png" href="/assets/img/dodo.png" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/assets/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/_responsive.scss" />
+        <script src="/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="/assets/js/inc_crea.js"></script>
+    </head>
+    <body>
+        <div class="container text-center">
+            <h1 class="coltitle center">Creazione incantesimi</h1>
+
+            <div class="center">
+                <p>
+                    <span class="coltext">Compilando il seguente form verrà generato l'incantesimo con le cose fornite che poi potrà essere copiato ed incollato. Alcune cose sono obbligatorie e sono scritte </span> <span class="required">con questo colore.</span>
+                </p>
+
+                <form>
+                    <label for="name" class="req">
+                        Nome incantesimo (Obbligatorio, minimo 3 lettere):
+                    </label>
+                    <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="itext required"
+                        minlength="3"
+                        required
+                        />
+                    <br />
+
+                    <label for="mana" class="req">
+                        Costo in mana (Obbligatorio):
+                    </label>
+                    <input
+                        type="text"
+                        name="mana"
+                        id="mana"
+                        class="itext required"
+                        maxlength="3"
+                        required
+                        />
+                    <br />
+
+                    <label for="action" class="req">
+                        Azione (Obbligatorio):
+                    </label>
+                    <select
+                        name="action"
+                        id="action"
+                        class="itext required"
+                        required
+                        >
+                        <option value=""></option>
+                        <option value="standard">Standard</option>
+                        <option value="movimento">Movimento</option>
+                        <option value="complete">Round completo</option>
+                        <option value="veloce">Veloce</option>
+                    </select>
+                    <br />
+
+                    <label for="hit_type" class="req">
+                        Come colpisce (Obbligatorio):
+                    </label>
+                    <select
+                        name="hit_type"
+                        id="hit_type"
+                        class="itext required"
+                        required>
+                        <option value=""></option>
+                        <option value="contatto">Contatto</option>
+                        <option value="contatto_dist">Contatto a distanza</option>
+                        <option value="txc">Tiro per colpire</option>
+                        <option value="txc_dist">Tiro per colpire a distanza</option>
+                    </select>
+                    <br />
+
+                    <label for="gittata" class="req">
+                        Gittata (Obbligatorio):
+                    </label>
+                    <select
+                        name="gittata"
+                        id="gittata"
+                        class="itext required"
+                        required>
+                        <option value=""></option>
+                        <option value="ravvicinata">Ravvicinata</option>
+                        <option value="3m">3 m</option>
+                        <option value="6m">6 m</option>
+                        <option value="9m">9 m</option>
+                        <option value="12m">12 m</option>
+                        <option value="15m">15 m</option>
+                        <option value="18m">18 m</option>
+                        <option value="36m">36 m</option>
+                        <option value="corta">7,5 m + 1,5 m ogni 2 livelli</option>
+                        <option value="media">30 m + 3 m/livello</option>
+                        <option value="lunga">120 m + 12 m/livello</option>
+                    </select>
+                    <br />
+
+                    <label for="area" class="coltext">
+                        Area:
+                    </label>
+                    <input
+                        type="text"
+                        name="area"
+                        id="area"
+                        class="itext"
+                        />
+                    <br />
+
+                    <label for="durata" class="req">
+                        Durata (Obbligatorio):
+                    </label>
+                    <select
+                        name="durata"
+                        id="durata"
+                        class="itext required"
+                        required>
+                        <option value=""></option>
+                        <option value="istantaneo">Istantaneo</option>
+                        <option value="1round">1 round</option>
+                        <option value="2round">2 round</option>
+                        <option value="3round">3 round</option>
+                        <option value="4round">4 round</option>
+                        <option value="5round">5 round</option>
+                        <option value="round">1 round x livello</option>
+                        <option value="minuto">1 minuto x livello</option>
+                        <option value="ore">1 ora x livello</option>
+                        <option value="giorno">24 ore</option>
+                        <option value="settimane">1 giorno x livello</option>
+                    </select>
+                    <br />
+
+                    <p class="coltext">I TS sono: Tempra, se il bersaglio viene debilitato fisicamente; Riflessi, se il bersaglio deve essere agile per salvarsi; Volontà se sei Goetia oppure se influenzi la mente del bersaglio</p>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="ts" class="req">
+                                TS (Obbligatorio):
+                            </label>
+                            <select
+                                name="ts"
+                                id="ts"
+                                class="itext required"
+                                required>
+                                <option value=""></option>
+                                <option value="si_ts">Si</option>
+                                <option value="no_ts">No</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="ts_princ" class="coltext">
+                                Tipo TS:
+                            </label>
+                            <select
+                                name="ts_princ"
+                                id="ts_princ"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="temp_princ">Tempra</option>
+                                <option value="rif_princ">Riflessi</option>
+                                <option value="vol_princ">Volontà</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="ts_sec" class="coltext">
+                                TS secondario:
+                            </label>
+                            <select
+                                name="ts_sec"
+                                id="ts_sec"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="temp_sec">Tempra</option>
+                                <option value="rif_sec">Riflessi</option>
+                                <option value="vol_sec">Volontà</option>
+                            </select>
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="dado_princ" class="coltext">
+                                Dado danno/cura:
+                            </label>
+                            <select
+                                name="dado_princ"
+                                id="dado_princ"
+                                class="itext"
+                                >
+                                <option value=""></option>
+                                <option value="d4_princ">D4</option>
+                                <option value="d6_princ">D6</option>
+                                <option value="d8_princ">D8</option>
+                                <option value="d10_princ">D10</option>
+                                <option value="d12_princ">D12</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="dado_sec" class="coltext">
+                                Dado danno/cura secondario:
+                            </label>
+                            <select
+                                name="dado_sec"
+                                id="dado_sec"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="d4_sec">D4</option>
+                                <option value="d6_sec">D6</option>
+                                <option value="d8_sec">D8</option>
+                                <option value="d10_sec">D10</option>
+                                <option value="d12_sec">D12</option>
+                            </select>
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="damage_princ" class="coltext">
+                                Quantità dado:
+                            </label>
+                            <input
+                                type="text"
+                                name="damage_princ"
+                                id="damage_princ"
+                                class="itext"
+                                placeholder="1 ogni due livelli">
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="damage_sec" class="coltext">
+                                Quantità dado secondario:
+                            </label>
+                            <input
+                                type="text"
+                                name="damage_sec"
+                                id="damage_sec"
+                                class="itext"
+                                placeholder="1 ogni due livelli">
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="typedam_princ" class="coltext">
+                                Tipo danno:
+                            </label>
+                            <select
+                                name="typedam_princ"
+                                id="typedam_princ"
+                                class="itext"
+                                >
+                                <option value=""></option>
+                                <option value="tagl">Tagliente</option>
+                                <option value="perf">Perforante</option>
+                                <option value="cont">Contundente</option>
+                                <option value="fuoco">Fuoco</option>
+                                <option value="acido">Acido</option>
+                                <option value="elettrico">Elettrico</option>
+                                <option value="freddo">Freddo</option>
+                                <option value="sonoro">Sonoro</option>
+                                <option value="grezza">Magia grezza</option>
+                                <option value="sacro">Sacro (energia positiva)</option>
+                                <option value="sacrilego">Sacrilego (energia negativa)</option>
+                                <option value="psichico">Psichico</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="typedam_sec" class="coltext">
+                                Tipo danno secondario:
+                            </label>
+                            <select
+                                name="typedam_sec"
+                                id="typedam_sec"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="tagl_sec">Tagliente</option>
+                                <option value="perf_sec">Perforante</option>
+                                <option value="cont_sec">Contundente</option>
+                                <option value="fuoco_sec">Fuoco</option>
+                                <option value="acido_sec">Acido</option>
+                                <option value="elettrico_sec">Elettrico</option>
+                                <option value="freddo_sec">Freddo</option>
+                                <option value="sonoro_sec">Sonoro</option>
+                                <option value="grezza_sec">Magia grezza</option>
+                                <option value="sacro_sec">Sacro (energia positiva)</option>
+                                <option value="sacrilego_sec">Sacrilego (energia negativa)</option>
+                                <option value="psichico_sec">Psichico</option>
+                            </select>
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="malus" class="req">
+                                Infligge penalità (Obbligatorio):
+                            </label>
+                            <select
+                                name="malus"
+                                id="malus"
+                                class="itext required"
+                                required>
+                                <option value=""></option>
+                                <option value="si_malus">Si</option>
+                                <option value="no_malus">No</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="malus_val" class="coltext">
+                                Valore penalità:
+                            </label>
+                            <input
+                                type="text"
+                                name="malus_val"
+                                id="malus_val"
+                                class="itext"/>
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <p class="coltext">Bonus dello stesso tipo non si sommano, ma viene considerato solo quello dal valore maggiore</p>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="bonus_princ" class="req">
+                                Fornisce bonus (obbligatorio):
+                            </label>
+                            <select
+                                name="bonus_princ"
+                                id="bonus_princ"
+                                class="itext required"
+                                required>
+                                <option value=""></option>
+                                <option value="si_bonus">Si</option>
+                                <option value="no_bonus">No</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="type_bonus_princ" class="coltext">
+                                Tipo Bonus:
+                            </label>
+                            <select
+                                name="type_bonus_princ"
+                                id="type_bonus_princ"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="alchemico">Alchemico</option>
+                                <option value="armatura">Armatura</option>
+                                <option value="armatura_nat">Armatura naturale</option>
+                                <option value="cognitivo">Cognitivo</option>
+                                <option value="competenza">Competenza</option>
+                                <option value="deviazione">Deviazione</option>
+                                <option value="fortuna">Fortuna</option>
+                                <option value="intrinseco">Intrinseco</option>
+                                <option value="morale">Morale</option>
+                                <option value="potenziamento">Potenziamento</option>
+                                <option value="profano">Profano</option>
+                                <option value="razziale">Razziale</option>
+                                <option value="resistenza">Resistenza</option>
+                                <option value="sacro">Sacro</option>
+                                <option value="schivare">Schivare</option>
+                                <option value="scudo">Scudo</option>
+                                <option value="taglia">Taglia</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="val_bonus_princ" class="coltext">
+                                Valore bonus:
+                            </label>
+                            <input
+                                type="text"
+                                name="val_bonus_princ"
+                                id="val_bonus_princ"
+                                class="itext"/>
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="inline_item">
+                        <div>
+                            <label for="bonus_sec" class="coltext">
+                                Bonus secondario:
+                            </label>
+                            <select
+                                name="bonus_sec"
+                                id="bonus_sec"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="si_bonus">Si</option>
+                                <option value="no_bonus">No</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="type_bonus_sec" class="coltext">
+                                Tipo Bonus:
+                            </label>
+                            <select
+                                name="type_bonus_sec"
+                                id="type_bonus_sec"
+                                class="itext">
+                                <option value=""></option>
+                                <option value="alchemico">Alchemico</option>
+                                <option value="armatura">Armatura</option>
+                                <option value="armatura_nat">Armatura naturale</option>
+                                <option value="cognitivo">Cognitivo</option>
+                                <option value="competenza">Competenza</option>
+                                <option value="deviazione">Deviazione</option>
+                                <option value="fortuna">Fortuna</option>
+                                <option value="intrinseco">Intrinseco</option>
+                                <option value="morale">Morale</option>
+                                <option value="potenziamento">Potenziamento</option>
+                                <option value="profano">Profano</option>
+                                <option value="razziale">Razziale</option>
+                                <option value="resistenza">Resistenza</option>
+                                <option value="sacro">Sacro</option>
+                                <option value="schivare">Schivare</option>
+                                <option value="scudo">Scudo</option>
+                                <option value="taglia">Taglia</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="val_bonus_sec" class="coltext">
+                                Valore bonus:
+                            </label>
+                            <input
+                                type="text"
+                                name="val_bonus_sec"
+                                id="val_bonus_sec"
+                                class="itext"/>
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <label for="description" class="req">
+                        Descrizione ed effetti aggiuntivi (Obbligatorio, minimo 10 lettere):
+                    </label>
+                    <textarea
+                        name="description"
+                        id="descriprion"
+                        class="required"
+                        rows="35"
+                        cols="90"
+                        minlength="10"
+                        required
+                        >
+                    </textarea>
+                    <br />
+
+                </form>
+
+                <div>
+                    <button
+                        class=""
+                        style="margin-bottom: 0.8em"
+                        id="crea">
+                        <span>Crea incantesimo copiabile</span>
+                        <i></i>
+                    </button>
+                </div>
+                <div>
+                    <p class="res" id="result"></p>
+                </div>
+            </div>
+
+            <div class="flex-row center">
+                <a href="../creation.html" class="button-link">
+                    <button class="button-led-back margin">
+                        <span>Creazione personaggio</span>
+                        <i></i>
+                    </button>
+                </a>
+
+                <a href="/Dodos-Tales-site/index.html" class="button-link">
+                    <button class="button-led-back margin">
+                        <span>Dodo's Tales Home</span>
+                        <i></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <footer class="p-1">
+            <div class="mb-2">
+                <div style="display: inline-flex; flex-direction: column">
+                    <span
+                        >Questo sito è per scopo di apprendimento e per uso
+                        privato</span
+                    >
+                    <span>
+                        Parte del sito è stato preso da
+                        <a
+                            class="link"
+                            href="https://golarion.altervista.org/wiki/Pagina_principale"
+                            target="_blank"
+                            >Golarion</a
+                        >
+                    </span>
+                    <span>Non sono il proprietario delle immagini usate.</span>
+                </div>
+            </div>
+            <div>
+                <div style="display: inline-flex; flex-direction: column">
+                    <span
+                        >This site is for learning purpose and private use</span
+                    >
+                    <span>
+                        Some of the content are from
+                        <a
+                            class="link"
+                            href="https://golarion.altervista.org/wiki/Pagina_principale"
+                            target="_blank">
+                            Golarion
+                        </a>
+                    </span>
+                    <span>I'm not the owner of the images used.</span>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
