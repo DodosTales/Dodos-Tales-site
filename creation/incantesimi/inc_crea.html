@@ -39,11 +39,12 @@
                         Costo in mana (Obbligatorio):
                     </label>
                     <input
-                        type="text"
+                        type="number"
                         name="mana"
                         id="mana"
                         class="itext required"
-                        maxlength="3"
+                        min="1"
+                        max="999"
                         required
                         />
                     <br />
@@ -74,6 +75,8 @@
                         class="itext required"
                         required>
                         <option value=""></option>
+                        <option value="ts_only">Solo TS</option>
+                        <option value="support">Supporto</option>
                         <option value="contatto">Contatto</option>
                         <option value="contatto_dist">Contatto a distanza</option>
                         <option value="txc">Tiro per colpire</option>
@@ -112,6 +115,18 @@
                         name="area"
                         id="area"
                         class="itext"
+                        />
+                    <br />
+
+                    <label for="target" class="req">
+                        Bersagli (Obbligatorio):
+                    </label>
+                    <input
+                        type="text"
+                        name="target"
+                        id="target"
+                        class="itext required"
+                        required
                         />
                     <br />
 
@@ -194,8 +209,44 @@
 
                     <div class="inline_item">
                         <div>
+                            <label for="cura" class="coltext">
+                                Dado cura:
+                            </label>
+                            <select
+                                name="cura"
+                                id="cura"
+                                class="itext"
+                                >
+                                <option value=""></option>
+                                <option value="d4_princ">D4</option>
+                                <option value="d6_princ">D6</option>
+                                <option value="d8_princ">D8</option>
+                                <option value="d10_princ">D10</option>
+                                <option value="d12_princ">D12</option>
+                            </select>
+                            <br />
+                        </div>
+
+                        <div>
+                            <label for="val_cura" class="coltext">
+                                Quantità cura:
+                            </label>
+                            <input
+                                type="text"
+                                name="val_cura"
+                                id="val_cura"
+                                class="itext"
+                                placeholder="1 ogni due livelli">
+                            <br />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="inline_item">
+                        <div>
                             <label for="dado_princ" class="coltext">
-                                Dado danno/cura:
+                                Dado danno:
                             </label>
                             <select
                                 name="dado_princ"
@@ -214,7 +265,7 @@
 
                         <div>
                             <label for="dado_sec" class="coltext">
-                                Dado danno/cura secondario:
+                                Dado danno secondario:
                             </label>
                             <select
                                 name="dado_sec"
@@ -480,7 +531,7 @@
                     </label>
                     <textarea
                         name="description"
-                        id="descriprion"
+                        id="description"
                         class="required"
                         rows="35"
                         cols="90"
@@ -501,8 +552,9 @@
                         <i></i>
                     </button>
                 </div>
-                <div>
-                    <p class="res" id="result"></p>
+                <div class="center">
+                    <h2 class="coltitle" id="res_name"></h2>
+                    <p class="res coltext" id="result"></p>
                 </div>
             </div>
 
