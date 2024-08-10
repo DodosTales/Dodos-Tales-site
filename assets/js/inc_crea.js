@@ -243,7 +243,7 @@ window.onload=()=>{
 
             final_txt += description_txt + "\n";
 
-            //compilo il testo ricopiabile
+            //genero il testo ricopiabile
             res_name.innerText = name_txt;
 
             result.innerText = final_txt; 
