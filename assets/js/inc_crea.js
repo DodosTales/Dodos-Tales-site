@@ -198,7 +198,7 @@ window.onload=()=>{
                 let val_bonus_princ_txt = String(val_bonus_princ.value);
 
                 if (val_bonus_princ_txt.length!==0 && type_bonus_princ_txt !==0){
-                    final_txt += "Fonisce un bonus " + type_bonus_princ_txt + " di " + val_bonus_princ_txt + "\n";
+                    final_txt += "Fornisce un bonus " + type_bonus_princ_txt + " di " + val_bonus_princ_txt + "\n";
                 } else {
                     if (val_bonus_princ_txt.length===0){
                         info_alert += "Valore bonus richiesto, dato che fornisce bonus \n"
