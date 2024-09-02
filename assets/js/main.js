@@ -26,7 +26,7 @@ const doni_comp = [
     "magia demoniaca",
     "magia della pestilenza",
     "magia delle maledizioni",
-    "magia degli spiriti",
+    "magia delle maschere",
     "magia delle ossa",
     "magia della corruzione",
     "magia dei patti",

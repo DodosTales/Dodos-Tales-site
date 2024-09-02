@@ -131,5 +131,5 @@ dist
 
 .env
 .DS_Store
-.template.html
+template.html
 Dodos-Tales-site/
