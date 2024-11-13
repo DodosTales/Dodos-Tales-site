@@ -552,6 +552,20 @@ const DATA = [
     ],
 
     [
+        "Il ladro delle voci",
+        "Due freelancer investigatori, Leolar e Hopper, si avventurano per una richiesta di Calendula: al festival del canto molta gente sta rimanendo senza voce improvvisamente. Durante la loro avventura si uniscono a loro dei membri della gilda oscura dei Feral Lynx: Scrotos, Mr.Proud, Jidan. Arrivando in città incontrano e si uniscono a dei membri dei Lion's Pride incaricati di risolvere lo stesso incarico degli investigatori: Zaraki, Nargi, Cynthia, Cyrus. Dopo una piccola lite, i Feral lynx visitano Circe e gli altri vanno a chiedere informazioni sull'incarico. Si scopre che, oltre alle voci rubate, è stato rubato un cristallo che dovrebbe potreggere la città, poi successivamente si uniscono pure i Feral Lynx nella risoluzione dell'incarico. Quella stessa notte, dopo aver raccolto altre informazioni, viene rubata la voce pure a Circe, ma ci dà informazioni importanti sull'accaduto. Andiamo nella foresta seguendo le tracce, troviamo un gruppo con una cantante che dice di aver rubato lei il cristallo e le voci. Alcuni del gruppo ci attaccano ed anche alcuni alleati ammaliati dalla canzone. Purtroppo veniamo sconiftti, ma degli spiritelli curano i privi di senso, mentre per quelli morti vengono portati in uno strano luogo dove uno spirito di un procione mette alla prova la bontà delle anime dei morti riportandoli in vita.",
+        "3 Gelata",
+        null,
+    ],
+
+    [
+        "",
+        "Ci risvegliamo seguendo le tracce per trovare i restanti del gruppo della cantante ladra, sconfiggendola e recuperando il cristallo rubato. Dopo averlo recuperato, il folletto, che altro non era il procione spiritico che ha salvato coloro che erano morti, ci chiede di raccogliere gli altri cristalli per liberare un suo amico. Riusciamo a recuperare il cristallo dopo aver convinto il sindaco ed il folletto, chiamato Pepito, libera il suo amico, Kiluko, che si scopre essere il fondatore di Calendula. Dopodichè si festeggia.",
+        "4 Gelata",
+        null,
+    ],
+
+    [
         "Din e la sofferenza di Cupido",
         "Din, il dragon slayer del suono degli Astral Narvalls, abbandona la sua gilda e decide di unirsi ai Lion’s Pride creando scalpore. Per essere messo alla prova gli viene affidato un incarico, indagare su un furto avvenuto nel locale di Cerasus ‘amore ad ogni costo’ di Eros, il dio dell’amore. Ad accompagnare Din si uniscono: Cupido; Seishin, con il suo compagno Spirit; Nyx; Lanwor; Zazeres.",
         "21 Gelata",
