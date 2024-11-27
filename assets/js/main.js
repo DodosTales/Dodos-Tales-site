@@ -128,6 +128,7 @@ const doni_comp = [
     "magia del trasporto",
     "magia del gioco",
     "magia delle fiabe",
+    "magia totemica",
     "magia delle magie",
     "magia dei rifiuti",
     "magia della legge",
@@ -164,6 +165,9 @@ const battute = [
     "Se continui così mi SPAZIOentisco!",
     "Dovresti apprendere altri incantesimi, così spazi il tuo repertorio",
     "Facendo spazio nella tua mente forse troveresti il modo di fare qualcosa bene",
+    "Lo spazio per starti vicino lo trovo sempre... e non è mai un bene per te",
+    "Lo spazio che ci separa non è molto, stai letteralmente ad un passo da me",
+    "Ogni mia parola è spaziale, ogni tua parola no",
 ];
 
 export { doni_comp, battute };
