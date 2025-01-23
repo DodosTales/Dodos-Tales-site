@@ -170,4 +170,43 @@ const battute = [
     "Ogni mia parola è spaziale, ogni tua parola no",
 ];
 
-export { doni_comp, battute };
+//insulti wolf
+const insulto_wolf = [
+    "Wolf, sei così peloso che sembri un tappeto con le gambe!", 
+    "Wolf, la tua intelligenza è inversamente proporzionale alla lunghezza del tuo pelo!", 
+    "Sai qual è la differenza tra te e un vero lupo? Il lupo almeno spaventa qualcuno!", 
+    "Wolf, per essere un predatore sembri più un cane smarrito che cerca attenzioni.", 
+    "Wolf, le tue zanne fanno più ridere che paura. Sembrano più pronte a mangiare un biscotto che a mordere un nemico!", 
+    "Con il tuo ululato, Wolf, spaventi solo le galline… forse.", 
+    "Wolf, sei il peggior lupo che abbia mai visto. Hai mai vinto una lotta? O ti arrendi prima?", 
+    "Sei così sfortunato che se cacciassi una lepre, lei tornerebbe indietro per prenderti in giro!", 
+    "Wolf, il tuo branco ti ha lasciato perché non volevano morire di noia.", 
+    "Wolf, sei un lupo o un barboncino travestito? Perché non vedo la differenza!", 
+    "Il tuo 'ruggito' è così fiacco che persino le pecore si addormentano.", 
+    "Wolf, hai così poco carisma che persino le rocce evitano di parlarti.", 
+    "Wolf, hai mai provato a spaventare qualcuno? No, perché non credo che nessuno se ne accorga.", 
+    "Hai la grazia di un grizzly con la febbre e l’eleganza di una sedia zoppa.", 
+    "Ti fai chiamare Wolf, ma con quella faccia tutti pensano che sei un Jack Russel che ha avuto una brutta giornata.", 
+    "Sei così lento che la tua preda di solito si ferma per lasciarti un bigliettino di consolazione.", 
+    "Il tuo ululato è così debole che persino la luna ti ignora.", 
+    "Wolf, sei il motivo per cui il detto 'Lupo solitario' è diventato un insulto.", 
+    "Wolf, sei come il vento: rumoroso, ma senza una direzione precisa.",
+    "Ti credi feroce, ma sembri più un peluche dimenticato in un angolo di una taverna.", 
+    "Wolf, sei un lupo o una pecora con un costume scadente?", 
+    "Wolf, sei talmente bravo a cacciare che le prede di solito tornano indietro per spiegarti come si fa.", 
+    "Sai, Wolf, se l’incompetenza fosse un’arte, saresti il Picasso del fallimento.", 
+    "Wolf, anche un goblin cieco con due mani legate farebbe meglio di te in combattimento.", 
+    "Il tuo piano migliore finora? Aspettare che qualcuno faccia tutto al posto tuo.", 
+    "Wolf, sei così inutile che anche il vento ti evita per non sprecare fatica a spingerti.", 
+    "Wolf, sei la prova vivente che il talento può saltare una generazione intera.", 
+    "Ogni volta che escogiti un piano, Wolf, il destino ride e si prepara a godersi lo spettacolo.", 
+    "Wolf, sei così bravo a fallire che potresti insegnarlo in una scuola… se sapessi come si insegna, ovviamente.", 
+    "La tua idea di strategia è 'corri in cerchio e spera per il meglio', vero?", 
+    "Wolf, anche un sacco di patate sarebbe più utile in battaglia. Almeno quello pesa sugli avversari.", 
+    "Il tuo ululato potrebbe spaventare qualcuno, ma solo se avessero paura della vergogna.", 
+    "Wolf, sei talmente incompetente che persino il tuo riflesso ti prende in giro.", 
+    "Sai cosa hanno detto le tue prede l'altro giorno? 'Non preoccuparti, è solo Wolf. Non ci prenderà mai.", 
+    "Wolf, ogni volta che tocchi qualcosa, mi chiedo se stai provando a rovinarlo di proposito o se è solo talento naturale.",
+];
+
+export { doni_comp, battute, insulto_wolf };
