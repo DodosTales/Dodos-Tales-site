@@ -141,6 +141,7 @@ const doni_comp = [
     "magia della virtù",
     "magia del dolore",
     "magia degli elementi",
+    "magia dell'energia",
     "senza dono",
     "dono a scelta",
     "doppio dono",
