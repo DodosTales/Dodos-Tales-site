@@ -147,7 +147,7 @@ const doni_comp = [
     "doppio dono",
 ];
 
-//frasi Drey
+//battute Drey
 const battute = [
     "Ci separa un abisso... metaforicamente e materialmente",
     "Non starmi addosso ho bisogno di spazio",
