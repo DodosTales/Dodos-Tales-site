@@ -552,6 +552,14 @@ const DATA = [
     ],
 
     [
+        "",
+        "Ci risvegliamo seguendo le tracce per trovare i restanti del gruppo della cantante ladra, sconfiggendola e recuperando il cristallo rubato. Dopo averlo recuperato, il folletto, che altro non era il procione spiritico che ha salvato coloro che erano morti, ci chiede di raccogliere gli altri cristalli per liberare un suo amico. Riusciamo a recuperare il cristallo dopo aver convinto il sindaco ed il folletto, chiamato Pepito, libera il suo amico, Kiluko, che si scopre essere il fondatore di Calendula. Dopodichè si festeggia.",
+        "4 Gelata",
+        null,
+    ],
+
+
+    [
         "Il ladro delle voci",
         "Due freelancer investigatori, Leolar e Hopper, si avventurano per una richiesta di Calendula: al festival del canto molta gente sta rimanendo senza voce improvvisamente. Durante la loro avventura si uniscono a loro dei membri della gilda oscura dei Feral Lynx: Scrotos, Mr.Proud, Jidan. Arrivando in città incontrano e si uniscono a dei membri dei Lion's Pride incaricati di risolvere lo stesso incarico degli investigatori: Zaraki, Nargi, Cynthia, Cyrus. Dopo una piccola lite, i Feral lynx visitano Circe e gli altri vanno a chiedere informazioni sull'incarico. Si scopre che, oltre alle voci rubate, è stato rubato un cristallo che dovrebbe potreggere la città, poi successivamente si uniscono pure i Feral Lynx nella risoluzione dell'incarico. Quella stessa notte, dopo aver raccolto altre informazioni, viene rubata la voce pure a Circe, ma ci dà informazioni importanti sull'accaduto. Andiamo nella foresta seguendo le tracce, troviamo un gruppo con una cantante che dice di aver rubato lei il cristallo e le voci. Alcuni del gruppo ci attaccano ed anche alcuni alleati ammaliati dalla canzone. Purtroppo veniamo sconiftti, ma degli spiritelli curano i privi di senso, mentre per quelli morti vengono portati in uno strano luogo dove uno spirito di un procione mette alla prova la bontà delle anime dei morti riportandoli in vita.",
         "3 Gelata",
@@ -559,9 +567,37 @@ const DATA = [
     ],
 
     [
+        "Momento di pausa e di addii",
+        "La gilda fa ritorno a Magnolia, mentre il gruppo che era con Loyce rientra finalmente a casa. Una volta tornata, Ophelia scopre una lettera che annuncia che Lion dovrà affrontare un giudizio imminente; nello stesso momento nota anche un cambiamento inquietante: Onyxia sembra ora in grado di assumere una forma più concreta e fisica, segno di una possibile evoluzione o minaccia. \n Successivamente Zan e Shin chiedono a Ophelia di utilizzare la sfera magica per mettersi in contatto con Barost e Kyoshi. Il tentativo di comunicare con Kyoshi però fallisce: non arriva alcuna risposta, e questo silenzio colpisce profondamente Shin, che cade in uno stato di forte depressione. \n Quando invece riescono a contattare Barost, la situazione si fa subito allarmante. Attraverso la sfera appare una violenta tempesta di neve accompagnata dal suono di un potente battito d’ali. L’ambiente circostante reagisce in modo anomalo: la stanza in cui si trovano inizia a congelarsi. Della comunicazione si riescono a distinguere solo poche parole frammentarie, tra cui il nome di Zan e il verbo “uccidere”, lasciando intendere un grave pericolo o un’accusa. Poco dopo, la sfera si incrina e il collegamento si interrompe bruscamente, lasciando il gruppo pieno di dubbi e timori.",
+        "5 Gelata",
+        null,
+    ],
+
+    [
         "",
-        "Ci risvegliamo seguendo le tracce per trovare i restanti del gruppo della cantante ladra, sconfiggendola e recuperando il cristallo rubato. Dopo averlo recuperato, il folletto, che altro non era il procione spiritico che ha salvato coloro che erano morti, ci chiede di raccogliere gli altri cristalli per liberare un suo amico. Riusciamo a recuperare il cristallo dopo aver convinto il sindaco ed il folletto, chiamato Pepito, libera il suo amico, Kiluko, che si scopre essere il fondatore di Calendula. Dopodichè si festeggia.",
-        "4 Gelata",
+        "Durante la serata, Onyxia inizia a discutere con Ophelia: cerca di convincere il gruppo a impedire a Shin di andare a salvare Lion, ritenendo il rischio troppo alto, e suggerisce a Perseus di rivolgersi alla chiesa di Cardia o ai Therian per rimuovere la sua maledizione. Dopo un acceso confronto, Onyxia si separa definitivamente dal corpo di Ophelia, che perde il suo dono; Onyxia assume forma fisica e lascia la casa. Nel frattempo, la sfera viene riparata. Poco dopo, una statua di ceramica a forma di falchetto consegna al gruppo un messaggio e una lacrima di comunicazione da parte di Derril, destinata a Perseus e legata alle indagini sulle sue sorelle. Attraverso la lacrima, Perseus e Derril si scambiano ulteriori informazioni. Tog resta con Ophelia per consolarla, mentre gli altri vanno alla gilda per cercare informazioni su come rimuovere la maledizione del caos da Perseus. Alla gilda scoprono che la master Helga è sana e salva. Perseus chiede poi un contatto affidabile alla chiesa di Cardia e incontrano Arrett, punito e travestito da cane. Successivamente il gruppo aggiorna Viden su tutta la situazione. Dopo l’incontro con Viden, Myra affida al gruppo un incarico riguardante dei coboldi nei pressi della vecchia casa. Il gruppo si divide: Loyce e Perseus vanno a Cardia, dove Perseus commissiona un oggetto per sopprimere temporaneamente la maledizione; Tog e Zan indagano sui coboldi, riuscendo a stanarli e scoprendo che alcuni oggetti importanti sono stati recuperati dalla tana di Venomfang. Infine, tutti si riuniscono alla casa per condividere le nuove informazioni e fare il punto della situazione.",
+        "6 Gelata",
+        null,
+    ],
+
+    [
+        "",
+        "Perseus si sveglia quando Null tenta di fuggire e scopre Kalem nella stanza, che afferma di doverlo uccidere in futuro quando il frammento del Vuoto prenderà il controllo. Kalem si presenta poi al gruppo: non appartiene a nessuna fazione e, pur riconoscendo Kalamith in Tog e Zan, non interviene. Dal sottosuolo della villa emerge Atharion, ex membro di gilda che aveva previsto la scomparsa dei draghi; dopo aver stretto un patto con Eazu per ottenere informazioni, si ritrova dieci anni dopo a disastro avvenuto. \nIn serata Perseus e Loyce entrano nel reame dei sogni, corrotto dalla follia dei draghi liberati da Drey, e ottengono informazioni sul piano di Chrono e su Izanami, figlia di Drey e detentrice del dominio della conoscenza. Tentano infine di trasmettere le informazioni a K, ma non riescono a comunicare quelle su Izanami.",
+        "7 Gelata",
+        null,
+    ],
+
+    [
+        "",
+        "Il gruppo si sveglia e raggiunge l’incontro con i coboldi usando la rotaia. Alla loro tana, Tog viene aggiornato su quanto accaduto, scopre l’uovo e incontra Novarei, sua sorella/fratello. Mentre decidono di parlare con il master per il futuro di Novarei, l’uovo si schiude alla presenza di Tog, facendo nascere il problema di come crescere il cucciolo e dove tenerlo. Tog decide di restare temporaneamente con i coboldi per addestrare sia il cucciolo di drago, chiamato Imbeth, sia Novarei. \nIl resto del gruppo torna alla villa di Ophelia e poi si dirige alla gilda, incontrando Osin lungo la strada. Alla gilda scoprono che Helga è tornata: accoglie Loyce con un abbraccio, saluta Atharion e poi rimprovera il gruppo per la situazione dei coboldi, di Imbeth, dei dragon slayer e di Kalamith. Informa inoltre Zan che sua sorella Frostbite lo stava cercando, quindi va a prendere Tog. \nDopo il confronto con Helga, Tog, Imbeth e Novarei vengono portati alla villa, dove viene preparata una stanza per loro.",
+        "8 Gelata",
+        null,
+    ],
+
+    [
+        "",
+        "Di prima mattina qualcuno bussa alla villa cercando Ophelia: ad aprire è il gruppo, che trova Eazu. Eazu dona a Ophelia un collare che la trasforma in un cane e rassicura Perseus sul suo frammento di Nulla, poi se ne va. Subito dopo Perseus prende Ophelia e si rifugia con lei nella sua stanza.\n Zan parte alla ricerca di Frostbite e, dopo ore, riesce a trovarla. I due si aggiornano sulla situazione a Barost e Zan la invita alla gilda. Nel frattempo, alla villa arrivano Red e Lucky, noti come Q, inviati da K per cercare Tog: si occuperanno di accudire il draghetto quando Tog sarà assente. \nNel pomeriggio un postino consegna a Loyce una lettera e un pacco. La lettera contiene informazioni su sua madre e su come screditare Cronos; nel pacco Loyce trova Silvie, il suo famiglio. In serata Frostbite arriva alla villa e, poco dopo, Loyce si reca da Helga per informarla del contenuto della lettera.",
+        "9 Gelata",
         null,
     ],
 
